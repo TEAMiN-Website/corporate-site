@@ -1,6 +1,5 @@
 #!/usr/bin/env node
 import * as cdk from 'aws-cdk-lib';
-import { InfrastructureStack } from '../lib/infrastructure-stack';
 import { Configuration, getConfiguration } from '../common/configuration';
 import { HostingStack } from '../bucket/hosting';
 import * as assert from 'assert';
