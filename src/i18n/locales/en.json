@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About TEAMiN",
+    "spass": "SpAss Program",
+    "athletes": "Athletes & Families",
+    "aurelian": "Meet Aurelian",
+    "volunteers": "Volunteers",
+    "signup": "Sign Up",
+    "partners": "Partners",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Building Communities Where Everyone Belongs Through Sports",
+    "subtitle": "TEAMiN creates inclusive sports environments in Bavaria through our Sport-Assistenz program, connecting people with disabilities to mainstream sports clubs and fostering independence through skilled support.",
+    "findSport": "Find Your Sport",
+    "becomeAssistant": "Become an Assistant"
+  },
+  "about": {
+    "title": "Our Mission for Inclusive Sports",
+    "description": "TEAMiN transforms sports culture in Bavaria by creating systematic pathways for inclusion. We believe that sports clubs should be places where everyone can participate, grow, and belong.",
+    "values": [
+      "Systematic approach to sustainable inclusion",
+      "Evidence-based training methodology",
+      "Community-centered support network",
+      "Long-term independence as the goal"
+    ]
+  },
+  "spass": {
+    "title": "Sport-Assistenz (SpAss) Program",
+    "subtitle": "Our structured training program creates skilled assistants who provide temporary support, enabling independent participation in mainstream sports clubs.",
+    "features": [
+      {
+        "title": "Structured Training",
+        "description": "Comprehensive methodology based on research and best practices for inclusive sports assistance."
+      },
+      {
+        "title": "Temporary Support",
+        "description": "Skilled assistance that gradually reduces as independence and club integration develops."
+      },
+      {
+        "title": "Sustainable Inclusion",
+        "description": "Long-term integration into mainstream clubs with ongoing community support systems."
+      }
+    ]
+  },
+  "athletes": {
+    "title": "For Athletes & Families",
+    "description": "We connect people with disabilities and their families to sports opportunities throughout Bavaria, providing the support needed to find your place in mainstream sports clubs.",
+    "services": [
+      "Personalized club matching",
+      "Family support programs",
+      "Ongoing mentorship",
+      "Accessibility resources"
+    ],
+    "getConnected": "Get Connected"
+  },
+  "aurelian": {
+    "title": "Meet Aurelian",
+    "quote": "Through TEAMiN's Sport-Assistenz program, I found not just a sport I love, but a community that embraces me for who I am. The support was there when I needed it, and now I'm proud to call my teammates true friends.",
+    "attribution": "Aurelian, Football Player at FC Würzburg",
+    "stats": [
+      { "number": "18", "label": "Months in Program" },
+      { "number": "3", "label": "Sports Tried" },
+      { "number": "∞", "label": "New Friendships" }
+    ]
+  },
+  "volunteers": {
+    "title": "Become a Sport Assistant",
+    "subtitle": "Use your unique skills and passion for sports to create meaningful impact. Help others achieve independence while building stronger, more inclusive communities.",
+    "benefits": [
+      {
+        "title": "Professional Development",
+        "description": "Gain certified training in inclusive sports methodology and assistance techniques."
+      },
+      {
+        "title": "Meaningful Impact",
+        "description": "Directly contribute to creating lasting change in your community's sports culture."
+      },
+      {
+        "title": "Personal Growth",
+        "description": "Develop empathy, leadership, and communication skills while building lasting friendships."
+      },
+      {
+        "title": "Flexible Commitment",
+        "description": "Choose your level of involvement based on your schedule and interests."
+      }
+    ]
+  },
+  "signup": {
+    "title": "Start Your Journey as a Sport Assistant",
+    "subtitle": "Join our next training cohort and begin making a difference in your community.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Application",
+        "description": "Complete our simple application form and tell us about your interests."
+      },
+      {
+        "step": "2",
+        "title": "Training",
+        "description": "Participate in our comprehensive Sport-Assistenz certification program."
+      },
+      {
+        "step": "3",
+        "title": "Match & Start",
+        "description": "Get matched with athletes and clubs that align with your skills and schedule."
+      }
+    ],
+    "form": {
+      "firstName": "First Name",
+      "lastName": "Last Name",
+      "email": "Email Address",
+      "interests": "Sports Interests",
+      "interestsPlaceholder": "Tell us about your sports background and interests",
+      "submit": "Apply to Become a Sport Assistant"
+    }
+  },
+  "partners": {
+    "title": "Our Partners",
+    "subtitle": "Working together with leading organizations to create systematic change in Bavarian sports.",
+    "list": [
+      {
+        "name": "BVS Bayern",
+        "description": "Bavarian Sports Association partnership for club integration"
+      },
+      {
+        "name": "University of Würzburg",
+        "description": "Research collaboration and methodology development"
+      },
+      {
+        "name": "Lebenshilfe",
+        "description": "Supporting families and individuals with disabilities"
+      },
+      {
+        "name": "Local Sports Clubs",
+        "description": "Growing network of inclusive sports communities"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Get in Touch",
+    "subtitle": "Ready to join the inclusive sports movement? We're here to help athletes, families, volunteers, and clubs connect with the right opportunities.",
+    "info": {
+      "phone": "Phone",
+      "email": "Email",
+      "address": "Address"
+    },
+    "form": {
+      "title": "Send us a Message",
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "messagePlaceholder": "Tell us how we can help...",
+      "submit": "Send Message"
+    }
+  },
+  "footer": {
+    "description": "Building communities where everyone belongs through inclusive sports in Bavaria.",
+    "quickLinks": "Quick Links",
+    "legal": "Legal",
+    "copyright": "Creating inclusive sports communities across Bavaria."
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Something went wrong. Please try again.",
+    "success": "Success!"
+  }
+}

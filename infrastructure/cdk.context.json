@@ -1,0 +1,13 @@
+{
+  "dev": {
+    "Account": "362286870589",
+    "Region": "eu-west-1",
+    "ApplicationName": "TeamIn Corporate Site",
+    "ApplicationCode": "tcs",
+    "Environment": "prd",
+    "StorageBucketName": "team-corporate-site-arg",
+    "DomainName": "teamin.arg.one",
+    "CertificateArn": "arn:aws:acm:us-east-1:362286870589:certificate/a18e1371-82d4-4ba9-9a1f-986e0cd60f46"
+  },
+  "cli-telemetry": false
+}

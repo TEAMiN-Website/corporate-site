@@ -1,0 +1,169 @@
+{
+  "nav": {
+    "home": "Startseite",
+    "about": "Über TEAMiN",
+    "spass": "SpAss Programm",
+    "athletes": "Athleten & Familien",
+    "aurelian": "Aurelian kennenlernen",
+    "volunteers": "Freiwillige",
+    "signup": "Anmelden",
+    "partners": "Partner",
+    "contact": "Kontakt"
+  },
+  "home": {
+    "title": "Gemeinschaften schaffen, in denen jeder durch Sport dazugehört",
+    "subtitle": "TEAMiN schafft inklusive Sportumgebungen in Bayern durch unser Sport-Assistenz-Programm, verbindet Menschen mit Behinderungen mit Mainstream-Sportvereinen und fördert Unabhängigkeit durch qualifizierte Unterstützung.",
+    "findSport": "Finde deinen Sport",
+    "becomeAssistant": "Werde Assistent"
+  },
+  "about": {
+    "title": "Unsere Mission für inklusiven Sport",
+    "description": "TEAMiN transformiert die Sportkultur in Bayern durch die Schaffung systematischer Wege zur Inklusion. Wir glauben, dass Sportvereine Orte sein sollten, an denen jeder teilnehmen, wachsen und dazugehören kann.",
+    "values": [
+      "Systematischer Ansatz für nachhaltige Inklusion",
+      "Evidenzbasierte Trainingsmethodik",
+      "Gemeinschaftszentriertes Unterstützungsnetzwerk",
+      "Langfristige Unabhängigkeit als Ziel"
+    ]
+  },
+  "spass": {
+    "title": "Sport-Assistenz (SpAss) Programm",
+    "subtitle": "Unser strukturiertes Trainingsprogramm schafft qualifizierte Assistenten, die temporäre Unterstützung bieten und unabhängige Teilnahme in Mainstream-Sportvereinen ermöglichen.",
+    "features": [
+      {
+        "title": "Strukturiertes Training",
+        "description": "Umfassende Methodik basierend auf Forschung und bewährten Praktiken für inklusive Sportassistenz."
+      },
+      {
+        "title": "Temporäre Unterstützung",
+        "description": "Qualifizierte Assistenz, die sich schrittweise reduziert, während Unabhängigkeit und Vereinsintegration entwickelt werden."
+      },
+      {
+        "title": "Nachhaltige Inklusion",
+        "description": "Langfristige Integration in Mainstream-Vereine mit fortlaufenden Gemeinschaftsunterstützungssystemen."
+      }
+    ]
+  },
+  "athletes": {
+    "title": "Für Athleten & Familien",
+    "description": "Wir verbinden Menschen mit Behinderungen und ihre Familien mit Sportmöglichkeiten in ganz Bayern und bieten die Unterstützung, die sie brauchen, um ihren Platz in Mainstream-Sportvereinen zu finden.",
+    "services": [
+      "Personalisierte Vereinsvermittlung",
+      "Familien-Unterstützungsprogramme",
+      "Fortlaufende Betreuung",
+      "Barrierefreiheits-Ressourcen"
+    ],
+    "getConnected": "Verbinden"
+  },
+  "aurelian": {
+    "title": "Aurelian kennenlernen",
+    "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
+    "attribution": "Aurelian, Fußballspieler beim FC Würzburg",
+    "stats": [
+      { "number": "18", "label": "Monate im Programm" },
+      { "number": "3", "label": "Sportarten ausprobiert" },
+      { "number": "∞", "label": "Neue Freundschaften" }
+    ]
+  },
+  "volunteers": {
+    "title": "Werde Sport-Assistent",
+    "subtitle": "Nutze deine einzigartigen Fähigkeiten und Leidenschaft für Sport, um bedeutsamen Einfluss zu schaffen. Hilf anderen, Unabhängigkeit zu erreichen, während du stärkere, inklusivere Gemeinschaften aufbaust.",
+    "benefits": [
+      {
+        "title": "Berufliche Entwicklung",
+        "description": "Erhalte zertifizierte Ausbildung in inklusiver Sportmethodik und Assistenztechniken."
+      },
+      {
+        "title": "Bedeutsamer Einfluss",
+        "description": "Trage direkt zu dauerhaften Veränderungen in der Sportkultur deiner Gemeinschaft bei."
+      },
+      {
+        "title": "Persönliches Wachstum",
+        "description": "Entwickle Empathie, Führungsqualitäten und Kommunikationsfähigkeiten, während du dauerhafte Freundschaften aufbaust."
+      },
+      {
+        "title": "Flexibles Engagement",
+        "description": "Wähle dein Engagement basierend auf deinem Zeitplan und deinen Interessen."
+      }
+    ]
+  },
+  "signup": {
+    "title": "Beginne deine Reise als Sport-Assistent",
+    "subtitle": "Schließe dich unserer nächsten Trainingsgruppe an und beginne, einen Unterschied in deiner Gemeinschaft zu machen.",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Bewerbung",
+        "description": "Fülle unser einfaches Bewerbungsformular aus und erzähle uns von deinen Interessen."
+      },
+      {
+        "step": "2",
+        "title": "Training",
+        "description": "Nimm an unserem umfassenden Sport-Assistenz-Zertifizierungsprogramm teil."
+      },
+      {
+        "step": "3",
+        "title": "Vermittlung & Start",
+        "description": "Werde mit Athleten und Vereinen vermittelt, die zu deinen Fähigkeiten und deinem Zeitplan passen."
+      }
+    ],
+    "form": {
+      "firstName": "Vorname",
+      "lastName": "Nachname",
+      "email": "E-Mail-Adresse",
+      "interests": "Sport-Interessen",
+      "interestsPlaceholder": "Erzähle uns von deinem Sport-Hintergrund und deinen Interessen",
+      "submit": "Bewerbung als Sport-Assistent"
+    }
+  },
+  "partners": {
+    "title": "Unsere Partner",
+    "subtitle": "Zusammenarbeit mit führenden Organisationen zur Schaffung systematischer Veränderungen im bayerischen Sport.",
+    "list": [
+      {
+        "name": "BVS Bayern",
+        "description": "Partnerschaft mit dem Bayerischen Sportverband für Vereinsintegration"
+      },
+      {
+        "name": "Universität Würzburg",
+        "description": "Forschungskooperation und Methodikentwicklung"
+      },
+      {
+        "name": "Lebenshilfe",
+        "description": "Unterstützung von Familien und Personen mit Behinderungen"
+      },
+      {
+        "name": "Lokale Sportvereine",
+        "description": "Wachsendes Netzwerk inklusiver Sportgemeinschaften"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Kontakt aufnehmen",
+    "subtitle": "Bereit, der inklusiven Sportbewegung beizutreten? Wir sind hier, um Athleten, Familien, Freiwilligen und Vereinen zu helfen, sich mit den richtigen Möglichkeiten zu verbinden.",
+    "info": {
+      "phone": "Telefon",
+      "email": "E-Mail",
+      "address": "Adresse"
+    },
+    "form": {
+      "title": "Sende uns eine Nachricht",
+      "name": "Name",
+      "email": "E-Mail",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzähle uns, wie wir helfen können...",
+      "submit": "Nachricht senden"
+    }
+  },
+  "footer": {
+    "description": "Gemeinschaften schaffen, in denen jeder durch inklusiven Sport in Bayern dazugehört.",
+    "quickLinks": "Schnelllinks",
+    "legal": "Rechtliches",
+    "copyright": "Inklusive Sportgemeinschaften in ganz Bayern schaffen."
+  },
+  "common": {
+    "loading": "Laden...",
+    "error": "Etwas ist schief gelaufen. Bitte versuche es erneut.",
+    "success": "Erfolg!"
+  }
+}

@@ -1,0 +1,65 @@
+name: Build and Deploy with cache
+
+on:
+  push:
+    branches:
+      - production
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: "Deployment environment"
+        required: false
+        default: "dev"
+        type: choice
+        options:
+          - dev
+          - uat
+          - prod
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: read
+    env:
+      CDK_QUALIFIER: ${{ (github.event_name == 'workflow_dispatch' && inputs.environment || 'dev') }}-tcs
+      ENVIRONMENT: ${{ (github.event_name == 'workflow_dispatch' && inputs.environment || 'dev') }}
+      TOOLKIT_STACK_NAME: ${{ (github.event_name == 'workflow_dispatch' && inputs.environment || 'dev') }}TcsCDK
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Cache npm dependencies
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build frontend
+        run: npm run build
+        working-directory: .
+
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v4.3.1
+        with:
+          audience: sts.amazonaws.com
+          aws-region: eu-west-1
+          role-to-assume: arn:aws:iam::362286870589:role/github-deployment-role
+
+      - name: Deploy with AWS CDK
+        run: |
+          COMMIT_ID=changeset-${{ github.sha }}
+          echo "Commit ID: $COMMIT_ID"
+          npm install
+          npx cdk bootstrap --context config=${{ env.ENVIRONMENT }} --toolkit-stack-name ${{ env.TOOLKIT_STACK_NAME }} --qualifier ${{ env.CDK_QUALIFIER }} --require-approval never --all
+          npx cdk deploy --context config=${{ env.ENVIRONMENT }} --context commitId=$COMMIT_ID --toolkit-stack-name ${{ env.TOOLKIT_STACK_NAME }} --change-set-name $COMMIT_ID --qualifier ${{ env.CDK_QUALIFIER }} --require-approval never --all
+        working-directory: ./infrastructure
