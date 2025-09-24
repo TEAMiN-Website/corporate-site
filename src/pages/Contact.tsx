@@ -25,7 +25,7 @@ const Contact: React.FC = () => {
 
   const contactInfo = [
     { icon: Phone, label: t('contact.info.phone'), value: '+49 (0) 931 123-4567' },
-    { icon: Mail, label: t('contact.info.email'), value: 'info@teamin-bavaria.de' },
+    { icon: Mail, label: t('contact.info.email'), value: 'info@teaminklusion.de' },
     { icon: MapPin, label: t('contact.info.address'), value: 'Würzburg, Bavaria, Germany' }
   ];
 
