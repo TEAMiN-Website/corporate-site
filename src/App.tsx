@@ -29,6 +29,9 @@ const RouteTracker: React.FC = () => {
       trackPageView(location.pathname, document.title);
     }
   }, [location]);
+  return null;
+};
+
 function App() {
   return (
     <ThemeProvider>
@@ -38,9 +41,6 @@ function App() {
     </ThemeProvider>
   );
 }
-
-  return null;
-};
 
 const AppContent: React.FC = () => {
   useEffect(() => {
