@@ -48,12 +48,16 @@ const AppContent: React.FC = () => {
     const consent = localStorage.getItem('cookie-consent');
     if (consent === 'accepted') {
       initializeAnalytics();
+      // Track initial page view (this will also identify the user)
+      setTimeout(() => {
+        trackPageView(window.location.pathname, document.title);
+      }, 500);
     }
   }, []);
 
   const handleCookieAccept = () => {
     initializeAnalytics();
-    // Track initial page view
+    // Track initial page view (this will also identify the user)
     trackPageView(window.location.pathname, document.title);
   };
 
