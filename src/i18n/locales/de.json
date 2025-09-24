@@ -165,5 +165,22 @@
     "loading": "Laden...",
     "error": "Etwas ist schief gelaufen. Bitte versuche es erneut.",
     "success": "Erfolg!"
+  },
+  "cookieConsent": {
+    "title": "Cookie-Einstellungen",
+    "subtitle": "Wir respektieren Ihre Privatsphäre",
+    "description": "Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung zu verbessern, die Website-Nutzung zu analysieren und unsere Marketing-Bemühungen zu unterstützen. Dies hilft uns, Ihnen bessere Inhalte und eine personalisiertere Erfahrung zu bieten.",
+    "essential": {
+      "title": "Notwendige Cookies",
+      "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich. Sie ermöglichen grundlegende Funktionen wie Seitennavigation, Spracheinstellungen und Zugang zu sicheren Bereichen."
+    },
+    "analytics": {
+      "title": "Analyse-Cookies",
+      "description": "Wir verwenden Microsoft Clarity und Google Analytics, um zu verstehen, wie Besucher mit unserer Website interagieren. Dies hilft uns, unsere Inhalte und Benutzererfahrung zu verbessern und dabei Ihre Privatsphäre zu wahren."
+    },
+    "showDetails": "Details anzeigen",
+    "hideDetails": "Details ausblenden",
+    "accept": "Alle Cookies akzeptieren",
+    "decline": "Analyse ablehnen"
   }
 }
