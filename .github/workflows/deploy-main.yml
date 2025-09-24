@@ -3,7 +3,7 @@ name: Build and Deploy with cache
 on:
   push:
     branches:
-      - production
+      - main
   workflow_dispatch:
     inputs:
       environment:
