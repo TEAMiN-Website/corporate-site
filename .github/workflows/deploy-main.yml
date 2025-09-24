@@ -1,9 +1,11 @@
-name: Build and Deploy with cache
+name: Deploy from main automatically
 
 on:
   push:
     branches:
-      - production
+      - main
+    paths-ignore:
+      - '**/*.md'
   workflow_dispatch:
     inputs:
       environment:
