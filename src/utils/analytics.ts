@@ -2,6 +2,25 @@
 const CLARITY_PROJECT_ID = 'tfwiogwvud'; // Replace with your Microsoft Clarity Project ID
 const GA_MEASUREMENT_ID = 'G-PX3P760ZQR'; // Replace with your Google Analytics Measurement ID (GA4)
 
+// Generate or retrieve persistent user ID
+const getUserId = (): string => {
+  const STORAGE_KEY = 'teamin_user_id';
+  let userId = localStorage.getItem(STORAGE_KEY);
+  
+  if (!userId) {
+    // Generate a unique user ID (similar to UUID v4)
+    userId = 'user_' + Date.now() + '_' + Math.random().toString(36).substr(2, 9);
+    localStorage.setItem(STORAGE_KEY, userId);
+  }
+  
+  return userId;
+};
+
+// Export function to get current user ID (for debugging)
+export const getCurrentUserId = (): string | null => {
+  return localStorage.getItem('teamin_user_id');
+};
+
 // Microsoft Clarity initialization
 export const initializeClarity = (): void => {
   if (typeof window === 'undefined' || !CLARITY_PROJECT_ID) {
@@ -15,12 +34,38 @@ export const initializeClarity = (): void => {
       return;
     }
 
-    // Clarity tracking script
-    (function(c: any,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+    // Clarity tracking script with proper TypeScript handling
+    (function(c: any, l: Document, a: string, r: string, i: string) {
+        c[a] = c[a] || function() { (c[a].q = c[a].q || []).push(arguments); };
+        const t = l.createElement(r) as HTMLScriptElement;
+        t.async = true;
+        t.src = "https://www.clarity.ms/tag/" + i;
+        const y = l.getElementsByTagName(r)[0];
+        if (y && y.parentNode) {
+          y.parentNode.insertBefore(t, y);
+        }
     })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
+
+    // Set persistent user ID once Clarity is loaded
+    const userId = getUserId();
+    
+    // Wait for Clarity to be ready and set the user ID
+    const setUserIdWhenReady = () => {
+      if ((window as any).clarity && typeof (window as any).clarity === 'function') {
+        try {
+          (window as any).clarity('identify', userId);
+          console.log('Microsoft Clarity: User ID set to', userId);
+        } catch (error) {
+          console.error('Microsoft Clarity: Failed to set user ID', error);
+        }
+      } else {
+        // Retry after a short delay
+        setTimeout(setUserIdWhenReady, 100);
+      }
+    };
+    
+    // Start checking for Clarity readiness
+    setTimeout(setUserIdWhenReady, 100);
   } catch (error) {
     console.error('Microsoft Clarity: Initialization failed', error);
   }
@@ -132,6 +177,9 @@ export const removeAnalytics = (): void => {
 
     // Remove Clarity
     delete (window as any).clarity;
+
+    // Remove persistent user ID
+    localStorage.removeItem('teamin_user_id');
   } catch (error) {
     console.error('Analytics: Error removing cookies and scripts', error);
   }
