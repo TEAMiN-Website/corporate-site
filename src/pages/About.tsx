@@ -10,7 +10,7 @@ const About: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
-            <h1 className="text-3xl lg:text-4xl font-bold text-gray-900 dark:text-white mb-6">
+            <h1 className="text-3xl lg:text-4xl font-cooper-hewitt-book font-normal text-gray-900 dark:text-white mb-6">
               {t('about.title')}
             </h1>
             <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">

@@ -45,7 +45,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4">{t('footer.quickLinks')}</h4>
+            <h4 className="font-cooper-hewitt-book font-normal mb-4">{t('footer.quickLinks')}</h4>
             <div className="space-y-2">
               {quickLinks.map((link) => (
                 <Link
@@ -60,7 +60,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div>
-            <h4 className="font-bold mb-4">{t('footer.legal')}</h4>
+            <h4 className="font-cooper-hewitt-book font-normal mb-4">{t('footer.legal')}</h4>
             <div className="space-y-2">
               {legalLinks.map((link) => (
                 <Link

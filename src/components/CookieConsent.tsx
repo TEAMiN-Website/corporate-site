@@ -43,7 +43,7 @@ const CookieConsent: React.FC<CookieConsentProps> = ({ onAccept, onDecline }) =>
                 <Cookie className="w-6 h-6 text-blue-600 dark:text-blue-400" />
               </div>
               <div>
-                <h3 className="text-xl font-bold text-gray-900 dark:text-white">
+                <h3 className="text-xl font-cooper-hewitt-book font-normal text-gray-900 dark:text-white">
                   {t('cookieConsent.title')}
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400">

@@ -33,7 +33,7 @@ const Contact: React.FC = () => {
     <div className="py-16 lg:py-24 bg-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
-          <h1 className="text-3xl lg:text-4xl font-bold mb-4">
+          <h1 className="text-3xl lg:text-4xl font-cooper-hewitt-book font-normal mb-4">
             {t('contact.title')}
           </h1>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
         
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-bold mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-cooper-hewitt-book font-normal mb-8">Contact Information</h3>
             <div className="space-y-6">
               {contactInfo.map((contact, index) => {
                 const IconComponent = contact.icon;
@@ -65,7 +65,7 @@ const Contact: React.FC = () => {
           </div>
           
           <div>
-            <h3 className="text-2xl font-bold mb-8">{t('contact.form.title')}</h3>
+            <h3 className="text-2xl font-cooper-hewitt-book font-normal mb-8">{t('contact.form.title')}</h3>
             <form onSubmit={handleSubmit} className="space-y-6">
               <div className="grid md:grid-cols-2 gap-6">
                 <div>
