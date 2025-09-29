@@ -29,7 +29,17 @@ const Home: React.FC = () => {
           <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
             <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
           </svg>
-          FULL-SCREEN IMAGE/VIDEO: Mixed ability athletes playing sports
+          Mixed ability athletes playing sports
+        </div>
+
+        {/* Hero Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.pexels.com/photos/3621227/pexels-photo-3621227.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+            alt="Mixed ability athletes playing sports together"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/80 to-[#D86D55]/80"></div>
         </div>
 
         <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
@@ -56,7 +66,16 @@ const Home: React.FC = () => {
       <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden">
         {/* Background Note */}
         <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider opacity-70">
-          BACKGROUND: Continuation of hero image with overlay
+          Continuation of hero image with overlay
+        </div>
+
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.pexels.com/photos/3621227/pexels-photo-3621227.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+            alt="Sports environment background"
+            className="w-full h-full object-cover opacity-30"
+          />
         </div>
 
         {/* Radial gradients */}
@@ -97,13 +116,13 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
               
-              <div className="h-48 bg-gradient-to-br from-[#D86D55]/15 to-[#D86D55]/5 border-2 border-dashed border-[#D86D55] flex flex-col items-center justify-center text-[#D86D55]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: People of different ages helping & supporting in sports - active, helpful, smiling
-                </div>
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.pexels.com/photos/3621080/pexels-photo-3621080.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="People of different ages helping and supporting in sports"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[#D86D55]/10"></div>
               </div>
 
               <div className="p-8 text-center">
@@ -122,13 +141,13 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
               
-              <div className="h-48 bg-gradient-to-br from-[#71B554]/15 to-[#71B554]/5 border-2 border-dashed border-[#71B554] flex flex-col items-center justify-center text-[#71B554]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: Families doing sports - parents, children with disabilities, actively together
-                </div>
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.pexels.com/photos/8612990/pexels-photo-8612990.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="Families doing sports together - parents and children actively participating"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-[#71B554]/10"></div>
               </div>
 
               <div className="p-8 text-center">
@@ -147,13 +166,13 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
               
-              <div className="h-48 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10 border-2 border-dashed border-[#B3ADAA] flex flex-col items-center justify-center text-[#B3ADAA]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: Diverse sports and activities - variety of possibilities, welcoming, professional
-                </div>
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.pexels.com/photos/3621235/pexels-photo-3621235.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="Diverse sports and activities - variety of possibilities, welcoming environment"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
               </div>
 
               <div className="p-8 text-center">
@@ -172,13 +191,13 @@ const Home: React.FC = () => {
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
               
-              <div className="h-48 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10 border-2 border-dashed border-[#B3ADAA] flex flex-col items-center justify-center text-[#B3ADAA]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: Team/network imagery - diverse group, collaborative, inclusive community feel
-                </div>
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  alt="Team network imagery - diverse group, collaborative, inclusive community"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
               </div>
 
               <div className="p-8 text-center">
