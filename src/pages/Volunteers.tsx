@@ -3,83 +3,58 @@ import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ArrowDown } from 'lucide-react';
 
-const Home: React.FC = () => {
+const Volunteers: React.FC = () => {
   const { t } = useTranslation();
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="min-h-screen bg-gradient-to-br from-[#71B554] to-[#D86D55] relative overflow-hidden">
-        {/* Animated diagonal pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-repeat" style={{
-            backgroundImage: `repeating-linear-gradient(
-              60deg,
-              transparent,
-              transparent 100px,
-              rgba(255,255,255,0.03) 100px,
-              rgba(255,255,255,0.03) 200px
-            )`,
-            animation: 'slidePattern 20s linear infinite'
-          }}></div>
-        </div>
-
-        {/* Hero Background Note */}
-        <div className="absolute top-8 right-8 bg-white/20 backdrop-blur-md px-5 py-3 rounded-lg text-white text-xs uppercase tracking-wider flex items-center gap-3">
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-          </svg>
-          FULL-SCREEN IMAGE/VIDEO: Mixed ability athletes playing sports
-        </div>
-        <div className="relative overflow-hidden flex items-center justify-center text-white p-10 order-2 lg:order-1">
+      {/* Hero Section with Diagonal Split */}
+      <section className="grid lg:grid-cols-2 min-h-[80vh] mt-20 relative overflow-hidden">
+        {/* Left Image Panel */}
+        <div className="relative overflow-hidden bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40">
           <img 
             src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop"
             alt="Three people in sports environment having conversation, including person with disability"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20"></div>
-          <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider z-10">
+          <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
             Successful assistant moment
           </div>
         </div>
 
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer animate-bounce">
-          <div className="text-white text-sm uppercase tracking-widest mb-3 opacity-80">
-            Discover
-          </div>
-          <ArrowDown className="w-8 h-8 text-white opacity-80" />
-        </div>
-      </section>
-
-      {/* Why This Matters Section */}
-      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden">
-        {/* Background Note */}
-        <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider opacity-70">
-          BACKGROUND: Continuation of hero image with overlay
-        </div>
-
-        {/* Radial gradients */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-radial from-[#71B554]/10 via-transparent to-transparent" style={{
-            background: `radial-gradient(circle at 20% 50%, rgba(113, 181, 84, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 50%, rgba(216, 109, 85, 0.1) 0%, transparent 50%)`
-          }}></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <div className="bg-white/5 backdrop-blur-md p-12 md:p-16 rounded-3xl border border-white/10">
-            <p className="text-xl md:text-2xl leading-relaxed opacity-85 italic">
-              [ONE PARAGRAPH 3-4 SENTENCES: Universal sports experience → Current gap → You as bridge. 
-              Emotional progression: Recognition ("I know that feeling") → Empathy ("That must be hard") → Possibility ("I could help")]
+        {/* Right Text Panel */}
+        <div className="bg-[#D86D55] flex items-center justify-center p-8 lg:p-16 relative">
+          {/* Diagonal edge effect */}
+          <div className="absolute left-0 top-0 bottom-0 w-12 bg-[#D86D55] transform -skew-x-6 -translate-x-6 hidden lg:block"></div>
+          
+          <div className="max-w-xl text-center lg:text-left relative z-10">
+            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
+              Lorem Ipsum [Assistants Page]
+            </h1>
+            <p className="text-xl text-white/90 mb-8 leading-relaxed">
+              Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+              <Link 
+                to="/signup"
+                className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                Lorem Ipsum
+              </Link>
+              <Link 
+                to="/about"
+                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
+              >
+                Dolor Sit ↓
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Your Path Section */}
-      <section className="py-24 bg-[#F7ECD5] relative">
-        {/* Subtle pattern overlay */}
+      {/* Benefits Comparison Section */}
+      <section className="py-24 bg-[#F7ECD5]/50 relative">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-repeat" style={{
             backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.05) 35px, rgba(255,255,255,0.05) 70px),
@@ -88,166 +63,201 @@ const Home: React.FC = () => {
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
-            Your Path to Inclusive Sports
-          </h2>
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+              Lorem Ipsum [Benefits]
+            </h2>
+            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+          </div>
 
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Become Sport Assistant Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
-              
-              <div className="h-48 bg-gradient-to-br from-[#D86D55]/15 to-[#D86D55]/5 border-2 border-dashed border-[#D86D55] flex flex-col items-center justify-center text-[#D86D55]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: People of different ages helping & supporting in sports - active, helpful, smiling
-                </div>
-              </div>
-
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">Become Sport Assistant</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Accompany others on their sports journey]</p>
-                <Link 
-                  to="/volunteers"
-                  className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                >
-                  Join Now
-                </Link>
+          {/* Diagonal Split Images */}
+          <div className="grid lg:grid-cols-2 gap-8 mb-16">
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <img 
+                src="https://images.pexels.com/photos/4098369/pexels-photo-4098369.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                alt="Person sitting at home watching TV"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40"></div>
+              <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
+                <h3 className="font-bold text-[#3F3E34]">Lorem Ipsum</h3>
+                <p className="text-sm text-[#B3ADAA]">Consectetur adipiscing elit</p>
               </div>
             </div>
 
-            {/* Athletes & Families Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
-              
-              <div className="h-48 bg-gradient-to-br from-[#71B554]/15 to-[#71B554]/5 border-2 border-dashed border-[#71B554] flex flex-col items-center justify-center text-[#71B554]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: Families doing sports - parents, children with disabilities, actively together
-                </div>
-              </div>
-
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">Athletes & Families</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Find your place in sports with qualified support]</p>
-                <Link 
-                  to="/athletes"
-                  className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                >
-                  Learn More
-                </Link>
+            <div className="relative overflow-hidden rounded-2xl shadow-xl">
+              <img 
+                src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                alt="Person with disability sitting at home watching TV"
+                className="w-full h-64 object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/20 to-[#71B554]/40"></div>
+              <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
+                <h3 className="font-bold text-[#3F3E34]">Dolor Sit Amet</h3>
+                <p className="text-sm text-[#B3ADAA]">Ut enim ad minim veniam</p>
               </div>
             </div>
+          </div>
 
-            {/* SpAss Program Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
-              
-              <div className="h-48 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10 border-2 border-dashed border-[#B3ADAA] flex flex-col items-center justify-center text-[#B3ADAA]">
-                <svg className="w-10 h-10 mb-4 opacity-50" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-                </svg>
-                <div className="text-xs uppercase tracking-wider text-center leading-tight">
-                  PHOTO: Diverse sports and activities - variety of possibilities, welcoming, professional
-                </div>
-              </div>
-
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">SpAss Program</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Discover our sport assistance program in detail]</p>
-                <Link 
-                  to="/spass"
-                  className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                >
-                  Explore Program
-                </Link>
-              </div>
-            </div>
-
-            {/* TEAMiN Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-[#B3ADAA]"></div>
-              
-              <div className="h-64 rounded-2xl overflow-hidden relative">
-                <img 
-                  src="https://images.pexels.com/photos/8612991/pexels-photo-8612991.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop"
-                  alt="Two people together in sports environment - assistant and person with disability"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/20 to-[#D86D55]/20"></div>
-              </div>
-
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">TEAMiN - The Inclusive Network</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Learn more about us and our mission]</p>
-                <Link 
-                  to="/about"
-                  className="inline-block bg-[#B3ADAA] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#B3ADAA] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                >
-                  About Us
-                </Link>
+          {/* Full Width Image */}
+          <div className="relative overflow-hidden rounded-2xl shadow-xl">
+            <img 
+              src="https://images.pexels.com/photos/8612991/pexels-photo-8612991.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop"
+              alt="Two people together in sports environment - assistant and person with disability"
+              className="w-full h-80 object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/30 to-[#D86D55]/30"></div>
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center text-white">
+                <h3 className="text-3xl font-bold mb-4">Together in Sports</h3>
+                <p className="text-xl opacity-90">Building connections through inclusive activities</p>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Contact Section */}
+      {/* Volunteer Stories Section */}
       <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
-            Questions? Contact Us!
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+              Lorem Ipsum [Volunteer Stories]
+            </h2>
+            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
+              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+            </p>
+          </div>
+
+          <div className="flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory">
+            {[
+              { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.", name: "Lorem I., Dolor" },
+              { quote: "Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.", name: "Ipsum D., Sit Amet" },
+              { quote: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", name: "Consectetur A., Elit" },
+              { quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.", name: "Adipiscing T., Eiusmod" }
+            ].map((story, index) => (
+              <div key={index} className="min-w-80 bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 snap-start">
+                <div className="w-16 h-16 bg-[#D86D55] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
+                  {story.name.charAt(0)}
+                </div>
+                <p className="text-lg text-[#B3ADAA] italic mb-6 leading-relaxed">"{story.quote}"</p>
+                <p className="font-semibold text-[#D86D55]">{story.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Journey Timeline Section */}
+      <section className="py-24 bg-[#F7ECD5]/50 relative">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+              Lorem Ipsum Journey
+            </h2>
+            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
+              Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium.
+            </p>
+          </div>
+
+          <div className="relative">
+            {/* Timeline line */}
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#D86D55]/30 transform -translate-y-1/2 hidden lg:block"></div>
+
+            <div className="grid lg:grid-cols-5 gap-8">
+              {[
+                { title: "Lorem Ipsum", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem." },
+                { title: "Dolor Sit", desc: "At vero eos et accusamus et iusto odio dignissimos ducimus." },
+                { title: "Consectetur", desc: "Nam libero tempore, cum soluta nobis est eligendi optio." },
+                { title: "Adipiscing", desc: "Temporibus autem quibusdam et aut officiis debitis aut." },
+                { title: "Eiusmod", desc: "Quis autem vel eum iure reprehenderit qui in ea voluptate." }
+              ].map((step, index) => (
+                <div key={index} className="text-center relative">
+                  <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0">
+                    <div className="w-12 h-12 bg-[#D86D55] text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-xl font-bold text-[#3F3E34] mb-3">{step.title}</h3>
+                    <p className="text-[#B3ADAA] text-sm leading-relaxed">{step.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Entry Points Section */}
+      <section className="py-24 bg-white">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+              Lorem Ipsum [Get Started]
+            </h2>
+            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+            </p>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            {[
+              { icon: "✏️", title: "Sign Up", desc: "Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam.", cta: "Start Here →" },
+              { icon: "👋", title: "Meet Aurelian", desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.", cta: "Learn More →" },
+              { icon: "💬", title: "Contact Us", desc: "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque.", cta: "Get in Touch →" }
+            ].map((entry, index) => (
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55] transform scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
+                <div className="text-4xl mb-6">{entry.icon}</div>
+                <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
+                <p className="text-[#B3ADAA] mb-6 leading-relaxed">{entry.desc}</p>
+                <Link 
+                  to="/contact"
+                  className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#71B554] transition-colors duration-300"
+                >
+                  {entry.cta}
+                </Link>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Banner */}
+      <section className="py-24 bg-[#D86D55] text-white text-center relative overflow-hidden">
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute inset-0 bg-repeat" style={{
+            backgroundImage: `repeating-linear-gradient(
+              60deg,
+              transparent,
+              transparent 100px,
+              rgba(255,255,255,0.03) 100px,
+              rgba(255,255,255,0.03) 200px
+            )`
+          }}></div>
+        </div>
+
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
+          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
+            Lorem Ipsum Dolor Sit Amet
           </h2>
-
-          <div className="bg-[#F7ECD5] p-12 md:p-16 rounded-3xl shadow-xl relative overflow-hidden">
-            {/* Decorative gradient circle */}
-            <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-[#71B554]/10 to-transparent rounded-full"></div>
-            
-            <form className="relative z-10 space-y-6">
-              <div>
-                <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
-                  Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
-                  required
-                />
-              </div>
-
-              <div>
-                <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
-                  Message
-                </label>
-                <textarea
-                  rows={4}
-                  className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base resize-vertical transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
-                  required
-                ></textarea>
-              </div>
-
-              <button
-                type="submit"
-                className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
-              >
-                Send
-              </button>
-            </form>
+          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link 
+              to="/signup"
+              className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              Lorem Ipsum
+            </Link>
+            <Link 
+              to="/contact"
+              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
+            >
+              Dolor Sit
+            </Link>
           </div>
         </div>
       </section>
@@ -255,4 +265,4 @@ const Home: React.FC = () => {
   );
 };
 
-export default Home;
+export default Volunteers;

@@ -9,7 +9,17 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen bg-gradient-to-br from-[#71B554] to-[#D86D55] relative overflow-hidden">
+      <section className="min-h-screen relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="https://images.pexels.com/photos/6551415/pexels-photo-6551415.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+            alt="Special Olympics athletes celebrating together - inclusive sports community"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/80 to-[#D86D55]/80"></div>
+        </div>
+
         {/* Animated diagonal pattern */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute inset-0 bg-repeat" style={{
@@ -63,20 +73,14 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why This Matters Section */}
-      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden">
-        {/* Background Note */}
-        <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider opacity-70">
-          Continuation of hero image with overlay
-        </div>
-
-        {/* Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="https://images.pexels.com/photos/3621227/pexels-photo-3621227.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
-            alt="Sports environment background"
-            className="w-full h-full object-cover opacity-30"
-          />
-        </div>
+      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden" style={{
+        backgroundImage: `url('https://images.pexels.com/photos/6551415/pexels-photo-6551415.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundAttachment: 'fixed'
+      }}>
+        {/* Dark overlay for readability */}
+        <div className="absolute inset-0 bg-[#3F3E34]/85 z-0"></div>
 
         {/* Radial gradients */}
         <div className="absolute inset-0">
@@ -84,6 +88,11 @@ const Home: React.FC = () => {
             background: `radial-gradient(circle at 20% 50%, rgba(113, 181, 84, 0.1) 0%, transparent 50%),
                         radial-gradient(circle at 80% 50%, rgba(216, 109, 85, 0.1) 0%, transparent 50%)`
           }}></div>
+        </div>
+
+        {/* Background Note */}
+        <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider opacity-70 z-10">
+          Continuation of hero image with overlay
         </div>
 
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
@@ -118,7 +127,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3621080/pexels-photo-3621080.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                   alt="People of different ages helping and supporting in sports"
                   className="w-full h-full object-cover"
                 />
@@ -143,7 +152,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/8612990/pexels-photo-8612990.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  src="https://images.pexels.com/photos/8613089/pexels-photo-8613089.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                   alt="Families doing sports together - parents and children actively participating"
                   className="w-full h-full object-cover"
                 />
@@ -168,7 +177,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3621235/pexels-photo-3621235.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                   alt="Diverse sports and activities - variety of possibilities, welcoming environment"
                   className="w-full h-full object-cover"
                 />
@@ -193,7 +202,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
+                  src="https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
                   alt="Team network imagery - diverse group, collaborative, inclusive community"
                   className="w-full h-full object-cover"
                 />
