@@ -5,6 +5,21 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Custom animations */
+@keyframes slidePattern {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(200px); }
+}
+
+.animate-slidePattern {
+  animation: slidePattern 20s linear infinite;
+}
+
+/* Custom gradient utilities */
+.bg-gradient-radial {
+  background: radial-gradient(circle, var(--tw-gradient-stops));
+}
+
 @layer base {
   body {
     font-family: 'DM Sans', sans-serif;

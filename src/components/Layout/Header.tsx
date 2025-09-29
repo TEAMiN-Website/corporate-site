@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Heart, Sun, Moon, Globe } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
@@ -9,6 +9,7 @@ const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { isDark, toggleTheme } = useTheme();
   const location = useLocation();
+  const navigate = useNavigate();
 
   const navItems = [
     { id: '/', label: t('nav.home') },
@@ -28,6 +29,24 @@ const Header: React.FC = () => {
     localStorage.setItem('language', newLang);
   };
 
+  // Function to get navigation item styling based on current page
+  const getNavItemStyle = (itemPath: string) => {
+    const isActive = location.pathname === itemPath;
+    
+    if (isActive) {
+      // Special styling for different pages
+      if (itemPath === '/') {
+        return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white';
+      } else if (itemPath === '/volunteers') {
+        return 'bg-[#D86D55] text-white';
+      } else {
+        return 'bg-blue-600 text-white'; // Default active style for other pages
+      }
+    }
+    
+    return 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400';
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -45,11 +64,7 @@ const Header: React.FC = () => {
               <Link
                 key={item.id}
                 to={item.id}
-                className={`text-sm font-medium transition-colors duration-200 ${
-                  location.pathname === item.id 
-                    ? 'text-blue-600 dark:text-blue-400' 
-                    : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
-                }`}
+                className={`text-sm font-medium transition-all duration-300 px-4 py-2 rounded-full ${getNavItemStyle(item.id)}`}
               >
                 {item.label}
               </Link>
@@ -117,7 +132,7 @@ const Header: React.FC = () => {
                 key={item.id}
                 to={item.id}
                 onClick={() => setIsMenuOpen(false)}
-                className="block w-full text-left px-3 py-2 text-base font-medium text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 hover:bg-gray-50 dark:hover:bg-gray-800 rounded-md transition-colors duration-200"
+                className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 ${getNavItemStyle(item.id)}`}
               >
                 {item.label}
               </Link>
