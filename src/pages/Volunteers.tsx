@@ -30,6 +30,7 @@ const Home: React.FC = () => {
             <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
           </svg>
           FULL-SCREEN IMAGE/VIDEO: Mixed ability athletes playing sports
+        </div>
         <div className="relative overflow-hidden flex items-center justify-center text-white p-10 order-2 lg:order-1">
           <img 
             src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg?auto=compress&cs=tinysrgb&w=800&h=1200&fit=crop"
@@ -163,33 +164,33 @@ const Home: React.FC = () => {
                   className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
                   Explore Program
-              <div className="h-48 rounded-2xl overflow-hidden relative">
-                <img 
-                  src="https://images.pexels.com/photos/4009402/pexels-photo-4009402.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                  alt="Person sitting and watching TV at home"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-[#B3ADAA]/20"></div>
+                </Link>
+              </div>
+            </div>
+
+            {/* TEAMiN Card */}
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-[#B3ADAA]"></div>
               
-              <div className="h-48 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10 border-2 border-dashed border-[#B3ADAA] flex flex-col items-center justify-center text-[#B3ADAA]">
-              <div className="h-48 rounded-2xl overflow-hidden relative">
+              <div className="h-64 rounded-2xl overflow-hidden relative">
                 <img 
-                  src="https://images.pexels.com/photos/7176026/pexels-photo-7176026.jpeg?auto=compress&cs=tinysrgb&w=600&h=400&fit=crop"
-                  alt="Person with disability sitting and watching TV at home"
+                  src="https://images.pexels.com/photos/8612991/pexels-photo-8612991.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop"
+                  alt="Two people together in sports environment - assistant and person with disability"
                   className="w-full h-full object-cover"
                 />
-                <div className="absolute inset-0 bg-[#B3ADAA]/20"></div>
+                <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/20 to-[#D86D55]/20"></div>
+              </div>
 
               <div className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">TEAMiN - The Inclusive Network</h3>
                 <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Learn more about us and our mission]</p>
-            <div className="h-64 rounded-2xl overflow-hidden relative">
-              <img 
-                src="https://images.pexels.com/photos/8612991/pexels-photo-8612991.jpeg?auto=compress&cs=tinysrgb&w=1200&h=600&fit=crop"
-                alt="Two people together in sports environment - assistant and person with disability"
-                className="w-full h-full object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/20 to-[#D86D55]/20"></div>
+                <Link 
+                  to="/about"
+                  className="inline-block bg-[#B3ADAA] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#B3ADAA] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                >
+                  About Us
+                </Link>
+              </div>
             </div>
           </div>
         </div>
