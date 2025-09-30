@@ -13,7 +13,7 @@ const Volunteers: React.FC = () => {
         {/* Left Image Panel */}
         <div className="relative overflow-hidden bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40">
           <img 
-            src="/src/assets/assistant picture 2.jpg"
+            src="/src/assets/assistant picture 5 copy.jpg"
             alt="Three people in sports environment having conversation, including person with disability"
             className="w-full h-full object-cover"
           />
