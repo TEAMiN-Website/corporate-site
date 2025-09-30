@@ -43,16 +43,6 @@ const Home: React.FC = () => {
           Mixed ability athletes playing sports
         </div>
 
-        {/* Hero Background Image */}
-        <div className="absolute inset-0 z-0">
-          <img 
-            src="/src/assets/TEAMiN Network.jpg"
-            alt="Mixed ability athletes playing sports together"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/80 to-[#D86D55]/80"></div>
-        </div>
-
         <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
           <div className="text-center text-white max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
@@ -183,7 +173,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/src/assets/athlete 2.jpg"
+                  src="/src/assets/assistant picture 2.jpg"
                   alt="Diverse sports and activities - variety of possibilities, welcoming environment"
                   className="w-full h-full object-cover"
                 />
@@ -231,13 +221,22 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-white relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/src/assets/assistant picture 5 copy.jpg"
+            alt="Three people in conversation in sports environment"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        
         <div className="max-w-4xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
             Questions? Contact Us!
           </h2>
 
-          <div className="bg-[#F7ECD5] p-12 md:p-16 rounded-3xl shadow-xl relative overflow-hidden">
+          <div className="bg-[#F7ECD5]/95 backdrop-blur-sm p-12 md:p-16 rounded-3xl shadow-xl relative overflow-hidden z-10">
             {/* Decorative gradient circle */}
             <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-[#71B554]/10 to-transparent rounded-full"></div>
             
