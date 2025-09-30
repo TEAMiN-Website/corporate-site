@@ -28,6 +28,17 @@
   background: radial-gradient(circle, var(--tw-gradient-stops));
 }
 
+/* Ensure proper layering for sections */
+.hero-section {
+  position: relative;
+  z-index: 1;
+}
+
+/* Remove any fixed positioning that might interfere */
+section {
+  position: relative;
+}
+
 @layer base {
   body {
     font-family: 'DM Sans', sans-serif;

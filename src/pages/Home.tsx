@@ -9,14 +9,13 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden">
+      <section className="min-h-screen relative overflow-hidden hero-section">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="/src/assets/athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
-            className="w-full h-full object-cover fixed"
-            style={{ backgroundAttachment: 'fixed' }}
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/80 to-[#D86D55]/80"></div>
         </div>
@@ -64,16 +63,12 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why This Matters Section */}
-      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden" style={{
-        background: 'transparent'
-      }}>
-        {/* Continuing the hero image effect */}
+      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
             src="/src/assets/athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
-            className="w-full h-full object-cover fixed"
-            style={{ backgroundAttachment: 'fixed' }}
+            className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-[#3F3E34]/85"></div>
         </div>
@@ -225,13 +220,13 @@ const Home: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/assistant picture 5 copy.jpg"
-            alt="Three people in conversation in sports environment"
+            src="/src/assets/athlete 1.jpg"
+            alt="Special Olympics athletes celebrating together - inclusive sports community"
             className="w-full h-full object-cover"
           />
         </div>
         
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-4xl mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
             Questions? Contact Us!
           </h2>
