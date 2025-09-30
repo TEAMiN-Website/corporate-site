@@ -13,7 +13,7 @@ const Volunteers: React.FC = () => {
         {/* Left Image Panel */}
         <div className="relative overflow-hidden bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40">
           <img 
-            src="/src/assets/assistant picture 5 copy.jpg"
+            src="assistant picture 5 copy.jpg"
             alt="Three people in sports environment having conversation, including person with disability"
             className="w-full h-full object-cover"
           />
@@ -76,7 +76,7 @@ const Volunteers: React.FC = () => {
           <div className="grid lg:grid-cols-2 gap-8 mb-16">
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <img 
-                src="/src/assets/assistant picture 1.jpg"
+                src="assistant picture 1.jpg"
                 alt="Person sitting at home watching TV"
                 className="w-full h-64 object-cover"
               />
@@ -89,7 +89,7 @@ const Volunteers: React.FC = () => {
 
             <div className="relative overflow-hidden rounded-2xl shadow-xl">
               <img 
-                src="/src/assets/athlete 1.jpg"
+                src="athlete 1.jpg"
                 alt="Person with disability sitting at home watching TV"
                 className="w-full h-64 object-cover"
               />
@@ -104,7 +104,7 @@ const Volunteers: React.FC = () => {
           {/* Full Width Image */}
           <div className="relative overflow-hidden rounded-2xl shadow-xl">
             <img 
-              src="/src/assets/athlete 2.jpg"
+              src="athlete 2.jpg"
               alt="Two people together in sports environment - assistant and person with disability"
               className="w-full h-80 object-cover"
             />

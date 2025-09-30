@@ -13,7 +13,7 @@ const Home: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/athlete 1.jpg"
+            src="athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
             className="w-full h-full object-cover"
           />
@@ -66,7 +66,7 @@ const Home: React.FC = () => {
       <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/athlete 1.jpg"
+            src="athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
             className="w-full h-full object-cover"
           />
@@ -118,7 +118,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/src/assets/assistant picture 1.jpg"
+                  src="assistant picture 1.jpg"
                   alt="People of different ages helping and supporting in sports"
                   className="w-full h-full object-cover"
                 />
@@ -143,7 +143,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/src/assets/athlete 2.jpg"
+                  src="athlete 2.jpg"
                   alt="Families doing sports together - parents and children actively participating"
                   className="w-full h-full object-cover"
                 />
@@ -168,7 +168,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/src/assets/assistant picture 2.jpg"
+                  src="assistant picture 2.jpg"
                   alt="Diverse sports and activities - variety of possibilities, welcoming environment"
                   className="w-full h-full object-cover"
                 />
@@ -193,7 +193,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/src/assets/TEAMiN Network.jpg"
+                  src="TEAMiN Network.jpg"
                   alt="Team network imagery - diverse group, collaborative, inclusive community"
                   className="w-full h-full object-cover"
                 />
@@ -220,7 +220,7 @@ const Home: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/athlete 1.jpg"
+            src="athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
             className="w-full h-full object-cover"
           />
