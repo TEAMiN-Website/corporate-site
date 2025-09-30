@@ -15,6 +15,14 @@
   animation: slidePattern 20s linear infinite;
 }
 
+/* Parallax effect for hero background */
+.parallax-bg {
+  background-attachment: fixed !important;
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+}
+
 /* Custom gradient utilities */
 .bg-gradient-radial {
   background: radial-gradient(circle, var(--tw-gradient-stops));

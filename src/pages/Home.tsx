@@ -13,9 +13,10 @@ const Home: React.FC = () => {
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
-            src="/src/assets/TEAMiN Network.jpg"
+            src="/src/assets/athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover fixed"
+            style={{ backgroundAttachment: 'fixed' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/80 to-[#D86D55]/80"></div>
         </div>
@@ -74,13 +75,18 @@ const Home: React.FC = () => {
 
       {/* Why This Matters Section */}
       <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden" style={{
-        backgroundImage: `url('https://images.pexels.com/photos/6551415/pexels-photo-6551415.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop')`,
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundAttachment: 'fixed'
+        background: 'transparent'
       }}>
-        {/* Dark overlay for readability */}
-        <div className="absolute inset-0 bg-[#3F3E34]/85 z-0"></div>
+        {/* Continuing the hero image effect */}
+        <div className="absolute inset-0 z-0">
+          <img 
+            src="/src/assets/athlete 1.jpg"
+            alt="Special Olympics athletes celebrating together - inclusive sports community"
+            className="w-full h-full object-cover fixed"
+            style={{ backgroundAttachment: 'fixed' }}
+          />
+          <div className="absolute inset-0 bg-[#3F3E34]/85"></div>
+        </div>
 
         {/* Radial gradients */}
         <div className="absolute inset-0">
@@ -152,7 +158,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="/src/assets/athlete 1.jpg"
+                  src="/src/assets/athlete 2.jpg"
                   alt="Families doing sports together - parents and children actively participating"
                   className="w-full h-full object-cover"
                 />
