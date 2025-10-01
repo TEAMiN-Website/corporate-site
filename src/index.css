@@ -5,6 +5,59 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Continuous parallax background for hero and following sections */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url('/athlete 1.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: -1;
+  will-change: transform;
+}
+
+/* Hero section overlay */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom right, rgba(113, 181, 84, 0.8), rgba(216, 109, 85, 0.8));
+  z-index: 1;
+}
+
+/* Why This Matters section overlay */
+.why-matters-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 62, 52, 0.85);
+  z-index: 1;
+}
+
+/* Contact section overlay */
+.contact-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(63, 62, 52, 0.85);
+  z-index: 1;
+}
+
 /* Custom animations */
 @keyframes slidePattern {
   0% { transform: translateX(0); }
@@ -15,28 +68,6 @@
   animation: slidePattern 20s linear infinite;
 }
 
-/* Parallax effect for hero background */
-.parallax-bg {
-  background-attachment: fixed !important;
-  background-position: center !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  will-change: transform;
-}
-
-.parallax-container {
-  position: relative;
-  overflow: hidden;
-}
-
-/* Enhanced parallax for better performance */
-@media (prefers-reduced-motion: no-preference) {
-  .parallax-bg {
-    transform: translateZ(0);
-    backface-visibility: hidden;
-  }
-}
-
 /* Custom gradient utilities */
 .bg-gradient-radial {
   background: radial-gradient(circle, var(--tw-gradient-stops));
@@ -45,12 +76,17 @@
 /* Ensure proper layering for sections */
 .hero-section {
   position: relative;
-  z-index: 1;
+  z-index: 2;
 }
 
-/* Remove any fixed positioning that might interfere */
-section {
+.why-matters-section {
   position: relative;
+  z-index: 2;
+}
+
+.contact-section {
+  position: relative;
+  z-index: 2;
 }
 
 @layer base {

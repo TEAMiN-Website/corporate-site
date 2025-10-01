@@ -55,9 +55,9 @@ const Header: React.FC = () => {
             <img 
               src="TEAMiN Logo.jpg" 
               alt="TEAMiN Logo" 
-              className="h-12 w-auto object-contain"
+              className="h-10 w-auto object-contain"
             />
-            <span className="text-2xl font-dm-sans-light font-light text-gray-900 dark:text-white">TEAMiN</span>
+            <span className="text-xl font-dm-sans-light font-light text-gray-900 dark:text-white">TEAMiN</span>
           </Link>
           
           {/* Desktop Navigation */}
