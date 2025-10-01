@@ -14,7 +14,7 @@ const Volunteers: React.FC = () => {
         <div 
           className="absolute inset-0 overflow-hidden bg-cover bg-no-repeat"
           style={{ 
-            backgroundImage: 'url("athlete 4.jpg")',
+            backgroundImage: 'url("/athlete 4.jpg")',
             backgroundPosition: '75% top'
           }}
         >
