@@ -15,7 +15,8 @@ const Volunteers: React.FC = () => {
           className="absolute inset-0 overflow-hidden bg-cover bg-no-repeat"
           style={{ 
             backgroundImage: 'url("/athlete 4.jpg")',
-            backgroundPosition: '75% top'
+            backgroundPosition: '20% top',
+            backgroundSize: 'cover'
           }}
         >
           <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/30"></div>
