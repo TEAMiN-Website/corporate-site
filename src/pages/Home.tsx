@@ -9,7 +9,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden hero-section">
+      <section className="min-h-screen relative overflow-hidden parallax-section hero-overlay">
 
         {/* Animated diagonal pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -54,7 +54,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why This Matters Section */}
-      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden why-matters-section">
+      <section className="py-24 text-white relative overflow-hidden parallax-section dark-overlay">
 
         {/* Radial gradients */}
         <div className="absolute inset-0">
@@ -199,7 +199,7 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden contact-section">
+      <section className="py-24 text-white relative overflow-hidden parallax-section dark-overlay">
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">

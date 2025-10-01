@@ -5,25 +5,18 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Continuous parallax background for hero and following sections */
-body::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  background-image: url('/athlete 1.jpg');
+/* Parallax background sections */
+.parallax-section {
+  background-image: url('/athlete%201.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  z-index: -1;
-  will-change: transform;
+  position: relative;
 }
 
-/* Hero section overlay */
-.hero-section::before {
+/* Section overlays */
+.hero-overlay::before {
   content: '';
   position: absolute;
   top: 0;
@@ -34,20 +27,7 @@ body::before {
   z-index: 1;
 }
 
-/* Why This Matters section overlay */
-.why-matters-section::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(63, 62, 52, 0.85);
-  z-index: 1;
-}
-
-/* Contact section overlay */
-.contact-section::before {
+.dark-overlay::before {
   content: '';
   position: absolute;
   top: 0;
