@@ -10,20 +10,17 @@ const Volunteers: React.FC = () => {
     <div>
       {/* Hero Section with Diagonal Split */}
       <section className="min-h-[80vh] mt-20 relative overflow-hidden">
-        {/* Image Container */}
-        <div className="absolute inset-0 overflow-hidden">
-          <img 
-            src="assistant picture 2 crop copy.jpg"
-            alt="Sport assistant helping athlete"
-            className="w-full h-full object-cover"
-            style={{ 
-              objectPosition: 'center center'
-            }}
-          />
-        </div>
+        {/* Background Image - covers entire section */}
+        <div 
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("assistant picture 2 crop copy.jpg")'
+          }}
+        ></div>
         
-        {/* Overlays */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/30"></div>
+        {/* Subtle overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/10"></div>
+        
         <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
           Successful assistant moment
         </div>
