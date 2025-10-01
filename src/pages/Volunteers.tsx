@@ -14,7 +14,7 @@ const Volunteers: React.FC = () => {
         <div 
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("assistant picture 2 crop copy.jpg")'
+            backgroundImage: 'url("assistant picture 5-min.jpg")'
           }}
         ></div>
         
