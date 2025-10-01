@@ -13,7 +13,7 @@ const Volunteers: React.FC = () => {
         {/* Image Container */}
         <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
           <img 
-            src="assistant picture 2 crop.jpg"
+            src="assistant picture 2 crop copy.jpg"
             alt="Sport assistant helping athlete"
             className="object-cover"
             style={{ 
