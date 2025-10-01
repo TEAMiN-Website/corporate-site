@@ -9,22 +9,27 @@ const Volunteers: React.FC = () => {
   return (
     <div>
       {/* Hero Section with Diagonal Split */}
-      <section className="grid lg:grid-cols-2 min-h-[80vh] mt-20 relative overflow-hidden">
+      <section className="min-h-[80vh] mt-20 relative overflow-hidden">
         {/* Left Image Panel */}
-        <div className="relative overflow-hidden bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40">
+        <div className="absolute inset-0 overflow-hidden">
           <img 
             src="assistant picture 5 copy.jpg"
             alt="Sport assistant helping in inclusive sports environment"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40"></div>
           <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
             Successful assistant moment
           </div>
+          
+          {/* Diagonal cut overlay */}
+          <div className="absolute inset-0 bg-[#D86D55]" style={{
+            clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
+          }}></div>
         </div>
 
-        {/* Right Text Panel */}
-        <div className="bg-[#D86D55] flex items-center justify-center p-8 lg:p-16 relative">
+        {/* Text Content */}
+        <div className="relative z-10 flex items-center justify-end min-h-[80vh] p-8 lg:p-16">
           <div className="max-w-xl text-center lg:text-left relative z-10">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Lorem Ipsum [Assistants Page]
@@ -156,10 +161,10 @@ const Volunteers: React.FC = () => {
             alt="Inclusive running event with wheelchair participant"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#F7ECD5]/90"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-black/20"></div>
         </div>
         
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
               Lorem Ipsum Journey
@@ -203,17 +208,17 @@ const Volunteers: React.FC = () => {
           <img 
             src="Aurelian 1 copy.jpg"
             alt="Two people having friendly conversation"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-top"
           />
-          <div className="absolute inset-0 bg-white/85"></div>
+          <div className="absolute inset-0 bg-gray-900/60"></div>
         </div>
         
-        <div className="max-w-6xl mx-auto px-4">
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
               Lorem Ipsum [Get Started]
             </h2>
-            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
+            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
               Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
             </p>
           </div>
@@ -224,7 +229,7 @@ const Volunteers: React.FC = () => {
               { icon: "👋", title: "Meet Aurelian", desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.", cta: "Learn More →" },
               { icon: "💬", title: "Contact Us", desc: "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque.", cta: "Get in Touch →" }
             ].map((entry, index) => (
-              <div key={index} className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
+              <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55] transform scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
                 <div className="text-4xl mb-6">{entry.icon}</div>
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
