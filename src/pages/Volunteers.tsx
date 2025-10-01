@@ -15,16 +15,16 @@ const Volunteers: React.FC = () => {
           <img 
             src="assistant picture 5 copy.jpg"
             alt="Sport assistant helping in inclusive sports environment"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-left"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/30"></div>
           <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
             Successful assistant moment
           </div>
           
           {/* Diagonal cut overlay */}
           <div className="absolute inset-0 bg-[#D86D55]" style={{
-            clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
+            clipPath: 'polygon(65% 0%, 100% 0%, 100% 100%, 45% 100%)'
           }}></div>
         </div>
 
@@ -163,7 +163,7 @@ const Volunteers: React.FC = () => {
             alt="Inclusive running event with wheelchair participant"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gray-900/20"></div>
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
         
         <div className="max-w-6xl mx-auto px-4 relative z-10">
