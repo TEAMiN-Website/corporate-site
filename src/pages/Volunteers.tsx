@@ -15,7 +15,7 @@ const Volunteers: React.FC = () => {
           <img 
             src="athlete 4.jpg"
             alt="Sport assistant helping in inclusive sports environment"
-            className="w-full h-full object-cover object-center"
+            className="w-full h-full object-cover object-left-bottom"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/30"></div>
           <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
