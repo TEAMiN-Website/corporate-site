@@ -21,6 +21,20 @@
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+  will-change: transform;
+}
+
+.parallax-container {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Enhanced parallax for better performance */
+@media (prefers-reduced-motion: no-preference) {
+  .parallax-bg {
+    transform: translateZ(0);
+    backface-visibility: hidden;
+  }
 }
 
 /* Custom gradient utilities */

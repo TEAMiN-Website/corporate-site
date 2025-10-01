@@ -55,7 +55,7 @@ const Header: React.FC = () => {
             <img 
               src="TEAMiN Logo.jpg" 
               alt="TEAMiN Logo" 
-              className="h-10 w-auto"
+              className="h-12 w-auto object-contain"
             />
             <span className="text-2xl font-dm-sans-light font-light text-gray-900 dark:text-white">TEAMiN</span>
           </Link>

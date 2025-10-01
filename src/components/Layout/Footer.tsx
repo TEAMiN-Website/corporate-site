@@ -29,13 +29,10 @@ const Footer: React.FC = () => {
               <img 
                 src="TEAMiN Logo.jpg" 
                 alt="TEAMiN Logo" 
-                className="h-8 w-auto"
+                className="h-10 w-auto object-contain"
               />
               <span className="text-xl font-dm-sans-light font-light">TEAMiN</span>
             </div>
-            <p className="text-gray-600 leading-relaxed mb-4">
-              {t('footer.description')}
-            </p>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-colors duration-200">
                 <Mail className="w-5 h-5 text-gray-600" />
@@ -78,7 +75,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-200 mt-8 pt-8 text-center text-gray-600">
-          <p>&copy; 2025 TEAMiN. {t('footer.copyright')}</p>
+          <p>&copy; 2025 TEAMiN.</p>
         </div>
       </div>
     </footer>

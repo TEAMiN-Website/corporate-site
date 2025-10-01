@@ -9,13 +9,13 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden hero-section">
+      <section className="min-h-screen relative overflow-hidden hero-section parallax-container">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover parallax-bg"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/80 to-[#D86D55]/80"></div>
         </div>
@@ -63,12 +63,12 @@ const Home: React.FC = () => {
       </section>
 
       {/* Why This Matters Section */}
-      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden">
+      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden parallax-container">
         <div className="absolute inset-0 z-0">
           <img 
             src="athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover parallax-bg"
           />
           <div className="absolute inset-0 bg-[#3F3E34]/85"></div>
         </div>
@@ -216,18 +216,19 @@ const Home: React.FC = () => {
       </section>
 
       {/* Contact Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 bg-[#3F3E34] text-white relative overflow-hidden parallax-container">
         {/* Background Image */}
         <div className="absolute inset-0 z-0">
           <img 
             src="athlete 1.jpg"
             alt="Special Olympics athletes celebrating together - inclusive sports community"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover parallax-bg"
           />
+          <div className="absolute inset-0 bg-[#3F3E34]/85"></div>
         </div>
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
             Questions? Contact Us!
           </h2>
 
