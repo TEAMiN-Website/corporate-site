@@ -17,11 +17,11 @@ const Volunteers: React.FC = () => {
             alt="Sport assistant helping athlete"
             className="object-cover"
             style={{ 
-              width: '120%',
-              height: '120%',
+              width: '80%',
+              height: '80%',
               objectPosition: 'left center',
-              minWidth: '120%',
-              minHeight: '120%'
+              minWidth: '80%',
+              minHeight: '80%'
             }}
           />
         </div>
