@@ -152,14 +152,14 @@ const Volunteers: React.FC = () => {
       </section>
 
       {/* Journey Timeline Section */}
-      <section className="py-24 relative overflow-hidden">
+      <section className="py-48 relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
             src="assistant picture 3 copy.jpg"
             alt="Inclusive running event with wheelchair participant"
             className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 20%' }}
+            style={{ objectPosition: 'center 30%' }}
           />
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
