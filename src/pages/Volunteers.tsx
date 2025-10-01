@@ -13,10 +13,10 @@ const Volunteers: React.FC = () => {
         {/* Left Image Panel */}
         <div className="absolute inset-0 overflow-hidden">
           <img 
-            src="/athlete 4.jpg"
+            src="/athlete 4 copy.jpg"
             alt="Sport assistant helping athlete"
             className="w-full h-full object-cover"
-            style={{ objectPosition: '30% center' }}
+            style={{ objectPosition: 'center center' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/30"></div>
           <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
