@@ -27,7 +27,7 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
               <img 
-                src="TEAMiN Logo.jpg" 
+                src="TEAMiN Logo.png" 
                 alt="TEAMiN Logo" 
                 className="h-10 w-auto object-contain"
               />

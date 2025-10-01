@@ -76,7 +76,7 @@ const Header: React.FC = () => {
         <div className="flex justify-between items-center py-4">
           <Link to="/" className="flex items-center space-x-2 mr-8">
             <img 
-              src="TEAMiN Logo.jpg" 
+              src="TEAMiN Logo.png" 
               alt="TEAMiN Logo" 
               className="h-12 w-auto object-contain"
             />
