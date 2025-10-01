@@ -22,17 +22,13 @@ const Volunteers: React.FC = () => {
         {/* Subtle overlay for better text readability */}
         <div className="absolute inset-0 bg-black/10"></div>
         
-        <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
-          Successful assistant moment
-        </div>
-        
         {/* Diagonal cut overlay */}
         <div className="absolute inset-0 bg-[#D86D55]" style={{
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
 
         {/* Text Content */}
-        <div className="relative z-10 flex items-end justify-end min-h-screen p-2 lg:p-4 pb-24">
+        <div className="relative z-10 flex items-center justify-end min-h-screen p-2 lg:p-4">
           <div className="max-w-xl text-center lg:text-left relative z-10 mr-1 lg:mr-2">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Lorem Ipsum [Assistants Page]
