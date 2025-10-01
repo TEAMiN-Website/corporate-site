@@ -13,8 +13,8 @@ const Volunteers: React.FC = () => {
         {/* Left Image Panel */}
         <div className="relative overflow-hidden bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40">
           <img 
-            src="assistant picture 3 copy.jpg"
-            alt="Three people in sports environment having conversation, including person with disability"
+            src="assistant picture 5 copy.jpg"
+            alt="Sport assistant helping in inclusive sports environment"
             className="w-full h-full object-cover"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-black/40 to-black/20"></div>
@@ -25,9 +25,6 @@ const Volunteers: React.FC = () => {
 
         {/* Right Text Panel */}
         <div className="bg-[#D86D55] flex items-center justify-center p-8 lg:p-16 relative">
-          {/* Diagonal edge effect */}
-          <div className="absolute left-0 top-0 bottom-0 w-12 bg-[#D86D55] transform -skew-x-6 -translate-x-6 hidden lg:block"></div>
-          
           <div className="max-w-xl text-center lg:text-left relative z-10">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Lorem Ipsum [Assistants Page]
@@ -151,7 +148,17 @@ const Volunteers: React.FC = () => {
       </section>
 
       {/* Journey Timeline Section */}
-      <section className="py-24 bg-[#F7ECD5]/50 relative">
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="assistant picture 3 copy.jpg"
+            alt="Inclusive running event with wheelchair participant"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-[#F7ECD5]/90"></div>
+        </div>
+        
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
@@ -190,7 +197,17 @@ const Volunteers: React.FC = () => {
       </section>
 
       {/* Entry Points Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Image */}
+        <div className="absolute inset-0">
+          <img 
+            src="Aurelian 1 copy.jpg"
+            alt="Two people having friendly conversation"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-white/85"></div>
+        </div>
+        
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
@@ -207,7 +224,7 @@ const Volunteers: React.FC = () => {
               { icon: "👋", title: "Meet Aurelian", desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.", cta: "Learn More →" },
               { icon: "💬", title: "Contact Us", desc: "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque.", cta: "Get in Touch →" }
             ].map((entry, index) => (
-              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
+              <div key={index} className="bg-white/90 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55] transform scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
                 <div className="text-4xl mb-6">{entry.icon}</div>
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
