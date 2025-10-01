@@ -24,12 +24,14 @@ const Volunteers: React.FC = () => {
           
           {/* Diagonal cut overlay */}
           <div className="absolute inset-0 bg-[#D86D55]" style={{
-            clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
+            clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
           }}></div>
         </div>
 
         {/* Text Content */}
-        <div className="relative z-10 flex items-center justify-end min-h-[80vh] p-8 lg:p-16">
+        <div className="relative z-10 flex items-center justify-end min-h-[80vh] p-8 lg:p-16" style={{
+          backgroundPosition: 'center left'
+        }}>
           <div className="max-w-xl text-center lg:text-left relative z-10">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Lorem Ipsum [Assistants Page]
@@ -161,7 +163,7 @@ const Volunteers: React.FC = () => {
             alt="Inclusive running event with wheelchair participant"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-black/20 to-black/20"></div>
+          <div className="absolute inset-0 bg-gray-900/20"></div>
         </div>
         
         <div className="max-w-6xl mx-auto px-4 relative z-10">
