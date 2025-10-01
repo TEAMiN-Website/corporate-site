@@ -27,7 +27,7 @@ const Volunteers: React.FC = () => {
         
         {/* Diagonal cut overlay */}
         <div className="absolute inset-0 bg-[#D86D55]" style={{
-          clipPath: 'polygon(40% 0%, 100% 0%, 100% 100%, 20% 100%)'
+          clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
 
         {/* Text Content */}
