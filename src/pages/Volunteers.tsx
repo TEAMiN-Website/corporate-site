@@ -34,7 +34,6 @@ const Volunteers: React.FC = () => {
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight text-center lg:text-left">
               Lorem Ipsum<br />
               Lorem Ipsum<br />
-              Lorem Ipsum<br />
               Lorem Ipsum
             </h1>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
