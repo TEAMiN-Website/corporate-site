@@ -68,9 +68,7 @@ const Signup: React.FC = () => {
                 </div>
                 
                 <div className="relative z-10">
-                  <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-5"></div>
                   <h3 className="text-white text-2xl font-semibold mb-2">E-Learning</h3>
-                  <p className="text-white/80 text-sm">Lorem ipsum dolor</p>
                 </div>
               </div>
               
@@ -121,9 +119,7 @@ const Signup: React.FC = () => {
                 </div>
                 
                 <div className="relative z-10">
-                  <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-5"></div>
                   <h3 className="text-white text-2xl font-semibold mb-2">Praxistag</h3>
-                  <p className="text-white/80 text-sm">Lorem ipsum dolor</p>
                 </div>
               </div>
               
@@ -174,9 +170,7 @@ const Signup: React.FC = () => {
                 </div>
                 
                 <div className="relative z-10">
-                  <div className="w-20 h-20 bg-white/20 rounded-full mx-auto mb-5"></div>
                   <h3 className="text-white text-2xl font-semibold mb-2">SSO Partner</h3>
-                  <p className="text-white/80 text-sm">Lorem ipsum dolor</p>
                 </div>
               </div>
               
@@ -231,11 +225,7 @@ const Signup: React.FC = () => {
               </div>
               
               <div className="relative z-10">
-                <div className="w-32 h-32 bg-[#71B554] rounded-full mx-auto mb-8"></div>
                 <h2 className="text-4xl font-bold text-[#3F3E34] mb-6">Meet Aurelian</h2>
-                <div className="bg-white p-8 rounded-xl mb-8 min-h-[100px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic">[Description Text Lorem Ipsum]</p>
-                </div>
                 <button className="bg-[#71B554] text-white px-16 py-5 rounded-full text-lg font-semibold hover:bg-[#5FA044] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   Lorem Ipsum →
                 </button>
