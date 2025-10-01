@@ -158,7 +158,7 @@ const Volunteers: React.FC = () => {
           <img 
             src="assistant picture 3 copy.jpg"
             alt="Inclusive running event with wheelchair participant"
-            className="w-full h-full object-cover"
+            className="w-full h-full object-cover object-bottom"
           />
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
@@ -174,13 +174,12 @@ const Volunteers: React.FC = () => {
             {/* Timeline line */}
             <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#D86D55]/30 transform -translate-y-1/2 hidden lg:block"></div>
 
-            <div className="grid lg:grid-cols-5 gap-8">
+            <div className="grid lg:grid-cols-4 gap-8">
               {[
                 { title: "Lorem Ipsum", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem." },
                 { title: "Dolor Sit", desc: "At vero eos et accusamus et iusto odio dignissimos ducimus." },
                 { title: "Consectetur", desc: "Nam libero tempore, cum soluta nobis est eligendi optio." },
-                { title: "Adipiscing", desc: "Temporibus autem quibusdam et aut officiis debitis aut." },
-                { title: "Eiusmod", desc: "Quis autem vel eum iure reprehenderit qui in ea voluptate." }
+                { title: "Adipiscing", desc: "Temporibus autem quibusdam et aut officiis debitis aut." }
               ].map((step, index) => (
                 <div key={index} className="text-center relative">
                   <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0">
