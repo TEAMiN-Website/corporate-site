@@ -15,12 +15,13 @@ const Volunteers: React.FC = () => {
           <img 
             src="assistant picture 2 crop.jpg"
             alt="Sport assistant helping athlete"
-            className="min-w-full min-h-full object-cover"
+            className="object-cover"
             style={{ 
-              width: 'auto',
-              height: 'auto',
-              minWidth: '100%',
-              minHeight: '100%'
+              width: '120%',
+              height: '120%',
+              objectPosition: 'left center',
+              minWidth: '120%',
+              minHeight: '120%'
             }}
           />
         </div>
