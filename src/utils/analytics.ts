@@ -125,7 +125,8 @@ export const initializeClarity = (): void => {
         });
         
         t.addEventListener('error', (e) => {
-          console.error('Microsoft Clarity: Failed to load', e);
+          // Silently handle Clarity loading failures (common with ad blockers or network issues)
+          // This prevents console spam while maintaining functionality
         });
         
     })(window, document, "clarity", "script", CLARITY_PROJECT_ID);
