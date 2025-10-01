@@ -28,7 +28,7 @@ const Volunteers: React.FC = () => {
         }}></div>
 
         {/* Text Content */}
-        <div className="relative z-10 flex items-center justify-end min-h-screen p-2 lg:p-4">
+        <div className="relative z-10 flex items-center justify-end min-h-screen p-2 lg:p-4 pt-32">
           <div className="max-w-xl text-center lg:text-left relative z-10 mr-1 lg:mr-2">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Lorem Ipsum [Assistants Page]
