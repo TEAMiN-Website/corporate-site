@@ -51,22 +51,22 @@ const Header: React.FC = () => {
     <nav className="fixed top-0 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center py-4">
-          <Link to="/" className="flex items-center space-x-2">
+          <Link to="/" className="flex items-center space-x-2 mr-8">
             <img 
               src="TEAMiN Logo.jpg" 
               alt="TEAMiN Logo" 
-              className="h-10 w-auto object-contain"
+              className="h-12 w-auto object-contain"
             />
-            <span className="text-xl font-dm-sans-light font-light text-gray-900 dark:text-white">TEAMiN</span>
+            <span className="text-2xl font-dm-sans-light font-light text-gray-900 dark:text-white">TEAMiN</span>
           </Link>
           
           {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-6">
+          <div className="hidden lg:flex items-center space-x-4">
             {navItems.map((item) => (
               <Link
                 key={item.id}
                 to={item.id}
-                className={`text-sm font-medium transition-all duration-300 px-4 py-2 rounded-full ${getNavItemStyle(item.id)}`}
+                className={`text-sm font-medium transition-all duration-300 px-3 py-2 rounded-full ${getNavItemStyle(item.id)}`}
               >
                 {item.label}
               </Link>

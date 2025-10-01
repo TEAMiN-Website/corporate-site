@@ -25,14 +25,6 @@ const Home: React.FC = () => {
           }}></div>
         </div>
 
-        {/* Hero Background Note */}
-        <div className="absolute top-8 right-8 bg-white/20 backdrop-blur-md px-5 py-3 rounded-lg text-white text-xs uppercase tracking-wider flex items-center gap-3">
-          <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-            <path d="M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7-3.5c0-.28 0-.5-.1-.75l1.6-1.2l-1.5-2.6l-1.85.75A6.8 6.8 0 0 0 15.75 7l-.3-2h-3l-.3 2c-.5.35-1 .7-1.4 1.15L8.9 7.4l-1.5 2.6l1.6 1.2c-.1.25-.1.5-.1.8s0 .5.1.75l-1.6 1.2l1.5 2.6l1.85-.75c.4.45.9.8 1.4 1.15l.3 2h3l.3-2a7 7 0 0 0 1.4-1.15l1.85.75l1.5-2.6l-1.6-1.2c.1-.25.1-.5.1-.75Z"/>
-          </svg>
-          Mixed ability athletes playing sports
-        </div>
-
         <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
           <div className="text-center text-white max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
@@ -62,11 +54,6 @@ const Home: React.FC = () => {
             background: `radial-gradient(circle at 20% 50%, rgba(113, 181, 84, 0.1) 0%, transparent 50%),
                         radial-gradient(circle at 80% 50%, rgba(216, 109, 85, 0.1) 0%, transparent 50%)`
           }}></div>
-        </div>
-
-        {/* Background Note */}
-        <div className="absolute top-5 right-5 bg-white/10 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider opacity-70 z-10">
-          Continuation of hero image with overlay
         </div>
 
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
