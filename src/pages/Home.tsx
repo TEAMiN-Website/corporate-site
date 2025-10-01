@@ -88,7 +88,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/6975474/pexels-photo-6975474.jpeg"
+                  src="assistant picture 1.jpg"
                   alt="People of different ages helping and supporting in sports"
                   className="w-full h-full object-cover"
                 />
@@ -113,7 +113,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/8612944/pexels-photo-8612944.jpeg"
+                  src="athlete 2.jpg"
                   alt="Families doing sports together - parents and children actively participating"
                   className="w-full h-full object-cover"
                 />
@@ -138,7 +138,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg"
+                  src="assistant picture 2.jpg"
                   alt="Diverse sports and activities - variety of possibilities, welcoming environment"
                   className="w-full h-full object-cover"
                 />
@@ -163,7 +163,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg"
+                  src="TEAMiN Network.jpg"
                   alt="Team network imagery - diverse group, collaborative, inclusive community"
                   className="w-full h-full object-cover"
                 />
