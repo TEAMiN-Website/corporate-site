@@ -35,7 +35,7 @@ const Athletes: React.FC = () => {
           </div>
           <div>
             <img
-              src="https://images.pexels.com/photos/3621227/pexels-photo-3621227.jpeg?auto=compress&cs=tinysrgb&w=600"
+              src="athlete 6 copy.jpg"
               alt="Family supporting athlete in sports"
               className="rounded-2xl shadow-xl"
             />
