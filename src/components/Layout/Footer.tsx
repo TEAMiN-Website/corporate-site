@@ -31,7 +31,6 @@ const Footer: React.FC = () => {
                 alt="TEAMiN Logo" 
                 className="h-10 w-auto object-contain"
               />
-              <span className="text-xl font-dm-sans-light font-light">TEAMiN</span>
             </div>
             <div className="flex space-x-4">
               <div className="w-10 h-10 bg-gray-100 rounded-lg flex items-center justify-center hover:bg-gray-200 cursor-pointer transition-colors duration-200">
