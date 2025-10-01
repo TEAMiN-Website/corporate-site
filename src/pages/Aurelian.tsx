@@ -12,7 +12,7 @@ const Aurelian: React.FC = () => {
         </h1>
         <div className="bg-white dark:bg-gray-900 p-8 lg:p-12 rounded-2xl shadow-xl mb-8">
           <img
-            src="Aurelian 1 copy.jpg"
+            src="https://images.pexels.com/photos/7991579/pexels-photo-7991579.jpeg"
             alt="Aurelian participating in sports"
             className="w-32 h-32 rounded-full object-cover mx-auto mb-6"
           />

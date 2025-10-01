@@ -27,7 +27,7 @@ const About: React.FC = () => {
           </div>
           <div className="relative">
             <img
-              src="assistant picture 3 copy.jpg"
+              src="https://images.pexels.com/photos/6975474/pexels-photo-6975474.jpeg"
               alt="Inclusive sports training session"
               className="rounded-2xl shadow-xl"
             />
