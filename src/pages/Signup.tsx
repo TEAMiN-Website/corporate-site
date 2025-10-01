@@ -13,7 +13,7 @@ const Signup: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="h-[60vh] relative overflow-hidden mt-20">
+      <section className="h-[60vh] relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
