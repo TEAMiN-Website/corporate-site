@@ -27,20 +27,15 @@ const Volunteers: React.FC = () => {
         
         {/* Diagonal cut overlay */}
         <div className="absolute inset-0 bg-[#D86D55]" style={{
-          clipPath: 'polygon(65% 0%, 100% 0%, 100% 100%, 45% 100%)'
+          clipPath: 'polygon(40% 0%, 100% 0%, 100% 100%, 20% 100%)'
         }}></div>
 
         {/* Text Content */}
-        <div className="relative z-10 flex items-center justify-end min-h-[80vh] p-8 lg:p-16" style={{
-          backgroundPosition: 'center left'
-        }}>
-          <div className="max-w-xl text-center lg:text-left relative z-10">
+        <div className="relative z-10 flex items-end justify-end min-h-[80vh] p-8 lg:p-16">
+          <div className="max-w-xl text-center lg:text-left relative z-10 mb-8">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight">
               Lorem Ipsum [Assistants Page]
             </h1>
-            <p className="text-xl text-white/90 mb-8 leading-relaxed">
-              Elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua
-            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link 
                 to="/signup"
