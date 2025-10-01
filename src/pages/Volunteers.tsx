@@ -112,7 +112,7 @@ const Volunteers: React.FC = () => {
               src="Aurelian 1 copy.jpg"
               alt="Two people together in sports environment - assistant and person with disability"
               className="w-full h-80 object-cover"
-            />
+             style={{ objectPosition: '75% top' }}
             <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/30 to-[#D86D55]/30"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white">
