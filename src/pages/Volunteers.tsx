@@ -16,7 +16,7 @@ const Volunteers: React.FC = () => {
             src="athlete 4.jpg"
             alt="Sport assistant helping in inclusive sports environment"
             className="w-full h-full object-cover"
-            style={{ objectPosition: '30% 60%' }}
+            style={{ objectPosition: '70% 100%' }}
           />
           <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/30"></div>
           <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-md px-4 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
