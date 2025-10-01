@@ -158,7 +158,8 @@ const Volunteers: React.FC = () => {
           <img 
             src="assistant picture 3 copy.jpg"
             alt="Inclusive running event with wheelchair participant"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 20%' }}
           />
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
