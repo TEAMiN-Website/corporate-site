@@ -11,17 +11,13 @@ const Volunteers: React.FC = () => {
       {/* Hero Section with Diagonal Split */}
       <section className="min-h-[80vh] mt-20 relative overflow-hidden">
         {/* Image Container */}
-        <div className="absolute inset-0 flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0 overflow-hidden">
           <img 
             src="assistant picture 2 crop copy.jpg"
             alt="Sport assistant helping athlete"
-            className="object-cover"
+            className="w-full h-full object-cover"
             style={{ 
-              width: '80%',
-              height: '80%',
-              objectPosition: 'left center',
-              minWidth: '80%',
-              minHeight: '80%'
+              objectPosition: 'center center'
             }}
           />
         </div>
