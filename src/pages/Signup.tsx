@@ -22,7 +22,7 @@ const Signup: React.FC = () => {
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center 20%' }}
           />
-          {/* Game Heat Red Overlay 20% opacity */}
+          {/* Game Heat Red Overlay 40% opacity */}
           <div className="absolute inset-0 bg-[#D86D55]/40"></div>
         </div>
         
@@ -55,7 +55,7 @@ const Signup: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {/* E-Learning Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
+            <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
               <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
@@ -73,7 +73,7 @@ const Signup: React.FC = () => {
               </div>
               
               <div className="p-8">
-                <div className="bg-[#F7ECD5] p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
+                <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
                   <p className="text-[#B3ADAA] italic text-center">[Description Text]</p>
                 </div>
                 
@@ -85,8 +85,8 @@ const Signup: React.FC = () => {
                   onClick={() => toggleDetails(0)}
                   className={`w-full py-4 px-6 rounded-xl font-semibold border-2 transition-all duration-300 flex items-center justify-center gap-2 ${
                     expandedCard === 0 
-                      ? 'bg-[#F7ECD5] border-[#3F3E34] text-[#3F3E34]' 
-                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34] hover:bg-[#F7ECD5]'
+                      ? 'bg-white border-[#3F3E34] text-[#3F3E34]' 
+                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
                   }`}
                 >
                   Details 
@@ -96,17 +96,17 @@ const Signup: React.FC = () => {
                 <div className={`overflow-hidden transition-all duration-300 ${
                   expandedCard === 0 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
                 }`}>
-                  <div className="bg-[#F7ECD5] p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    <div className="bg-white p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
-                    <div className="bg-white p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
-                    <div className="bg-white p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
+                  <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
+                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
+                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
+                    <div className="bg-[#F7ECD5] p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* Praxistag Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
+            <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
               <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
@@ -124,7 +124,7 @@ const Signup: React.FC = () => {
               </div>
               
               <div className="p-8">
-                <div className="bg-[#F7ECD5] p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
+                <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
                   <p className="text-[#B3ADAA] italic text-center">[Description Text]</p>
                 </div>
                 
@@ -136,8 +136,8 @@ const Signup: React.FC = () => {
                   onClick={() => toggleDetails(1)}
                   className={`w-full py-4 px-6 rounded-xl font-semibold border-2 transition-all duration-300 flex items-center justify-center gap-2 ${
                     expandedCard === 1 
-                      ? 'bg-[#F7ECD5] border-[#3F3E34] text-[#3F3E34]' 
-                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34] hover:bg-[#F7ECD5]'
+                      ? 'bg-white border-[#3F3E34] text-[#3F3E34]' 
+                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
                   }`}
                 >
                   Details 
@@ -147,17 +147,17 @@ const Signup: React.FC = () => {
                 <div className={`overflow-hidden transition-all duration-300 ${
                   expandedCard === 1 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
                 }`}>
-                  <div className="bg-[#F7ECD5] p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    <div className="bg-white p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
-                    <div className="bg-white p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
-                    <div className="bg-white p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
+                  <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
+                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
+                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
+                    <div className="bg-[#F7ECD5] p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
                   </div>
                 </div>
               </div>
             </div>
 
             {/* SSO Partner Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#3F3E34]">
+            <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#3F3E34]">
               <div className="bg-[#3F3E34] p-10 text-center relative overflow-hidden h-48">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
@@ -175,7 +175,7 @@ const Signup: React.FC = () => {
               </div>
               
               <div className="p-8">
-                <div className="bg-[#F7ECD5] p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
+                <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
                   <p className="text-[#B3ADAA] italic text-center">[Description Text]</p>
                 </div>
                 
@@ -187,8 +187,8 @@ const Signup: React.FC = () => {
                   onClick={() => toggleDetails(2)}
                   className={`w-full py-4 px-6 rounded-xl font-semibold border-2 transition-all duration-300 flex items-center justify-center gap-2 ${
                     expandedCard === 2 
-                      ? 'bg-[#F7ECD5] border-[#3F3E34] text-[#3F3E34]' 
-                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34] hover:bg-[#F7ECD5]'
+                      ? 'bg-white border-[#3F3E34] text-[#3F3E34]' 
+                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
                   }`}
                 >
                   Details 
@@ -198,10 +198,10 @@ const Signup: React.FC = () => {
                 <div className={`overflow-hidden transition-all duration-300 ${
                   expandedCard === 2 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
                 }`}>
-                  <div className="bg-[#F7ECD5] p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    <div className="bg-white p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
-                    <div className="bg-white p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
-                    <div className="bg-white p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
+                  <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
+                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
+                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
+                    <div className="bg-[#F7ECD5] p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
                   </div>
                 </div>
               </div>
@@ -212,9 +212,9 @@ const Signup: React.FC = () => {
 
       {/* Meet Aurelian Section */}
       <section className="py-24 bg-[#F7ECD5]">
-        <div className="max-w-4xl mx-auto px-4">
+        <div className="max-w-3xl mx-auto px-4">
           <div className="text-center">
-            <div className="bg-[#F7ECD5] p-16 rounded-3xl shadow-xl border-4 border-[#71B554] relative overflow-hidden h-80">
+            <div className="bg-[#F7ECD5] p-16 rounded-3xl shadow-xl border-4 border-[#71B554] relative overflow-hidden h-96 flex flex-col justify-end">
               {/* Background Image */}
               <div className="absolute inset-0">
                 <img 
@@ -225,7 +225,7 @@ const Signup: React.FC = () => {
                 />
               </div>
               
-              <div className="relative z-10">
+              <div className="relative z-10 pb-8">
                 <h2 className="text-4xl font-bold text-[#3F3E34] mb-6">Meet Aurelian</h2>
                 <button className="bg-[#71B554] text-white px-16 py-5 rounded-full text-lg font-semibold hover:bg-[#5FA044] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
                   Lorem Ipsum →
