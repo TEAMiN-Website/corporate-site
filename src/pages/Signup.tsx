@@ -29,13 +29,13 @@ const Signup: React.FC = () => {
         <div className="relative z-10 flex items-center justify-center h-full">
           <div className="text-center text-white max-w-4xl px-4">
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 3px 6px rgba(0,0,0,0.6)' }}>
-              Lorem Ipsum Dolor
+              {t('signupNew.hero.title')}
             </h1>
             <p className="text-2xl font-light mb-4 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
-              Consectetur adipiscing elit sed do
+              {t('signupNew.hero.subtitle')}
             </p>
             <p className="text-lg max-w-2xl mx-auto opacity-90" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              {t('signupNew.hero.description')}
             </p>
           </div>
         </div>
@@ -46,10 +46,10 @@ const Signup: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#3F3E34] mb-6">
-              Lorem Ipsum
+              {t('signupNew.training.title')}
             </h2>
             <p className="text-xl text-[#B3ADAA]">
-              Sed ut perspiciatis unde omnis iste natus
+              {t('signupNew.training.subtitle')}
             </p>
           </div>
 
@@ -68,17 +68,17 @@ const Signup: React.FC = () => {
                 </div>
                 
                 <div className="relative z-10 h-full flex items-center justify-center">
-                  <h3 className="text-white text-2xl font-semibold mb-2">E-Learning</h3>
+                  <h3 className="text-white text-2xl font-semibold mb-2">{t('signupNew.training.elearning.title')}</h3>
                 </div>
               </div>
               
               <div className="p-8">
                 <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic text-center">[Description Text]</p>
+                  <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.elearning.description')}</p>
                 </div>
                 
                 <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold mb-4 hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
-                  BVS Campus Link <ExternalLink className="w-4 h-4" />
+                  {t('signupNew.training.elearning.cta')} <ExternalLink className="w-4 h-4" />
                 </button>
                 
                 <button 
@@ -89,7 +89,7 @@ const Signup: React.FC = () => {
                       : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
                   }`}
                 >
-                  Details 
+                  {t('signupNew.training.details')}
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expandedCard === 0 ? 'rotate-180' : ''}`} />
                 </button>
                 
@@ -97,9 +97,9 @@ const Signup: React.FC = () => {
                   expandedCard === 0 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
                 }`}>
                   <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
-                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
-                    <div className="bg-[#F7ECD5] p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
+                    {(t('signupNew.training.elearning.details', { returnObjects: true }) as any[]).map((detail: string, index: number) => (
+                      <div key={index} className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic last:mb-0">{detail}</div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -119,17 +119,17 @@ const Signup: React.FC = () => {
                 </div>
                 
                 <div className="relative z-10 h-full flex items-center justify-center">
-                  <h3 className="text-white text-2xl font-semibold mb-2">Praxistag</h3>
+                  <h3 className="text-white text-2xl font-semibold mb-2">{t('signupNew.training.practiceDay.title')}</h3>
                 </div>
               </div>
               
               <div className="p-8">
                 <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic text-center">[Description Text]</p>
+                  <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.practiceDay.description')}</p>
                 </div>
                 
                 <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold mb-4 hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
-                  BVS Booking Link <ExternalLink className="w-4 h-4" />
+                  {t('signupNew.training.practiceDay.cta')} <ExternalLink className="w-4 h-4" />
                 </button>
                 
                 <button 
@@ -140,7 +140,7 @@ const Signup: React.FC = () => {
                       : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
                   }`}
                 >
-                  Details 
+                  {t('signupNew.training.details')}
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expandedCard === 1 ? 'rotate-180' : ''}`} />
                 </button>
                 
@@ -148,9 +148,9 @@ const Signup: React.FC = () => {
                   expandedCard === 1 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
                 }`}>
                   <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
-                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
-                    <div className="bg-[#F7ECD5] p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
+                    {(t('signupNew.training.practiceDay.details', { returnObjects: true }) as any[]).map((detail: string, index: number) => (
+                      <div key={index} className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic last:mb-0">{detail}</div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -170,17 +170,17 @@ const Signup: React.FC = () => {
                 </div>
                 
                 <div className="relative z-10 h-full flex items-center justify-center">
-                  <h3 className="text-white text-2xl font-semibold mb-2">SSO Partner</h3>
+                  <h3 className="text-white text-2xl font-semibold mb-2">{t('signupNew.training.partner.title')}</h3>
                 </div>
               </div>
               
               <div className="p-8">
                 <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic text-center">[Description Text]</p>
+                  <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.partner.description')}</p>
                 </div>
                 
                 <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold mb-4 hover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
-                  Partner Intranet Link <ExternalLink className="w-4 h-4" />
+                  {t('signupNew.training.partner.cta')} <ExternalLink className="w-4 h-4" />
                 </button>
                 
                 <button 
@@ -191,7 +191,7 @@ const Signup: React.FC = () => {
                       : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
                   }`}
                 >
-                  Details 
+                  {t('signupNew.training.details')}
                   <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expandedCard === 2 ? 'rotate-180' : ''}`} />
                 </button>
                 
@@ -199,9 +199,9 @@ const Signup: React.FC = () => {
                   expandedCard === 2 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
                 }`}>
                   <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 1]</div>
-                    <div className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic">[Detail Item 2]</div>
-                    <div className="bg-[#F7ECD5] p-3 rounded text-[#B3ADAA] italic">[Detail Item 3]</div>
+                    {(t('signupNew.training.partner.details', { returnObjects: true }) as any[]).map((detail: string, index: number) => (
+                      <div key={index} className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic last:mb-0">{detail}</div>
+                    ))}
                   </div>
                 </div>
               </div>
@@ -227,9 +227,9 @@ const Signup: React.FC = () => {
               </div>
               
               <div className="relative z-10 pb-8">
-                <h2 className="text-4xl font-bold text-[#3F3E34] mb-6">Meet Aurelian</h2>
+                <h2 className="text-4xl font-bold text-[#3F3E34] mb-6">{t('signupNew.aurelian.title')}</h2>
                 <button className="bg-[#71B554] text-white px-16 py-5 rounded-full text-lg font-semibold hover:bg-[#5FA044] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-                  Lorem Ipsum →
+                  {t('signupNew.aurelian.cta')}
                 </button>
               </div>
             </div>

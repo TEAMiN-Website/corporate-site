@@ -141,6 +141,7 @@
   "contact": {
     "title": "Kontakt aufnehmen",
     "subtitle": "Bereit, der inklusiven Sportbewegung beizutreten? Wir sind hier, um Athleten, Familien, Freiwilligen und Vereinen zu helfen, sich mit den richtigen Möglichkeiten zu verbinden.",
+    "infoTitle": "Kontaktinformationen",
     "info": {
       "phone": "Telefon",
       "email": "E-Mail",
@@ -152,14 +153,22 @@
       "email": "E-Mail",
       "message": "Nachricht",
       "messagePlaceholder": "Erzähle uns, wie wir helfen können...",
-      "submit": "Nachricht senden"
+      "submit": "Nachricht senden",
+      "namePlaceholder": "Ihr Name",
+      "emailPlaceholder": "Ihre E-Mail"
     }
   },
   "footer": {
     "description": "Gemeinschaften schaffen, in denen jeder durch inklusiven Sport in Bayern dazugehört.",
     "quickLinks": "Schnelllinks",
     "legal": "Rechtliches",
-    "copyright": "Inklusive Sportgemeinschaften in ganz Bayern schaffen."
+    "copyright": "Inklusive Sportgemeinschaften in ganz Bayern schaffen.",
+    "legalLinks": {
+      "impressum": "Impressum",
+      "privacy": "Datenschutzerklärung",
+      "terms": "Nutzungsbedingungen",
+      "faq": "Häufige Fragen"
+    }
   },
   "common": {
     "loading": "Laden...",
@@ -182,5 +191,198 @@
     "hideDetails": "Details ausblenden",
     "accept": "Alle Cookies akzeptieren",
     "decline": "Analyse ablehnen"
+  },
+  "notFound": {
+    "title": "Seite nicht gefunden",
+    "description": "Die gesuchte Seite existiert nicht oder wurde verschoben.",
+    "goHome": "Zur Startseite",
+    "goBack": "Zurück"
+  },
+  "homeNew": {
+    "hero": {
+      "title": "Gemeinschaften schaffen, in denen jeder durch Sport dazugehört",
+      "subtitle": "TEAMiN schafft inklusive Sportumgebungen in Bayern durch unser Sport-Assistenz-Programm, verbindet Menschen mit Behinderungen mit Mainstream-Sportvereinen und fördert Unabhängigkeit durch qualifizierte Unterstützung.",
+      "discover": "Entdecken"
+    },
+    "whyMatters": {
+      "description": "Sport sollte ein Ort sein, an dem jeder teilnehmen, wachsen und dazugehören kann. Doch viele Menschen mit Behinderungen stehen vor Barrieren, die sie daran hindern, Mainstream-Sportvereinen beizutreten. Sie haben die Macht, diese Lücke zu schließen und durch unser Sport-Assistenz-Programm bedeutsame Veränderungen in Ihrer Gemeinschaft zu schaffen."
+    },
+    "paths": {
+      "title": "Ihr Weg zum inklusiven Sport",
+      "becomeAssistant": {
+        "title": "Sport-Assistent werden",
+        "description": "Begleiten Sie andere auf ihrer Sportreise",
+        "cta": "Jetzt mitmachen"
+      },
+      "athletesFamilies": {
+        "title": "Athleten & Familien",
+        "description": "Finden Sie Ihren Platz im Sport mit qualifizierter Unterstützung",
+        "cta": "Mehr erfahren"
+      },
+      "spAssProgram": {
+        "title": "SpAss Programm",
+        "description": "Entdecken Sie unser Sport-Assistenz-Programm im Detail",
+        "cta": "Programm erkunden"
+      },
+      "teamInNetwork": {
+        "title": "TEAMiN - Das inklusive Netzwerk",
+        "description": "Erfahren Sie mehr über uns und unsere Mission",
+        "cta": "Über uns"
+      }
+    },
+    "contact": {
+      "title": "Fragen? Kontaktieren Sie uns!",
+      "form": {
+        "name": "Name",
+        "email": "E-Mail",
+        "message": "Nachricht",
+        "send": "Senden"
+      }
+    }
+  },
+  "volunteersNew": {
+    "hero": {
+      "title": "Schließen Sie sich unserer Mission für inklusiven Sport an",
+      "subtitle": "Werden Sie zertifizierter Sport-Assistent und helfen Sie dabei, Gemeinschaften zu schaffen, in denen jeder dazugehört",
+      "joinNow": "Jetzt mitmachen",
+      "learnMore": "Mehr erfahren"
+    },
+    "benefits": {
+      "title": "Warum Sport-Assistent werden?",
+      "subtitle": "Schaffen Sie bedeutsame Veränderungen, während Sie wertvolle Fähigkeiten entwickeln und dauerhafte Verbindungen aufbauen.",
+      "beforeAfter": {
+        "before": {
+          "title": "Ohne Unterstützung",
+          "description": "Barrieren verhindern Teilnahme"
+        },
+        "after": {
+          "title": "Mit TEAMiN",
+          "description": "Jeder findet seinen Platz"
+        },
+        "together": {
+          "title": "Gemeinsam im Sport",
+          "description": "Verbindungen durch inklusive Aktivitäten schaffen"
+        }
+      }
+    },
+    "stories": {
+      "title": "Freiwilligen-Geschichten",
+      "subtitle": "Hören Sie von unseren aktuellen Sport-Assistenten über ihre bedeutsamen Erfahrungen.",
+      "testimonials": [
+        {
+          "quote": "Sport-Assistent zu sein war eine der lohnendsten Erfahrungen meines Lebens. Zu sehen, wie Athleten Selbstvertrauen und Unabhängigkeit gewinnen, ist unglaublich erfüllend.",
+          "name": "Sarah M., Fußball-Assistentin"
+        },
+        {
+          "quote": "Die Ausbildung war exzellent und die Unterstützung von TEAMiN ist fortlaufend. Ich habe genauso viel von den Athleten gelernt wie sie von mir.",
+          "name": "Michael K., Schwimm-Assistent"
+        },
+        {
+          "quote": "Was als Freiwilligenarbeit begann, wurde zu einer Leidenschaft. Die Freundschaften, die ich durch dieses Programm aufgebaut habe, sind lebenslang.",
+          "name": "Lisa R., Basketball-Assistentin"
+        },
+        {
+          "quote": "TEAMiN stellt alle Werkzeuge und Schulungen zur Verfügung, die Sie brauchen. Der Einfluss, den Sie in nur wenigen Stunden pro Woche haben können, ist erstaunlich.",
+          "name": "Thomas W., Leichtathletik-Assistent"
+        }
+      ]
+    },
+    "journey": {
+      "title": "Ihre Reise als Sport-Assistent",
+      "steps": [
+        {
+          "title": "Online bewerben",
+          "description": "Füllen Sie unsere Bewerbung aus und erzählen Sie uns von Ihren Interessen und Ihrer Verfügbarkeit."
+        },
+        {
+          "title": "Ausbildung erhalten",
+          "description": "Nehmen Sie an unserem umfassenden Zertifizierungsprogramm teil, um Ihre Fähigkeiten zu entwickeln."
+        },
+        {
+          "title": "Vermittelt werden",
+          "description": "Wir verbinden Sie mit Athleten und Sportvereinen, die zu Ihren Interessen passen."
+        },
+        {
+          "title": "Einfluss nehmen",
+          "description": "Beginnen Sie, Athleten zu unterstützen, während Sie inklusive Sportgemeinschaften aufbauen."
+        }
+      ]
+    },
+    "getStarted": {
+      "title": "Bereit anzufangen?",
+      "subtitle": "Wählen Sie, wie Sie Ihre Reise mit TEAMiN beginnen möchten.",
+      "options": [
+        {
+          "icon": "✏️",
+          "title": "Anmelden",
+          "description": "Beginnen Sie Ihre Bewerbung, um zertifizierter Sport-Assistent zu werden und an unserem Trainingsprogramm teilzunehmen.",
+          "cta": "Hier starten →"
+        },
+        {
+          "icon": "👋",
+          "title": "Aurelian kennenlernen",
+          "description": "Lernen Sie aus Aurelians Geschichte und sehen Sie die echte Wirkung unseres Sport-Assistenz-Programms.",
+          "cta": "Mehr erfahren →"
+        },
+        {
+          "icon": "💬",
+          "title": "Kontakt aufnehmen",
+          "description": "Haben Sie Fragen? Nehmen Sie Kontakt mit unserem Team auf, um mehr über Freiwilligenmöglichkeiten zu erfahren.",
+          "cta": "Kontakt aufnehmen →"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Beginnen Sie heute, einen Unterschied zu machen",
+      "subtitle": "Schließen Sie sich Hunderten von Freiwilligen in ganz Bayern an, die durch TEAMiNs Sport-Assistenz-Programm inklusivere Sportgemeinschaften schaffen.",
+      "apply": "Jetzt bewerben",
+      "contact": "Kontakt aufnehmen"
+    }
+  },
+  "signupNew": {
+    "hero": {
+      "title": "Beginnen Sie Ihre Ausbildung",
+      "subtitle": "Starten Sie Ihre Sport-Assistenten-Zertifizierung",
+      "description": "Wählen Sie aus unseren flexiblen Ausbildungsoptionen, die auf Ihren Zeitplan und Ihre Lernpräferenzen zugeschnitten sind. Alle Wege führen zur gleichen umfassenden Zertifizierung."
+    },
+    "training": {
+      "title": "Ausbildungsoptionen",
+      "subtitle": "Wählen Sie das Format, das am besten für Sie funktioniert",
+      "elearning": {
+        "title": "E-Learning",
+        "description": "Absolvieren Sie Ihre Ausbildung online in Ihrem eigenen Tempo mit interaktiven Modulen und Bewertungen.",
+        "cta": "BVS Campus Link",
+        "details": [
+          "Selbstbestimmte Online-Module",
+          "Interaktive Bewertungen",
+          "Zertifikat nach Abschluss"
+        ]
+      },
+      "practiceDay": {
+        "title": "Praxistag",
+        "description": "Nehmen Sie an praktischen Trainingssitzungen mit erfahrenen Assistenten und realen Übungsmöglichkeiten teil.",
+        "cta": "BVS Buchungslink",
+        "details": [
+          "Präsenz-Trainingssitzungen",
+          "Praktische Übungen",
+          "Vernetzung mit anderen Assistenten"
+        ]
+      },
+      "partner": {
+        "title": "Partner-Ausbildung",
+        "description": "Zugang zu spezialisierter Ausbildung durch unsere Partnerorganisationen mit zusätzlichen Unterstützungsressourcen.",
+        "cta": "Partner-Portal Link",
+        "details": [
+          "Partner-spezifische Inhalte",
+          "Zusätzliche Unterstützungsressourcen",
+          "Spezialisierte Zertifizierungen"
+        ]
+      },
+      "details": "Details"
+    },
+    "aurelian": {
+      "title": "Aurelian kennenlernen",
+      "cta": "Seine Geschichte lesen →"
+    }
   }
 }

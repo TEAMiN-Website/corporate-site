@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowDown } from 'lucide-react';
 
 const Volunteers: React.FC = () => {
   const { t } = useTranslation();
@@ -32,22 +31,23 @@ const Volunteers: React.FC = () => {
           <div className="max-w-xl text-center lg:text-left relative z-10 mr-8 lg:mr-16">
             <div className="mt-64">
             <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight text-center lg:text-left">
-              Lorem Ipsum<br />
-              Lorem Ipsum<br />
-              Lorem Ipsum
+              {t('volunteersNew.hero.title')}
             </h1>
+            <p className="text-xl text-white mb-8 opacity-90 text-center lg:text-left max-w-xl">
+              {t('volunteersNew.hero.subtitle')}
+            </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
               <Link 
                 to="/signup"
                 className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
-                Lorem Ipsum
+                {t('volunteersNew.hero.joinNow')}
               </Link>
               <Link 
                 to="/about"
                 className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
               >
-                Dolor Sit ↓
+                {t('volunteersNew.hero.learnMore')}
               </Link>
             </div>
             </div>
@@ -67,10 +67,10 @@ const Volunteers: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
-              Lorem Ipsum [Benefits]
+              {t('volunteersNew.benefits.title')}
             </h2>
             <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              {t('volunteersNew.benefits.subtitle')}
             </p>
           </div>
 
@@ -84,8 +84,8 @@ const Volunteers: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40"></div>
               <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
-                <h3 className="font-bold text-[#3F3E34]">Lorem Ipsum</h3>
-                <p className="text-sm text-[#B3ADAA]">Consectetur adipiscing elit</p>
+                <h3 className="font-bold text-[#3F3E34]">{t('volunteersNew.benefits.beforeAfter.before.title')}</h3>
+                <p className="text-sm text-[#B3ADAA]">{t('volunteersNew.benefits.beforeAfter.before.description')}</p>
               </div>
             </div>
 
@@ -97,8 +97,8 @@ const Volunteers: React.FC = () => {
               />
               <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/20 to-[#71B554]/40"></div>
               <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
-                <h3 className="font-bold text-[#3F3E34]">Dolor Sit Amet</h3>
-                <p className="text-sm text-[#B3ADAA]">Ut enim ad minim veniam</p>
+                <h3 className="font-bold text-[#3F3E34]">{t('volunteersNew.benefits.beforeAfter.after.title')}</h3>
+                <p className="text-sm text-[#B3ADAA]">{t('volunteersNew.benefits.beforeAfter.after.description')}</p>
               </div>
             </div>
           </div>
@@ -114,8 +114,8 @@ const Volunteers: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/30 to-[#D86D55]/30"></div>
             <div className="absolute inset-0 flex items-center justify-center">
               <div className="text-center text-white">
-                <h3 className="text-3xl font-bold mb-4">Together in Sports</h3>
-                <p className="text-xl opacity-90">Building connections through inclusive activities</p>
+                <h3 className="text-3xl font-bold mb-4">{t('volunteersNew.benefits.beforeAfter.together.title')}</h3>
+                <p className="text-xl opacity-90">{t('volunteersNew.benefits.beforeAfter.together.description')}</p>
               </div>
             </div>
           </div>
@@ -127,20 +127,15 @@ const Volunteers: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
-              Lorem Ipsum [Volunteer Stories]
+              {t('volunteersNew.stories.title')}
             </h2>
             <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis.
+              {t('volunteersNew.stories.subtitle')}
             </p>
           </div>
 
           <div className="flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory">
-            {[
-              { quote: "Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.", name: "Lorem I., Dolor" },
-              { quote: "Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud.", name: "Ipsum D., Sit Amet" },
-              { quote: "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.", name: "Consectetur A., Elit" },
-              { quote: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.", name: "Adipiscing T., Eiusmod" }
-            ].map((story, index) => (
+            {(t('volunteersNew.stories.testimonials', { returnObjects: true }) as any[]).map((story: any, index: number) => (
               <div key={index} className="min-w-80 bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 snap-start">
                 <div className="w-16 h-16 bg-[#D86D55] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
                   {story.name.charAt(0)}
@@ -169,7 +164,7 @@ const Volunteers: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
-              Lorem Ipsum Journey
+              {t('volunteersNew.journey.title')}
             </h2>
           </div>
 
@@ -178,19 +173,14 @@ const Volunteers: React.FC = () => {
             <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#D86D55]/30 transform -translate-y-1/2 hidden lg:block"></div>
 
             <div className="grid lg:grid-cols-4 gap-8">
-              {[
-                { title: "Lorem Ipsum", desc: "Sed ut perspiciatis unde omnis iste natus error sit voluptatem." },
-                { title: "Dolor Sit", desc: "At vero eos et accusamus et iusto odio dignissimos ducimus." },
-                { title: "Consectetur", desc: "Nam libero tempore, cum soluta nobis est eligendi optio." },
-                { title: "Adipiscing", desc: "Temporibus autem quibusdam et aut officiis debitis aut." }
-              ].map((step, index) => (
+              {(t('volunteersNew.journey.steps', { returnObjects: true }) as any[]).map((step: any, index: number) => (
                 <div key={index} className="text-center relative">
                   <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0">
                     <div className="w-12 h-12 bg-[#D86D55] text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10">
                       {index + 1}
                     </div>
                     <h3 className="text-xl font-bold text-[#3F3E34] mb-3">{step.title}</h3>
-                    <p className="text-[#B3ADAA] text-sm leading-relaxed">{step.desc}</p>
+                    <p className="text-[#B3ADAA] text-sm leading-relaxed">{step.description}</p>
                   </div>
                 </div>
               ))}
@@ -214,26 +204,22 @@ const Volunteers: React.FC = () => {
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
-              Lorem Ipsum [Get Started]
+              {t('volunteersNew.getStarted.title')}
             </h2>
             <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.
+              {t('volunteersNew.getStarted.subtitle')}
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {[
-              { icon: "✏️", title: "Sign Up", desc: "Ut enim ad minima veniam quis nostrum exercitationem ullam corporis suscipit laboriosam.", cta: "Start Here →" },
-              { icon: "👋", title: "Meet Aurelian", desc: "Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.", cta: "Learn More →" },
-              { icon: "💬", title: "Contact Us", desc: "Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt neque.", cta: "Get in Touch →" }
-            ].map((entry, index) => (
+            {(t('volunteersNew.getStarted.options', { returnObjects: true }) as any[]).map((entry: any, index: number) => (
               <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55] transform scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
                 <div className="text-4xl mb-6">{entry.icon}</div>
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
-                <p className="text-[#B3ADAA] mb-6 leading-relaxed">{entry.desc}</p>
+                <p className="text-[#B3ADAA] mb-6 leading-relaxed">{entry.description}</p>
                 <Link 
-                  to="/contact"
+                  to={index === 0 ? "/signup" : index === 1 ? "/aurelian" : "/contact"}
                   className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#71B554] transition-colors duration-300"
                 >
                   {entry.cta}
@@ -260,23 +246,23 @@ const Volunteers: React.FC = () => {
 
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            Lorem Ipsum Dolor Sit Amet
+            {t('volunteersNew.cta.title')}
           </h2>
           <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            {t('volunteersNew.cta.subtitle')}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               to="/signup"
               className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
-              Lorem Ipsum
+              {t('volunteersNew.cta.apply')}
             </Link>
             <Link 
               to="/contact"
               className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
             >
-              Dolor Sit
+              {t('volunteersNew.cta.contact')}
             </Link>
           </div>
         </div>

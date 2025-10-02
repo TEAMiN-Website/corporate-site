@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Heart, Mail, Phone } from 'lucide-react';
+import { Mail, Phone } from 'lucide-react';
 
 const Footer: React.FC = () => {
   const { t } = useTranslation();
@@ -14,10 +14,10 @@ const Footer: React.FC = () => {
   ];
 
   const legalLinks = [
-    { to: '/impressum', label: 'Impressum' },
-    { to: '/privacy', label: 'Privacy Policy' },
-    { to: '/terms', label: 'Terms of Use' },
-    { to: '/faq', label: 'FAQ' }
+    { to: '/impressum', label: t('footer.legalLinks.impressum') },
+    { to: '/privacy', label: t('footer.legalLinks.privacy') },
+    { to: '/terms', label: t('footer.legalLinks.terms') },
+    { to: '/faq', label: t('footer.legalLinks.faq') }
   ];
 
   return (
@@ -74,7 +74,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="border-t border-gray-200 dark:border-gray-700 mt-8 pt-8 text-center text-gray-600 dark:text-gray-400">
-          <p>&copy; 2025 TEAMiN.</p>
+          <p>&copy; 2025 TEAMiN. {t('footer.copyright')}</p>
         </div>
       </div>
     </footer>

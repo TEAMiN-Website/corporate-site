@@ -141,6 +141,7 @@
   "contact": {
     "title": "Get in Touch",
     "subtitle": "Ready to join the inclusive sports movement? We're here to help athletes, families, volunteers, and clubs connect with the right opportunities.",
+    "infoTitle": "Contact Information",
     "info": {
       "phone": "Phone",
       "email": "Email",
@@ -152,14 +153,22 @@
       "email": "Email",
       "message": "Message",
       "messagePlaceholder": "Tell us how we can help...",
-      "submit": "Send Message"
+      "submit": "Send Message",
+      "namePlaceholder": "Your name",
+      "emailPlaceholder": "Your email"
     }
   },
   "footer": {
     "description": "Building communities where everyone belongs through inclusive sports in Bavaria.",
     "quickLinks": "Quick Links",
     "legal": "Legal",
-    "copyright": "Creating inclusive sports communities across Bavaria."
+    "copyright": "Creating inclusive sports communities across Bavaria.",
+    "legalLinks": {
+      "impressum": "Impressum",
+      "privacy": "Privacy Policy",
+      "terms": "Terms of Use",
+      "faq": "FAQ"
+    }
   },
   "common": {
     "loading": "Loading...",
@@ -182,5 +191,198 @@
     "hideDetails": "Hide Details",
     "accept": "Accept All Cookies",
     "decline": "Decline Analytics"
+  },
+  "notFound": {
+    "title": "Page Not Found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "goHome": "Go Home",
+    "goBack": "Go Back"
+  },
+  "homeNew": {
+    "hero": {
+      "title": "Building Communities Where Everyone Belongs Through Sports",
+      "subtitle": "TEAMiN creates inclusive sports environments in Bavaria through our Sport-Assistenz program, connecting people with disabilities to mainstream sports clubs and fostering independence through skilled support.",
+      "discover": "Discover"
+    },
+    "whyMatters": {
+      "description": "Sports should be a place where everyone can participate, grow, and belong. Yet many people with disabilities face barriers that prevent them from joining mainstream sports clubs. You have the power to bridge this gap and create meaningful change in your community through our Sport-Assistenz program."
+    },
+    "paths": {
+      "title": "Your Path to Inclusive Sports",
+      "becomeAssistant": {
+        "title": "Become Sport Assistant",
+        "description": "Accompany others on their sports journey",
+        "cta": "Join Now"
+      },
+      "athletesFamilies": {
+        "title": "Athletes & Families",
+        "description": "Find your place in sports with qualified support",
+        "cta": "Learn More"
+      },
+      "spAssProgram": {
+        "title": "SpAss Program",
+        "description": "Discover our sport assistance program in detail",
+        "cta": "Explore Program"
+      },
+      "teamInNetwork": {
+        "title": "TEAMiN - The Inclusive Network",
+        "description": "Learn more about us and our mission",
+        "cta": "About Us"
+      }
+    },
+    "contact": {
+      "title": "Questions? Contact Us!",
+      "form": {
+        "name": "Name",
+        "email": "Email",
+        "message": "Message",
+        "send": "Send"
+      }
+    }
+  },
+  "volunteersNew": {
+    "hero": {
+      "title": "Join Our Mission for Inclusive Sports",
+      "subtitle": "Become a certified Sport Assistant and help create communities where everyone belongs",
+      "joinNow": "Join Now",
+      "learnMore": "Learn More"
+    },
+    "benefits": {
+      "title": "Why Become a Sport Assistant?",
+      "subtitle": "Make a meaningful impact while developing valuable skills and building lasting connections.",
+      "beforeAfter": {
+        "before": {
+          "title": "Without Support",
+          "description": "Barriers prevent participation"
+        },
+        "after": {
+          "title": "With TEAMiN",
+          "description": "Everyone finds their place"
+        },
+        "together": {
+          "title": "Together in Sports",
+          "description": "Building connections through inclusive activities"
+        }
+      }
+    },
+    "stories": {
+      "title": "Volunteer Stories",
+      "subtitle": "Hear from our current Sport Assistants about their meaningful experiences.",
+      "testimonials": [
+        {
+          "quote": "Being a Sport Assistant has been one of the most rewarding experiences of my life. Seeing athletes gain confidence and independence is incredibly fulfilling.",
+          "name": "Sarah M., Football Assistant"
+        },
+        {
+          "quote": "The training was excellent and the support from TEAMiN is ongoing. I've learned as much from the athletes as they have from me.",
+          "name": "Michael K., Swimming Assistant"
+        },
+        {
+          "quote": "What started as volunteering became a passion. The friendships I've built through this program are lifelong.",
+          "name": "Lisa R., Basketball Assistant"
+        },
+        {
+          "quote": "TEAMiN provides all the tools and training you need. The impact you can make in just a few hours a week is amazing.",
+          "name": "Thomas W., Athletics Assistant"
+        }
+      ]
+    },
+    "journey": {
+      "title": "Your Journey as a Sport Assistant",
+      "steps": [
+        {
+          "title": "Apply Online",
+          "description": "Complete our application and tell us about your interests and availability."
+        },
+        {
+          "title": "Get Trained",
+          "description": "Participate in our comprehensive certification program to develop your skills."
+        },
+        {
+          "title": "Get Matched",
+          "description": "We'll connect you with athletes and sports clubs that match your interests."
+        },
+        {
+          "title": "Make Impact",
+          "description": "Begin supporting athletes while building inclusive sports communities."
+        }
+      ]
+    },
+    "getStarted": {
+      "title": "Ready to Get Started?",
+      "subtitle": "Choose how you'd like to begin your journey with TEAMiN.",
+      "options": [
+        {
+          "icon": "✏️",
+          "title": "Sign Up",
+          "description": "Start your application to become a certified Sport Assistant and join our training program.",
+          "cta": "Start Here →"
+        },
+        {
+          "icon": "👋",
+          "title": "Meet Aurelian",
+          "description": "Learn from Aurelian's story and see the real impact of our Sport-Assistenz program.",
+          "cta": "Learn More →"
+        },
+        {
+          "icon": "💬",
+          "title": "Contact Us",
+          "description": "Have questions? Get in touch with our team to learn more about volunteering opportunities.",
+          "cta": "Get in Touch →"
+        }
+      ]
+    },
+    "cta": {
+      "title": "Start Making a Difference Today",
+      "subtitle": "Join hundreds of volunteers across Bavaria who are creating more inclusive sports communities through TEAMiN's Sport-Assistenz program.",
+      "apply": "Apply Now",
+      "contact": "Contact Us"
+    }
+  },
+  "signupNew": {
+    "hero": {
+      "title": "Start Your Training",
+      "subtitle": "Begin your Sport Assistant certification",
+      "description": "Choose from our flexible training options designed to fit your schedule and learning preferences. All paths lead to the same comprehensive certification."
+    },
+    "training": {
+      "title": "Training Options",
+      "subtitle": "Select the format that works best for you",
+      "elearning": {
+        "title": "E-Learning",
+        "description": "Complete your training online at your own pace with interactive modules and assessments.",
+        "cta": "BVS Campus Link",
+        "details": [
+          "Self-paced online modules",
+          "Interactive assessments",
+          "Certificate upon completion"
+        ]
+      },
+      "practiceDay": {
+        "title": "Practice Day",
+        "description": "Join hands-on training sessions with experienced assistants and real-world practice opportunities.",
+        "cta": "BVS Booking Link",
+        "details": [
+          "In-person training sessions",
+          "Hands-on practice",
+          "Networking with other assistants"
+        ]
+      },
+      "partner": {
+        "title": "Partner Training",
+        "description": "Access specialized training through our partner organizations with additional support resources.",
+        "cta": "Partner Portal Link",
+        "details": [
+          "Partner-specific content",
+          "Additional support resources",
+          "Specialized certifications"
+        ]
+      },
+      "details": "Details"
+    },
+    "aurelian": {
+      "title": "Meet Aurelian",
+      "cta": "Read His Story →"
+    }
   }
 }

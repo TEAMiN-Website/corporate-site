@@ -43,7 +43,7 @@ const Contact: React.FC = () => {
         
         <div className="grid lg:grid-cols-2 gap-12">
           <div>
-            <h3 className="text-2xl font-cooper-hewitt-book font-normal mb-8">Contact Information</h3>
+            <h3 className="text-2xl font-cooper-hewitt-book font-normal mb-8">{t('contact.infoTitle')}</h3>
             <div className="space-y-6">
               {contactInfo.map((contact, index) => {
                 const IconComponent = contact.icon;
@@ -78,7 +78,7 @@ const Contact: React.FC = () => {
                     value={formData.name}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
-                    placeholder="Your name"
+                    placeholder={t('contact.form.namePlaceholder')}
                     required
                   />
                 </div>
@@ -92,7 +92,7 @@ const Contact: React.FC = () => {
                     value={formData.email}
                     onChange={handleChange}
                     className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-white"
-                    placeholder="Your email"
+                    placeholder={t('contact.form.emailPlaceholder')}
                     required
                   />
                 </div>

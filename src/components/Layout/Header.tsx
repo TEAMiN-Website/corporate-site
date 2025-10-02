@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link, useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { Menu, X, Heart, Sun, Moon, Globe, ChevronDown } from 'lucide-react';
+import { Menu, X, Sun, Moon, Globe, ChevronDown } from 'lucide-react';
 import { useTheme } from '../../contexts/ThemeContext';
 
 const Header: React.FC = () => {
@@ -10,7 +10,6 @@ const Header: React.FC = () => {
   const { t, i18n } = useTranslation();
   const { isDark, toggleTheme } = useTheme();
   const location = useLocation();
-  const navigate = useNavigate();
 
   const navItems = [
     { id: '/', label: t('nav.home') },

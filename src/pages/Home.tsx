@@ -28,10 +28,10 @@ const Home: React.FC = () => {
         <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
           <div className="text-center text-white max-w-4xl">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
-              [3-5 WORD HEADLINE: Pattern interrupt about sports connecting people]
+              {t('homeNew.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl font-light mb-12 opacity-85 max-w-3xl mx-auto leading-relaxed italic">
-              [ONE SENTENCE: Possibility statement about overcoming barriers together]
+              {t('homeNew.hero.subtitle')}
             </p>
           </div>
         </div>
@@ -39,7 +39,7 @@ const Home: React.FC = () => {
         {/* Scroll Indicator */}
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer animate-bounce">
           <div className="text-white text-sm uppercase tracking-widest mb-3 opacity-80">
-            Discover
+            {t('homeNew.hero.discover')}
           </div>
           <ArrowDown className="w-8 h-8 text-white opacity-80" />
         </div>
@@ -59,8 +59,7 @@ const Home: React.FC = () => {
         <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
           <div className="bg-white/5 backdrop-blur-md p-12 md:p-16 rounded-3xl border border-white/10">
             <p className="text-xl md:text-2xl leading-relaxed opacity-85 italic">
-              [ONE PARAGRAPH 3-4 SENTENCES: Universal sports experience → Current gap → You as bridge. 
-              Emotional progression: Recognition ("I know that feeling") → Empathy ("That must be hard") → Possibility ("I could help")]
+              {t('homeNew.whyMatters.description')}
             </p>
           </div>
         </div>
@@ -78,7 +77,7 @@ const Home: React.FC = () => {
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
-            Your Path to Inclusive Sports
+            {t('homeNew.paths.title')}
           </h2>
 
           <div className="grid md:grid-cols-2 gap-10">
@@ -96,13 +95,13 @@ const Home: React.FC = () => {
               </div>
 
               <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">Become Sport Assistant</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Accompany others on their sports journey]</p>
+                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.becomeAssistant.title')}</h3>
+                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.becomeAssistant.description')}</p>
                 <Link 
                   to="/volunteers"
                   className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
-                  Join Now
+                  {t('homeNew.paths.becomeAssistant.cta')}
                 </Link>
               </div>
             </div>
@@ -121,13 +120,13 @@ const Home: React.FC = () => {
               </div>
 
               <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">Athletes & Families</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Find your place in sports with qualified support]</p>
+                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.athletesFamilies.title')}</h3>
+                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.athletesFamilies.description')}</p>
                 <Link 
                   to="/athletes"
                   className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
-                  Learn More
+                  {t('homeNew.paths.athletesFamilies.cta')}
                 </Link>
               </div>
             </div>
@@ -146,13 +145,13 @@ const Home: React.FC = () => {
               </div>
 
               <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">SpAss Program</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Discover our sport assistance program in detail]</p>
+                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.spAssProgram.title')}</h3>
+                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.spAssProgram.description')}</p>
                 <Link 
                   to="/spass"
                   className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
-                  Explore Program
+                  {t('homeNew.paths.spAssProgram.cta')}
                 </Link>
               </div>
             </div>
@@ -171,13 +170,13 @@ const Home: React.FC = () => {
               </div>
 
               <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">TEAMiN - The Inclusive Network</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">[5-7 WORDS: Learn more about us and our mission]</p>
+                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.teamInNetwork.title')}</h3>
+                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.teamInNetwork.description')}</p>
                 <Link 
                   to="/about"
                   className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
-                  About Us
+                  {t('homeNew.paths.teamInNetwork.cta')}
                 </Link>
               </div>
             </div>
@@ -190,7 +189,7 @@ const Home: React.FC = () => {
         
         <div className="max-w-4xl mx-auto px-4 relative z-10">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
-            Questions? Contact Us!
+            {t('homeNew.contact.title')}
           </h2>
 
           <div className="bg-[#F7ECD5]/95 backdrop-blur-sm p-12 md:p-16 rounded-3xl shadow-xl relative overflow-hidden z-10">
@@ -200,7 +199,7 @@ const Home: React.FC = () => {
             <form className="relative z-10 space-y-6">
               <div>
                 <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
-                  Name
+                  {t('homeNew.contact.form.name')}
                 </label>
                 <input
                   type="text"
@@ -211,7 +210,7 @@ const Home: React.FC = () => {
 
               <div>
                 <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
-                  Email
+                  {t('homeNew.contact.form.email')}
                 </label>
                 <input
                   type="email"
@@ -222,7 +221,7 @@ const Home: React.FC = () => {
 
               <div>
                 <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
-                  Message
+                  {t('homeNew.contact.form.message')}
                 </label>
                 <textarea
                   rows={4}
@@ -235,7 +234,7 @@ const Home: React.FC = () => {
                 type="submit"
                 className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
               >
-                Send
+                {t('homeNew.contact.form.send')}
               </button>
             </form>
           </div>
