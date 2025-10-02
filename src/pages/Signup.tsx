@@ -42,7 +42,7 @@ const Signup: React.FC = () => {
       </section>
 
       {/* CTA Cards Section */}
-      <section className="py-24 bg-[#F7ECD5]">
+      <section className="py-24 bg-white">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-20">
             <h2 className="text-4xl md:text-5xl font-bold text-[#3F3E34] mb-6">
@@ -211,7 +211,7 @@ const Signup: React.FC = () => {
       </section>
 
       {/* Meet Aurelian Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F7ECD5]">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center">
             <div className="bg-[#F7ECD5] p-16 rounded-3xl shadow-xl border-4 border-[#71B554] relative overflow-hidden h-80">
