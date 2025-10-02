@@ -223,6 +223,7 @@ const Signup: React.FC = () => {
                   className="w-full h-full object-cover opacity-20"
                   style={{ objectPosition: 'center 20%' }}
                 />
+                <div className="absolute inset-0 bg-[#71B554]/20"></div>
               </div>
               
               <div className="relative z-10 pb-8">
