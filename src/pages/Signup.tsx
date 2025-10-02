@@ -67,7 +67,7 @@ const Signup: React.FC = () => {
                   <div className="absolute inset-0 bg-[#D86D55]/80"></div>
                 </div>
                 
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex items-center justify-center">
                   <h3 className="text-white text-2xl font-semibold mb-2">E-Learning</h3>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const Signup: React.FC = () => {
                   <div className="absolute inset-0 bg-[#D86D55]/80"></div>
                 </div>
                 
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex items-center justify-center">
                   <h3 className="text-white text-2xl font-semibold mb-2">Praxistag</h3>
                 </div>
               </div>
@@ -169,7 +169,7 @@ const Signup: React.FC = () => {
                   <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
                 </div>
                 
-                <div className="relative z-10">
+                <div className="relative z-10 h-full flex items-center justify-center">
                   <h3 className="text-white text-2xl font-semibold mb-2">SSO Partner</h3>
                 </div>
               </div>
