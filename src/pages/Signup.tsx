@@ -23,7 +23,7 @@ const Signup: React.FC = () => {
             style={{ objectPosition: 'center 20%' }}
           />
           {/* Game Heat Red Overlay 20% opacity */}
-          <div className="absolute inset-0 bg-[#D86D55]/20"></div>
+          <div className="absolute inset-0 bg-[#D86D55]/40"></div>
         </div>
         
         <div className="relative z-10 flex items-center justify-center h-full">
