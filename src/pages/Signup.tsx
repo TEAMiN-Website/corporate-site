@@ -22,7 +22,7 @@ const Signup: React.FC = () => {
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center 20%' }}
           />
-          {/* Game Heat Overlay */}
+          {/* Game Heat Red Overlay 20% opacity */}
           <div className="absolute inset-0 bg-[#D86D55]/20"></div>
         </div>
         
@@ -56,7 +56,7 @@ const Signup: React.FC = () => {
           <div className="grid md:grid-cols-3 gap-8">
             {/* E-Learning Card */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
-              <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden">
+              <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
                   <img 
@@ -107,7 +107,7 @@ const Signup: React.FC = () => {
 
             {/* Praxistag Card */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
-              <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden">
+              <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
                   <img 
@@ -158,7 +158,7 @@ const Signup: React.FC = () => {
 
             {/* SSO Partner Card */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#3F3E34]">
-              <div className="bg-[#3F3E34] p-10 text-center relative overflow-hidden">
+              <div className="bg-[#3F3E34] p-10 text-center relative overflow-hidden h-48">
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
                   <img 
@@ -214,13 +214,14 @@ const Signup: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="max-w-4xl mx-auto px-4">
           <div className="text-center">
-            <div className="bg-[#F7ECD5] p-16 rounded-3xl shadow-xl border-4 border-[#71B554] relative overflow-hidden">
+            <div className="bg-[#F7ECD5] p-16 rounded-3xl shadow-xl border-4 border-[#71B554] relative overflow-hidden h-80">
               {/* Background Image */}
               <div className="absolute inset-0">
                 <img 
                   src="aurelian 3-min-min.jpg"
                   alt="Aurelian smiling in sports jersey"
                   className="w-full h-full object-cover opacity-20"
+                  style={{ objectPosition: 'center 20%' }}
                 />
               </div>
               
