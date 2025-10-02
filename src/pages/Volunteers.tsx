@@ -56,7 +56,7 @@ const Volunteers: React.FC = () => {
       </section>
 
       {/* Benefits Comparison Section */}
-      <section className="py-24 bg-[#F7ECD5]/50 relative">
+      <section className="py-24 bg-white relative">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-repeat" style={{
             backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.05) 35px, rgba(255,255,255,0.05) 70px),
@@ -123,7 +123,7 @@ const Volunteers: React.FC = () => {
       </section>
 
       {/* Volunteer Stories Section */}
-      <section className="py-24 bg-white">
+      <section className="py-24 bg-[#F7ECD5]/50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
