@@ -455,5 +455,158 @@
       "title": "Meet Aurelian",
       "cta": "Read His Story →"
     }
+  },
+  "spassNew": {
+    "hero": {
+      "title": "Sport-Assistenz Program",
+      "subtitle": "Systematic support enabling independence through qualified assistance in mainstream sports clubs",
+      "imageNote": "Sport Assistance in Action",
+      "imageAlt": "Sport Assistant working with athlete",
+      "cta1": "Get Started",
+      "cta2": "Learn More"
+    },
+    "approach": {
+      "title": "Our Approach",
+      "subtitle": "We create sustainable pathways to inclusion through structured support, community building, and fostering independence.",
+      "items": [
+        {
+          "title": "Strong Networks",
+          "description": "Building connections between athletes, assistants, clubs, and families to create a supportive ecosystem.",
+          "icon": "network"
+        },
+        {
+          "title": "Community Focus",
+          "description": "Developing inclusive sports communities where everyone is valued and supported in their journey.",
+          "icon": "users"
+        },
+        {
+          "title": "Path to Independence",
+          "description": "Temporary assistance that gradually reduces as athletes gain confidence and club integration develops.",
+          "icon": "target"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "How It Works",
+      "toggleButton": "Show/Hide Journey Details",
+      "athleteJourney": {
+        "title": "Athlete Journey",
+        "steps": [
+          {
+            "title": "Initial Contact",
+            "description": "Connect with us to discuss your sports interests and support needs."
+          },
+          {
+            "title": "Matching Process",
+            "description": "Get matched with a trained assistant and suitable club based on your preferences."
+          },
+          {
+            "title": "Supported Participation",
+            "description": "Begin your sports journey with qualified assistance tailored to your needs."
+          },
+          {
+            "title": "Growing Independence",
+            "description": "Gradually reduce support as you become integrated and confident in your club."
+          }
+        ]
+      },
+      "assistantJourney": {
+        "title": "Assistant Journey",
+        "steps": [
+          {
+            "title": "Apply & Register",
+            "description": "Complete our application and share your sports background and interests."
+          },
+          {
+            "title": "Complete Training",
+            "description": "Participate in our comprehensive Sport-Assistenz certification program."
+          },
+          {
+            "title": "Get Matched",
+            "description": "Connect with athletes and clubs that align with your skills and schedule."
+          },
+          {
+            "title": "Make Impact",
+            "description": "Begin supporting athletes while receiving ongoing guidance and community support."
+          }
+        ]
+      }
+    },
+    "stories": {
+      "title": "Success Stories",
+      "testimonials": [
+        {
+          "quote": "Through TEAMiN's Sport-Assistenz program, I found not just a sport I love, but a community that embraces me. The support was there when I needed it, and now I'm proud to call my teammates true friends.",
+          "name": "Aurelian, Football Player"
+        },
+        {
+          "quote": "Being a Sport Assistant has been incredibly rewarding. Watching athletes gain confidence and independence while building lasting friendships makes every moment worthwhile.",
+          "name": "Sarah M., Sport Assistant"
+        },
+        {
+          "quote": "Our club has been transformed by the SpAss program. We've welcomed new members, learned valuable skills, and created a truly inclusive environment.",
+          "name": "Michael R., Club Manager"
+        }
+      ]
+    },
+    "pathways": {
+      "title": "Become Part of SpAss",
+      "assistant": {
+        "title": "Assistant Pathway",
+        "description": "Use your passion for sports to make a meaningful impact. Get certified training and support athletes on their journey to independence.",
+        "cta1": "Apply Now",
+        "cta2": "Learn More"
+      },
+      "athlete": {
+        "title": "Athlete Pathway",
+        "description": "Find your place in sports with qualified support. Join a mainstream club with assistance tailored to help you succeed and belong.",
+        "cta1": "Get Started",
+        "cta2": "More Info"
+      },
+      "organization": {
+        "title": "For Organizations",
+        "description": "Partner with TEAMiN to build inclusive sports programs. Access training, resources, and support to transform your club culture.",
+        "cta": "Partner With Us"
+      }
+    },
+    "faq": {
+      "title": "Frequently Asked Questions",
+      "categories": [
+        {
+          "title": "For Athletes",
+          "items": [
+            {
+              "question": "Who can participate in the SpAss program?",
+              "answer": "The program is open to people with disabilities of all ages who want to participate in mainstream sports clubs with qualified support."
+            },
+            {
+              "question": "How long does the support last?",
+              "answer": "Support duration varies based on individual needs. The goal is to gradually reduce assistance as you become integrated and independent in your club."
+            },
+            {
+              "question": "What sports are available?",
+              "answer": "We work with a wide range of sports clubs across Bavaria. We'll help match you with a sport and club that fits your interests and abilities."
+            }
+          ]
+        },
+        {
+          "title": "For Assistants",
+          "items": [
+            {
+              "question": "What training is required?",
+              "answer": "All assistants complete our comprehensive Sport-Assistenz certification program, which includes online modules, practical training, and ongoing support."
+            },
+            {
+              "question": "How much time commitment is needed?",
+              "answer": "Time commitment varies based on your availability and the athlete's schedule. Most assistants commit to 2-4 hours per week."
+            },
+            {
+              "question": "Do I need sports expertise?",
+              "answer": "While sports interest is important, you don't need to be an expert. We provide training in both sports assistance and inclusive support methods."
+            }
+          ]
+        }
+      ]
+    }
   }
 }

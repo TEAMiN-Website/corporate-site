@@ -455,5 +455,158 @@
       "title": "Aurelian kennenlernen",
       "cta": "Seine Geschichte lesen →"
     }
+  },
+  "spassNew": {
+    "hero": {
+      "title": "Sport-Assistenz Programm",
+      "subtitle": "Systematische Unterstützung für Unabhängigkeit durch qualifizierte Assistenz in regulären Sportvereinen",
+      "imageNote": "Sport-Assistenz in Aktion",
+      "imageAlt": "Sport-Assistent bei der Arbeit mit Athlet",
+      "cta1": "Jetzt starten",
+      "cta2": "Mehr erfahren"
+    },
+    "approach": {
+      "title": "Unser Ansatz",
+      "subtitle": "Wir schaffen nachhaltige Wege zur Inklusion durch strukturierte Unterstützung, Gemeinschaftsaufbau und Förderung der Unabhängigkeit.",
+      "items": [
+        {
+          "title": "Starke Netzwerke",
+          "description": "Aufbau von Verbindungen zwischen Athleten, Assistenten, Vereinen und Familien für ein unterstützendes Ökosystem.",
+          "icon": "network"
+        },
+        {
+          "title": "Gemeinschaftsfokus",
+          "description": "Entwicklung inklusiver Sportgemeinschaften, in denen jeder geschätzt und auf seinem Weg unterstützt wird.",
+          "icon": "users"
+        },
+        {
+          "title": "Weg zur Unabhängigkeit",
+          "description": "Temporäre Assistenz, die sich schrittweise reduziert, während Athleten Vertrauen gewinnen und sich in den Verein integrieren.",
+          "icon": "target"
+        }
+      ]
+    },
+    "timeline": {
+      "title": "Wie es funktioniert",
+      "toggleButton": "Reise-Details ein-/ausblenden",
+      "athleteJourney": {
+        "title": "Athleten-Reise",
+        "steps": [
+          {
+            "title": "Erstkontakt",
+            "description": "Nehmen Sie Kontakt mit uns auf, um Ihre Sportinteressen und Unterstützungsbedürfnisse zu besprechen."
+          },
+          {
+            "title": "Vermittlungsprozess",
+            "description": "Werden Sie mit einem ausgebildeten Assistenten und passenden Verein basierend auf Ihren Präferenzen vermittelt."
+          },
+          {
+            "title": "Unterstützte Teilnahme",
+            "description": "Beginnen Sie Ihre Sportreise mit qualifizierter Assistenz, die auf Ihre Bedürfnisse zugeschnitten ist."
+          },
+          {
+            "title": "Wachsende Unabhängigkeit",
+            "description": "Reduzieren Sie schrittweise die Unterstützung, während Sie sich integrieren und Vertrauen in Ihrem Verein gewinnen."
+          }
+        ]
+      },
+      "assistantJourney": {
+        "title": "Assistenten-Reise",
+        "steps": [
+          {
+            "title": "Bewerben & Registrieren",
+            "description": "Füllen Sie unsere Bewerbung aus und teilen Sie Ihren Sport-Hintergrund und Ihre Interessen mit."
+          },
+          {
+            "title": "Ausbildung absolvieren",
+            "description": "Nehmen Sie an unserem umfassenden Sport-Assistenz-Zertifizierungsprogramm teil."
+          },
+          {
+            "title": "Vermittelt werden",
+            "description": "Verbinden Sie sich mit Athleten und Vereinen, die zu Ihren Fähigkeiten und Ihrem Zeitplan passen."
+          },
+          {
+            "title": "Einfluss nehmen",
+            "description": "Beginnen Sie, Athleten zu unterstützen, während Sie fortlaufende Anleitung und Gemeinschaftsunterstützung erhalten."
+          }
+        ]
+      }
+    },
+    "stories": {
+      "title": "Erfolgsgeschichten",
+      "testimonials": [
+        {
+          "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich akzeptiert. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
+          "name": "Aurelian, Fußballspieler"
+        },
+        {
+          "quote": "Sport-Assistent zu sein war unglaublich bereichernd. Zu sehen, wie Athleten Selbstvertrauen und Unabhängigkeit gewinnen und dauerhafte Freundschaften aufbauen, macht jeden Moment lohnenswert.",
+          "name": "Sarah M., Sport-Assistentin"
+        },
+        {
+          "quote": "Unser Verein wurde durch das SpAss-Programm transformiert. Wir haben neue Mitglieder willkommen geheißen, wertvolle Fähigkeiten gelernt und eine wirklich inklusive Umgebung geschaffen.",
+          "name": "Michael R., Vereinsmanager"
+        }
+      ]
+    },
+    "pathways": {
+      "title": "Werden Sie Teil von SpAss",
+      "assistant": {
+        "title": "Assistenten-Weg",
+        "description": "Nutzen Sie Ihre Leidenschaft für Sport, um einen bedeutsamen Einfluss zu haben. Erhalten Sie zertifizierte Ausbildung und unterstützen Sie Athleten auf ihrem Weg zur Unabhängigkeit.",
+        "cta1": "Jetzt bewerben",
+        "cta2": "Mehr erfahren"
+      },
+      "athlete": {
+        "title": "Athleten-Weg",
+        "description": "Finden Sie Ihren Platz im Sport mit qualifizierter Unterstützung. Treten Sie einem regulären Verein bei mit Assistenz, die darauf zugeschnitten ist, Ihnen zu Erfolg und Zugehörigkeit zu verhelfen.",
+        "cta1": "Jetzt starten",
+        "cta2": "Mehr Infos"
+      },
+      "organization": {
+        "title": "Für Organisationen",
+        "description": "Partnern Sie mit TEAMiN, um inklusive Sportprogramme aufzubauen. Zugang zu Training, Ressourcen und Unterstützung zur Transformation Ihrer Vereinskultur.",
+        "cta": "Partner werden"
+      }
+    },
+    "faq": {
+      "title": "Häufig gestellte Fragen",
+      "categories": [
+        {
+          "title": "Für Athleten",
+          "items": [
+            {
+              "question": "Wer kann am SpAss-Programm teilnehmen?",
+              "answer": "Das Programm steht Menschen mit Behinderungen jeden Alters offen, die mit qualifizierter Unterstützung an regulären Sportvereinen teilnehmen möchten."
+            },
+            {
+              "question": "Wie lange dauert die Unterstützung?",
+              "answer": "Die Unterstützungsdauer variiert je nach individuellen Bedürfnissen. Das Ziel ist es, die Assistenz schrittweise zu reduzieren, während Sie sich integrieren und unabhängig in Ihrem Verein werden."
+            },
+            {
+              "question": "Welche Sportarten sind verfügbar?",
+              "answer": "Wir arbeiten mit einer Vielzahl von Sportvereinen in ganz Bayern zusammen. Wir helfen Ihnen, eine Sportart und einen Verein zu finden, der zu Ihren Interessen und Fähigkeiten passt."
+            }
+          ]
+        },
+        {
+          "title": "Für Assistenten",
+          "items": [
+            {
+              "question": "Welche Ausbildung ist erforderlich?",
+              "answer": "Alle Assistenten absolvieren unser umfassendes Sport-Assistenz-Zertifizierungsprogramm, das Online-Module, praktisches Training und fortlaufende Unterstützung umfasst."
+            },
+            {
+              "question": "Wie viel Zeitaufwand ist erforderlich?",
+              "answer": "Der Zeitaufwand variiert je nach Ihrer Verfügbarkeit und dem Zeitplan des Athleten. Die meisten Assistenten engagieren sich für 2-4 Stunden pro Woche."
+            },
+            {
+              "question": "Benötige ich Sport-Expertise?",
+              "answer": "Während Sportinteresse wichtig ist, müssen Sie kein Experte sein. Wir bieten Training sowohl in Sport-Assistenz als auch in inklusiven Unterstützungsmethoden."
+            }
+          ]
+        }
+      ]
+    }
   }
 }
