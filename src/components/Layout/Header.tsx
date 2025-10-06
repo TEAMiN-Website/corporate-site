@@ -49,26 +49,26 @@ const Header: React.FC = () => {
     setDropdownOpen(null);
   };
   // Function to get navigation item styling based on current page
-  const getNavItemStyle = (itemPath: string) => {
+  const getNavItemStyle = (itemPath: string, dropdown?: any[]) => {
     const isActive = location.pathname === itemPath;
-    
-    if (isActive) {
+    const isChildActive = dropdown ? dropdown.some(item => location.pathname === item.id) : false;
+
+    if (isActive || isChildActive) {
       // Special styling for different pages
       if (itemPath === '/') {
         return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white';
       } else if (itemPath === '/volunteers') {
         return 'bg-[#D86D55] text-white';
+      } else if (itemPath === '/athletes') {
+        return 'bg-[#71B554] text-white';
       } else {
         return 'bg-blue-600 text-white'; // Default active style for other pages
       }
     }
-    
+
     return 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400';
   };
 
-  const isDropdownItemActive = (dropdown: any[]) => {
-    return dropdown.some(item => location.pathname === item.id);
-  };
   return (
     <nav className="fixed top-0 left-0 right-0 bg-white/95 dark:bg-gray-900/95 backdrop-blur-md z-50 border-b border-gray-200 dark:border-gray-700 transition-colors duration-200">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -89,9 +89,7 @@ const Header: React.FC = () => {
                   <>
                     <button
                       onClick={() => handleDropdownToggle(item.id)}
-                      className={`text-sm font-medium transition-all duration-300 px-3 py-2 rounded-full flex items-center space-x-1 ${
-                        isDropdownItemActive(item.dropdown) ? getNavItemStyle(item.id) : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
-                      }`}
+                      className={`text-sm font-medium transition-all duration-300 px-3 py-2 rounded-full flex items-center space-x-1 ${getNavItemStyle(item.id, item.dropdown)}`}
                     >
                       <span>{item.label}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen === item.id ? 'rotate-180' : ''}`} />
@@ -189,9 +187,7 @@ const Header: React.FC = () => {
                   <>
                     <button
                       onClick={() => handleDropdownToggle(item.id)}
-                      className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 flex items-center justify-between ${
-                        isDropdownItemActive(item.dropdown) ? getNavItemStyle(item.id) : 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400'
-                      }`}
+                      className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 flex items-center justify-between ${getNavItemStyle(item.id, item.dropdown)}`}
                     >
                       <span>{item.label}</span>
                       <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen === item.id ? 'rotate-180' : ''}`} />
