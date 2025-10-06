@@ -22,15 +22,58 @@
       "subtitle": "Wir bauen Gemeinschaften, in denen jeder durch systematische Sportassistenz und nachhaltige Inklusion dazugehört."
     },
     "missionVision": {
-      "heading": "Unsere Mission & Vision",
+      "heading": "Wer wir sind",
+      "whoWeAre": {
+        "title": "Wer wir sind",
+        "description": "TEAMiN ist ein kollaboratives Netzwerk aus Forschungseinrichtungen, Sportorganisationen und Community-Partnern, die gemeinsam daran arbeiten, die Sportkultur in Bayern zu transformieren. Wir verbinden akademische Expertise mit praktischer Erfahrung, um dauerhaften Wandel zu schaffen."
+      },
       "mission": {
-        "title": "Mission",
-        "description": "TEAMiN transformiert die Sportkultur in Bayern durch die Schaffung systematischer Wege zur Inklusion. Wir bilden qualifizierte Sportassistent:innen aus, die Menschen mit Behinderungen ermöglichen, selbstständig in regulären Sportvereinen teilzunehmen."
+        "title": "Unsere Mission",
+        "description": "Wir schaffen systematische Wege zur Inklusion, indem wir qualifizierte Sportassistent:innen ausbilden, die Menschen mit Behinderungen ermöglichen, selbstständig in regulären Sportvereinen teilzunehmen. Unser evidenzbasierter Ansatz gewährleistet nachhaltige Integration."
       },
       "vision": {
-        "title": "Vision",
+        "title": "Unsere Vision",
         "description": "Ein Bayern, in dem jeder Sportverein wirklich inklusiv ist, in dem Menschen mit Behinderungen als geschätzte Mitglieder teilnehmen und temporäre Unterstützung zu dauerhafter Unabhängigkeit und Zugehörigkeit führt."
       }
+    },
+    "values": {
+      "heading": "Unsere Werte",
+      "list": [
+        "Systematischer Ansatz für nachhaltige Inklusion",
+        "Evidenzbasierte Trainingsmethodik",
+        "Gemeinschaftszentriertes Unterstützungsnetzwerk",
+        "Langfristige Unabhängigkeit als Ziel"
+      ]
+    },
+    "team": {
+      "heading": "Unser Team",
+      "subtitle": "Eine vielfältige Gruppe von Forschern, Praktikern und Community-Führern, die sich dafür einsetzen, Sport für alle zugänglich zu machen.",
+      "members": [
+        {
+          "name": "Dr. Sarah Schmidt",
+          "role": "Forschungsleiterin"
+        },
+        {
+          "name": "Michael Weber",
+          "role": "Programmkoordinator"
+        },
+        {
+          "name": "Anna Müller",
+          "role": "Ausbildungsspezialistin"
+        },
+        {
+          "name": "Thomas Fischer",
+          "role": "Community-Koordinator"
+        },
+        {
+          "name": "Julia Becker",
+          "role": "Sportintegrations-Expertin"
+        },
+        {
+          "name": "David Klein",
+          "role": "Datenanalyst"
+        }
+      ]
     },
     "partners": {
       "heading": "Unsere Partner",

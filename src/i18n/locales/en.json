@@ -22,15 +22,58 @@
       "subtitle": "Building communities where everyone belongs through systematic sport assistance and sustainable inclusion."
     },
     "missionVision": {
-      "heading": "Our Mission & Vision",
+      "heading": "Who We Are",
+      "whoWeAre": {
+        "title": "Who We Are",
+        "description": "TEAMiN is a collaborative network of research institutions, sports organizations, and community partners working together to transform sports culture in Bavaria. We combine academic expertise with practical experience to create lasting change."
+      },
       "mission": {
-        "title": "Mission",
-        "description": "TEAMiN transforms sports culture in Bavaria by creating systematic pathways for inclusion. We train qualified sport assistants who enable people with disabilities to participate independently in mainstream sports clubs."
+        "title": "Our Mission",
+        "description": "We create systematic pathways for inclusion by training qualified sport assistants who enable people with disabilities to participate independently in mainstream sports clubs. Our evidence-based approach ensures sustainable integration."
       },
       "vision": {
-        "title": "Vision",
+        "title": "Our Vision",
         "description": "A Bavaria where every sports club is truly inclusive, where people with disabilities participate as valued members, and where temporary support leads to lasting independence and belonging."
       }
+    },
+    "values": {
+      "heading": "Our Values",
+      "list": [
+        "Systematic approach to sustainable inclusion",
+        "Evidence-based training methodology",
+        "Community-centered support network",
+        "Long-term independence as the goal"
+      ]
+    },
+    "team": {
+      "heading": "Our Team",
+      "subtitle": "A diverse group of researchers, practitioners, and community leaders dedicated to making sports accessible for everyone.",
+      "members": [
+        {
+          "name": "Dr. Sarah Schmidt",
+          "role": "Research Director"
+        },
+        {
+          "name": "Michael Weber",
+          "role": "Program Coordinator"
+        },
+        {
+          "name": "Anna Müller",
+          "role": "Training Specialist"
+        },
+        {
+          "name": "Thomas Fischer",
+          "role": "Community Liaison"
+        },
+        {
+          "name": "Julia Becker",
+          "role": "Sports Integration Expert"
+        },
+        {
+          "name": "David Klein",
+          "role": "Data Analyst"
+        }
+      ]
     },
     "partners": {
       "heading": "Our Partners",

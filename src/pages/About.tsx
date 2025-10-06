@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Target, Eye } from 'lucide-react';
+import { Target, Eye, Users, CheckCircle } from 'lucide-react';
 
 const About: React.FC = () => {
   const { t } = useTranslation();
@@ -35,26 +35,30 @@ const About: React.FC = () => {
     }
   ];
 
+  const teamMembers = t('about.team.members', { returnObjects: true }) as Array<{name: string, role: string}>;
+
   return (
     <div>
-      {/* Hero Section with Diagonal Split - Image on Right, Overlay on Left */}
+      {/* Hero Section with Diagonal Split - Image on Right, Gradient Overlay on Left */}
       <section className="min-h-screen relative overflow-hidden">
-        {/* Image - Right 60% */}
-        <div className="absolute top-0 right-0 bottom-0 w-[60%]">
-          <img
-            src="TEAMiN About Hero.jpg"
-            alt="TEAMiN Team"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: 'center center' }}
-          />
-        </div>
+        {/* Background Image - covers entire section */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("TEAMiN About Hero.jpg")',
+            backgroundPosition: '85% center'
+          }}
+        ></div>
 
-        {/* Diagonal Green Overlay - Left 40% */}
-        <div className="absolute inset-0 bg-[#71B554]" style={{
-          clipPath: 'polygon(0% 0%, 40% 0%, 60% 100%, 0% 100%)'
+        {/* Subtle overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/10"></div>
+
+        {/* Diagonal gradient overlay - same width as assistant page */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55] to-[#71B554]" style={{
+          clipPath: 'polygon(0% 0%, 30% 0%, 50% 100%, 0% 100%)'
         }}></div>
 
-        {/* Text Content on Green Overlay */}
+        {/* Text Content on Gradient Overlay */}
         <div className="relative z-10 flex items-center min-h-screen p-4 lg:p-8">
           <div className="max-w-xl text-white ml-8 lg:ml-16">
             <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
@@ -67,14 +71,25 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Mission & Vision Section - Two Tiles Side by Side */}
+      {/* Who We Are, Mission & Vision Section - Three Tiles */}
       <section className="py-24 bg-[#F7ECD5]">
         <div className="max-w-6xl mx-auto px-4">
           <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
             {t('about.missionVision.heading')}
           </h2>
 
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-3 gap-8">
+            {/* Who We Are Tile */}
+            <div className="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+              <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10 rounded-2xl mb-6">
+                <Users className="w-8 h-8 text-[#71B554]" />
+              </div>
+              <h3 className="text-3xl font-bold mb-6 text-[#3F3E34]">{t('about.missionVision.whoWeAre.title')}</h3>
+              <p className="text-lg text-[#B3ADAA] leading-relaxed">
+                {t('about.missionVision.whoWeAre.description')}
+              </p>
+            </div>
+
             {/* Mission Tile */}
             <div className="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
               <div className="flex items-center justify-center w-16 h-16 bg-[#D86D55]/10 rounded-2xl mb-6">
@@ -96,6 +111,50 @@ const About: React.FC = () => {
                 {t('about.missionVision.vision.description')}
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Values Section */}
+      <section className="py-24 bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34] dark:text-white">
+            {t('about.values.heading')}
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {(t('about.values.list', { returnObjects: true }) as string[]).map((value: string, index: number) => (
+              <div key={index} className="flex flex-col items-center text-center">
+                <div className="flex items-center justify-center w-16 h-16 bg-[#71B554]/10 rounded-full mb-4">
+                  <CheckCircle className="w-8 h-8 text-[#71B554]" />
+                </div>
+                <p className="text-lg font-semibold text-[#3F3E34] dark:text-white">{value}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team Section */}
+      <section className="py-24 bg-[#F7ECD5]">
+        <div className="max-w-6xl mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#3F3E34]">
+            {t('about.team.heading')}
+          </h2>
+          <p className="text-xl text-center text-[#B3ADAA] mb-16 max-w-3xl mx-auto">
+            {t('about.team.subtitle')}
+          </p>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {teamMembers.map((member, index) => (
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                <div className="w-24 h-24 bg-gradient-to-br from-[#71B554]/20 to-[#D86D55]/20 rounded-full mx-auto mb-6 flex items-center justify-center">
+                  <Users className="w-12 h-12 text-[#71B554]" />
+                </div>
+                <h3 className="text-xl font-bold mb-2 text-[#3F3E34]">{member.name}</h3>
+                <p className="text-[#B3ADAA] italic">{member.role}</p>
+              </div>
+            ))}
           </div>
         </div>
       </section>
