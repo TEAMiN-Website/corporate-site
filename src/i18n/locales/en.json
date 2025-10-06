@@ -36,14 +36,9 @@
         "description": "A Bavaria where every sports club is truly inclusive, where people with disabilities participate as valued members, and where temporary support leads to lasting independence and belonging."
       }
     },
-    "values": {
-      "heading": "Our Values",
-      "list": [
-        "Systematic approach to sustainable inclusion",
-        "Evidence-based training methodology",
-        "Community-centered support network",
-        "Long-term independence as the goal"
-      ]
+    "inclusion": {
+      "heading": "Our Understanding of Inclusion",
+      "description": "For us, inclusion means more than just participation – it's about genuine belonging and self-determination. We believe that everyone has the right to experience sports in a supportive environment that addresses individual needs. Through systematic approaches, evidence-based methods, and community-centered support, we create sustainable structures that enable people with disabilities to participate independently in club life over the long term."
     },
     "team": {
       "heading": "Our Team",

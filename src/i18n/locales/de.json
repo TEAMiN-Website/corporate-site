@@ -36,14 +36,9 @@
         "description": "Ein Bayern, in dem jeder Sportverein wirklich inklusiv ist, in dem Menschen mit Behinderungen als geschätzte Mitglieder teilnehmen und temporäre Unterstützung zu dauerhafter Unabhängigkeit und Zugehörigkeit führt."
       }
     },
-    "values": {
-      "heading": "Unsere Werte",
-      "list": [
-        "Systematischer Ansatz für nachhaltige Inklusion",
-        "Evidenzbasierte Trainingsmethodik",
-        "Gemeinschaftszentriertes Unterstützungsnetzwerk",
-        "Langfristige Unabhängigkeit als Ziel"
-      ]
+    "inclusion": {
+      "heading": "Unser Verständnis von Inklusion",
+      "description": "Inklusion bedeutet für uns mehr als nur Teilhabe – es geht um echte Zugehörigkeit und Selbstbestimmung. Wir glauben daran, dass jeder Mensch das Recht hat, Sport in einem unterstützenden Umfeld zu erleben, das auf individuelle Bedürfnisse eingeht. Durch systematische Ansätze, evidenzbasierte Methoden und gemeinschaftszentrierte Unterstützung schaffen wir nachhaltige Strukturen, die Menschen mit Behinderungen ermöglichen, langfristig unabhängig am Vereinsleben teilzunehmen."
     },
     "team": {
       "heading": "Unser Team",

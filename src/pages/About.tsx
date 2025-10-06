@@ -115,23 +115,15 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Values Section */}
+      {/* Inclusion Understanding Section */}
       <section className="py-24 bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34] dark:text-white">
-            {t('about.values.heading')}
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#3F3E34] dark:text-white">
+            {t('about.inclusion.heading')}
           </h2>
-
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {(t('about.values.list', { returnObjects: true }) as string[]).map((value: string, index: number) => (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="flex items-center justify-center w-16 h-16 bg-[#71B554]/10 rounded-full mb-4">
-                  <CheckCircle className="w-8 h-8 text-[#71B554]" />
-                </div>
-                <p className="text-lg font-semibold text-[#3F3E34] dark:text-white">{value}</p>
-              </div>
-            ))}
-          </div>
+          <p className="text-lg text-center text-[#B3ADAA] dark:text-gray-300 leading-relaxed">
+            {t('about.inclusion.description')}
+          </p>
         </div>
       </section>
 
