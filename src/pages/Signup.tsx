@@ -13,12 +13,12 @@ const Signup: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="h-[60vh] relative overflow-hidden">
+      <section className="h-[75vh] relative overflow-hidden">
         {/* Background Image */}
         <div className="absolute inset-0">
           <img 
-            src="aurelian 2.jpg"
-            alt="Aurelian in sports environment"
+            src="Aurelian 4-min.jpg"
+            alt="Aurelian with sport assistant in training environment"
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center 20%' }}
           />
@@ -57,6 +57,11 @@ const Signup: React.FC = () => {
             {/* E-Learning Card */}
             <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
               <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
+                {/* Number 1 in top right corner */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">1</span>
+                </div>
+                
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
                   <img 
@@ -108,6 +113,11 @@ const Signup: React.FC = () => {
             {/* Praxistag Card */}
             <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
               <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
+                {/* Number 2 in top right corner */}
+                <div className="absolute top-4 right-4 w-8 h-8 bg-white/20 rounded-full flex items-center justify-center">
+                  <span className="text-white font-bold text-lg">2</span>
+                </div>
+                
                 {/* Background Image with Overlay */}
                 <div className="absolute inset-0">
                   <img 
