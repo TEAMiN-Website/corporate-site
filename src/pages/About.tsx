@@ -197,7 +197,7 @@ const About: React.FC = () => {
 
                   {/* Back of card */}
                   <div
-                    className="absolute inset-0 w-full h-full bg-[#71B554] text-white rounded-2xl shadow-lg p-4 flex items-center justify-center backface-hidden"
+                    className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#D86D55] to-[#71B554] text-white rounded-2xl shadow-lg p-4 flex items-center justify-center backface-hidden"
                     style={{
                       backfaceVisibility: 'hidden',
                       transform: 'rotateY(180deg)'
