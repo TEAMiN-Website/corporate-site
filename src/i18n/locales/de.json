@@ -17,14 +17,47 @@
     "becomeAssistant": "Werde Assistent"
   },
   "about": {
-    "title": "Unsere Mission für inklusiven Sport",
-    "description": "TEAMiN transformiert die Sportkultur in Bayern durch die Schaffung systematischer Wege zur Inklusion. Wir glauben, dass Sportvereine Orte sein sollten, an denen jeder teilnehmen, wachsen und dazugehören kann.",
-    "values": [
-      "Systematischer Ansatz für nachhaltige Inklusion",
-      "Evidenzbasierte Trainingsmethodik",
-      "Gemeinschaftszentriertes Unterstützungsnetzwerk",
-      "Langfristige Unabhängigkeit als Ziel"
-    ]
+    "hero": {
+      "title": "TEAMiN: Das inklusive Sportnetzwerk",
+      "subtitle": "Wir bauen Gemeinschaften, in denen jeder durch systematische Sportassistenz und nachhaltige Inklusion dazugehört."
+    },
+    "missionVision": {
+      "heading": "Unsere Mission & Vision",
+      "mission": {
+        "title": "Mission",
+        "description": "TEAMiN transformiert die Sportkultur in Bayern durch die Schaffung systematischer Wege zur Inklusion. Wir bilden qualifizierte Sportassistent:innen aus, die Menschen mit Behinderungen ermöglichen, selbstständig in regulären Sportvereinen teilzunehmen."
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "Ein Bayern, in dem jeder Sportverein wirklich inklusiv ist, in dem Menschen mit Behinderungen als geschätzte Mitglieder teilnehmen und temporäre Unterstützung zu dauerhafter Unabhängigkeit und Zugehörigkeit führt."
+      }
+    },
+    "partners": {
+      "heading": "Unsere Partner",
+      "bvs": "Forschungspartner im BMFTR-geförderten Forschungsprojekt 'SpAss', der Projektmitarbeiter sowie Zugang zu E-Learning- und Buchungsinfrastruktur und wertvollem Netzwerk von Sportvereinen in Bayern beisteuert.",
+      "uniWuerzburg": "Forschungspartner im BMFTR-geförderten Forschungsprojekt 'SpAss', der Projektmitarbeiter, tiefes akademisches Wissen rund um inklusiven Sport, Qualifikation für Assistent:innen und laufende Forschung zur Sportassistenz beisteuert.",
+      "bmftr": "Finanziert das Forschungsprojekt über das datipilot-Programm.",
+      "lebenshilfe": "Sie vermitteln Sportler:innen und Freiwillige und kümmern sich um die gesamte Administration.",
+      "adidas": "Unterstützt das Projekt als strategischer Partner durch Mitarbeiter-Volunteering in Form von Pro-Bono-Beratung und Sportassistent:innen sowie finanzielle Unterstützung."
+    },
+    "cta": {
+      "heading": "Mitmachen",
+      "volunteering": {
+        "title": "Werde Sportassistent:in",
+        "description": "Mache einen bedeutenden Unterschied, indem du Athlet:innen auf ihrem Weg zur Unabhängigkeit unterstützt.",
+        "button": "Mehr erfahren"
+      },
+      "athletes": {
+        "title": "Sportler:innen & Familien",
+        "description": "Finde deinen Platz im Sport mit qualifizierter Unterstützung und einladenden Gemeinschaften.",
+        "button": "Los geht's"
+      },
+      "spass": {
+        "title": "SpAss Programm",
+        "description": "Entdecke unsere forschungsbasierte Trainingsmethodik für inklusive Sportassistenz.",
+        "button": "Programm erkunden"
+      }
+    }
   },
   "spass": {
     "title": "Sport-Assistenz (SpAss) Programm",

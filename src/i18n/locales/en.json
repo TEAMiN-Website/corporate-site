@@ -17,14 +17,47 @@
     "becomeAssistant": "Become an Assistant"
   },
   "about": {
-    "title": "Our Mission for Inclusive Sports",
-    "description": "TEAMiN transforms sports culture in Bavaria by creating systematic pathways for inclusion. We believe that sports clubs should be places where everyone can participate, grow, and belong.",
-    "values": [
-      "Systematic approach to sustainable inclusion",
-      "Evidence-based training methodology",
-      "Community-centered support network",
-      "Long-term independence as the goal"
-    ]
+    "hero": {
+      "title": "TEAMiN: The Inclusive Sports Network",
+      "subtitle": "Building communities where everyone belongs through systematic sport assistance and sustainable inclusion."
+    },
+    "missionVision": {
+      "heading": "Our Mission & Vision",
+      "mission": {
+        "title": "Mission",
+        "description": "TEAMiN transforms sports culture in Bavaria by creating systematic pathways for inclusion. We train qualified sport assistants who enable people with disabilities to participate independently in mainstream sports clubs."
+      },
+      "vision": {
+        "title": "Vision",
+        "description": "A Bavaria where every sports club is truly inclusive, where people with disabilities participate as valued members, and where temporary support leads to lasting independence and belonging."
+      }
+    },
+    "partners": {
+      "heading": "Our Partners",
+      "bvs": "Research partner in the BMFTR funded research project 'SpAss' contributing project members as well as access to e-learning and booking infrastructure and valuable network of sports clubs in Bavaria.",
+      "uniWuerzburg": "Research partner in the BMFTR funded research project 'SpAss' contributing project members, deep academic knowledge around inclusive sports, qualification for assistants, ongoing research around sports assistance.",
+      "bmftr": "Funds the research project via the datipilot program.",
+      "lebenshilfe": "They match Sportler:innen and volunteers and take care of all administration.",
+      "adidas": "Supports the project as a strategic partner through employee volunteering in the form of pro bono consulting and sports assistants as well as financial support."
+    },
+    "cta": {
+      "heading": "Get Involved",
+      "volunteering": {
+        "title": "Become a Sport Assistant",
+        "description": "Make a meaningful impact by supporting athletes in their journey to independence.",
+        "button": "Learn More"
+      },
+      "athletes": {
+        "title": "Sportler:innen & Families",
+        "description": "Find your place in sports with qualified support and welcoming communities.",
+        "button": "Get Started"
+      },
+      "spass": {
+        "title": "SpAss Program",
+        "description": "Discover our research-backed training methodology for inclusive sports assistance.",
+        "button": "Explore Program"
+      }
+    }
   },
   "spass": {
     "title": "Sport-Assistenz (SpAss) Program",

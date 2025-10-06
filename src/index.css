@@ -69,12 +69,29 @@
   z-index: 2;
 }
 
+/* 3D flip card utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+}
+
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
 @layer base {
   body {
     font-family: 'DM Sans', sans-serif;
     font-weight: 300; /* Light weight */
   }
-  
+
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 400; /* Book weight */
