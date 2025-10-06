@@ -30,36 +30,39 @@ const SpAss: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Hero Section with Diagonal Split */}
-      <section className="grid md:grid-cols-[45%_55%] min-h-[80vh] relative overflow-hidden">
-        {/* Image Panel */}
-        <div className="relative bg-gradient-to-br from-gray-800 to-gray-600 dark:from-gray-900 dark:to-gray-700 flex items-center justify-center p-10 order-2 md:order-1">
-          <div className="absolute top-5 left-5 bg-white/20 backdrop-blur-sm px-5 py-2 rounded-lg text-white text-xs uppercase tracking-wider">
-            {t('spassNew.hero.imageNote')}
-          </div>
-          <img
-            src="/assistant picture 1.jpg"
-            alt={t('spassNew.hero.imageAlt')}
-            className="w-full h-full object-cover absolute inset-0"
-          />
-          <div className="absolute inset-0 bg-black/30" />
-        </div>
+      {/* Hero Section with Diagonal Split - Similar to About Page */}
+      <section className="min-h-screen relative overflow-hidden">
+        {/* Background Image - covers entire section */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("/assistant picture 2 crop copy copy.jpg")',
+            backgroundPosition: '85% center'
+          }}
+        ></div>
 
-        {/* Text Panel with Diagonal Edge */}
-        <div className="relative bg-[#F7ECD5] dark:bg-gray-800 flex items-center p-10 md:p-16 order-1 md:order-2">
-          <div className="hidden md:block absolute -left-12 top-0 bottom-0 w-24 bg-[#F7ECD5] dark:bg-gray-800 transform skew-x-[-5deg]" />
-          <div className="max-w-2xl w-full relative z-10">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold mb-6 text-gray-900 dark:text-white leading-tight">
+        {/* Subtle overlay for better text readability */}
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/20"></div>
+
+        {/* Diagonal gradient overlay - from right instead of left */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55] to-[#71B554] dark:from-[#D86D55]/90 dark:to-[#71B554]/90" style={{
+          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 70% 100%)'
+        }}></div>
+
+        {/* Text Content on Gradient Overlay */}
+        <div className="relative z-10 flex items-center min-h-screen p-4 lg:p-8">
+          <div className="max-w-xl text-white ml-auto mr-8 lg:mr-16">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
               {t('spassNew.hero.title')}
             </h1>
-            <p className="text-xl md:text-2xl font-light mb-10 text-gray-700 dark:text-gray-300">
+            <p className="text-xl lg:text-2xl leading-relaxed opacity-95 mb-10">
               {t('spassNew.hero.subtitle')}
             </p>
             <div className="flex flex-wrap gap-5">
-              <button className="px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
+              <button className="px-10 py-4 text-lg font-semibold text-white bg-white/20 backdrop-blur-sm border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
                 {t('spassNew.hero.cta1')}
               </button>
-              <button className="px-10 py-4 text-lg font-semibold text-gray-900 dark:text-white border-2 border-gray-900 dark:border-white rounded-full hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:text-white hover:border-transparent transition-all duration-300 uppercase tracking-wide">
+              <button className="px-10 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 uppercase tracking-wide">
                 {t('spassNew.hero.cta2')} ↓
               </button>
             </div>
