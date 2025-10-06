@@ -78,19 +78,6 @@ const Aurelian: React.FC = () => {
         </div>
       </section>
 
-      {/* Quote Section */}
-      <section className="py-24 bg-white">
-        <div className="max-w-4xl mx-auto px-4">
-          <div className="text-center">
-            <blockquote className="text-2xl md:text-3xl text-[#3F3E34] leading-relaxed mb-8 italic font-light">
-              "{t('aurelian.quote')}"
-            </blockquote>
-            <p className="text-xl text-[#D86D55] font-semibold">
-              Aurelian, Fußballspieler, 11 Jahre alt
-            </p>
-          </div>
-        </div>
-      </section>
 
       {/* Diagonal Split Section with Carousel */}
       <section className="min-h-screen relative overflow-hidden">
@@ -124,6 +111,12 @@ const Aurelian: React.FC = () => {
             <h2 className="text-3xl lg:text-5xl font-bold mb-8 leading-tight">
               The Power of Sport Assistance
             </h2>
+            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-4 italic font-light opacity-95">
+              "{t('aurelian.quote')}"
+            </blockquote>
+            <p className="text-lg font-semibold mb-8 opacity-95">
+              Aurelian, Fußballspieler, 11 Jahre alt
+            </p>
             <div className="space-y-6 text-lg lg:text-xl opacity-95">
               <p>
                 Aurelian's story shows how TEAMiN's Sport-Assistenz program creates real opportunities for athletes with disabilities.
