@@ -103,7 +103,7 @@ const Aurelian: React.FC = () => {
                 src={image}
                 alt={`Aurelian ${index + 1}`}
                 className="w-full h-full object-cover"
-                style={{ objectPosition: '40% center' }}
+                style={{ objectPosition: 'left center' }}
               />
             </div>
           ))}
