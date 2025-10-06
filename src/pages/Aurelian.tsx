@@ -91,7 +91,7 @@ const Aurelian: React.FC = () => {
       {/* Diagonal Split Section with Carousel */}
       <section className="min-h-screen relative overflow-hidden">
         {/* Carousel Images - Left 60% */}
-        <div className="absolute inset-0">
+        <div className="absolute top-0 left-0 bottom-0 w-[60%]">
           {carouselImages.map((image, index) => (
             <div
               key={image}
@@ -103,7 +103,7 @@ const Aurelian: React.FC = () => {
                 src={image}
                 alt={`Aurelian ${index + 1}`}
                 className="w-full h-full object-cover"
-                style={{ objectPosition: 'left center' }}
+                style={{ objectPosition: 'center center' }}
               />
             </div>
           ))}
@@ -141,7 +141,7 @@ const Aurelian: React.FC = () => {
         </div>
 
         {/* Carousel Indicators */}
-        <div className="absolute bottom-8 left-1/4 transform -translate-x-1/2 z-20 flex gap-2">
+        <div className="absolute bottom-8 left-[15%] z-20 flex gap-2">
           {carouselImages.map((_, index) => (
             <button
               key={index}
