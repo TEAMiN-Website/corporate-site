@@ -115,15 +115,35 @@ const About: React.FC = () => {
         </div>
       </section>
 
-      {/* Inclusion Understanding Section */}
-      <section className="py-24 bg-white dark:bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-bold text-center mb-8 text-[#3F3E34] dark:text-white">
-            {t('about.inclusion.heading')}
-          </h2>
-          <p className="text-lg text-center text-[#B3ADAA] dark:text-gray-300 leading-relaxed">
-            {t('about.inclusion.description')}
-          </p>
+      {/* Inclusion Understanding Section with Diagonal Split */}
+      <section className="min-h-[600px] relative overflow-hidden">
+        {/* Background Image - left side */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("Inklusion sign.jpg")',
+            backgroundPosition: 'center'
+          }}
+        ></div>
+
+        {/* Subtle overlay for better contrast */}
+        <div className="absolute inset-0 bg-black/10"></div>
+
+        {/* Diagonal cut overlay with gradient */}
+        <div className="absolute inset-0 bg-gradient-to-br from-[#71B554] to-[#D86D55]" style={{
+          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)'
+        }}></div>
+
+        {/* Text Content */}
+        <div className="relative z-10 flex items-center justify-end min-h-[600px] px-4 py-16">
+          <div className="max-w-xl text-left relative z-10 mr-8 lg:mr-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
+              {t('about.inclusion.heading')}
+            </h2>
+            <p className="text-lg text-white leading-relaxed opacity-95">
+              {t('about.inclusion.description')}
+            </p>
+          </div>
         </div>
       </section>
 
