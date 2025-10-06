@@ -117,21 +117,19 @@ const About: React.FC = () => {
 
       {/* Inclusion Understanding Section with Diagonal Split */}
       <section className="min-h-[600px] relative overflow-hidden">
-        {/* Background Image - left side */}
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url("Inklusion sign.jpg")',
-            backgroundPosition: 'center'
-          }}
-        ></div>
+        {/* Background Image - Left 50% */}
+        <div className="absolute top-0 left-0 bottom-0 w-[50%]">
+          <img
+            src="Inklusion sign.jpg"
+            alt="Inklusion"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: '30% center' }}
+          />
+        </div>
 
-        {/* Subtle overlay for better contrast */}
-        <div className="absolute inset-0 bg-black/10"></div>
-
-        {/* Diagonal cut overlay with gradient */}
+        {/* Diagonal Gradient Overlay - Right 50% */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#71B554] to-[#D86D55]" style={{
-          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%)'
+          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%)'
         }}></div>
 
         {/* Text Content */}
