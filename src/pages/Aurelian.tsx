@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { Activity, Users, Trophy } from 'lucide-react';
 
 const Aurelian: React.FC = () => {
   const { t } = useTranslation();
@@ -57,19 +58,28 @@ const Aurelian: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-[#71B554] mb-4">Physical Development</h3>
+              <div className="flex justify-center mb-6">
+                <Activity className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Physical Development</h3>
               <p className="text-lg text-[#B3ADAA]">
                 Improved coordination, fitness, and football-specific skills through regular training and expert guidance.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-[#71B554] mb-4">Social Integration</h3>
+              <div className="flex justify-center mb-6">
+                <Users className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Social Integration</h3>
               <p className="text-lg text-[#B3ADAA]">
                 Built lasting friendships with teammates and became a valued member of the club community.
               </p>
             </div>
             <div className="text-center">
-              <h3 className="text-2xl font-bold text-[#71B554] mb-4">Independence</h3>
+              <div className="flex justify-center mb-6">
+                <Trophy className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Independence</h3>
               <p className="text-lg text-[#B3ADAA]">
                 Developed confidence and skills to participate independently without continuous assistance.
               </p>
