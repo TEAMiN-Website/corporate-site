@@ -35,7 +35,7 @@ const About: React.FC = () => {
     }
   ];
 
-  const teamMembers = t('about.team.members', { returnObjects: true }) as Array<{name: string, role: string}>;
+  const teamMembers = t('about.team.members', { returnObjects: true }) as Array<{name: string, role: string, photo?: string}>;
 
   return (
     <div>
@@ -147,12 +147,24 @@ const About: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
-                <div className="w-24 h-24 bg-gradient-to-br from-[#71B554]/20 to-[#D86D55]/20 rounded-full mx-auto mb-6 flex items-center justify-center">
-                  <Users className="w-12 h-12 text-[#71B554]" />
-                </div>
+              <div key={index} className="bg-gradient-to-br from-[#D86D55]/5 to-[#71B554]/5 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+                {member.photo ? (
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-[#D86D55] to-[#71B554]">
+                    <img
+                      src={member.photo}
+                      alt={member.name}
+                      className="w-full h-full rounded-full object-cover"
+                    />
+                  </div>
+                ) : (
+                  <div className="w-32 h-32 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-[#D86D55] to-[#71B554]">
+                    <div className="w-full h-full bg-white rounded-full flex items-center justify-center">
+                      <Users className="w-12 h-12 text-[#71B554]" />
+                    </div>
+                  </div>
+                )}
                 <h3 className="text-xl font-bold mb-2 text-[#3F3E34]">{member.name}</h3>
-                <p className="text-[#B3ADAA] italic">{member.role}</p>
+                <p className="text-[#B3ADAA] italic text-sm leading-relaxed">{member.role}</p>
               </div>
             ))}
           </div>

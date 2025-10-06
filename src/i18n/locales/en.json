@@ -50,28 +50,28 @@
       "subtitle": "A diverse group of researchers, practitioners, and community leaders dedicated to making sports accessible for everyone.",
       "members": [
         {
-          "name": "Dr. Sarah Schmidt",
-          "role": "Research Director"
+          "name": "Dr. Christiane Reuter",
+          "role": "Project Lead University of Würzburg",
+          "photo": "Christiane-Reuter.jpg"
         },
         {
-          "name": "Michael Weber",
-          "role": "Program Coordinator"
+          "name": "Prof. Dr. David Rygl",
+          "role": "Project Lead BVS Bayern",
+          "photo": "rygl.png"
         },
         {
-          "name": "Anna Müller",
-          "role": "Training Specialist"
+          "name": "Jakob Prechtl",
+          "role": "Project Member University of Würzburg - Responsible for qualification and research",
+          "photo": "Jakob_Prechtl.jpg"
         },
         {
-          "name": "Thomas Fischer",
-          "role": "Community Liaison"
+          "name": "Tim Noppeney",
+          "role": "Project Member BVS Bayern - Responsible for user research and marketing",
+          "photo": "tim-noppeney.jpg"
         },
         {
-          "name": "Julia Becker",
-          "role": "Sports Integration Expert"
-        },
-        {
-          "name": "David Klein",
-          "role": "Data Analyst"
+          "name": "Michael Zimmermann",
+          "role": "Project Member University of Würzburg - Responsible for qualification and research"
         }
       ]
     },
