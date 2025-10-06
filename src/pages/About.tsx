@@ -147,7 +147,7 @@ const About: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-[#D86D55]/5 to-[#71B554]/5 rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
+              <div key={index} className="bg-white rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 text-center">
                 {member.photo ? (
                   <div className="w-32 h-32 mx-auto mb-6 rounded-full p-1 bg-gradient-to-br from-[#D86D55] to-[#71B554]">
                     <img
