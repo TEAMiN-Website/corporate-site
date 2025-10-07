@@ -28,14 +28,14 @@ const Volunteers: React.FC = () => {
 
         {/* Text Content */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
-          <div className="w-full lg:w-[32%] text-center lg:text-left pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
+          <div className="w-full lg:w-[32%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight">
               {t('volunteersNew.hero.title')}
             </h1>
             <p className="text-xl lg:text-2xl text-white mb-10 opacity-90 leading-relaxed">
               {t('volunteersNew.hero.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-5 justify-center lg:justify-start">
+            <div className="flex flex-col sm:flex-row flex-wrap gap-5 justify-end">
               <Link
                 to="/signup"
                 className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
