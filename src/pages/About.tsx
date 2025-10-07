@@ -39,34 +39,43 @@ const About: React.FC = () => {
 
   return (
     <div>
-      {/* Hero Section with Diagonal Split - Image on Right, Gradient Overlay on Left */}
+      {/* Hero Section with Diagonal Split - Image on Left, Overlay on Right */}
       <section className="min-h-screen relative overflow-hidden">
         {/* Background Image - covers entire section */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("TEAMiN About Hero copy.jpg")',
-            backgroundPosition: '85% center'
+            backgroundPosition: '15% center'
           }}
         ></div>
 
         {/* Subtle overlay for better text readability */}
         <div className="absolute inset-0 bg-black/10"></div>
 
-        {/* Diagonal gradient overlay - same width as assistant page */}
+        {/* Diagonal gradient overlay on the right - 10% wider with 85% opacity */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55] to-[#71B554]" style={{
-          clipPath: 'polygon(0% 0%, 30% 0%, 50% 100%, 0% 100%)'
+          opacity: 0.85,
+          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%)'
         }}></div>
 
         {/* Text Content on Gradient Overlay */}
-        <div className="relative z-10 flex items-center min-h-screen p-4 lg:p-8">
-          <div className="max-w-xl text-white ml-8 lg:ml-16">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
+        <div className="relative z-10 flex items-center justify-end min-h-screen">
+          <div className="w-full lg:w-[50%] text-right pr-8 lg:pr-16 py-20 lg:py-0">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-white uppercase">
               {t('about.hero.title')}
             </h1>
-            <p className="text-xl lg:text-2xl leading-relaxed opacity-95">
+            <p className="text-xl lg:text-2xl leading-relaxed text-white/95 mb-10">
               {t('about.hero.subtitle')}
             </p>
+            <div className="flex justify-end">
+              <Link
+                to="/signup"
+                className="inline-block px-10 py-4 text-xl font-semibold text-white bg-white/20 backdrop-blur-sm border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wide"
+              >
+                {t('about.hero.cta')}
+              </Link>
+            </div>
           </div>
         </div>
       </section>
