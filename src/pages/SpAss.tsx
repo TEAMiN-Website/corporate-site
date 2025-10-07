@@ -32,17 +32,20 @@ const SpAss: React.FC = () => {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section with Diagonal Split - Image Left, Text Right */}
       <section className="min-h-screen relative overflow-hidden">
-        {/* Background Image - covers entire section */}
+        {/* Background Image - limited to left 70% */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("/assistant picture 2 crop copy copy.jpg")',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center',
+            clipPath: 'polygon(0% 0%, 70% 0%, 50% 100%, 0% 100%)'
           }}
         ></div>
 
-        {/* Subtle overlay for better text readability */}
-        <div className="absolute inset-0 bg-black/10 dark:bg-black/20"></div>
+        {/* Subtle overlay for better text readability on image */}
+        <div className="absolute inset-0 bg-black/10 dark:bg-black/20" style={{
+          clipPath: 'polygon(0% 0%, 70% 0%, 50% 100%, 0% 100%)'
+        }}></div>
 
         {/* Diagonal gradient overlay on the right - using Flashpoint color */}
         <div className="absolute inset-0 bg-[#F7ECD5] dark:bg-gray-800" style={{
