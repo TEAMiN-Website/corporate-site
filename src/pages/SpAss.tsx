@@ -50,28 +50,28 @@ const SpAss: React.FC = () => {
 
         {/* Diagonal gradient overlay on the right - using Flashpoint color */}
         <div className="absolute inset-0 dark:hidden" style={{
-          backgroundColor: 'rgba(247, 236, 213, 0.9)',
+          backgroundColor: 'rgba(247, 236, 213, 0.85)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
         <div className="absolute inset-0 hidden dark:block" style={{
-          backgroundColor: 'rgba(31, 41, 55, 0.9)',
+          backgroundColor: 'rgba(31, 41, 55, 0.85)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
 
         {/* Text Content on Flashpoint Overlay */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
           <div className="w-full lg:w-[32%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-gray-900 dark:text-white">
-              {t('spassNew.hero.title')}
+            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight text-gray-900 dark:text-white uppercase">
+              SPASS - UNABHÄNGIGE TEILHABE DURCH SPORT-ASSISTENZ
             </h1>
-            <p className="text-xl lg:text-2xl leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
+            <p className="text-2xl lg:text-3xl leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
               {t('spassNew.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-5 justify-end">
-              <button className="px-10 py-4 text-xl font-semibold text-white bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
+              <button className="px-10 py-4 text-2xl font-semibold text-white bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
                 {t('spassNew.hero.cta1')}
               </button>
-              <button className="px-10 py-4 text-xl font-semibold text-gray-900 dark:text-white border-2 border-gray-900 dark:border-white rounded-full hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:text-white hover:border-transparent transition-all duration-300 uppercase tracking-wide">
+              <button className="px-10 py-4 text-2xl font-semibold text-gray-900 dark:text-white border-2 border-gray-900 dark:border-white rounded-full hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:text-white hover:border-transparent transition-all duration-300 uppercase tracking-wide">
                 {t('spassNew.hero.cta2')} ↓
               </button>
             </div>
