@@ -48,13 +48,13 @@ const SpAss: React.FC = () => {
           clipPath: 'polygon(0% 0%, 70% 0%, 50% 100%, 0% 100%)'
         }}></div>
 
-        {/* Diagonal gradient overlay on the right - using Flashpoint color - DEBUG MODE */}
-        <div className="absolute inset-0 dark:hidden border-4 border-red-500" style={{
-          backgroundColor: 'rgba(247, 236, 213, 0.3)',
+        {/* Diagonal gradient overlay on the right - using Flashpoint color */}
+        <div className="absolute inset-0 dark:hidden" style={{
+          backgroundColor: 'rgba(247, 236, 213, 0.8)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
-        <div className="absolute inset-0 hidden dark:block border-4 border-red-500" style={{
-          backgroundColor: 'rgba(31, 41, 55, 0.3)',
+        <div className="absolute inset-0 hidden dark:block" style={{
+          backgroundColor: 'rgba(31, 41, 55, 0.8)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
 
