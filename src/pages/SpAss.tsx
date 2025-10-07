@@ -34,13 +34,12 @@ const SpAss: React.FC = () => {
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section with Diagonal Split - Image Left, Text Right */}
       <section className="min-h-screen relative overflow-hidden">
-        {/* Background Image - limited to left 70% */}
+        {/* Background Image - now covers entire hero section */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("/athlete 7-min-min copy.jpg")',
-            backgroundPosition: '40% center',
-            clipPath: 'polygon(0% 0%, 70% 0%, 50% 100%, 0% 100%)'
+            backgroundPosition: '40% center'
           }}
         ></div>
 
