@@ -67,7 +67,7 @@ const Home: React.FC = () => {
               
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="assistant picture 2 copy.jpg"
+                  src="assistant picture 1.jpg"
                   alt="People of different ages helping and supporting in sports"
                   className="w-full h-full object-cover"
                 />
