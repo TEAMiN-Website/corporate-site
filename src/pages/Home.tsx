@@ -27,7 +27,7 @@ const Home: React.FC = () => {
 
         <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
           <div className="text-center text-white max-w-4xl">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90 uppercase" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
               {t('homeNew.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl font-light mb-12 opacity-85 max-w-3xl mx-auto leading-relaxed italic">
@@ -42,26 +42,6 @@ const Home: React.FC = () => {
             {t('homeNew.hero.discover')}
           </div>
           <ArrowDown className="w-8 h-8 text-white opacity-80" />
-        </div>
-      </section>
-
-      {/* Why This Matters Section */}
-      <section className="py-24 text-white relative overflow-hidden parallax-section dark-overlay">
-
-        {/* Radial gradients */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-radial from-[#71B554]/10 via-transparent to-transparent" style={{
-            background: `radial-gradient(circle at 20% 50%, rgba(113, 181, 84, 0.1) 0%, transparent 50%),
-                        radial-gradient(circle at 80% 50%, rgba(216, 109, 85, 0.1) 0%, transparent 50%)`
-          }}></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 text-center relative z-10">
-          <div className="bg-white/5 backdrop-blur-md p-12 md:p-16 rounded-3xl border border-white/10">
-            <p className="text-xl md:text-2xl leading-relaxed opacity-85 italic">
-              {t('homeNew.whyMatters.description')}
-            </p>
-          </div>
         </div>
       </section>
 
