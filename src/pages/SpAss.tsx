@@ -48,7 +48,12 @@ const SpAss: React.FC = () => {
         }}></div>
 
         {/* Diagonal gradient overlay on the right - using Flashpoint color */}
-        <div className="absolute inset-0 bg-[#F7ECD5]/80 dark:bg-gray-800/80" style={{
+        <div className="absolute inset-0 dark:hidden" style={{
+          backgroundColor: 'rgba(247, 236, 213, 0.8)',
+          clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
+        }}></div>
+        <div className="absolute inset-0 hidden dark:block" style={{
+          backgroundColor: 'rgba(31, 41, 55, 0.8)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
 
