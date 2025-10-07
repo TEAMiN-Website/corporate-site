@@ -61,7 +61,7 @@ const SpAss: React.FC = () => {
         {/* Text Content on Flashpoint Overlay */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
           <div className="w-full lg:w-[32%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
-            <h1 className="text-5xl lg:text-6xl xl:text-7xl font-bold mb-8 leading-tight text-gray-900 dark:text-white uppercase">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-gray-900 dark:text-white uppercase">
               SPASS - UNABHÄNGIGE TEILHABE DURCH SPORT-ASSISTENZ
             </h1>
             <p className="text-2xl lg:text-3xl leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
