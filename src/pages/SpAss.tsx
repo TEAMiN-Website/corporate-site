@@ -28,6 +28,8 @@ const SpAss: React.FC = () => {
     return () => clearInterval(interval);
   }, [stories.length]);
 
+  console.log('SpAss hero section rendered with 30% opacity overlay DEBUG');
+
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section with Diagonal Split - Image Left, Text Right */}
@@ -47,13 +49,13 @@ const SpAss: React.FC = () => {
           clipPath: 'polygon(0% 0%, 70% 0%, 50% 100%, 0% 100%)'
         }}></div>
 
-        {/* Diagonal gradient overlay on the right - using Flashpoint color */}
-        <div className="absolute inset-0 dark:hidden" style={{
-          backgroundColor: 'rgba(247, 236, 213, 0.8)',
+        {/* Diagonal gradient overlay on the right - using Flashpoint color - DEBUG MODE */}
+        <div className="absolute inset-0 dark:hidden border-4 border-red-500" style={{
+          backgroundColor: 'rgba(247, 236, 213, 0.3)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
-        <div className="absolute inset-0 hidden dark:block" style={{
-          backgroundColor: 'rgba(31, 41, 55, 0.8)',
+        <div className="absolute inset-0 hidden dark:block border-4 border-red-500" style={{
+          backgroundColor: 'rgba(31, 41, 55, 0.3)',
           clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
         }}></div>
 
