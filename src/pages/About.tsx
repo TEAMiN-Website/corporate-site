@@ -166,23 +166,23 @@ const About: React.FC = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {teamMembers.map((member, index) => (
-              <div key={index} className="bg-gradient-to-br from-[#D86D55] to-[#71B554] rounded-3xl p-8 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col items-center justify-between min-h-[400px]">
-                {member.photo ? (
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/30 mt-8">
+              <div key={index} className="p-[2px] bg-gradient-to-br from-red-500 to-green-500 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+                <div className="bg-white dark:bg-gray-800 rounded-2xl overflow-hidden">
+                  {member.photo ? (
                     <img
                       src={member.photo}
                       alt={member.name}
-                      className="w-full h-full object-cover"
+                      className="w-full h-64 object-cover"
                     />
+                  ) : (
+                    <div className="w-full h-64 bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+                      <Users className="w-16 h-16 text-gray-400" />
+                    </div>
+                  )}
+                  <div className="p-4 text-center">
+                    <h3 className="text-gray-900 dark:text-white text-xl font-semibold mb-1">{member.name}</h3>
+                    <p className="text-gray-600 dark:text-gray-400 text-sm">{member.role}</p>
                   </div>
-                ) : (
-                  <div className="w-48 h-48 rounded-full overflow-hidden border-4 border-white/30 mt-8 bg-white flex items-center justify-center">
-                    <Users className="w-16 h-16 text-[#71B554]" />
-                  </div>
-                )}
-                <div className="text-center mb-4">
-                  <h3 className="text-2xl font-bold mb-2 text-white">{member.name}</h3>
-                  <p className="text-white/90 italic text-base leading-relaxed">{member.role}</p>
                 </div>
               </div>
             ))}
