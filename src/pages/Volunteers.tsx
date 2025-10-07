@@ -27,29 +27,29 @@ const Volunteers: React.FC = () => {
         }}></div>
 
         {/* Text Content */}
-        <div className="relative z-10 flex items-center justify-end min-h-screen p-2 lg:p-4">
-          <div className="max-w-xl text-center lg:text-left relative z-10 mr-8 lg:mr-16">
-            <div className="mt-64">
-            <h1 className="text-4xl lg:text-6xl font-bold text-white mb-6 leading-tight text-center lg:text-left">
-              {t('volunteersNew.hero.title')}
-            </h1>
-            <p className="text-xl text-white mb-8 opacity-90 text-center lg:text-left max-w-xl">
-              {t('volunteersNew.hero.subtitle')}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link 
-                to="/signup"
-                className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-              >
-                {t('volunteersNew.hero.joinNow')}
-              </Link>
-              <Link 
-                to="/about"
-                className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
-              >
-                {t('volunteersNew.hero.learnMore')}
-              </Link>
-            </div>
+        <div className="relative z-10 flex items-center justify-end min-h-screen">
+          <div className="w-full max-w-7xl mx-auto px-4 flex justify-end">
+            <div className="w-full lg:w-[35%] text-center lg:text-left py-20 lg:py-0">
+              <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight">
+                {t('volunteersNew.hero.title')}
+              </h1>
+              <p className="text-lg md:text-xl text-white mb-8 opacity-90">
+                {t('volunteersNew.hero.subtitle')}
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                <Link
+                  to="/signup"
+                  className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+                >
+                  {t('volunteersNew.hero.joinNow')}
+                </Link>
+                <Link
+                  to="/about"
+                  className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
+                >
+                  {t('volunteersNew.hero.learnMore')}
+                </Link>
+              </div>
             </div>
           </div>
         </div>
