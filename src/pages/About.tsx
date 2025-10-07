@@ -53,15 +53,15 @@ const About: React.FC = () => {
         {/* Subtle overlay for better text readability */}
         <div className="absolute inset-0 bg-black/10"></div>
 
-        {/* Diagonal gradient overlay on the right - 10% wider with 85% opacity */}
+        {/* Diagonal gradient overlay on the right - same width as SpAss with 85% opacity */}
         <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55] to-[#71B554]" style={{
           opacity: 0.85,
-          clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%)'
+          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
         }}></div>
 
         {/* Text Content on Gradient Overlay */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
-          <div className="w-full lg:w-[50%] text-right pr-8 lg:pr-16 py-20 lg:py-0">
+          <div className="w-full lg:w-[42%] text-right pr-8 lg:pr-16 py-20 lg:py-0">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-white uppercase">
               {t('about.hero.title')}
             </h1>
