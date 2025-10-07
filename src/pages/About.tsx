@@ -45,7 +45,7 @@ const About: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("TEAMiN About Hero.jpg")',
+            backgroundImage: 'url("TEAMiN About Hero copy.jpg")',
             backgroundPosition: '85% center'
           }}
         ></div>
