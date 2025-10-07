@@ -30,39 +30,39 @@ const SpAss: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Hero Section with Diagonal Split - Similar to About Page */}
+      {/* Hero Section with Diagonal Split - Image Left, Text Right */}
       <section className="min-h-screen relative overflow-hidden">
         {/* Background Image - covers entire section */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("/assistant picture 2 crop copy copy.jpg")',
-            backgroundPosition: '85% center'
+            backgroundPosition: 'center'
           }}
         ></div>
 
         {/* Subtle overlay for better text readability */}
         <div className="absolute inset-0 bg-black/10 dark:bg-black/20"></div>
 
-        {/* Diagonal gradient overlay - from right instead of left */}
-        <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55] to-[#71B554] dark:from-[#D86D55]/90 dark:to-[#71B554]/90" style={{
+        {/* Diagonal gradient overlay on the right - using Flashpoint color */}
+        <div className="absolute inset-0 bg-[#F7ECD5] dark:bg-gray-800" style={{
           clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 70% 100%)'
         }}></div>
 
-        {/* Text Content on Gradient Overlay */}
+        {/* Text Content on Flashpoint Overlay */}
         <div className="relative z-10 flex items-center min-h-screen p-4 lg:p-8">
-          <div className="max-w-xl text-white ml-auto mr-8 lg:mr-16">
-            <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight">
+          <div className="max-w-xl ml-auto mr-8 lg:mr-16">
+            <h1 className="text-4xl lg:text-6xl font-bold mb-8 leading-tight text-gray-900 dark:text-white">
               {t('spassNew.hero.title')}
             </h1>
-            <p className="text-xl lg:text-2xl leading-relaxed opacity-95 mb-10">
+            <p className="text-xl lg:text-2xl leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
               {t('spassNew.hero.subtitle')}
             </p>
             <div className="flex flex-wrap gap-5">
-              <button className="px-10 py-4 text-lg font-semibold text-white bg-white/20 backdrop-blur-sm border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
+              <button className="px-10 py-4 text-lg font-semibold text-white bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
                 {t('spassNew.hero.cta1')}
               </button>
-              <button className="px-10 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 uppercase tracking-wide">
+              <button className="px-10 py-4 text-lg font-semibold text-gray-900 dark:text-white border-2 border-gray-900 dark:border-white rounded-full hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:text-white hover:border-transparent transition-all duration-300 uppercase tracking-wide">
                 {t('spassNew.hero.cta2')} ↓
               </button>
             </div>
