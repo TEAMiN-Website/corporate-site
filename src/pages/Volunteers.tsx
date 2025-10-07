@@ -43,12 +43,6 @@ const Volunteers: React.FC = () => {
               >
                 {t('volunteersNew.hero.joinNow')}
               </Link>
-              <Link
-                to="/about"
-                className="border-2 border-white text-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-white hover:text-[#D86D55] transition-all duration-300"
-              >
-                {t('volunteersNew.hero.learnMore')}
-              </Link>
             </div>
           </div>
         </div>
