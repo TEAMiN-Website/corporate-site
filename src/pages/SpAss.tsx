@@ -51,16 +51,16 @@ const SpAss: React.FC = () => {
         {/* Diagonal gradient overlay on the right - using Flashpoint color */}
         <div className="absolute inset-0 dark:hidden" style={{
           backgroundColor: 'rgba(247, 236, 213, 0.85)',
-          clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
+          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
         }}></div>
         <div className="absolute inset-0 hidden dark:block" style={{
           backgroundColor: 'rgba(31, 41, 55, 0.85)',
-          clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
+          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
         }}></div>
 
         {/* Text Content on Flashpoint Overlay */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
-          <div className="w-full lg:w-[32%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
+          <div className="w-full lg:w-[42%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-gray-900 dark:text-white uppercase">
               <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span><br />
               INKLUSION DURCH SPORT-ASSISTENZ
