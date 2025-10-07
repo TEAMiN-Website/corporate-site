@@ -10,10 +10,10 @@ const Volunteers: React.FC = () => {
       {/* Hero Section with Diagonal Split */}
       <section className="min-h-screen relative overflow-hidden">
         {/* Background Image - covers entire section */}
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("assistant picture 5-min copy.jpg")',
+            backgroundImage: 'url("assistant picture 3 copy copy.jpg")',
             backgroundPosition: '15% center'
           }}
         ></div>
