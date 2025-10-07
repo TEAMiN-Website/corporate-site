@@ -22,14 +22,15 @@ const Volunteers: React.FC = () => {
         <div className="absolute inset-0 bg-black/10"></div>
         
         {/* Diagonal cut overlay */}
-        <div className="absolute inset-0 bg-[#D86D55]" style={{
-          clipPath: 'polygon(70% 0%, 100% 0%, 100% 100%, 50% 100%)'
+        <div className="absolute inset-0" style={{
+          backgroundColor: 'rgba(216, 109, 85, 0.85)',
+          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
         }}></div>
 
         {/* Text Content */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
-          <div className="w-full lg:w-[32%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight">
+          <div className="w-full lg:w-[42%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight uppercase">
               {t('volunteersNew.hero.title')}
             </h1>
             <p className="text-xl lg:text-2xl text-white mb-10 opacity-90 leading-relaxed">
