@@ -55,7 +55,7 @@ const Header: React.FC = () => {
     if (isActive || isChildActive) {
       // Special styling for different pages
       if (itemPath === '/') {
-        return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] border-2 border-transparent bg-clip-padding';
+        return 'bg-white dark:bg-gray-900 border-2 border-transparent [background-clip:padding-box] relative before:absolute before:inset-0 before:rounded-full before:p-[2px] before:bg-gradient-to-r before:from-[#71B554] before:to-[#D86D55] before:-z-10 before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[mask-composite:exclude]';
       } else if (itemPath === '/volunteers') {
         return 'bg-[#D86D55] text-white';
       } else if (itemPath === '/athletes') {
@@ -73,7 +73,7 @@ const Header: React.FC = () => {
 
     // Hover states for each page
     if (itemPath === '/') {
-      return 'text-gray-600 dark:text-gray-300 hover:border-2 hover:border-transparent hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:bg-clip-border hover:[background-clip:border-box] transition-all duration-300';
+      return 'text-gray-600 dark:text-gray-300 hover:bg-white hover:dark:bg-gray-900 hover:border-2 hover:border-transparent hover:[background-clip:padding-box] relative before:absolute before:inset-0 before:rounded-full before:p-[2px] before:bg-gradient-to-r before:from-[#71B554] before:to-[#D86D55] before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[mask-composite:exclude] transition-all duration-300';
     } else if (itemPath === '/volunteers' || (dropdown && itemPath === '/volunteers')) {
       return 'text-gray-600 dark:text-gray-300 hover:bg-[#D86D55] hover:text-white transition-all duration-300';
     } else if (itemPath === '/athletes' || (dropdown && itemPath === '/athletes')) {
