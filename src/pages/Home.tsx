@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ArrowDown } from 'lucide-react';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -33,15 +32,15 @@ const Home: React.FC = () => {
             <p className="text-xl md:text-2xl font-light mb-12 opacity-85 max-w-3xl mx-auto leading-relaxed italic">
               {t('homeNew.hero.subtitle')}
             </p>
+            <Link
+              to="/signup"
+              className="inline-block bg-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              <span className="bg-gradient-to-r from-[#71B554] to-[#D86D55] bg-clip-text text-transparent">
+                {t('home.becomeAssistant')}
+              </span>
+            </Link>
           </div>
-        </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 flex flex-col items-center cursor-pointer animate-bounce">
-          <div className="text-white text-sm uppercase tracking-widest mb-3 opacity-80">
-            {t('homeNew.hero.discover')}
-          </div>
-          <ArrowDown className="w-8 h-8 text-white opacity-80" />
         </div>
 
         {/* Logo in bottom right corner */}
