@@ -46,13 +46,15 @@ const Home: React.FC = () => {
       </section>
 
       {/* Your Path Section */}
-      <section className="py-24 bg-[#F7ECD5] relative">
-        {/* Subtle pattern overlay */}
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-repeat" style={{
-            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.05) 35px, rgba(255,255,255,0.05) 70px),
-                             repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(0,0,0,0.02) 35px, rgba(0,0,0,0.02) 70px)`
-          }}></div>
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Pattern Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/Slide1.jpg"
+            alt="Pattern background"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-[#F7ECD5]/60 dark:bg-gray-900/60"></div>
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
