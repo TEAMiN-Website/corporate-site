@@ -5,10 +5,20 @@ import { useTranslation } from 'react-i18next';
 const Home: React.FC = () => {
   const { t } = useTranslation();
 
+  const scrollToNextSection = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const nextSection = heroSection.nextElementSibling;
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden parallax-section hero-overlay">
+      <section className="min-h-screen relative overflow-hidden parallax-section hero-overlay hero-section">
 
         {/* Animated diagonal pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -24,22 +34,25 @@ const Home: React.FC = () => {
           }}></div>
         </div>
 
-        <div className="relative z-10 flex items-center justify-center min-h-screen px-4">
-          <div className="text-center text-white max-w-4xl">
+        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+          <div className="text-center text-white max-w-4xl flex-grow flex flex-col justify-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90 uppercase" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
               {t('homeNew.hero.title')}
             </h1>
             <p className="text-xl md:text-2xl font-light mb-12 opacity-85 max-w-3xl mx-auto leading-relaxed italic">
               {t('homeNew.hero.subtitle')}
             </p>
-            <Link
-              to="/signup"
-              className="inline-block bg-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+          </div>
+
+          <div className="pb-16">
+            <button
+              onClick={scrollToNextSection}
+              className="bg-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
             >
               <span className="bg-gradient-to-r from-[#71B554] to-[#D86D55] bg-clip-text text-transparent">
-                {t('home.becomeAssistant')}
+                Erkunde Deinen Weg
               </span>
-            </Link>
+            </button>
           </div>
         </div>
 
