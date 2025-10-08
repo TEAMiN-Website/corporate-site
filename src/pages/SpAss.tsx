@@ -117,10 +117,21 @@ const SpAss: React.FC = () => {
       <div className="h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55] opacity-30" />
 
       {/* How It Works Timeline Section */}
-      <section className="py-24 px-6 bg-[#F7ECD5]/50 dark:bg-gray-800">
-        <div className="max-w-7xl mx-auto">
+      <section className="py-24 px-6 relative">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("/assistant picture 3.jpg")',
+            backgroundPosition: 'center'
+          }}
+        />
+        {/* Base Overlay */}
+        <div className="absolute inset-0 bg-[#3F3E34]/20 dark:bg-[#3F3E34]/40" />
+
+        <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
               {t('spassNew.timeline.title')}
             </h2>
           </div>
@@ -135,14 +146,14 @@ const SpAss: React.FC = () => {
             </button>
 
             <div
-              className={`grid md:grid-cols-2 gap-16 relative bg-[#F7ECD5] dark:bg-gray-900 rounded-3xl shadow-xl overflow-hidden transition-all duration-500 ${
+              className={`grid md:grid-cols-2 gap-16 relative bg-[#F7ECD5]/85 dark:bg-gray-900/85 backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden transition-all duration-500 ${
                 timelineExpanded ? 'max-h-[1000px] p-10 opacity-100' : 'max-h-0 p-0 opacity-0'
               }`}
             >
               <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#71B554] to-[#D86D55] -translate-x-1/2" />
 
               <div className="px-5">
-                <div className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center p-4 bg-white dark:bg-gray-800 rounded-xl">
+                <div className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center p-4 bg-white/90 dark:bg-gray-800/90 rounded-xl">
                   {t('spassNew.timeline.athleteJourney.title')}
                 </div>
                 {(t('spassNew.timeline.athleteJourney.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
@@ -161,7 +172,7 @@ const SpAss: React.FC = () => {
               </div>
 
               <div className="px-5">
-                <div className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center p-4 bg-white dark:bg-gray-800 rounded-xl">
+                <div className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center p-4 bg-white/90 dark:bg-gray-800/90 rounded-xl">
                   {t('spassNew.timeline.assistantJourney.title')}
                 </div>
                 {(t('spassNew.timeline.assistantJourney.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
