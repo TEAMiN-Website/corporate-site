@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
 import { ThemeProvider } from './contexts/ThemeContext';
 import CookieConsent from './components/CookieConsent';
+import { ScrollToTop } from './components/ScrollToTop';
 import Layout from './components/Layout/Layout';
 import Home from './pages/Home';
 import About from './pages/About';
@@ -67,6 +68,7 @@ const AppContent: React.FC = () => {
 
   return (
     <>
+      <ScrollToTop />
       <RouteTracker />
       <Routes>
         <Route path="/" element={<Layout />}>
@@ -82,7 +84,7 @@ const AppContent: React.FC = () => {
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
-      <CookieConsent 
+      <CookieConsent
         onAccept={handleCookieAccept}
         onDecline={handleCookieDecline}
       />
