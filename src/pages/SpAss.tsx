@@ -77,26 +77,6 @@ const SpAss: React.FC = () => {
         </div>
       </section>
 
-      {/* Decorative Diagonal Pattern Border */}
-      <div className="relative h-24 overflow-hidden">
-        <svg
-          className="absolute inset-0 w-full h-full"
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 1200 100"
-        >
-          <defs>
-            <pattern id="diagonalPattern" x="0" y="0" width="40" height="40" patternUnits="userSpaceOnUse" patternTransform="rotate(-45)">
-              <rect x="0" y="0" width="20" height="20" fill="#71B554" />
-              <rect x="20" y="0" width="20" height="20" fill="#D86D55" />
-              <rect x="0" y="20" width="20" height="20" fill="#D86D55" />
-              <rect x="20" y="20" width="20" height="20" fill="#71B554" />
-            </pattern>
-          </defs>
-          <polygon points="0,0 840,0 600,100 0,100" fill="url(#diagonalPattern)" opacity="0.9" />
-        </svg>
-      </div>
-
       {/* Our Approach Section */}
       <section className="py-24 px-6 bg-white dark:bg-gray-900">
         <div className="max-w-7xl mx-auto">
