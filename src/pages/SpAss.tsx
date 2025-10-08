@@ -204,7 +204,7 @@ const SpAss: React.FC = () => {
           className="absolute inset-0 opacity-40"
           style={{
             backgroundImage: 'url("/assistant picture 1.jpg")',
-            backgroundSize: '130%',
+            backgroundSize: '145%',
             backgroundPosition: 'center center',
           }}
         ></div>
@@ -218,10 +218,10 @@ const SpAss: React.FC = () => {
             </h2>
           </div>
 
-          <div className="max-w-3xl mx-auto bg-[#F7ECD5]/85 rounded-[30px] p-16 shadow-2xl relative overflow-hidden">
-            <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
+          <div className="max-w-3xl mx-auto bg-[#F7ECD5]/85 rounded-[30px] p-16 shadow-2xl overflow-hidden">
+            <div className="relative">
               {stories.map((story, index) => (
-                <div key={index} className="min-w-full text-center px-5">
+                <div key={index} className={`text-center transition-opacity duration-500 ${index === currentSlide ? 'opacity-100' : 'opacity-0 absolute inset-0 pointer-events-none'}`}>
                   <Quote className="w-16 h-16 mx-auto mb-8 text-[#71B554]" />
                   <p className="text-2xl italic leading-relaxed text-gray-900 mb-8 relative">
                     {story.quote}
