@@ -94,7 +94,7 @@ const Home: React.FC = () => {
 
               <div className="h-48 relative overflow-hidden">
                 <img
-                  src="athlete 7-min.jpg"
+                  src="athlete 2.jpg"
                   alt="Families doing sports together - parents and children actively participating"
                   className="w-full h-full object-cover"
                 />
@@ -118,8 +118,8 @@ const Home: React.FC = () => {
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
               
               <div className="h-48 relative overflow-hidden">
-                <img 
-                  src="assistant picture 2.jpg"
+                <img
+                  src="athlete 7-min.jpg"
                   alt="Diverse sports and activities - variety of possibilities, welcoming environment"
                   className="w-full h-full object-cover"
                 />
