@@ -123,7 +123,7 @@ const SpAss: React.FC = () => {
           className="absolute inset-0 bg-cover bg-center"
           style={{
             backgroundImage: 'url("/assistant picture 3.jpg")',
-            backgroundPosition: 'center'
+            backgroundPosition: 'center 20%'
           }}
         />
         {/* Base Overlay */}
