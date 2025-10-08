@@ -3,9 +3,9 @@
     "home": "Home",
     "about": "About TEAMiN",
     "spass": "SpAss Program",
-    "athletes": "Sportler:innen & Families",
+    "athletes": "Sportler:innen",
     "aurelian": "Meet Aurelian",
-    "volunteers": "Volunteers",
+    "volunteers": "Helfer:innen",
     "signup": "Sign Up",
     "partners": "Partners",
     "contact": "Contact"
@@ -87,7 +87,7 @@
         "button": "Learn More"
       },
       "athletes": {
-        "title": "Sportler:innen & Families",
+        "title": "Sportler:innen",
         "description": "Find your place in sports with qualified support and welcoming communities.",
         "button": "Get Started"
       },
@@ -288,12 +288,12 @@
     "paths": {
       "title": "Your Path to Inclusive Sport",
       "becomeAssistant": {
-        "title": "Become Sport Assistant",
+        "title": "For Helfer:innen",
         "description": "Accompany others on their sports journey",
         "cta": "Join Now"
       },
       "athletesFamilies": {
-        "title": "Athletes & Families",
+        "title": "For Sportler:innen",
         "description": "Find your place in sports with qualified support",
         "cta": "Learn More"
       },

@@ -3,9 +3,9 @@
     "home": "Startseite",
     "about": "Über TEAMiN",
     "spass": "SpAss Programm",
-    "athletes": "Sportler:innen & Familien",
+    "athletes": "Sportler:innen",
     "aurelian": "Aurelian kennenlernen",
-    "volunteers": "Freiwillige",
+    "volunteers": "Helfer:innen",
     "signup": "Anmelden",
     "partners": "Partner",
     "contact": "Kontakt"
@@ -87,7 +87,7 @@
         "button": "Mehr erfahren"
       },
       "athletes": {
-        "title": "Sportler:innen & Familien",
+        "title": "Sportler:innen",
         "description": "Finde deinen Platz im Sport mit qualifizierter Unterstützung und einladenden Gemeinschaften.",
         "button": "Los geht's"
       },
@@ -288,7 +288,7 @@
     "paths": {
       "title": "Dein Weg zum inklusiven Sport",
       "becomeAssistant": {
-        "title": "Für Helfer",
+        "title": "Für Helfer:innen",
         "description": "Begleite als Sportassistent:in andere auf ihrer Sportreise",
         "cta": "Ist Sportassistenz für Dich?"
       },
