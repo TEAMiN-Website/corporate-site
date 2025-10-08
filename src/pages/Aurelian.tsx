@@ -17,7 +17,7 @@ const Aurelian: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="h-[85vh] relative overflow-hidden">
+      <section className="min-h-screen relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="Aurelian 1-min.jpg"
@@ -28,16 +28,20 @@ const Aurelian: React.FC = () => {
           <div className="absolute inset-0 bg-[#71B554]/40"></div>
         </div>
 
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center text-white max-w-4xl px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 3px 6px rgba(0,0,0,0.6)' }}>
-              {t('aurelian.title')}
+        <div className="relative z-10 flex items-center justify-end min-h-screen p-4 lg:p-8">
+          <div className="max-w-xl text-white mr-8 lg:mr-16">
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase text-right">
+              THE POWER <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">OF</span><br />
+              SPORT ASSISTANCE
             </h1>
-            <p className="text-2xl font-light mb-4 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
-              Aurelian's Journey with TEAMiN
+            <p className="text-xl lg:text-2xl leading-relaxed mb-6 text-right italic">
+              {t('aurelian.hero.quote')}
             </p>
-            <p className="text-lg max-w-2xl mx-auto opacity-90" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
-              Discover how sport assistance transformed one athlete's life
+            <p className="text-lg font-semibold text-right mb-8">
+              {t('aurelian.attribution')}
+            </p>
+            <p className="text-lg leading-relaxed text-right">
+              {t('aurelian.hero.description')}
             </p>
           </div>
         </div>

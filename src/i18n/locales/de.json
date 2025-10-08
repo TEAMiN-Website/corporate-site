@@ -129,8 +129,12 @@
   },
   "aurelian": {
     "title": "Aurelian kennenlernen",
+    "hero": {
+      "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
+      "description": "Aurelians Geschichte zeigt, wie TEAMiNs Sport-Assistenz-Programm echte Möglichkeiten für Sportler mit Behinderungen schafft. Durch qualifizierte Unterstützung und systematische Integration fand er nicht nur einen Sport, den er liebt, sondern eine Gemeinschaft, in der er wirklich dazugehört. Heute spielt Aurelian selbstständig mit seinem Team und hat die Fähigkeiten und das Selbstvertrauen entwickelt, um vollständig am Breitensport teilzunehmen."
+    },
     "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
-    "attribution": "Aurelian, Fußballspieler beim FC Würzburg",
+    "attribution": "Aurelian, Fußballspieler, 11 Jahre alt",
     "stats": [
       { "number": "18", "label": "Monate im Programm" },
       { "number": "3", "label": "Sportarten ausprobiert" },

@@ -129,8 +129,12 @@
   },
   "aurelian": {
     "title": "Meet Aurelian",
+    "hero": {
+      "quote": "Through TEAMiN's Sport-Assistenz program, I found not just a sport I love, but a community that embraces me for who I am. The support was there when I needed it, and now I'm proud to call my teammates true friends.",
+      "description": "Aurelian's story shows how TEAMiN's Sport-Assistenz program creates real opportunities for athletes with disabilities. Through qualified support and systematic integration, he found not just a sport he loves, but a community where he truly belongs. Today, Aurelian plays independently with his team, having developed the skills and confidence to participate fully in mainstream sports."
+    },
     "quote": "Through TEAMiN's Sport-Assistenz program, I found not just a sport I love, but a community that embraces me for who I am. The support was there when I needed it, and now I'm proud to call my teammates true friends.",
-    "attribution": "Aurelian, Football Player at FC Würzburg",
+    "attribution": "Aurelian, Football Player, 11 years old",
     "stats": [
       { "number": "18", "label": "Months in Program" },
       { "number": "3", "label": "Sports Tried" },
