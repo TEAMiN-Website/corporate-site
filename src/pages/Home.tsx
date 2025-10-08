@@ -91,10 +91,10 @@ const Home: React.FC = () => {
             {/* Athletes & Families Card */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
-              
+
               <div className="h-48 relative overflow-hidden">
-                <img 
-                  src="athlete 2.jpg"
+                <img
+                  src="athlete 7-min.jpg"
                   alt="Families doing sports together - parents and children actively participating"
                   className="w-full h-full object-cover"
                 />
