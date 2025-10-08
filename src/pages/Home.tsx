@@ -43,6 +43,15 @@ const Home: React.FC = () => {
           </div>
           <ArrowDown className="w-8 h-8 text-white opacity-80" />
         </div>
+
+        {/* Logo in bottom right corner */}
+        <div className="absolute bottom-8 right-8 z-20">
+          <img
+            src="/TEAMiN Logo short.png"
+            alt="TEAMiN Logo"
+            className="w-24 h-24 md:w-32 md:h-32 object-contain"
+          />
+        </div>
       </section>
 
       {/* Your Path Section */}
