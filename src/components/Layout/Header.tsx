@@ -13,18 +13,18 @@ const Header: React.FC = () => {
 
   const navItems = [
     { id: '/', label: t('nav.home') },
-    { id: '/about', label: t('nav.about') },
-    { id: '/spass', label: t('nav.spass') },
-    { 
-      id: '/athletes', 
+    { id: '/about', label: 'TEAMiN' },
+    { id: '/spass', label: 'SpAss' },
+    {
+      id: '/athletes',
       label: t('nav.athletes'),
       dropdown: [
         { id: '/athletes', label: t('nav.athletes') },
         { id: '/aurelian', label: t('nav.aurelian') }
       ]
     },
-    { 
-      id: '/volunteers', 
+    {
+      id: '/volunteers',
       label: t('nav.volunteers'),
       dropdown: [
         { id: '/volunteers', label: t('nav.volunteers') },
@@ -32,7 +32,6 @@ const Header: React.FC = () => {
       ]
     },
     { id: '/partners', label: t('nav.partners') },
-    { id: '/contact', label: t('nav.contact') },
   ];
 
   const toggleLanguage = () => {
@@ -56,14 +55,35 @@ const Header: React.FC = () => {
     if (isActive || isChildActive) {
       // Special styling for different pages
       if (itemPath === '/') {
-        return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white';
+        return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] border-2 border-transparent bg-clip-padding';
       } else if (itemPath === '/volunteers') {
         return 'bg-[#D86D55] text-white';
       } else if (itemPath === '/athletes') {
         return 'bg-[#71B554] text-white';
+      } else if (itemPath === '/about') {
+        return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white';
+      } else if (itemPath === '/spass') {
+        return 'bg-[#F7ECD5] text-gray-900 dark:text-gray-900';
+      } else if (itemPath === '/partners') {
+        return 'bg-[#3F3E34] text-white';
       } else {
         return 'bg-blue-600 text-white'; // Default active style for other pages
       }
+    }
+
+    // Hover states for each page
+    if (itemPath === '/') {
+      return 'text-gray-600 dark:text-gray-300 hover:border-2 hover:border-transparent hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:bg-clip-border hover:[background-clip:border-box] transition-all duration-300';
+    } else if (itemPath === '/volunteers' || (dropdown && itemPath === '/volunteers')) {
+      return 'text-gray-600 dark:text-gray-300 hover:bg-[#D86D55] hover:text-white transition-all duration-300';
+    } else if (itemPath === '/athletes' || (dropdown && itemPath === '/athletes')) {
+      return 'text-gray-600 dark:text-gray-300 hover:bg-[#71B554] hover:text-white transition-all duration-300';
+    } else if (itemPath === '/about') {
+      return 'text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:text-white transition-all duration-300';
+    } else if (itemPath === '/spass') {
+      return 'text-gray-600 dark:text-gray-300 hover:bg-[#F7ECD5] hover:text-gray-900 transition-all duration-300';
+    } else if (itemPath === '/partners') {
+      return 'text-gray-600 dark:text-gray-300 hover:bg-[#3F3E34] hover:text-white transition-all duration-300';
     }
 
     return 'text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400';
