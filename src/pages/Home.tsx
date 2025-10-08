@@ -18,7 +18,7 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden parallax-section hero-overlay hero-section">
+      <section className="relative overflow-hidden parallax-section hero-overlay hero-section" style={{ minHeight: '85vh' }}>
 
         {/* Animated diagonal pattern */}
         <div className="absolute inset-0 opacity-10">
@@ -34,7 +34,7 @@ const Home: React.FC = () => {
           }}></div>
         </div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4">
+        <div className="relative z-10 flex flex-col items-center justify-center px-4" style={{ minHeight: '85vh' }}>
           <div className="text-center text-white max-w-4xl flex-grow flex flex-col justify-center">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90 uppercase" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
               {t('homeNew.hero.title')}
