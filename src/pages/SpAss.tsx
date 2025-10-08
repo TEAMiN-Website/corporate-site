@@ -201,9 +201,11 @@ const SpAss: React.FC = () => {
       <section className="py-24 px-6 relative bg-gray-900">
         {/* Background Image */}
         <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
+          className="absolute inset-0 opacity-40"
           style={{
             backgroundImage: 'url("/assistant picture 1.jpg")',
+            backgroundSize: '130%',
+            backgroundPosition: 'center center',
           }}
         ></div>
 
@@ -216,7 +218,7 @@ const SpAss: React.FC = () => {
             </h2>
           </div>
 
-          <div className="max-w-4xl mx-auto bg-[#F7ECD5] rounded-[30px] p-16 shadow-2xl relative overflow-hidden">
+          <div className="max-w-3xl mx-auto bg-[#F7ECD5]/85 rounded-[30px] p-16 shadow-2xl relative overflow-hidden">
             <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
               {stories.map((story, index) => (
                 <div key={index} className="min-w-full text-center px-5">
