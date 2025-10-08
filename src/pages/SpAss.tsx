@@ -198,20 +198,30 @@ const SpAss: React.FC = () => {
       <div className="h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55] opacity-30" />
 
       {/* Success Stories Carousel */}
-      <section className="py-24 px-6 bg-white dark:bg-gray-900">
+      <section className="py-24 px-6 relative bg-gray-900">
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center opacity-40"
+          style={{
+            backgroundImage: 'url("/assistant picture 1.jpg")',
+          }}
+        ></div>
+
+        {/* Content */}
+        <div className="relative z-10">
         <div className="max-w-7xl mx-auto">
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 dark:text-white">
+            <h2 className="text-5xl md:text-6xl font-bold text-white">
               {t('spassNew.stories.title')}
             </h2>
           </div>
 
-          <div className="max-w-4xl mx-auto bg-[#F7ECD5] dark:bg-gray-800 rounded-[30px] p-16 shadow-2xl relative overflow-hidden">
+          <div className="max-w-4xl mx-auto bg-[#F7ECD5] rounded-[30px] p-16 shadow-2xl relative overflow-hidden">
             <div className="flex transition-transform duration-500" style={{ transform: `translateX(-${currentSlide * 100}%)` }}>
               {stories.map((story, index) => (
                 <div key={index} className="min-w-full text-center px-5">
                   <Quote className="w-16 h-16 mx-auto mb-8 text-[#71B554]" />
-                  <p className="text-2xl italic leading-relaxed text-gray-900 dark:text-white mb-8 relative">
+                  <p className="text-2xl italic leading-relaxed text-gray-900 mb-8 relative">
                     {story.quote}
                   </p>
                   <p className="text-lg font-semibold text-[#71B554]">
@@ -236,6 +246,7 @@ const SpAss: React.FC = () => {
               ))}
             </div>
           </div>
+        </div>
         </div>
       </section>
 
