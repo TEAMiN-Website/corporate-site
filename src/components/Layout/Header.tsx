@@ -55,13 +55,13 @@ const Header: React.FC = () => {
     if (isActive || isChildActive) {
       // Special styling for different pages
       if (itemPath === '/') {
-        return 'bg-white dark:bg-gray-900 border-2 border-transparent [background-clip:padding-box] relative before:absolute before:inset-0 before:rounded-full before:p-[2px] before:bg-gradient-to-r before:from-[#71B554] before:to-[#D86D55] before:-z-10 before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[mask-composite:exclude]';
+        return 'p-[2px] bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-full inline-block [&>*]:bg-white [&>*]:dark:bg-gray-900 [&>*]:text-gray-900 [&>*]:dark:text-gray-100 [&>*]:rounded-full [&>*]:block [&>*]:px-3 [&>*]:py-2';
       } else if (itemPath === '/volunteers') {
         return 'bg-[#D86D55] text-white';
       } else if (itemPath === '/athletes') {
         return 'bg-[#71B554] text-white';
       } else if (itemPath === '/about') {
-        return 'bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white';
+        return 'bg-gradient-to-r from-[#D86D55] to-[#71B554] text-white';
       } else if (itemPath === '/spass') {
         return 'bg-[#F7ECD5] text-gray-900 dark:text-gray-900';
       } else if (itemPath === '/partners') {
@@ -73,13 +73,13 @@ const Header: React.FC = () => {
 
     // Hover states for each page
     if (itemPath === '/') {
-      return 'text-gray-600 dark:text-gray-300 hover:bg-white hover:dark:bg-gray-900 hover:border-2 hover:border-transparent hover:[background-clip:padding-box] relative before:absolute before:inset-0 before:rounded-full before:p-[2px] before:bg-gradient-to-r before:from-[#71B554] before:to-[#D86D55] before:-z-10 before:opacity-0 hover:before:opacity-100 before:transition-opacity before:duration-300 before:[mask:linear-gradient(#fff_0_0)_content-box,linear-gradient(#fff_0_0)] before:[mask-composite:exclude] transition-all duration-300';
+      return 'text-gray-600 dark:text-gray-300 hover:p-[2px] hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:rounded-full hover:inline-block hover:[&>*]:bg-white hover:[&>*]:dark:bg-gray-900 hover:[&>*]:text-gray-900 hover:[&>*]:dark:text-gray-100 hover:[&>*]:rounded-full hover:[&>*]:block hover:[&>*]:px-3 hover:[&>*]:py-2 transition-all duration-300';
     } else if (itemPath === '/volunteers' || (dropdown && itemPath === '/volunteers')) {
       return 'text-gray-600 dark:text-gray-300 hover:bg-[#D86D55] hover:text-white transition-all duration-300';
     } else if (itemPath === '/athletes' || (dropdown && itemPath === '/athletes')) {
       return 'text-gray-600 dark:text-gray-300 hover:bg-[#71B554] hover:text-white transition-all duration-300';
     } else if (itemPath === '/about') {
-      return 'text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:text-white transition-all duration-300';
+      return 'text-gray-600 dark:text-gray-300 hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:text-white transition-all duration-300';
     } else if (itemPath === '/spass') {
       return 'text-gray-600 dark:text-gray-300 hover:bg-[#F7ECD5] hover:text-gray-900 transition-all duration-300';
     } else if (itemPath === '/partners') {
@@ -136,9 +136,9 @@ const Header: React.FC = () => {
                 ) : (
                   <Link
                     to={item.id}
-                    className={`text-sm font-medium transition-all duration-300 px-3 py-2 rounded-full ${getNavItemStyle(item.id)}`}
+                    className={`text-sm font-medium transition-all duration-300 ${item.id === '/' ? getNavItemStyle(item.id) : `px-3 py-2 rounded-full ${getNavItemStyle(item.id)}`}`}
                   >
-                    {item.label}
+                    {item.id === '/' ? <span>{item.label}</span> : item.label}
                   </Link>
                 )}
               </div>
@@ -238,9 +238,9 @@ const Header: React.FC = () => {
                   <Link
                     to={item.id}
                     onClick={() => setIsMenuOpen(false)}
-                    className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 ${getNavItemStyle(item.id)}`}
+                    className={`block w-full text-left text-base font-medium rounded-md transition-all duration-300 ${item.id === '/' ? getNavItemStyle(item.id) : `px-3 py-2 ${getNavItemStyle(item.id)}`}`}
                   >
-                    {item.label}
+                    {item.id === '/' ? <span>{item.label}</span> : item.label}
                   </Link>
                 )}
               </div>
