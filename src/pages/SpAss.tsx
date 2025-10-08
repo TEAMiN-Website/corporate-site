@@ -242,68 +242,53 @@ const SpAss: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-10">
             {/* Assistant Card */}
-            <div className="relative rounded-[25px] p-12 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+            <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
               <img src="/assistant picture 2 crop copy.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/90 to-[#D86D55]/80" />
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-3xl mb-8" />
-                <h3 className="text-3xl font-bold mb-5 text-white">
+                <h3 className="text-3xl font-bold mb-4 text-white">
                   {t('spassNew.pathways.assistant.title')}
                 </h3>
-                <p className="text-lg text-white/90 mb-8 leading-relaxed">
+                <p className="text-lg text-white/90 mb-6 leading-relaxed">
                   {t('spassNew.pathways.assistant.description')}
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white text-gray-900 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 uppercase tracking-wider">
-                    {t('spassNew.pathways.assistant.cta1')}
-                  </button>
-                  <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-transparent text-white border-2 border-white hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
-                    {t('spassNew.pathways.assistant.cta2')}
-                  </button>
-                </div>
+                <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
+                  {t('spassNew.pathways.assistant.cta1')}
+                </button>
               </div>
             </div>
 
             {/* Athlete Card */}
-            <div className="relative rounded-[25px] p-12 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+            <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
               <img src="/athlete 1.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80" />
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-3xl mb-8" />
-                <h3 className="text-3xl font-bold mb-5 text-white">
+                <h3 className="text-3xl font-bold mb-4 text-white">
                   {t('spassNew.pathways.athlete.title')}
                 </h3>
-                <p className="text-lg text-white/90 mb-8 leading-relaxed">
+                <p className="text-lg text-white/90 mb-6 leading-relaxed">
                   {t('spassNew.pathways.athlete.description')}
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white text-gray-900 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 uppercase tracking-wider">
-                    {t('spassNew.pathways.athlete.cta1')}
-                  </button>
-                  <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-transparent text-white border-2 border-white hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
-                    {t('spassNew.pathways.athlete.cta2')}
-                  </button>
-                </div>
+                <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
+                  {t('spassNew.pathways.athlete.cta1')}
+                </button>
               </div>
             </div>
 
             {/* Organization Card */}
-            <div className="relative rounded-[25px] p-12 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+            <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
               <img src="/partner picture-min.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#3F3E34]/90 to-[#3F3E34]/85" />
               <div className="relative z-10">
-                <div className="w-24 h-24 bg-white/20 backdrop-blur-sm border-2 border-white/30 rounded-3xl mb-8" />
-                <h3 className="text-3xl font-bold mb-5 text-white">
+                <h3 className="text-3xl font-bold mb-4 text-white">
                   {t('spassNew.pathways.organization.title')}
                 </h3>
-                <p className="text-lg text-white/90 mb-8 leading-relaxed">
+                <p className="text-lg text-white/90 mb-6 leading-relaxed">
                   {t('spassNew.pathways.organization.description')}
                 </p>
-                <div className="flex flex-wrap gap-4">
-                  <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white text-gray-900 hover:-translate-y-1 hover:shadow-xl transition-all duration-300 uppercase tracking-wider">
-                    {t('spassNew.pathways.organization.cta')}
-                  </button>
-                </div>
+                <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
+                  {t('spassNew.pathways.organization.cta')}
+                </button>
               </div>
             </div>
           </div>
