@@ -245,13 +245,15 @@ const SpAss: React.FC = () => {
             <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
               <img src="/assistant picture 2 crop copy.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/90 to-[#D86D55]/80" />
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold mb-4 text-white">
-                  {t('spassNew.pathways.assistant.title')}
-                </h3>
-                <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  {t('spassNew.pathways.assistant.description')}
-                </p>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <h3 className="text-3xl font-bold mb-4 text-white">
+                    {t('spassNew.pathways.assistant.title')}
+                  </h3>
+                  <p className="text-lg text-white/90 mb-6 leading-relaxed">
+                    {t('spassNew.pathways.assistant.description')}
+                  </p>
+                </div>
                 <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
                   {t('spassNew.pathways.assistant.cta1')}
                 </button>
@@ -262,13 +264,15 @@ const SpAss: React.FC = () => {
             <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
               <img src="/athlete 1.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80" />
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold mb-4 text-white">
-                  {t('spassNew.pathways.athlete.title')}
-                </h3>
-                <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  {t('spassNew.pathways.athlete.description')}
-                </p>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <h3 className="text-3xl font-bold mb-4 text-white">
+                    {t('spassNew.pathways.athlete.title')}
+                  </h3>
+                  <p className="text-lg text-white/90 mb-6 leading-relaxed">
+                    {t('spassNew.pathways.athlete.description')}
+                  </p>
+                </div>
                 <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
                   {t('spassNew.pathways.athlete.cta1')}
                 </button>
@@ -279,13 +283,15 @@ const SpAss: React.FC = () => {
             <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
               <img src="/partner picture-min.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#3F3E34]/90 to-[#3F3E34]/85" />
-              <div className="relative z-10">
-                <h3 className="text-3xl font-bold mb-4 text-white">
-                  {t('spassNew.pathways.organization.title')}
-                </h3>
-                <p className="text-lg text-white/90 mb-6 leading-relaxed">
-                  {t('spassNew.pathways.organization.description')}
-                </p>
+              <div className="relative z-10 h-full flex flex-col justify-between">
+                <div>
+                  <h3 className="text-3xl font-bold mb-4 text-white">
+                    {t('spassNew.pathways.organization.title')}
+                  </h3>
+                  <p className="text-lg text-white/90 mb-6 leading-relaxed">
+                    {t('spassNew.pathways.organization.description')}
+                  </p>
+                </div>
                 <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
                   {t('spassNew.pathways.organization.cta')}
                 </button>
