@@ -288,24 +288,24 @@
     "paths": {
       "title": "Dein Weg zum inklusiven Sport",
       "becomeAssistant": {
-        "title": "Sport-Assistent werden",
-        "description": "Begleiten Sie andere auf ihrer Sportreise",
-        "cta": "Jetzt mitmachen"
+        "title": "Für Helfer",
+        "description": "Begleite als Sportassistent:in andere auf ihrer Sportreise",
+        "cta": "Ist Sportassistenz für Dich?"
       },
       "athletesFamilies": {
-        "title": "Athleten & Familien",
-        "description": "Finden Sie Ihren Platz im Sport mit qualifizierter Unterstützung",
-        "cta": "Mehr erfahren"
+        "title": "Für Sportler:innen",
+        "description": "Finden Deinen Platz im Team mit qualifizierter Unterstützung",
+        "cta": "Möchtest du loslegen?"
       },
       "spAssProgram": {
         "title": "SpAss Programm",
-        "description": "Entdecken Sie unser Sport-Assistenz-Programm im Detail",
-        "cta": "Programm erkunden"
+        "description": "Entdecke unser Sport-Assistenz-Programm im Detail",
+        "cta": "Versteh die Details"
       },
       "teamInNetwork": {
-        "title": "TEAMiN - Das inklusive Netzwerk",
-        "description": "Erfahren Sie mehr über uns und unsere Mission",
-        "cta": "Über uns"
+        "title": "TEAMiN - Die inklusive Community",
+        "description": "Erfahre wer wir sind und was wir tun",
+        "cta": "Lerne uns kennen"
       }
     },
     "contact": {

@@ -134,10 +134,35 @@ const Home: React.FC = () => {
               </div>
             </div>
 
+            {/* TEAMiN - The Inclusive Network Card */}
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
+
+              <div className="h-48 relative overflow-hidden">
+                <img
+                  src="TEAMiN Network.jpg"
+                  alt="Team network imagery - diverse group, collaborative, inclusive community"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
+              </div>
+
+              <div className="p-8 text-center">
+                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.teamInNetwork.title')}</h3>
+                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.teamInNetwork.description')}</p>
+                <Link
+                  to="/about"
+                  className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+                >
+                  {t('homeNew.paths.teamInNetwork.cta')}
+                </Link>
+              </div>
+            </div>
+
             {/* SpAss Program Card */}
             <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
-              
+
               <div className="h-48 relative overflow-hidden">
                 <img
                   src="athlete 7-min.jpg"
@@ -150,36 +175,11 @@ const Home: React.FC = () => {
               <div className="p-8 text-center">
                 <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.spAssProgram.title')}</h3>
                 <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.spAssProgram.description')}</p>
-                <Link 
+                <Link
                   to="/spass"
                   className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
                 >
                   {t('homeNew.paths.spAssProgram.cta')}
-                </Link>
-              </div>
-            </div>
-
-            {/* TEAMiN - The Inclusive Network Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
-              
-              <div className="h-48 relative overflow-hidden">
-                <img 
-                  src="TEAMiN Network.jpg"
-                  alt="Team network imagery - diverse group, collaborative, inclusive community"
-                  className="w-full h-full object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
-              </div>
-
-              <div className="p-8 text-center">
-                <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.teamInNetwork.title')}</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.teamInNetwork.description')}</p>
-                <Link 
-                  to="/about"
-                  className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
-                >
-                  {t('homeNew.paths.teamInNetwork.cta')}
                 </Link>
               </div>
             </div>
