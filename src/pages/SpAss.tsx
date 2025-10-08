@@ -78,19 +78,15 @@ const SpAss: React.FC = () => {
       </section>
 
       {/* Our Approach Section */}
-      <section className="py-24 px-6 bg-white dark:bg-gray-900 relative overflow-hidden">
-        {/* Diagonal Pattern Background - using Slide1 copy.jpg */}
+      <section className="py-24 px-6 relative overflow-hidden">
+        {/* Background Pattern Image */}
         <div className="absolute inset-0">
           <img
-            src="/Slide1 copy.jpg"
+            src="/Slide1.jpg"
             alt="Pattern background"
-            className="absolute inset-0 w-full h-full object-cover"
-            style={{ objectPosition: 'left center' }}
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
           />
-          {/* Diagonal overlay to create the transition effect matching hero section */}
-          <div className="absolute inset-0 bg-white dark:bg-gray-900" style={{
-            clipPath: 'polygon(0% 0%, 40% 0%, 60% 100%, 0% 100%)'
-          }}></div>
+          <div className="absolute inset-0 bg-white/60 dark:bg-gray-900/60"></div>
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20">
