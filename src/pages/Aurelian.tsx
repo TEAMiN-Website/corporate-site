@@ -115,20 +115,20 @@ const Aurelian: React.FC = () => {
         }}></div>
 
         {/* Text Content on Green Overlay */}
-        <div className="relative z-10 flex items-center justify-end min-h-screen p-4 lg:p-8">
-          <div className="max-w-xl text-white mr-8 lg:mr-16">
+        <div className="relative z-10 flex items-center justify-end min-h-screen">
+          <div className="w-full lg:w-[42%] text-white pl-16 lg:pl-4 pr-8 lg:pr-20 py-20 lg:py-0">
             <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase text-right">
               THE POWER <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">OF</span><br />
               SPORT ASSISTANCE
             </h2>
             <blockquote className="text-xl lg:text-2xl leading-relaxed mb-6 italic font-light text-right">
-              "{t('aurelian.quote')}"
+              "{t('aurelian.quoteShort')}"
             </blockquote>
             <p className="text-lg font-semibold mb-8 text-right">
               {t('aurelian.attribution')}
             </p>
             <p className="text-lg leading-relaxed text-right">
-              {t('aurelian.hero.description')}
+              {t('aurelian.descriptionShort')}
             </p>
           </div>
         </div>
