@@ -50,7 +50,7 @@ const Home: React.FC = () => {
               className="bg-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
             >
               <span className="bg-gradient-to-r from-[#71B554] to-[#D86D55] bg-clip-text text-transparent">
-                Erkunde Deinen Weg
+                {t('homeNew.hero.cta')}
               </span>
             </button>
           </div>
