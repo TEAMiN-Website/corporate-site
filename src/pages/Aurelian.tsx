@@ -17,7 +17,7 @@ const Aurelian: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden">
+      <section className="h-[85vh] relative overflow-hidden">
         <div className="absolute inset-0">
           <img
             src="Aurelian 1-min.jpg"
@@ -28,20 +28,16 @@ const Aurelian: React.FC = () => {
           <div className="absolute inset-0 bg-[#71B554]/40"></div>
         </div>
 
-        <div className="relative z-10 flex items-center justify-end min-h-screen p-4 lg:p-8">
-          <div className="max-w-xl text-white mr-8 lg:mr-16">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase text-right">
-              THE POWER <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">OF</span><br />
-              SPORT ASSISTANCE
+        <div className="relative z-10 flex items-center justify-center h-full">
+          <div className="text-center text-white max-w-4xl px-4">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 3px 6px rgba(0,0,0,0.6)' }}>
+              {t('aurelian.title')}
             </h1>
-            <p className="text-xl lg:text-2xl leading-relaxed mb-6 text-right italic">
-              {t('aurelian.hero.quote')}
+            <p className="text-2xl font-light mb-4 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
+              Aurelian's Journey with TEAMiN
             </p>
-            <p className="text-lg font-semibold text-right mb-8">
-              {t('aurelian.attribution')}
-            </p>
-            <p className="text-lg leading-relaxed text-right">
-              {t('aurelian.hero.description')}
+            <p className="text-lg max-w-2xl mx-auto opacity-90" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
+              Discover how sport assistance transformed one athlete's life
             </p>
           </div>
         </div>
@@ -121,26 +117,19 @@ const Aurelian: React.FC = () => {
         {/* Text Content on Green Overlay */}
         <div className="relative z-10 flex items-center justify-end min-h-screen p-4 lg:p-8">
           <div className="max-w-xl text-white mr-8 lg:mr-16">
-            <h2 className="text-3xl lg:text-5xl font-bold mb-8 leading-tight">
-              The Power of Sport Assistance
+            <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase text-right">
+              THE POWER <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">OF</span><br />
+              SPORT ASSISTANCE
             </h2>
-            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-4 italic font-light opacity-95">
+            <blockquote className="text-xl lg:text-2xl leading-relaxed mb-6 italic font-light text-right">
               "{t('aurelian.quote')}"
             </blockquote>
-            <p className="text-lg font-semibold mb-8 opacity-95">
-              Aurelian, Fußballspieler, 11 Jahre alt
+            <p className="text-lg font-semibold mb-8 text-right">
+              {t('aurelian.attribution')}
             </p>
-            <div className="space-y-6 text-lg lg:text-xl opacity-95">
-              <p>
-                Aurelian's story shows how TEAMiN's Sport-Assistenz program creates real opportunities for athletes with disabilities.
-              </p>
-              <p>
-                Through qualified support and systematic integration, he found not just a sport he loves, but a community where he truly belongs.
-              </p>
-              <p>
-                Today, Aurelian plays independently with his team, having developed the skills and confidence to participate fully in mainstream sports.
-              </p>
-            </div>
+            <p className="text-lg leading-relaxed text-right">
+              {t('aurelian.hero.description')}
+            </p>
           </div>
         </div>
 
