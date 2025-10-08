@@ -154,9 +154,9 @@ const SpAss: React.FC = () => {
 
               <div className="px-5">
                 <div className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center p-4 bg-white/90 dark:bg-gray-800/90 rounded-xl">
-                  {t('spassNew.timeline.athleteJourney.title')}
+                  {t('spassNew.timeline.assistantJourney.title')}
                 </div>
-                {(t('spassNew.timeline.athleteJourney.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
+                {(t('spassNew.timeline.assistantJourney.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
                   <div key={index} className="mb-10 relative pl-14">
                     <span className="absolute left-0 top-0 w-9 h-9 bg-gradient-to-br from-[#D86D55] to-[#71B554] text-white rounded-full flex items-center justify-center font-bold">
                       {index + 1}
@@ -173,9 +173,9 @@ const SpAss: React.FC = () => {
 
               <div className="px-5">
                 <div className="text-2xl font-bold mb-8 text-gray-900 dark:text-white text-center p-4 bg-white/90 dark:bg-gray-800/90 rounded-xl">
-                  {t('spassNew.timeline.assistantJourney.title')}
+                  {t('spassNew.timeline.athleteJourney.title')}
                 </div>
-                {(t('spassNew.timeline.assistantJourney.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
+                {(t('spassNew.timeline.athleteJourney.steps', { returnObjects: true }) as Array<{ title: string; description: string }>).map((step, index) => (
                   <div key={index} className="mb-10 relative pl-14">
                     <span className="absolute left-0 top-0 w-9 h-9 bg-gradient-to-br from-[#D86D55] to-[#71B554] text-white rounded-full flex items-center justify-center font-bold">
                       {index + 1}
