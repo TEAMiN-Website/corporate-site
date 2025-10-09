@@ -95,6 +95,47 @@ const Volunteers: React.FC = () => {
         </div>
       </section>
 
+      {/* Journey Timeline Section */}
+      <section className="py-48 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="Aurelian 1 copy.jpg"
+            alt="Inclusive running event with wheelchair participant"
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0 bg-gray-900/60"></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
+              {t('volunteersNew.journey.title')}
+            </h2>
+            <p className="text-xl text-white italic">
+              {t('volunteersNew.journey.subtitle')}
+            </p>
+          </div>
+
+          <div className="relative">
+            <div className="absolute top-1/2 left-0 right-0 h-1 bg-white/30 transform -translate-y-1/2 hidden lg:block"></div>
+
+            <div className="grid lg:grid-cols-4 gap-8">
+              {(t('volunteersNew.journey.steps', { returnObjects: true }) as any[]).map((step: any, index: number) => (
+                <div key={index} className="text-center relative">
+                  <div className="bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0">
+                    <div className="w-12 h-12 bg-[#D86D55] text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10">
+                      {index + 1}
+                    </div>
+                    <h3 className="text-xl font-bold text-[#3F3E34] mb-3">{step.title}</h3>
+                    <p className="text-[#B3ADAA] text-sm leading-relaxed">{step.description}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Community Stories Section - Testimonials */}
       <section className="py-24 bg-[#F7ECD5]/50">
         <div className="max-w-4xl mx-auto px-4">
@@ -153,57 +194,16 @@ const Volunteers: React.FC = () => {
         </div>
       </section>
 
-      {/* Journey Timeline Section */}
-      <section className="py-48 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <img
-            src="assistant picture 3 copy.jpg"
-            alt="Inclusive running event with wheelchair participant"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 30%' }}
-          />
-          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
-        </div>
-
-        <div className="max-w-6xl mx-auto px-4 relative z-10">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
-              {t('volunteersNew.journey.title')}
-            </h2>
-            <p className="text-xl text-[#3F3E34] italic">
-              {t('volunteersNew.journey.subtitle')}
-            </p>
-          </div>
-
-          <div className="relative">
-            <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#D86D55]/30 transform -translate-y-1/2 hidden lg:block"></div>
-
-            <div className="grid lg:grid-cols-4 gap-8">
-              {(t('volunteersNew.journey.steps', { returnObjects: true }) as any[]).map((step: any, index: number) => (
-                <div key={index} className="text-center relative">
-                  <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0">
-                    <div className="w-12 h-12 bg-[#D86D55] text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10">
-                      {index + 1}
-                    </div>
-                    <h3 className="text-xl font-bold text-[#3F3E34] mb-3">{step.title}</h3>
-                    <p className="text-[#B3ADAA] text-sm leading-relaxed">{step.description}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Get Started Section */}
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="Aurelian 1 copy.jpg"
+            src="assistant picture 3 copy.jpg"
             alt="Two people having friendly conversation"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 30%' }}
           />
-          <div className="absolute inset-0 bg-gray-900/60"></div>
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
