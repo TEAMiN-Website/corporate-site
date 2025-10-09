@@ -99,9 +99,10 @@ const Volunteers: React.FC = () => {
       <section className="py-48 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="Aurelian 1 copy.jpg"
+            src="assistant picture 3 copy.jpg"
             alt="Inclusive running event with wheelchair participant"
-            className="w-full h-full object-cover object-top"
+            className="w-full h-full object-cover"
+            style={{ objectPosition: 'center 30%' }}
           />
           <div className="absolute inset-0 bg-gray-900/60"></div>
         </div>
@@ -198,10 +199,9 @@ const Volunteers: React.FC = () => {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="assistant picture 3 copy.jpg"
+            src="Aurelian 1 copy.jpg"
             alt="Two people having friendly conversation"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 30%' }}
+            className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
