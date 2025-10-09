@@ -329,16 +329,20 @@
       "subtitle": "Teile, was du hast - und wachse dabei über dich hinaus.",
       "cards": [
         {
-          "title": "Share What You Have",
-          "description": "Das, was du schon mitbringst - deine Zeit, deine Fähigkeiten, deine Art - ist genau das, was jemand braucht, um endlich Teil eines Teams zu werden. Du musst kein Experte sein, nur du selbst."
+          "title": "💝 Teile, was dir wichtig ist",
+          "description": "Erfahrung, Energie, Empathie - du hast so viel zu geben und weißt selbst, wie wichtig es ist, Teil eines Teams zu sein. Hier kannst du genau das mit jemandem teilen."
         },
         {
-          "title": "Flexibel & Individuell",
-          "description": "Dein Zeitplan. Deine Skills. Die Bedürfnisse deines Sportlers oder deiner Sportlerin. Wir finden gemeinsam heraus, wie Begleitung aussieht, die zu euch beiden passt - von Transport über emotionale Unterstützung bis hin zum Netzwerken im Verein."
+          "title": "🎯 Bleib flexibel und individuell",
+          "description": "Ihr als Assistenz-Match bestimmt: wann, wie oft, welche Sportart. Gemeinsam findet ihr einen Weg, der zu euren Zeitplänen, Skills und Bedürfnissen passt."
         },
         {
-          "title": "Wachse Mit",
-          "description": "Empathie. Kreativität. Offenheit. Mut. Als Sportassistent:in nutzt du nicht nur deine vorhandenen Fähigkeiten - du entwickelst sie weiter. Du lernst, flexibel zu denken, Verbindungen zu schaffen und echten Unterschied zu machen."
+          "title": "🌱 Nutze und entwickle deine Skills",
+          "description": "Empathie. Kreativität. Offenheit. Mut. Als Sportassistenz nutzt du, was schon in dir ist - und du entwickelst dich weiter."
+        },
+        {
+          "title": "👤 Sei einfach menschlich",
+          "description": "Kein Schauspiel, kein Skript. Es geht darum, authentisch zu sein, zuzuhören, da zu sein. Das Menschliche zählt - und genau damit machst du den Unterschied."
         }
       ]
     },
