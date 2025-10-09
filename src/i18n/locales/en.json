@@ -320,101 +320,86 @@
   },
   "volunteersNew": {
     "hero": {
-      "title": "Join Our Mission for Inclusive Sports",
-      "subtitle": "Become a certified Sport Assistant and help create communities where everyone belongs",
-      "joinNow": "Join Now",
-      "learnMore": "Learn More"
+      "title": "Are you the bridge?",
+      "subtitle": "Someone is waiting to finally find a team - just like many others. You can be the difference. We'll help you make a real impact with your personality and skills.",
+      "joinNow": "Find out how"
     },
     "benefits": {
-      "title": "Why Become a Sport Assistant?",
-      "subtitle": "Make a meaningful impact while developing valuable skills and building lasting connections.",
-      "beforeAfter": {
-        "before": {
-          "title": "Without Support",
-          "description": "Barriers prevent participation"
+      "title": "Why become a Sport Assistant?",
+      "subtitle": "Share what you have - and grow beyond yourself.",
+      "cards": [
+        {
+          "title": "Share What You Have",
+          "description": "What you already bring - your time, your skills, your way - is exactly what someone needs to finally become part of a team. You don't have to be an expert, just yourself."
         },
-        "after": {
-          "title": "With TEAMiN",
-          "description": "Everyone finds their place"
+        {
+          "title": "Flexible & Individual",
+          "description": "Your schedule. Your skills. The needs of your athlete. Together we'll figure out what support looks like that fits both of you - from transportation to emotional support to networking in the club."
         },
-        "together": {
-          "title": "Together in Sports",
-          "description": "Building connections through inclusive activities"
+        {
+          "title": "Grow With It",
+          "description": "Empathy. Creativity. Openness. Courage. As a Sport Assistant, you don't just use your existing skills - you develop them further. You learn to think flexibly, create connections and make a real difference."
         }
-      }
+      ]
     },
     "stories": {
-      "title": "Volunteer Stories",
-      "subtitle": "Hear from our current Sport Assistants about their meaningful experiences.",
+      "title": "From the Community",
       "testimonials": [
         {
-          "quote": "Being a Sport Assistant has been one of the most rewarding experiences of my life. Seeing athletes gain confidence and independence is incredibly fulfilling.",
-          "name": "Sarah M., Football Assistant"
+          "quote": "I think it's very fulfilling work. You experience so much from the lives of those you accompany. You can celebrate successes and see directly what impact you have.",
+          "name": "Kristina, Sport Assistant"
         },
         {
-          "quote": "The training was excellent and the support from TEAMiN is ongoing. I've learned as much from the athletes as they have from me.",
-          "name": "Michael K., Swimming Assistant"
+          "quote": "Just seeing her joy - how proud and happy she was on that stage, how the children celebrated together over that performance. That was just mega cool.",
+          "name": "Emma, Dance Assistant"
         },
         {
-          "quote": "What started as volunteering became a passion. The friendships I've built through this program are lifelong.",
-          "name": "Lisa R., Basketball Assistant"
-        },
-        {
-          "quote": "TEAMiN provides all the tools and training you need. The impact you can make in just a few hours a week is amazing.",
-          "name": "Thomas W., Athletics Assistant"
+          "quote": "Once a month we go to the Sunday disco together. It's hard for me to stop because we've built a connection. She wouldn't have anyone else - and I personally enjoy it too.",
+          "name": "Mina, Special Education Teacher & Leisure Assistant"
         }
       ]
     },
     "journey": {
       "title": "Your Journey as a Sport Assistant",
+      "subtitle": "Four steps to real impact",
       "steps": [
         {
-          "title": "Apply Online",
-          "description": "Complete our application and tell us about your interests and availability."
-        },
-        {
-          "title": "Get Trained",
-          "description": "Participate in our comprehensive certification program to develop your skills."
+          "title": "Get Qualified",
+          "description": "E-Learning online + practice day on-site. Free and flexible. You learn everything you need - without application stress."
         },
         {
           "title": "Get Matched",
-          "description": "We'll connect you with athletes and sports clubs that match your interests."
+          "description": "Our partners like Lebenshilfe connect you with athletes who match your skills and schedule."
         },
         {
-          "title": "Make Impact",
-          "description": "Begin supporting athletes while building inclusive sports communities."
+          "title": "Accompany and Support",
+          "description": "From getting to know each other to finding sports to club integration: You're there - with transportation, networking, encouragement. Exactly as needed."
+        },
+        {
+          "title": "Foster Independence",
+          "description": "Your goal: That your support eventually becomes unnecessary. Because relationships in the team have grown. Because self-confidence is there. Because inclusion works."
         }
       ]
     },
     "getStarted": {
-      "title": "Ready to Get Started?",
-      "subtitle": "Choose how you'd like to begin your journey with TEAMiN.",
+      "title": "Ready to get started?",
       "options": [
         {
-          "icon": "✏️",
           "title": "Sign Up",
-          "description": "Start your application to become a certified Sport Assistant and join our training program.",
-          "cta": "Start Here →"
+          "description": "Start now with the free online qualification and practice day. No application, just get started.",
+          "cta": "To Registration"
         },
         {
-          "icon": "👋",
           "title": "Meet Aurelian",
-          "description": "Learn from Aurelian's story and see the real impact of our Sport-Assistenz program.",
-          "cta": "Learn More →"
+          "description": "Talk to our project leader about the program, your questions or your individual situation.",
+          "cta": "Schedule Appointment"
         },
         {
-          "icon": "💬",
-          "title": "Contact Us",
-          "description": "Have questions? Get in touch with our team to learn more about volunteering opportunities.",
-          "cta": "Get in Touch →"
+          "title": "Contact",
+          "description": "Write us your questions, ideas or concerns. We'll get back to you quickly.",
+          "cta": "Send Message"
         }
       ]
-    },
-    "cta": {
-      "title": "Start Making a Difference Today",
-      "subtitle": "Join hundreds of volunteers across Bavaria who are creating more inclusive sports communities through TEAMiN's Sport-Assistenz program.",
-      "apply": "Apply Now",
-      "contact": "Contact Us"
     }
   },
   "signupNew": {

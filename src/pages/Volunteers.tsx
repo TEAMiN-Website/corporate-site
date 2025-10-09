@@ -5,11 +5,20 @@ import { useTranslation } from 'react-i18next';
 const Volunteers: React.FC = () => {
   const { t } = useTranslation();
 
+  const scrollToNextSection = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const nextSection = heroSection.nextElementSibling;
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div>
-      {/* Hero Section with Diagonal Split */}
-      <section className="min-h-screen relative overflow-hidden">
-        {/* Background Image - covers entire section */}
+      {/* Hero Section */}
+      <section className="min-h-screen relative overflow-hidden hero-section">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -17,17 +26,14 @@ const Volunteers: React.FC = () => {
             backgroundPosition: '15% center'
           }}
         ></div>
-        
-        {/* Subtle overlay for better text readability */}
+
         <div className="absolute inset-0 bg-black/10"></div>
-        
-        {/* Diagonal cut overlay */}
+
         <div className="absolute inset-0" style={{
           backgroundColor: 'rgba(216, 109, 85, 0.85)',
           clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
         }}></div>
 
-        {/* Text Content */}
         <div className="relative z-10 flex items-center justify-end min-h-screen">
           <div className="w-full lg:w-[42%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight uppercase">
@@ -37,18 +43,18 @@ const Volunteers: React.FC = () => {
               {t('volunteersNew.hero.subtitle')}
             </p>
             <div className="flex flex-col sm:flex-row flex-wrap gap-5 justify-end">
-              <Link
-                to="/signup"
+              <button
+                onClick={scrollToNextSection}
                 className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 {t('volunteersNew.hero.joinNow')}
-              </Link>
+              </button>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Benefits Comparison Section */}
+      {/* Why Become Sport Assistant Section */}
       <section className="py-24 bg-white relative">
         <div className="absolute inset-0 opacity-5">
           <div className="absolute inset-0 bg-repeat" style={{
@@ -59,82 +65,44 @@ const Volunteers: React.FC = () => {
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
               {t('volunteersNew.benefits.title')}
             </h2>
-            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
+            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto italic">
               {t('volunteersNew.benefits.subtitle')}
             </p>
           </div>
 
-          {/* Diagonal Split Images */}
-          <div className="grid lg:grid-cols-2 gap-8 mb-16">
-            <div className="relative overflow-hidden rounded-2xl shadow-xl">
-              <img 
-                src="athlete 6 copy.jpg"
-                alt="Person sitting at home watching TV"
-                className="w-full h-64 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/20 to-[#D86D55]/40"></div>
-              <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
-                <h3 className="font-bold text-[#3F3E34]">{t('volunteersNew.benefits.beforeAfter.before.title')}</h3>
-                <p className="text-sm text-[#B3ADAA]">{t('volunteersNew.benefits.beforeAfter.before.description')}</p>
+          <div className="grid md:grid-cols-3 gap-8">
+            {(t('volunteersNew.benefits.cards', { returnObjects: true }) as any[]).map((card: any, index: number) => (
+              <div key={index} className="bg-white border-2 border-gray-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{card.title}</h3>
+                <p className="text-[#B3ADAA] leading-relaxed">{card.description}</p>
               </div>
-            </div>
-
-            <div className="relative overflow-hidden rounded-2xl shadow-xl">
-              <img 
-                src="postkasten copy.jpg"
-                alt="Person with disability sitting at home watching TV"
-                className="w-full h-64 object-cover"
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/20 to-[#71B554]/40"></div>
-              <div className="absolute bottom-4 left-4 bg-white/90 px-4 py-2 rounded-lg">
-                <h3 className="font-bold text-[#3F3E34]">{t('volunteersNew.benefits.beforeAfter.after.title')}</h3>
-                <p className="text-sm text-[#B3ADAA]">{t('volunteersNew.benefits.beforeAfter.after.description')}</p>
-              </div>
-            </div>
-          </div>
-
-          {/* Full Width Image */}
-          <div className="relative overflow-hidden rounded-2xl shadow-xl">
-            <img 
-              src="Aurelian 1 copy.jpg"
-              alt="Two people together in sports environment - assistant and person with disability"
-              className="w-full h-80 object-cover"
-              style={{ objectPosition: '75% top' }}
-            />
-            <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/30 to-[#D86D55]/30"></div>
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="text-center text-white">
-                <h3 className="text-3xl font-bold mb-4">{t('volunteersNew.benefits.beforeAfter.together.title')}</h3>
-                <p className="text-xl opacity-90">{t('volunteersNew.benefits.beforeAfter.together.description')}</p>
-              </div>
-            </div>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Volunteer Stories Section */}
+      {/* Community Stories Section */}
       <section className="py-24 bg-[#F7ECD5]/50">
         <div className="max-w-6xl mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
               {t('volunteersNew.stories.title')}
             </h2>
-            <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
-              {t('volunteersNew.stories.subtitle')}
-            </p>
           </div>
 
-          <div className="flex gap-8 overflow-x-auto pb-4 snap-x snap-mandatory">
+          <div className="grid md:grid-cols-3 gap-8">
             {(t('volunteersNew.stories.testimonials', { returnObjects: true }) as any[]).map((story: any, index: number) => (
-              <div key={index} className="min-w-80 bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 snap-start">
-                <div className="w-16 h-16 bg-[#D86D55] rounded-full flex items-center justify-center text-white text-2xl font-bold mx-auto mb-6">
-                  {story.name.charAt(0)}
+              <div key={index} className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
+                <div className="mb-6">
+                  <svg className="w-12 h-12 text-[#D86D55] opacity-50" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
+                  </svg>
                 </div>
                 <p className="text-lg text-[#B3ADAA] italic mb-6 leading-relaxed">"{story.quote}"</p>
-                <p className="font-semibold text-[#D86D55]">{story.name}</p>
+                <p className="font-semibold text-[#D86D55]">— {story.name}</p>
               </div>
             ))}
           </div>
@@ -143,9 +111,8 @@ const Volunteers: React.FC = () => {
 
       {/* Journey Timeline Section */}
       <section className="py-48 relative overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
+          <img
             src="assistant picture 3 copy.jpg"
             alt="Inclusive running event with wheelchair participant"
             className="w-full h-full object-cover"
@@ -153,16 +120,18 @@ const Volunteers: React.FC = () => {
           />
           <div className="absolute inset-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.2)' }}></div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
               {t('volunteersNew.journey.title')}
             </h2>
+            <p className="text-xl text-[#3F3E34] italic">
+              {t('volunteersNew.journey.subtitle')}
+            </p>
           </div>
 
           <div className="relative">
-            {/* Timeline line */}
             <div className="absolute top-1/2 left-0 right-0 h-1 bg-[#D86D55]/30 transform -translate-y-1/2 hidden lg:block"></div>
 
             <div className="grid lg:grid-cols-4 gap-8">
@@ -182,36 +151,31 @@ const Volunteers: React.FC = () => {
         </div>
       </section>
 
-      {/* Entry Points Section */}
+      {/* Get Started Section */}
       <section className="py-24 relative overflow-hidden">
-        {/* Background Image */}
         <div className="absolute inset-0">
-          <img 
+          <img
             src="Aurelian 1 copy.jpg"
             alt="Two people having friendly conversation"
             className="w-full h-full object-cover object-top"
           />
           <div className="absolute inset-0 bg-gray-900/60"></div>
         </div>
-        
+
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
               {t('volunteersNew.getStarted.title')}
             </h2>
-            <p className="text-xl text-gray-200 max-w-3xl mx-auto">
-              {t('volunteersNew.getStarted.subtitle')}
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
             {(t('volunteersNew.getStarted.options', { returnObjects: true }) as any[]).map((entry: any, index: number) => (
-              <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden">
-                <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55] transform scale-x-0 hover:scale-x-100 transition-transform duration-300"></div>
-                <div className="text-4xl mb-6">{entry.icon}</div>
+              <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden flex flex-col">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
-                <p className="text-[#B3ADAA] mb-6 leading-relaxed">{entry.description}</p>
-                <Link 
+                <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>
+                <Link
                   to={index === 0 ? "/signup" : index === 1 ? "/aurelian" : "/contact"}
                   className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#71B554] transition-colors duration-300"
                 >
@@ -219,44 +183,6 @@ const Volunteers: React.FC = () => {
                 </Link>
               </div>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* CTA Banner */}
-      <section className="py-24 bg-[#D86D55] text-white text-center relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-repeat" style={{
-            backgroundImage: `repeating-linear-gradient(
-              60deg,
-              transparent,
-              transparent 100px,
-              rgba(255,255,255,0.03) 100px,
-              rgba(255,255,255,0.03) 200px
-            )`
-          }}></div>
-        </div>
-
-        <div className="max-w-4xl mx-auto px-4 relative z-10">
-          <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            {t('volunteersNew.cta.title')}
-          </h2>
-          <p className="text-xl mb-8 opacity-90 max-w-2xl mx-auto leading-relaxed">
-            {t('volunteersNew.cta.subtitle')}
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link 
-              to="/signup"
-              className="bg-white text-[#D86D55] px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
-            >
-              {t('volunteersNew.cta.apply')}
-            </Link>
-            <Link 
-              to="/contact"
-              className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-[#D86D55] transition-all duration-300"
-            >
-              {t('volunteersNew.cta.contact')}
-            </Link>
           </div>
         </div>
       </section>

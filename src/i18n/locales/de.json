@@ -320,101 +320,86 @@
   },
   "volunteersNew": {
     "hero": {
-      "title": "Schließen Sie sich unserer Mission für inklusiven Sport an",
-      "subtitle": "Werden Sie zertifizierter Sport-Assistent und helfen Sie dabei, Gemeinschaften zu schaffen, in denen jeder dazugehört",
-      "joinNow": "Jetzt mitmachen",
-      "learnMore": "Mehr erfahren"
+      "title": "Bist du die Brücke?",
+      "subtitle": "Jemand wartet darauf, endlich ein Team zu finden - einfach so, wie viele andere auch. Du kannst der Unterschied sein. Wir helfen dir, mit deiner Persönlichkeit und deinen Skills wirklich etwas zu bewirken.",
+      "joinNow": "Finde heraus wie"
     },
     "benefits": {
-      "title": "Warum Sport-Assistent werden?",
-      "subtitle": "Schaffen Sie bedeutsame Veränderungen, während Sie wertvolle Fähigkeiten entwickeln und dauerhafte Verbindungen aufbauen.",
-      "beforeAfter": {
-        "before": {
-          "title": "Ohne Unterstützung",
-          "description": "Barrieren verhindern Teilnahme"
+      "title": "Warum Sportassistent:in werden?",
+      "subtitle": "Teile, was du hast - und wachse dabei über dich hinaus.",
+      "cards": [
+        {
+          "title": "Share What You Have",
+          "description": "Das, was du schon mitbringst - deine Zeit, deine Fähigkeiten, deine Art - ist genau das, was jemand braucht, um endlich Teil eines Teams zu werden. Du musst kein Experte sein, nur du selbst."
         },
-        "after": {
-          "title": "Mit TEAMiN",
-          "description": "Jeder findet seinen Platz"
+        {
+          "title": "Flexibel & Individuell",
+          "description": "Dein Zeitplan. Deine Skills. Die Bedürfnisse deines Sportlers oder deiner Sportlerin. Wir finden gemeinsam heraus, wie Begleitung aussieht, die zu euch beiden passt - von Transport über emotionale Unterstützung bis hin zum Netzwerken im Verein."
         },
-        "together": {
-          "title": "Gemeinsam im Sport",
-          "description": "Verbindungen durch inklusive Aktivitäten schaffen"
+        {
+          "title": "Wachse Mit",
+          "description": "Empathie. Kreativität. Offenheit. Mut. Als Sportassistent:in nutzt du nicht nur deine vorhandenen Fähigkeiten - du entwickelst sie weiter. Du lernst, flexibel zu denken, Verbindungen zu schaffen und echten Unterschied zu machen."
         }
-      }
+      ]
     },
     "stories": {
-      "title": "Freiwilligen-Geschichten",
-      "subtitle": "Hören Sie von unseren aktuellen Sport-Assistenten über ihre bedeutsamen Erfahrungen.",
+      "title": "Aus der Community",
       "testimonials": [
         {
-          "quote": "Sport-Assistent zu sein war eine der lohnendsten Erfahrungen meines Lebens. Zu sehen, wie Athleten Selbstvertrauen und Unabhängigkeit gewinnen, ist unglaublich erfüllend.",
-          "name": "Sarah M., Fußball-Assistentin"
+          "quote": "Ich denke, es ist ne sehr erfüllende Arbeit. Man bekommt sehr viel aus dem Leben von denjenigen mit, die man begleitet. Man kann die Erfolge feiern und direkt sehen, was für einen Einfluss man hat.",
+          "name": "Kristina, Sportassistentin"
         },
         {
-          "quote": "Die Ausbildung war exzellent und die Unterstützung von TEAMiN ist fortlaufend. Ich habe genauso viel von den Athleten gelernt wie sie von mir.",
-          "name": "Michael K., Schwimm-Assistent"
+          "quote": "Einfach ihr diese Freude anzusehen - wie stolz und happy sie auf dieser Bühne war, wie sich die Kinder zusammen gefreut haben über diesen Auftritt. Das war einfach mega cool.",
+          "name": "Emma, Tanzassistentin"
         },
         {
-          "quote": "Was als Freiwilligenarbeit begann, wurde zu einer Leidenschaft. Die Freundschaften, die ich durch dieses Programm aufgebaut habe, sind lebenslang.",
-          "name": "Lisa R., Basketball-Assistentin"
-        },
-        {
-          "quote": "TEAMiN stellt alle Werkzeuge und Schulungen zur Verfügung, die Sie brauchen. Der Einfluss, den Sie in nur wenigen Stunden pro Woche haben können, ist erstaunlich.",
-          "name": "Thomas W., Leichtathletik-Assistent"
+          "quote": "Einmal im Monat gehen wir zusammen zur Sonntagsdisco. Mir fällt es schwer aufzuhören, weil wir eine Bindung aufgebaut haben. Sie hätte sonst niemanden - und mir macht es auch persönlich Spaß.",
+          "name": "Mina, Sonderpädagogin & Freizeitassistentin"
         }
       ]
     },
     "journey": {
-      "title": "Ihre Reise als Sport-Assistent",
+      "title": "Deine Reise als Sportassistent:in",
+      "subtitle": "In vier Schritten zur echten Wirkung",
       "steps": [
         {
-          "title": "Online bewerben",
-          "description": "Füllen Sie unsere Bewerbung aus und erzählen Sie uns von Ihren Interessen und Ihrer Verfügbarkeit."
+          "title": "Qualifiziere dich",
+          "description": "E-Learning online + Praxistag vor Ort. Kostenlos und flexibel. Du lernst alles, was du brauchst - ohne Bewerbungsstress."
         },
         {
-          "title": "Ausbildung erhalten",
-          "description": "Nehmen Sie an unserem umfassenden Zertifizierungsprogramm teil, um Ihre Fähigkeiten zu entwickeln."
+          "title": "Werde vermittelt",
+          "description": "Unsere Partner wie Lebenshilfe bringen dich mit Sportler:innen zusammen, die zu deinen Skills und deinem Zeitplan passen."
         },
         {
-          "title": "Vermittelt werden",
-          "description": "Wir verbinden Sie mit Athleten und Sportvereinen, die zu Ihren Interessen passen."
+          "title": "Begleite und unterstütze",
+          "description": "Von Kennenlernen über Sportartsuche bis Vereinsintegration: Du bist da - beim Transport, beim Netzwerken, beim Mut machen. Ganz so, wie es gebraucht wird."
         },
         {
-          "title": "Einfluss nehmen",
-          "description": "Beginnen Sie, Athleten zu unterstützen, während Sie inklusive Sportgemeinschaften aufbauen."
+          "title": "Fördere Selbstständigkeit",
+          "description": "Dein Ziel: Dass deine Unterstützung irgendwann nicht mehr nötig ist. Weil Beziehungen im Team gewachsen sind. Weil Selbstvertrauen da ist. Weil Inklusion funktioniert."
         }
       ]
     },
     "getStarted": {
-      "title": "Bereit anzufangen?",
-      "subtitle": "Wählen Sie, wie Sie Ihre Reise mit TEAMiN beginnen möchten.",
+      "title": "Bereit loszulegen?",
       "options": [
         {
-          "icon": "✏️",
           "title": "Anmelden",
-          "description": "Beginnen Sie Ihre Bewerbung, um zertifizierter Sport-Assistent zu werden und an unserem Trainingsprogramm teilzunehmen.",
-          "cta": "Hier starten →"
+          "description": "Starte jetzt mit der kostenlosen Online-Qualifikation und dem Praxistag. Keine Bewerbung, einfach loslegen.",
+          "cta": "Zur Anmeldung"
         },
         {
-          "icon": "👋",
           "title": "Aurelian kennenlernen",
-          "description": "Lernen Sie aus Aurelians Geschichte und sehen Sie die echte Wirkung unseres Sport-Assistenz-Programms.",
-          "cta": "Mehr erfahren →"
+          "description": "Sprich mit unserem Projektleiter über das Programm, deine Fragen oder deine individuelle Situation.",
+          "cta": "Termin vereinbaren"
         },
         {
-          "icon": "💬",
-          "title": "Kontakt aufnehmen",
-          "description": "Haben Sie Fragen? Nehmen Sie Kontakt mit unserem Team auf, um mehr über Freiwilligenmöglichkeiten zu erfahren.",
-          "cta": "Kontakt aufnehmen →"
+          "title": "Kontakt",
+          "description": "Schreib uns deine Fragen, Ideen oder Anliegen. Wir melden uns schnell zurück.",
+          "cta": "Nachricht senden"
         }
       ]
-    },
-    "cta": {
-      "title": "Beginnen Sie heute, einen Unterschied zu machen",
-      "subtitle": "Schließen Sie sich Hunderten von Freiwilligen in ganz Bayern an, die durch TEAMiNs Sport-Assistenz-Programm inklusivere Sportgemeinschaften schaffen.",
-      "apply": "Jetzt bewerben",
-      "contact": "Kontakt aufnehmen"
     }
   },
   "signupNew": {
