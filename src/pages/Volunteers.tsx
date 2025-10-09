@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
 
 const Volunteers: React.FC = () => {
   const { t } = useTranslation();
@@ -41,25 +41,36 @@ const Volunteers: React.FC = () => {
         <div className="absolute inset-0 bg-black/10"></div>
 
         <div className="absolute inset-0" style={{
-          backgroundColor: 'rgba(216, 109, 85, 0.85)',
-          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
+          backgroundColor: 'rgba(216, 109, 85, 0.2)'
         }}></div>
 
-        <div className="relative z-10 flex items-center justify-end min-h-screen">
-          <div className="w-full lg:w-[42%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
+        <img
+          src="/TEAMiN Logo short copy.png"
+          alt="TEAMiN Logo"
+          className="absolute bottom-8 right-8 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain z-20 opacity-90"
+        />
+
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="w-full max-w-4xl text-center px-8 py-20">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight uppercase">
               {t('volunteersNew.hero.title')}
             </h1>
             <p className="text-xl lg:text-2xl text-white mb-10 opacity-90 leading-relaxed">
               {t('volunteersNew.hero.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-5 justify-end">
+            <div className="flex justify-center">
               <button
                 onClick={scrollToNextSection}
                 className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 {t('volunteersNew.hero.joinNow')}
               </button>
+            </div>
+            <div className="mt-12 flex justify-center">
+              <ChevronDown
+                className="w-12 h-12 text-white animate-bounce cursor-pointer"
+                onClick={scrollToNextSection}
+              />
             </div>
           </div>
         </div>
