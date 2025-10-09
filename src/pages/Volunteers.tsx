@@ -47,18 +47,18 @@ const Volunteers: React.FC = () => {
         <img
           src="/TEAMiN Logo short copy.png"
           alt="TEAMiN Logo"
-          className="absolute bottom-8 right-8 w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 object-contain z-20 opacity-90"
+          className="absolute bottom-8 right-8 w-24 h-24 md:w-32 md:h-32 object-contain z-20"
         />
 
         <div className="relative z-10 flex items-center justify-center min-h-screen">
-          <div className="w-full max-w-4xl text-center px-8 py-20">
+          <div className="w-full max-w-4xl text-center px-8 pb-32">
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight uppercase">
               {t('volunteersNew.hero.title')}
             </h1>
             <p className="text-xl lg:text-2xl text-white mb-10 opacity-90 leading-relaxed">
               {t('volunteersNew.hero.subtitle')}
             </p>
-            <div className="flex justify-center">
+            <div className="flex justify-center mb-8">
               <button
                 onClick={scrollToNextSection}
                 className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
@@ -66,7 +66,7 @@ const Volunteers: React.FC = () => {
                 {t('volunteersNew.hero.joinNow')}
               </button>
             </div>
-            <div className="mt-12 flex justify-center">
+            <div className="flex justify-center">
               <ChevronDown
                 className="w-12 h-12 text-white animate-bounce cursor-pointer"
                 onClick={scrollToNextSection}
