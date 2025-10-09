@@ -128,7 +128,7 @@ const Volunteers: React.FC = () => {
                       {index + 1}
                     </div>
                     <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">{step.title}</h3>
-                    <p className="text-[#B3ADAA] text-sm leading-relaxed flex-grow">{step.description}</p>
+                    <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">{step.description}</p>
                   </div>
                 </div>
               ))}
