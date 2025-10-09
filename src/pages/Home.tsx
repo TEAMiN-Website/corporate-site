@@ -85,9 +85,9 @@ const Home: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-10">
             {/* Become Sport Assistant Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
-              
+
               <div className="h-48 relative overflow-hidden">
                 <img
                   src="assistant picture 1.jpg"
@@ -97,9 +97,9 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-[#D86D55]/10"></div>
               </div>
 
-              <div className="p-8 text-center">
+              <div className="p-8 text-center flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.becomeAssistant.title')}</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.becomeAssistant.description')}</p>
+                <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.becomeAssistant.description')}</p>
                 <Link
                   to="/volunteers"
                   className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
@@ -110,7 +110,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* Athletes & Families Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
               <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
 
               <div className="h-48 relative overflow-hidden">
@@ -122,9 +122,9 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-[#71B554]/10"></div>
               </div>
 
-              <div className="p-8 text-center">
+              <div className="p-8 text-center flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.athletesFamilies.title')}</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.athletesFamilies.description')}</p>
+                <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.athletesFamilies.description')}</p>
                 <Link
                   to="/athletes"
                   className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* TEAMiN - The Inclusive Network Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
 
               <div className="h-48 relative overflow-hidden">
@@ -147,9 +147,9 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
               </div>
 
-              <div className="p-8 text-center">
+              <div className="p-8 text-center flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.teamInNetwork.title')}</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.teamInNetwork.description')}</p>
+                <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.teamInNetwork.description')}</p>
                 <Link
                   to="/about"
                   className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
             </div>
 
             {/* SpAss Program Card */}
-            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
+            <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
 
               <div className="h-48 relative overflow-hidden">
@@ -172,9 +172,9 @@ const Home: React.FC = () => {
                 <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
               </div>
 
-              <div className="p-8 text-center">
+              <div className="p-8 text-center flex flex-col flex-grow">
                 <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.spAssProgram.title')}</h3>
-                <p className="text-[#B3ADAA] mb-6 italic">{t('homeNew.paths.spAssProgram.description')}</p>
+                <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.spAssProgram.description')}</p>
                 <Link
                   to="/spass"
                   className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
