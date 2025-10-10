@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import { ChevronDown } from 'lucide-react';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
@@ -35,7 +36,7 @@ const Home: React.FC = () => {
         </div>
 
         <div className="relative z-10 flex flex-col items-center justify-center px-4" style={{ minHeight: '85vh' }}>
-          <div className="text-center text-white max-w-4xl flex-grow flex flex-col justify-center">
+          <div className="text-center text-white max-w-4xl flex-grow flex flex-col justify-center pb-16">
             <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90 uppercase" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
               {t('homeNew.hero.title')}
             </h1>
@@ -44,7 +45,7 @@ const Home: React.FC = () => {
             </p>
           </div>
 
-          <div className="pb-16">
+          <div className="pb-8">
             <button
               onClick={scrollToNextSection}
               className="bg-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
@@ -53,6 +54,13 @@ const Home: React.FC = () => {
                 {t('homeNew.hero.cta')}
               </span>
             </button>
+          </div>
+
+          <div className="pb-16 flex justify-center">
+            <ChevronDown
+              className="w-12 h-12 text-white animate-bounce cursor-pointer"
+              onClick={scrollToNextSection}
+            />
           </div>
         </div>
 
