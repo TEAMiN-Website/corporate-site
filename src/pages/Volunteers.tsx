@@ -41,7 +41,7 @@ const Volunteers: React.FC = () => {
             <img
               src="/TEAMiN Logo short copy.png"
               alt="TEAMiN Logo"
-              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16"
+              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30"
             />
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
               {t('volunteersNew.hero.title')}
