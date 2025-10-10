@@ -78,7 +78,7 @@ const Volunteers: React.FC = () => {
         </div>
 
         {/* TEAMiN Logo Background */}
-        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ transform: 'rotate(90deg)', filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
+        <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ transform: 'rotate(120deg)', filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
           <img
             src="/TEAMiN Logo short copy copy.png"
             alt=""
