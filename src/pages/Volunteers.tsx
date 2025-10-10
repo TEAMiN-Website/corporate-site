@@ -99,7 +99,7 @@ const Volunteers: React.FC = () => {
             {(t('volunteersNew.benefits.cards', { returnObjects: true }) as any[]).map((card: any, index: number) => (
               <div key={index} className="bg-white border-2 border-gray-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{card.title}</h3>
-                <p className="text-[#B3ADAA] leading-relaxed">{card.description}</p>
+                <p className="text-[#3F3E34] leading-relaxed">{card.description}</p>
               </div>
             ))}
           </div>
