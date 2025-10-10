@@ -162,11 +162,12 @@ const Volunteers: React.FC = () => {
             src="/assistant picture 2.jpg"
             alt="Background"
             className="absolute inset-0 w-full h-full object-cover opacity-30"
+            style={{ transform: 'scale(1.5)' }}
           />
           <div className="absolute inset-0 bg-[#F7ECD5]/60"></div>
         </div>
 
-        <div className="max-w-4xl mx-auto px-4 relative z-10">
+        <div className="max-w-3xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
               Testimonials {t('volunteersNew.stories.title')}
