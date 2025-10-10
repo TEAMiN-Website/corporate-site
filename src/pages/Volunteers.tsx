@@ -70,15 +70,14 @@ const Volunteers: React.FC = () => {
 
       {/* Why Become Sport Assistant Section */}
       <section className="py-24 bg-white relative overflow-hidden">
-        {/* Background Image with color filter */}
-        <div
-          className="absolute inset-0 opacity-30 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url("/assistant picture 3.jpg")',
-            backgroundPosition: 'center 20%',
-            filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)'
-          }}
-        ></div>
+        {/* TEAMiN Logo Background */}
+        <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
+          <img
+            src="/TEAMiN Logo short copy copy.png"
+            alt=""
+            className="w-full h-full object-contain"
+          />
+        </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
