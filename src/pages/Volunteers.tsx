@@ -69,7 +69,18 @@ const Volunteers: React.FC = () => {
       </section>
 
       {/* Why Become Sport Assistant Section */}
-      <section className="py-24 bg-white relative overflow-hidden">
+      <section className="py-24 relative overflow-hidden">
+        {/* Background Pattern Image */}
+        <div className="absolute inset-0">
+          <img
+            src="/Slide1.jpg"
+            alt="Pattern background"
+            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            style={{ filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}
+          />
+          <div className="absolute inset-0 bg-white/60"></div>
+        </div>
+
         {/* TEAMiN Logo Background */}
         <div className="absolute bottom-8 right-8 opacity-30 pointer-events-none" style={{ filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
           <img
