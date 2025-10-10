@@ -36,18 +36,17 @@ const Volunteers: React.FC = () => {
           backgroundColor: 'rgba(216, 109, 85, 0.6)'
         }}></div>
 
-        <img
-          src="/TEAMiN Logo short copy.png"
-          alt="TEAMiN Logo"
-          className="absolute bottom-8 right-8 w-24 h-24 md:w-32 md:h-32 object-contain z-20"
-        />
-
         <div className="relative z-10 flex items-center justify-center min-h-screen">
-          <div className="w-full max-w-4xl text-center px-8 pb-32">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-8 leading-tight uppercase">
+          <div className="w-full max-w-4xl text-center px-8 pb-32 flex flex-col items-center">
+            <img
+              src="/TEAMiN Logo short copy.png"
+              alt="TEAMiN Logo"
+              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16"
+            />
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
               {t('volunteersNew.hero.title')}
             </h1>
-            <p className="text-xl lg:text-2xl text-white mb-10 opacity-90 leading-relaxed">
+            <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
               {t('volunteersNew.hero.subtitle')}
             </p>
             <div className="flex justify-center mb-8">
