@@ -15,6 +15,15 @@
   position: relative;
 }
 
+.volunteers-hero-parallax {
+  background-image: url('/assistant%20picture%205-min%20copy.jpg');
+  background-size: cover;
+  background-position: 15% center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
 /* Section overlays */
 .hero-overlay::before {
   content: '';

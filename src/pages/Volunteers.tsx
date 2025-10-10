@@ -29,15 +29,7 @@ const Volunteers: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden hero-section">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: 'url("assistant picture 5-min copy.jpg")',
-            backgroundPosition: '15% center'
-          }}
-        ></div>
-
+      <section className="min-h-screen relative overflow-hidden hero-section volunteers-hero-parallax">
         <div className="absolute inset-0 bg-black/10"></div>
 
         <div className="absolute inset-0" style={{
