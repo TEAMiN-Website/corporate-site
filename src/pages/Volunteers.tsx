@@ -79,15 +79,6 @@ const Volunteers: React.FC = () => {
           <div className="absolute inset-0 bg-[#F7ECD5]/60"></div>
         </div>
 
-        {/* TEAMiN Logo Background */}
-        <div className="absolute bottom-8 right-8 opacity-30 pointer-events-none" style={{ filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
-          <img
-            src="/TEAMiN Logo short copy copy.png"
-            alt=""
-            className="w-24 h-24 md:w-32 md:h-32 object-contain"
-          />
-        </div>
-
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
