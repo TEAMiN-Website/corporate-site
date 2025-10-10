@@ -70,21 +70,15 @@ const Volunteers: React.FC = () => {
 
       {/* Why Become Sport Assistant Section */}
       <section className="py-24 bg-white relative overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <div className="absolute inset-0 bg-repeat" style={{
-            backgroundImage: `repeating-linear-gradient(45deg, transparent, transparent 35px, rgba(255,255,255,0.05) 35px, rgba(255,255,255,0.05) 70px),
-                             repeating-linear-gradient(-45deg, transparent, transparent 35px, rgba(0,0,0,0.02) 35px, rgba(0,0,0,0.02) 70px)`
-          }}></div>
-        </div>
-
-        {/* TEAMiN Logo Background */}
-        <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ transform: 'rotate(120deg)', filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
-          <img
-            src="/TEAMiN Logo short copy copy.png"
-            alt=""
-            className="w-full h-full object-contain"
-          />
-        </div>
+        {/* Background Image with color filter */}
+        <div
+          className="absolute inset-0 opacity-30 bg-cover bg-center"
+          style={{
+            backgroundImage: 'url("/assistant picture 3.jpg")',
+            backgroundPosition: 'center 20%',
+            filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)'
+          }}
+        ></div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
           <div className="text-center mb-16">
