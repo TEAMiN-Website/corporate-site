@@ -92,20 +92,20 @@ const Volunteers: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {(t('volunteersNew.benefits.cards', { returnObjects: true }) as any[]).map((card: any, index: number) => {
               const backgrounds = [
-                { image: '/assistant page tile sharing.jpg', overlay: 'rgba(216, 109, 85, 0.6)', objectPosition: 'center 40%', scale: '115%' },
-                { image: '/assistant page tile flexible.jpg', overlay: 'rgba(63, 62, 52, 0.6)', objectPosition: 'center 35%', scale: '100%' },
-                { image: '/assistant page tile grow.jpg', overlay: 'rgba(63, 62, 52, 0.6)', objectPosition: 'center center', scale: '100%' },
-                { image: '/assistant page tile human.jpg', overlay: 'rgba(216, 109, 85, 0.6)', objectPosition: 'center 60%', scale: '100%' }
+                { image: '/assistant page tile sharing.jpg', overlay: 'rgba(216, 109, 85, 0.6)', size: '150%', position: 'center center' },
+                { image: '/assistant page tile flexible.jpg', overlay: 'rgba(63, 62, 52, 0.6)', size: 'cover', position: 'center 30%' },
+                { image: '/assistant page tile grow.jpg', overlay: 'rgba(63, 62, 52, 0.6)', size: 'cover', position: 'center center' },
+                { image: '/assistant page tile human.jpg', overlay: 'rgba(216, 109, 85, 0.6)', size: 'cover', position: 'center 65%' }
               ];
               return (
                 <div key={index} className="relative p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
-                  <img
-                    src={backgrounds[index].image}
-                    alt=""
-                    className="absolute inset-0 w-full h-full object-cover"
+                  <div
+                    className="absolute inset-0"
                     style={{
-                      objectPosition: backgrounds[index].objectPosition,
-                      transform: `scale(${backgrounds[index].scale})`
+                      backgroundImage: `url(${backgrounds[index].image})`,
+                      backgroundSize: backgrounds[index].size,
+                      backgroundPosition: backgrounds[index].position,
+                      backgroundRepeat: 'no-repeat'
                     }}
                   />
                   <div className="absolute inset-0" style={{ backgroundColor: backgrounds[index].overlay }}></div>
