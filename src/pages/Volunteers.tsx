@@ -101,7 +101,7 @@ const Volunteers: React.FC = () => {
                 <div key={index} className="relative p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
                   <img src={backgrounds[index].image} alt="" className="absolute inset-0 w-full h-full object-cover" />
                   <div className="absolute inset-0" style={{ backgroundColor: backgrounds[index].overlay }}></div>
-                  <div className="relative z-10">
+                  <div className="relative z-10 text-center">
                     <h3 className="text-2xl font-bold text-white mb-4">{card.title}</h3>
                     <p className="text-white leading-relaxed">{card.description}</p>
                   </div>
