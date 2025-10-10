@@ -71,11 +71,11 @@ const Volunteers: React.FC = () => {
       {/* Why Become Sport Assistant Section */}
       <section className="py-24 bg-white relative overflow-hidden">
         {/* TEAMiN Logo Background */}
-        <div className="absolute -bottom-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
+        <div className="absolute bottom-8 right-8 opacity-30 pointer-events-none" style={{ filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
           <img
             src="/TEAMiN Logo short copy copy.png"
             alt=""
-            className="w-full h-full object-contain"
+            className="w-24 h-24 md:w-32 md:h-32 object-contain"
           />
         </div>
 
