@@ -90,12 +90,24 @@ const Volunteers: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            {(t('volunteersNew.benefits.cards', { returnObjects: true }) as any[]).map((card: any, index: number) => (
-              <div key={index} className="bg-white border-2 border-gray-200 p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
-                <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{card.title}</h3>
-                <p className="text-[#3F3E34] leading-relaxed">{card.description}</p>
-              </div>
-            ))}
+            {(t('volunteersNew.benefits.cards', { returnObjects: true }) as any[]).map((card: any, index: number) => {
+              const backgrounds = [
+                { image: '/assistant page tile sharing.jpg', overlay: 'rgba(216, 109, 85, 0.6)' },
+                { image: '/assistant page tile flexible.jpg', overlay: 'rgba(63, 62, 52, 0.6)' },
+                { image: '/assistant page tile grow.jpg', overlay: 'rgba(63, 62, 52, 0.6)' },
+                { image: '/assistant page tile human.jpg', overlay: 'rgba(216, 109, 85, 0.6)' }
+              ];
+              return (
+                <div key={index} className="relative p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+                  <img src={backgrounds[index].image} alt="" className="absolute inset-0 w-full h-full object-cover" />
+                  <div className="absolute inset-0" style={{ backgroundColor: backgrounds[index].overlay }}></div>
+                  <div className="relative z-10">
+                    <h3 className="text-2xl font-bold text-white mb-4">{card.title}</h3>
+                    <p className="text-white leading-relaxed">{card.description}</p>
+                  </div>
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
