@@ -19,58 +19,41 @@ const Home: React.FC = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative overflow-hidden parallax-section hero-overlay hero-section" style={{ minHeight: '85vh' }}>
+      <section className="min-h-screen relative overflow-hidden hero-section parallax-section hero-overlay">
+        <div className="absolute inset-0 bg-black/10"></div>
 
-        {/* Animated diagonal pattern */}
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-repeat" style={{
-            backgroundImage: `repeating-linear-gradient(
-              60deg,
-              transparent,
-              transparent 100px,
-              rgba(255,255,255,0.03) 100px,
-              rgba(255,255,255,0.03) 200px
-            )`,
-            animation: 'slidePattern 20s linear infinite'
-          }}></div>
-        </div>
+        <div className="absolute inset-0" style={{
+          backgroundColor: 'rgba(216, 109, 85, 0.6)'
+        }}></div>
 
-        <div className="relative z-10 flex flex-col items-center justify-center px-4" style={{ minHeight: '85vh' }}>
-          <div className="text-center text-white max-w-4xl flex-grow flex flex-col justify-center pb-16">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight italic opacity-90 uppercase" style={{ textShadow: '0 4px 20px rgba(0,0,0,0.2)' }}>
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="w-full max-w-4xl text-center px-8 pb-32 flex flex-col items-center">
+            <img
+              src="/TEAMiN Logo short copy.png"
+              alt="TEAMiN Logo"
+              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30"
+            />
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
               {t('homeNew.hero.title')}
             </h1>
-            <p className="text-xl md:text-2xl font-light mb-12 opacity-85 max-w-3xl mx-auto leading-relaxed italic">
+            <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
               {t('homeNew.hero.subtitle')}
             </p>
-          </div>
-
-          <div className="pb-8">
-            <button
-              onClick={scrollToNextSection}
-              className="bg-white px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl cursor-pointer"
-            >
-              <span className="bg-gradient-to-r from-[#71B554] to-[#D86D55] bg-clip-text text-transparent">
+            <div className="flex justify-center mb-8">
+              <button
+                onClick={scrollToNextSection}
+                className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
                 {t('homeNew.hero.cta')}
-              </span>
-            </button>
+              </button>
+            </div>
+            <div className="flex justify-center">
+              <ChevronDown
+                className="w-12 h-12 text-white animate-bounce cursor-pointer"
+                onClick={scrollToNextSection}
+              />
+            </div>
           </div>
-
-          <div className="pb-16 flex justify-center">
-            <ChevronDown
-              className="w-12 h-12 text-white animate-bounce cursor-pointer"
-              onClick={scrollToNextSection}
-            />
-          </div>
-        </div>
-
-        {/* Logo in bottom right corner */}
-        <div className="absolute bottom-8 right-8 z-20">
-          <img
-            src="/TEAMiN Logo short.png"
-            alt="TEAMiN Logo"
-            className="w-24 h-24 md:w-32 md:h-32 object-contain"
-          />
         </div>
       </section>
 
