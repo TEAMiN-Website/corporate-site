@@ -78,13 +78,12 @@ const Volunteers: React.FC = () => {
         </div>
 
         {/* TEAMiN Logo Background */}
-        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ transform: 'rotate(90deg)' }}>
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 515 485" className="w-full h-full" fill="#D86D55">
-            <path d="M2575 4838 c-3 -7 -4 -289 -3 -625 l3 -612 213 -3 212 -2 0 -665 0 -666 -212 -2 -213 -3 -3 -612 c-1 -337 0 -618 3 -625 5 -12 106 -14 627 -14 l622 0 195 60 c282 87 502 209 712 396 384 342 606 815 638 1360 31 518 -125 1001 -448 1385 -191 228 -457 417 -734 521 l-122 45 -642 3 c-536 2 -643 0 -648 -11z m1188 -1224 c169 -41 292 -118 395 -247 118 -148 162 -290 162 -522 0 -232 -44 -374 -162 -522 -103 -129 -226 -206 -395 -247 l-58 -14 -3 786 -2 787 23 -5 c12 -3 29 -10 40 -16z"/>
-            <path d="M9430 3075 l0 -1765 240 0 240 0 2 728 3 727 565 0 565 0 3 -727 2 -728 240 0 240 0 0 1765 0 1765 -240 0 -240 0 -2 -792 -3 -793 -565 0 -565 0 -3 793 -2 792 -240 0 -240 0 0 -1765z"/>
-            <path d="M5930 3550 l0 -241 563 3 562 3 0 235 0 235 -562 3 -563 2 0 -240z"/>
-            <path d="M5930 1860 l0 -240 563 2 562 3 3 238 2 237 -565 0 -565 0 0 -240z"/>
-          </svg>
+        <div className="absolute -top-32 -right-32 w-[600px] h-[600px] opacity-30 pointer-events-none" style={{ transform: 'rotate(90deg)', filter: 'brightness(0) saturate(100%) invert(52%) sepia(47%) saturate(752%) hue-rotate(325deg) brightness(91%) contrast(88%)' }}>
+          <img
+            src="/TEAMiN Logo short copy copy.png"
+            alt=""
+            className="w-full h-full object-contain"
+          />
         </div>
 
         <div className="max-w-6xl mx-auto px-4 relative z-10">
