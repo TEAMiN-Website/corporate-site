@@ -67,12 +67,15 @@ const SpAss: React.FC = () => {
               className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
               style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(9%) saturate(480%) hue-rotate(37deg) brightness(96%) contrast(90%)' }}
             />
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight">
-              <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent uppercase">SpAss</span><br />
-              <span className="text-[#3F3E34] uppercase">Inklusion durch Sport-Assistenz</span>
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight">
+              <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent uppercase">SpAss</span>{' '}
+              <span className="text-[#3F3E34] text-2xl lg:text-3xl xl:text-4xl">by TEAMiN</span>
             </h1>
+            <p className="text-xl lg:text-2xl mb-4 opacity-90 leading-relaxed font-semibold" style={{ color: '#3F3E34' }}>
+              Inclusive teams through sport assistance
+            </p>
             <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed" style={{ color: '#3F3E34' }}>
-              {t('spassNew.hero.subtitle')}
+              We leverage the power of communities to support athletes' independent participation in regular sports clubs.
             </p>
             <div className="flex justify-center mb-8">
               <button
