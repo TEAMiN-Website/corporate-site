@@ -7,14 +7,15 @@ interface Partner {
   logo?: string;
   size: 'small' | 'medium' | 'large';
   angle: number;
+  customRadius?: number;
 }
 
 const PartnerNetwork: React.FC = () => {
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
-    { id: 'bvs', name: 'BVS Bayern', role: 'Infrastruktur', logo: '/BVS Logo.png', size: 'large', angle: 0 },
-    { id: 'uni', name: 'Uni Würzburg', role: 'Fachexpertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51 },
+    { id: 'bvs', name: 'BVS Bayern', role: 'Infrastruktur', logo: '/BVS Logo.png', size: 'large', angle: 0, customRadius: 160 },
+    { id: 'uni', name: 'Uni Würzburg', role: 'Fachexpertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51, customRadius: 160 },
     { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 103 },
     { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154 },
     { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', size: 'medium', angle: 206 },
@@ -75,8 +76,9 @@ const PartnerNetwork: React.FC = () => {
           {partners.map((partner) => {
             const size = getSizeInPx(partner.size);
             const angleRad = (partner.angle * Math.PI) / 180;
-            const x = Math.cos(angleRad) * radius;
-            const y = Math.sin(angleRad) * radius;
+            const partnerRadius = partner.customRadius || radius;
+            const x = Math.cos(angleRad) * partnerRadius;
+            const y = Math.sin(angleRad) * partnerRadius;
             const isFlipped = flippedCards.has(partner.id);
 
             return (
