@@ -44,14 +44,14 @@ const Home: React.FC = () => {
  if (result.success) {
  setSubmitStatus({
  type: 'success',
- message: result.error || t('homeNew.contact.form.successMessage') || 'Thank you for contacting us! We will get back to you soon.',
+ message: t('contact.form.success') || 'Thank you for contacting us! We will get back to you soon.',
  });
  // Reset form
  setFormData({ name: '', email: '', message: '' });
  } else {
  setSubmitStatus({
  type: 'error',
- message: result.error || t('homeNew.contact.form.errorMessage') || 'Something went wrong. Please try again.',
+ message: result.message || t('contact.form.error') || 'Something went wrong. Please try again.',
  });
  }
 
