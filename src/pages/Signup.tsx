@@ -180,30 +180,6 @@ const Signup: React.FC = () => {
         </div>
       </section>
 
-      {/* Meet Aurelian Section */}
-      <section className="py-24 bg-[#F7ECD5]">
-        <div className="max-w-3xl mx-auto px-4">
-          <div className="text-center">
-            <div className="relative rounded-[25px] p-16 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl overflow-hidden h-96 flex flex-col justify-center items-center">
-              {/* Background Image */}
-              <img
-                src="aurelian 3-min-min.jpg"
-                alt="Aurelian smiling in sports jersey"
-                className="absolute inset-0 w-full h-full object-cover"
-                style={{ objectPosition: 'center 20%' }}
-              />
-              <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80"></div>
-
-              <div className="relative z-10 text-center">
-                <h2 className="text-4xl font-bold text-white mb-6">{t('signupNew.aurelian.title')}</h2>
-                <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
-                  {t('signupNew.aurelian.cta')}
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
