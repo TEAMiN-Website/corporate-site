@@ -53,9 +53,9 @@ const SpAss: React.FC = () => {
           }}
         ></div>
 
-        {/* Beige overlay covering whole background - 60% opacity */}
+        {/* Beige overlay covering whole background - 80% opacity */}
         <div className="absolute inset-0" style={{
-          backgroundColor: 'rgba(247, 236, 213, 0.6)'
+          backgroundColor: 'rgba(247, 236, 213, 0.8)'
         }}></div>
 
         {/* Text Content - Centered */}
