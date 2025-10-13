@@ -68,10 +68,10 @@ const SpAss: React.FC = () => {
               style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(9%) saturate(480%) hue-rotate(37deg) brightness(96%) contrast(90%)' }}
             />
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight">
-              <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent uppercase">SpAss</span>{' '}
+              <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>{' '}
               <span className="text-[#3F3E34] text-2xl lg:text-3xl xl:text-4xl">by TEAMiN</span>
             </h1>
-            <p className="text-xl lg:text-2xl mb-4 opacity-90 leading-relaxed font-semibold" style={{ color: '#3F3E34' }}>
+            <p className="text-4xl lg:text-5xl xl:text-6xl mb-4 opacity-90 leading-relaxed font-semibold" style={{ color: '#3F3E34' }}>
               Inclusive teams through sport assistance
             </p>
             <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed" style={{ color: '#3F3E34' }}>
