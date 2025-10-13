@@ -48,7 +48,7 @@ const PartnerNetwork: React.FC = () => {
   return (
     <div className="relative w-full py-24 px-6 bg-[#F7ECD5] overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="relative mx-auto" style={{ width: '600px', height: '600px', maxWidth: '90vw', maxHeight: '90vw' }}>
+        <div className="relative mx-auto" style={{ width: '630px', height: '630px', maxWidth: '90vw', maxHeight: '90vw' }}>
           <div
             className="absolute inset-0 rounded-full"
             style={{
