@@ -105,7 +105,7 @@ const SpAss: React.FC = () => {
             alt="DATIpilot award ceremony"
             className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-[#3F3E34]/60"></div>
+          <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20">
@@ -118,12 +118,9 @@ const SpAss: React.FC = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[#F7ECD5] dark:bg-gray-800 p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 relative overflow-hidden group">
+            <div className="bg-[#F7ECD5]/80 dark:bg-gray-800/80 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 relative overflow-hidden group">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D86D55] to-[#71B554] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-              <h3 className="text-2xl font-bold mb-6 text-gray-900 dark:text-white text-center">
-                Where SpAss comes from
-              </h3>
-              <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-4">
+              <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-3">
                 <p>
                   SpAss is the sport assistance solution developed in an ongoing 18 months research project funded by the BMFTR program DATIpilot.
                 </p>
