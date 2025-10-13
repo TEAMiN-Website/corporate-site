@@ -143,16 +143,7 @@ const Header: React.FC = () => {
                 )}
               </div>
             ))}
-            
-            {/* Theme Toggle */}
-            <button
-              onClick={toggleTheme}
-              className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-              aria-label="Toggle theme"
-            >
-              {isDark ? <Sun className="w-5 h-5 text-gray-600 dark:text-gray-300" /> : <Moon className="w-5 h-5 text-gray-600" />}
-            </button>
-            
+
             {/* Language Toggle */}
             <button
               onClick={toggleLanguage}
@@ -169,14 +160,6 @@ const Header: React.FC = () => {
           {/* Mobile Menu Button */}
           <div className="lg:hidden flex items-center space-x-2">
             <button
-              onClick={toggleTheme}
-              className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
-              aria-label="Toggle theme"
-            >
-              {isDark ? <Sun className="w-5 h-5 text-gray-600 dark:text-gray-300" /> : <Moon className="w-5 h-5 text-gray-600" />}
-            </button>
-            
-            <button
               onClick={toggleLanguage}
               className="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               aria-label="Toggle language"
@@ -186,7 +169,7 @@ const Header: React.FC = () => {
                 {i18n.language.toUpperCase()}
               </span>
             </button>
-            
+
             <button
               className="p-2 rounded-md hover:bg-gray-100 dark:hover:bg-gray-800 transition-colors duration-200"
               onClick={() => setIsMenuOpen(!isMenuOpen)}
