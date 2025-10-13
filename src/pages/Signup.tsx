@@ -92,9 +92,14 @@ const Signup: React.FC = () => {
                   <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.elearning.description')}</p>
                 </div>
                 
-                <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+                <a
+                  href="https://campus.bvs-bayern.com/login/signup.php"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
+                >
                   {t('signupNew.training.elearning.cta')} <ExternalLink className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
 
@@ -126,9 +131,14 @@ const Signup: React.FC = () => {
                   <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.practiceDay.description')}</p>
                 </div>
                 
-                <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+                <a
+                  href="https://bvs-bayern.com/aus+fortbildung/spass/spass-praesenztag/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
+                >
                   {t('signupNew.training.practiceDay.cta')} <ExternalLink className="w-4 h-4" />
-                </button>
+                </a>
               </div>
             </div>
 
