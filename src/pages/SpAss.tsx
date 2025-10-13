@@ -96,47 +96,45 @@ const SpAss: React.FC = () => {
         </div>
       </section>
 
-      {/* Our Approach Section */}
+      {/* The Origins of SpAss Section */}
       <section className="py-24 px-6 relative overflow-hidden">
-        {/* Background Pattern Image */}
+        {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/Slide1.jpg"
-            alt="Pattern background"
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            src="/SpAss Datipilot Photo.jpg"
+            alt="DATIpilot award ceremony"
+            className="absolute inset-0 w-full h-full object-cover object-[center_35%]"
           />
-          <div className="absolute inset-0 bg-white/60 dark:bg-gray-900/60"></div>
+          <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-gray-900 dark:text-white">
-              {t('spassNew.approach.title')}
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
+              THE ORIGINS OF <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
-              {t('spassNew.approach.subtitle')}
+            <p className="text-xl text-white">
+              From sport assistance research to network
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-12">
-            {(t('spassNew.approach.items', { returnObjects: true }) as Array<{ title: string; description: string; icon: string }>).map((item, index) => (
-              <div
-                key={index}
-                className="bg-[#F7ECD5] dark:bg-gray-800 p-10 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 relative overflow-hidden group"
-              >
-                <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D86D55] to-[#71B554] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
-                <div className="w-20 h-20 mx-auto mb-8 bg-gradient-to-br from-[#D86D55] to-[#71B554] rounded-full flex items-center justify-center text-4xl text-white">
-                  {index === 0 && <Network className="w-10 h-10" />}
-                  {index === 1 && <Users className="w-10 h-10" />}
-                  {index === 2 && <Target className="w-10 h-10" />}
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900 dark:text-white text-center">
-                  {item.title}
-                </h3>
-                <p className="text-gray-700 dark:text-gray-300 text-center leading-relaxed">
-                  {item.description}
+          <div className="max-w-4xl mx-auto">
+            <div className="bg-[#F7ECD5]/80 dark:bg-gray-800/80 p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 relative overflow-hidden group">
+              <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D86D55] to-[#71B554] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
+              <div className="text-gray-700 dark:text-gray-300 leading-relaxed space-y-3">
+                <p>
+                  SpAss is the sport assistance solution developed in an ongoing 18 months research project funded by the BMFTR program DATIpilot.
+                </p>
+                <p>
+                  It will run until March 2026 and is headed by the Universität Würzburg-based researcher Dr. Christiane Reuter and BVS Bayern Vice President Prof. Dr. David Rygl.
+                </p>
+                <p>
+                  Based on a pilot in Würzburg by Dr. Reuter in 2023, the ongoing research project focuses on how to integrate our sport assistance solution into existing communities, organizations, and institutions through diverse partnerships.
+                </p>
+                <p>
+                  To this end, we use design-based research and state-of-the-art marketing to create attractive, user-centered solutions. Our dual focus—research and design—generates valuable data on inclusive sports participation while building sustainable pathways towards inclusive sports communities.
                 </p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
