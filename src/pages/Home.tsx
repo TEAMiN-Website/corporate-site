@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, CheckCircle, AlertCircle } from 'lucide-react';
+import { submitContactForm } from '../utils/contactService';
 
 const Home: React.FC = () => {
   const { t } = useTranslation();
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<{
+    type: 'success' | 'error' | null;
+    message: string;
+  }>({ type: null, message: '' });
 
   const scrollToNextSection = () => {
     const heroSection = document.querySelector('.hero-section');
@@ -14,6 +25,37 @@ const Home: React.FC = () => {
         nextSection.scrollIntoView({ behavior: 'smooth' });
       }
     }
+  };
+
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setFormData({
+      ...formData,
+      [e.target.name]: e.target.value
+    });
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus({ type: null, message: '' });
+
+    const result = await submitContactForm(formData);
+
+    if (result.success) {
+      setSubmitStatus({
+        type: 'success',
+        message: result.error || t('homeNew.contact.form.successMessage') || 'Thank you for contacting us! We will get back to you soon.',
+      });
+      // Reset form
+      setFormData({ name: '', email: '', message: '' });
+    } else {
+      setSubmitStatus({
+        type: 'error',
+        message: result.error || t('homeNew.contact.form.errorMessage') || 'Something went wrong. Please try again.',
+      });
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -190,13 +232,31 @@ const Home: React.FC = () => {
             {/* Decorative gradient circle */}
             <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-[#71B554]/10 to-transparent rounded-full"></div>
             
-            <form className="relative z-10 space-y-6">
+            {/* Status Messages */}
+            {submitStatus.type === 'success' && (
+              <div className="mb-6 p-4 bg-green-100 border-2 border-green-500 rounded-xl flex items-start space-x-3 relative z-10">
+                <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
+                <p className="text-green-800 font-medium">{submitStatus.message}</p>
+              </div>
+            )}
+            
+            {submitStatus.type === 'error' && (
+              <div className="mb-6 p-4 bg-red-100 border-2 border-red-500 rounded-xl flex items-start space-x-3 relative z-10">
+                <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
+                <p className="text-red-800 font-medium">{submitStatus.message}</p>
+              </div>
+            )}
+            
+            <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
               <div>
                 <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
                   {t('homeNew.contact.form.name')}
                 </label>
                 <input
                   type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
                   required
                 />
@@ -208,6 +268,9 @@ const Home: React.FC = () => {
                 </label>
                 <input
                   type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
                   required
                 />
@@ -218,6 +281,9 @@ const Home: React.FC = () => {
                   {t('homeNew.contact.form.message')}
                 </label>
                 <textarea
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
                   rows={4}
                   className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base resize-vertical transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
                   required
@@ -226,9 +292,20 @@ const Home: React.FC = () => {
 
               <button
                 type="submit"
-                className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300"
+                disabled={isSubmitting}
+                className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:hover:translate-y-0 flex items-center justify-center"
               >
-                {t('homeNew.contact.form.send')}
+                {isSubmitting ? (
+                  <>
+                    <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                      <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
+                      <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                    </svg>
+                    {t('homeNew.contact.form.submitting') || 'Sending...'}
+                  </>
+                ) : (
+                  t('homeNew.contact.form.send')
+                )}
               </button>
             </form>
           </div>
