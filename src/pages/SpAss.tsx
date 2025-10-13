@@ -21,6 +21,16 @@ const SpAss: React.FC = () => {
     setActiveFaqItems(newActiveFaqItems);
   };
 
+  const scrollToNextSection = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const nextSection = heroSection.nextElementSibling;
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   React.useEffect(() => {
     const interval = setInterval(() => {
       setCurrentSlide((prev) => (prev + 1) % stories.length);
@@ -33,7 +43,7 @@ const SpAss: React.FC = () => {
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
       {/* Hero Section */}
-      <section className="min-h-screen relative overflow-hidden">
+      <section className="min-h-screen relative overflow-hidden hero-section">
         {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
@@ -57,17 +67,27 @@ const SpAss: React.FC = () => {
               className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
               style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(9%) saturate(480%) hue-rotate(37deg) brightness(96%) contrast(90%)' }}
             />
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase">
-              <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span><br />
-              <span className="text-[#3F3E34]">INKLUSION DURCH SPORT-ASSISTENZ</span>
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight">
+              <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent uppercase">SpAss</span><br />
+              <span className="text-[#3F3E34] uppercase">Inklusion durch Sport-Assistenz</span>
             </h1>
             <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed" style={{ color: '#3F3E34' }}>
               {t('spassNew.hero.subtitle')}
             </p>
-            <div className="flex justify-center">
-              <button className="bg-white px-10 py-4 rounded-full font-semibold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wide">
-                <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">Das ist SpAss</span>
+            <div className="flex justify-center mb-8">
+              <button
+                onClick={scrollToNextSection}
+                className="bg-white px-10 py-4 rounded-full font-semibold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">Explore SpAss</span>
               </button>
+            </div>
+            <div className="flex justify-center">
+              <ChevronDown
+                className="w-12 h-12 animate-bounce cursor-pointer"
+                style={{ color: '#3F3E34' }}
+                onClick={scrollToNextSection}
+              />
             </div>
           </div>
         </div>
