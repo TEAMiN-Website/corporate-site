@@ -98,21 +98,21 @@ const SpAss: React.FC = () => {
 
       {/* The Origins of SpAss Section */}
       <section className="py-24 px-6 relative overflow-hidden">
-        {/* Background Pattern Image */}
+        {/* Background Image */}
         <div className="absolute inset-0">
           <img
-            src="/Slide1.jpg"
-            alt="Pattern background"
-            className="absolute inset-0 w-full h-full object-cover opacity-30"
+            src="/SpAss Datipilot Photo.jpg"
+            alt="DATIpilot award ceremony"
+            className="absolute inset-0 w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-white/60 dark:bg-gray-900/60"></div>
+          <div className="absolute inset-0 bg-[#3F3E34]/60"></div>
         </div>
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold mb-6">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
               THE ORIGINS OF <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>
             </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300">
+            <p className="text-xl text-white">
               From sport assistance research to network
             </p>
           </div>
