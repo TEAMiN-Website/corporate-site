@@ -413,23 +413,23 @@
       "cta": "Sign up"
     },
     "training": {
-      "title": "Training Options",
-      "subtitle": "Select the format that works best for you",
+      "title": "Begin your training",
       "elearning": {
         "title": "Step 1 | E-Learning",
         "description": "Complete your training online at your own pace with interactive modules and assessments. 15 hours total, fully flexible.",
-        "cta": "Start"
+        "cta": "Register on BVS Campus"
       },
       "practiceDay": {
         "title": "Step 2 | Practice Day",
         "description": "Practice real-word scenarios in our hands-on training session with your fellow aspiring assistants.",
-        "cta": "BVS Booking Portal"
+        "cta": "Sign up on BVS Portal"
       },
       "partner": {
         "title": "Partners",
         "description": "Your employer is already a partner of ours? Find out how to join.",
         "cta": "Partner Portal"
-      }
+      },
+      "note": "The E-Learning and our Practice Day booking are hosted by our partner Behinderten- und Rehabilitationssportverband Bayern e.V."
     },
     "aurelian": {
       "title": "Our inspiration",

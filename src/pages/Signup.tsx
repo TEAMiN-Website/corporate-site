@@ -61,9 +61,6 @@ const Signup: React.FC = () => {
             <h2 className="text-4xl md:text-5xl font-bold text-[#3F3E34] mb-6">
               {t('signupNew.training.title')}
             </h2>
-            <p className="text-xl text-[#B3ADAA]">
-              {t('signupNew.training.subtitle')}
-            </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
@@ -92,7 +89,7 @@ const Signup: React.FC = () => {
               
               <div className="p-8">
                 <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.elearning.description')}</p>
+                  <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.elearning.description')}</p>
                 </div>
                 
                 <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
@@ -126,7 +123,7 @@ const Signup: React.FC = () => {
               
               <div className="p-8">
                 <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.practiceDay.description')}</p>
+                  <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.practiceDay.description')}</p>
                 </div>
                 
                 <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
@@ -155,7 +152,7 @@ const Signup: React.FC = () => {
               
               <div className="p-8">
                 <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
-                  <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.partner.description')}</p>
+                  <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.partner.description')}</p>
                 </div>
                 
                 <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
@@ -163,6 +160,12 @@ const Signup: React.FC = () => {
                 </button>
               </div>
             </div>
+          </div>
+
+          <div className="text-center mt-12">
+            <p className="text-sm text-[#3F3E34] max-w-4xl mx-auto">
+              {t('signupNew.training.note')}
+            </p>
           </div>
         </div>
       </section>
