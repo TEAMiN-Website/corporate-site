@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, Network, Users, Target, Quote } from 'lucide-react';
+import PartnerNetwork from '../components/PartnerNetwork';
 
 const SpAss: React.FC = () => {
  const { t } = useTranslation();
@@ -136,6 +137,9 @@ const SpAss: React.FC = () => {
  </div>
  </div>
  </section>
+
+ {/* Partner Network Section */}
+ <PartnerNetwork />
 
  {/* Section Divider */}
  <div className="h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55] opacity-30" />
