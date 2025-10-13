@@ -1,23 +1,33 @@
+import { supabase } from "../utils/supabase/client";
+
 export interface ContactFormData {
   name: string;
   email: string;
   message: string;
-  interest?: string;
 }
 
-export const submitContactForm = async (data: ContactFormData): Promise<{ success: boolean; message: string }> => {
+export const submitContactForm = async (data: ContactFormData): Promise<{ success: boolean; message?: string }> => {
   try {
-    console.log('Contact form submitted:', data);
+    const { error } = await supabase
+      .from('contacts')
+      .insert([{
+        username: data.name,
+        email: data.email,
+        message: data.message,
+      }]);
+
+    if (error) {
+      throw error;
+    }
 
     return {
-      success: true,
-      message: 'Form submitted successfully'
+      success: true
     };
   } catch (error) {
     console.error('Error submitting form:', error);
     return {
       success: false,
-      message: 'Failed to submit form'
+      message: error instanceof Error ? error.message : 'Unknown error occurred'
     };
   }
 };

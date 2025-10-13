@@ -17,27 +17,27 @@ const Contact: React.FC = () => {
  }>({ type: null, message: '' });
 
  const handleSubmit = async (e: React.FormEvent) => {
- e.preventDefault();
- setIsSubmitting(true);
- setSubmitStatus({ type: null, message: '' });
+   e.preventDefault();
+   setIsSubmitting(true);
+   setSubmitStatus({ type: null, message: '' });
 
- const result = await submitContactForm(formData);
+   const result = await submitContactForm(formData);
 
- if (result.success) {
- setSubmitStatus({
- type: 'success',
- message: result.error || t('contact.form.successMessage') || 'Thank you for contacting us! We will get back to you soon.',
- });
- // Reset form
- setFormData({ name: '', email: '', message: '' });
- } else {
- setSubmitStatus({
- type: 'error',
- message: result.error || t('contact.form.errorMessage') || 'Something went wrong. Please try again.',
- });
- }
+   if (result.success) {
+     setSubmitStatus({
+       type: 'success',
+       message: t('contact.form.success') || 'Thank you for contacting us! We will get back to you soon.',
+     });
+     // Reset form
+     setFormData({ name: '', email: '', message: '' });
+   } else {
+     setSubmitStatus({
+       type: 'error',
+       message: t('contact.form.error') || 'Something went wrong. Please try again.',
+     });
+   }
 
- setIsSubmitting(false);
+   setIsSubmitting(false);
  };
 
  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
