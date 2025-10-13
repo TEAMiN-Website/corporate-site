@@ -249,7 +249,7 @@ const Home: React.FC = () => {
  
  <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
  <div>
- <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
+ <label className="block text-sm font-semibold !text-[#3F3E34] mb-2 uppercase tracking-wider">
  {t('homeNew.contact.form.name')}
  </label>
  <input
@@ -257,13 +257,13 @@ const Home: React.FC = () => {
  name="name"
  value={formData.name}
  onChange={handleChange}
- className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
+ className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base text-gray-900 transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
  required
  />
  </div>
 
  <div>
- <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
+ <label className="block text-sm font-semibold !text-[#3F3E34] mb-2 uppercase tracking-wider">
  {t('homeNew.contact.form.email')}
  </label>
  <input
@@ -271,13 +271,13 @@ const Home: React.FC = () => {
  name="email"
  value={formData.email}
  onChange={handleChange}
- className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
+ className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base text-gray-900 transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
  required
  />
  </div>
 
  <div>
- <label className="block text-sm font-semibold text-[#3F3E34] mb-2 uppercase tracking-wider">
+ <label className="block text-sm font-semibold !text-[#3F3E34] mb-2 uppercase tracking-wider">
  {t('homeNew.contact.form.message')}
  </label>
  <textarea
@@ -285,7 +285,7 @@ const Home: React.FC = () => {
  value={formData.message}
  onChange={handleChange}
  rows={4}
- className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base resize-vertical transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
+ className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base text-gray-900 resize-vertical transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
  required
  ></textarea>
  </div>
