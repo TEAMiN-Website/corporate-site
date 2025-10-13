@@ -416,7 +416,7 @@
       "title": "Training Options",
       "subtitle": "Select the format that works best for you",
       "elearning": {
-        "title": "1 E-Learning",
+        "title": "Step 1 | E-Learning",
         "description": "Complete your training online at your own pace with interactive modules and assessments.",
         "cta": "BVS Campus Link",
         "details": [
@@ -426,7 +426,7 @@
         ]
       },
       "practiceDay": {
-        "title": "2 Practice Day",
+        "title": "Step 2 | Practice Day",
         "description": "Join hands-on training sessions with experienced assistants and real-world practice opportunities.",
         "cta": "BVS Booking Link",
         "details": [

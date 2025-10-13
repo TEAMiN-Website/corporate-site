@@ -416,7 +416,7 @@
       "title": "Ausbildungsoptionen",
       "subtitle": "Wählen Sie das Format, das am besten für Sie funktioniert",
       "elearning": {
-        "title": "1 E-Learning",
+        "title": "Schritt 1 | E-Learning",
         "description": "Absolvieren Sie Ihre Ausbildung online in Ihrem eigenen Tempo mit interaktiven Modulen und Bewertungen.",
         "cta": "BVS Campus Link",
         "details": [
@@ -426,7 +426,7 @@
         ]
       },
       "practiceDay": {
-        "title": "2 Praxistag",
+        "title": "Schritt 2 | Praxistag",
         "description": "Nehmen Sie an praktischen Trainingssitzungen mit erfahrenen Assistenten und realen Übungsmöglichkeiten teil.",
         "cta": "BVS Buchungslink",
         "details": [
