@@ -1,37 +1,55 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ExternalLink } from 'lucide-react';
+import { ExternalLink, ChevronDown } from 'lucide-react';
 
 const Signup: React.FC = () => {
   const { t } = useTranslation();
 
+  const scrollToNextSection = () => {
+    const heroSection = document.querySelector('.hero-section');
+    if (heroSection) {
+      const nextSection = heroSection.nextElementSibling;
+      if (nextSection) {
+        nextSection.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  };
+
   return (
     <div>
       {/* Hero Section */}
-      <section className="h-[85vh] relative overflow-hidden">
-        {/* Background Image */}
-        <div className="absolute inset-0">
-          <img
-            src="Aurelian 4-min copy.jpg"
-            alt="Aurelian with sport assistant in training environment"
-            className="w-full h-full object-cover"
-            style={{ objectPosition: 'center 20%' }}
-          />
-          {/* Game Heat Red Overlay 40% opacity */}
-          <div className="absolute inset-0 bg-[#D86D55]/40"></div>
-        </div>
-        
-        <div className="relative z-10 flex items-center justify-center h-full">
-          <div className="text-center text-white max-w-4xl px-4">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 3px 6px rgba(0,0,0,0.6)' }}>
+      <section className="min-h-screen relative overflow-hidden hero-section signup-hero-parallax">
+        <div className="absolute inset-0 bg-black/10"></div>
+
+        <div className="absolute inset-0 bg-[#D86D55]/40"></div>
+
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
+            <img
+              src="/TEAMiN Logo short copy.png"
+              alt="TEAMiN Logo"
+              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+            />
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
               {t('signupNew.hero.title')}
             </h1>
-            <p className="text-2xl font-light mb-8 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
+            <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
               {t('signupNew.hero.subtitle')}
             </p>
-            <button className="bg-white text-[#D86D55] px-12 py-4 rounded-full text-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
-              {t('signupNew.hero.cta')}
-            </button>
+            <div className="flex justify-center mb-8">
+              <button
+                onClick={scrollToNextSection}
+                className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+              >
+                {t('signupNew.hero.cta')}
+              </button>
+            </div>
+            <div className="flex justify-center">
+              <ChevronDown
+                className="w-12 h-12 text-white animate-bounce cursor-pointer"
+                onClick={scrollToNextSection}
+              />
+            </div>
           </div>
         </div>
       </section>

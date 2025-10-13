@@ -24,6 +24,15 @@
   position: relative;
 }
 
+.signup-hero-parallax {
+  background-image: url('/Aurelian%204-min%20copy.jpg');
+  background-size: cover;
+  background-position: center 20%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
 /* Section overlays */
 .hero-overlay::before {
   content: '';
