@@ -103,7 +103,7 @@ const SpAss: React.FC = () => {
           <img
             src="/SpAss Datipilot Photo.jpg"
             alt="DATIpilot award ceremony"
-            className="absolute inset-0 w-full h-full object-cover"
+            className="absolute inset-0 w-full h-full object-cover object-[center_35%]"
           />
           <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
         </div>
