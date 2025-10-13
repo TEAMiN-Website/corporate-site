@@ -1,14 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, ExternalLink } from 'lucide-react';
+import { ExternalLink } from 'lucide-react';
 
 const Signup: React.FC = () => {
   const { t } = useTranslation();
-  const [expandedCard, setExpandedCard] = useState<number | null>(null);
-
-  const toggleDetails = (cardIndex: number) => {
-    setExpandedCard(expandedCard === cardIndex ? null : cardIndex);
-  };
 
   return (
     <div>
@@ -31,12 +26,12 @@ const Signup: React.FC = () => {
             <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 3px 6px rgba(0,0,0,0.6)' }}>
               {t('signupNew.hero.title')}
             </h1>
-            <p className="text-2xl font-light mb-4 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
+            <p className="text-2xl font-light mb-8 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
               {t('signupNew.hero.subtitle')}
             </p>
-            <p className="text-lg max-w-2xl mx-auto opacity-90" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
-              {t('signupNew.hero.description')}
-            </p>
+            <button className="bg-white text-[#D86D55] px-12 py-4 rounded-full text-xl font-semibold hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl">
+              {t('signupNew.hero.cta')}
+            </button>
           </div>
         </div>
       </section>
@@ -82,31 +77,9 @@ const Signup: React.FC = () => {
                   <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.elearning.description')}</p>
                 </div>
                 
-                <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold mb-4 hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+                <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
                   {t('signupNew.training.elearning.cta')} <ExternalLink className="w-4 h-4" />
                 </button>
-                
-                <button 
-                  onClick={() => toggleDetails(0)}
-                  className={`w-full py-4 px-6 rounded-xl font-semibold border-2 transition-all duration-300 flex items-center justify-center gap-2 ${
-                    expandedCard === 0 
-                      ? 'bg-white border-[#3F3E34] text-[#3F3E34]' 
-                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
-                  }`}
-                >
-                  {t('signupNew.training.details')}
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expandedCard === 0 ? 'rotate-180' : ''}`} />
-                </button>
-                
-                <div className={`overflow-hidden transition-all duration-300 ${
-                  expandedCard === 0 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
-                }`}>
-                  <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    {(t('signupNew.training.elearning.details', { returnObjects: true }) as any[]).map((detail: string, index: number) => (
-                      <div key={index} className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic last:mb-0">{detail}</div>
-                    ))}
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -138,31 +111,9 @@ const Signup: React.FC = () => {
                   <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.practiceDay.description')}</p>
                 </div>
                 
-                <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold mb-4 hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+                <button className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
                   {t('signupNew.training.practiceDay.cta')} <ExternalLink className="w-4 h-4" />
                 </button>
-                
-                <button 
-                  onClick={() => toggleDetails(1)}
-                  className={`w-full py-4 px-6 rounded-xl font-semibold border-2 transition-all duration-300 flex items-center justify-center gap-2 ${
-                    expandedCard === 1 
-                      ? 'bg-white border-[#3F3E34] text-[#3F3E34]' 
-                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
-                  }`}
-                >
-                  {t('signupNew.training.details')}
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expandedCard === 1 ? 'rotate-180' : ''}`} />
-                </button>
-                
-                <div className={`overflow-hidden transition-all duration-300 ${
-                  expandedCard === 1 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
-                }`}>
-                  <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    {(t('signupNew.training.practiceDay.details', { returnObjects: true }) as any[]).map((detail: string, index: number) => (
-                      <div key={index} className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic last:mb-0">{detail}</div>
-                    ))}
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -189,31 +140,9 @@ const Signup: React.FC = () => {
                   <p className="text-[#B3ADAA] italic text-center">{t('signupNew.training.partner.description')}</p>
                 </div>
                 
-                <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold mb-4 hover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+                <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
                   {t('signupNew.training.partner.cta')} <ExternalLink className="w-4 h-4" />
                 </button>
-                
-                <button 
-                  onClick={() => toggleDetails(2)}
-                  className={`w-full py-4 px-6 rounded-xl font-semibold border-2 transition-all duration-300 flex items-center justify-center gap-2 ${
-                    expandedCard === 2 
-                      ? 'bg-white border-[#3F3E34] text-[#3F3E34]' 
-                      : 'bg-white border-[#B3ADAA] text-[#3F3E34] hover:border-[#3F3E34]'
-                  }`}
-                >
-                  {t('signupNew.training.details')}
-                  <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${expandedCard === 2 ? 'rotate-180' : ''}`} />
-                </button>
-                
-                <div className={`overflow-hidden transition-all duration-300 ${
-                  expandedCard === 2 ? 'max-h-96 opacity-100 mt-5' : 'max-h-0 opacity-0'
-                }`}>
-                  <div className="bg-white p-5 rounded-xl border border-dashed border-[#B3ADAA]">
-                    {(t('signupNew.training.partner.details', { returnObjects: true }) as any[]).map((detail: string, index: number) => (
-                      <div key={index} className="bg-[#F7ECD5] p-3 mb-3 rounded text-[#B3ADAA] italic last:mb-0">{detail}</div>
-                    ))}
-                  </div>
-                </div>
               </div>
             </div>
           </div>

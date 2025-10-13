@@ -408,44 +408,28 @@
   },
   "signupNew": {
     "hero": {
-      "title": "Beginnen Sie Ihre Ausbildung",
-      "subtitle": "Starten Sie Ihre Sport-Assistenten-Zertifizierung",
-      "description": "Wählen Sie aus unseren flexiblen Ausbildungsoptionen, die auf Ihren Zeitplan und Ihre Lernpräferenzen zugeschnitten sind. Alle Wege führen zur gleichen umfassenden Zertifizierung."
+      "title": "Ready to make a difference?",
+      "subtitle": "Join our community of sport assistants. Get certified with flexible online learning and hands-on practice.",
+      "cta": "Sign up"
     },
     "training": {
-      "title": "Ausbildungsoptionen",
-      "subtitle": "Wählen Sie das Format, das am besten für Sie funktioniert",
+      "title": "Training Options",
+      "subtitle": "Select the format that works best for you",
       "elearning": {
-        "title": "Schritt 1 | E-Learning",
-        "description": "Absolvieren Sie Ihre Ausbildung online in Ihrem eigenen Tempo mit interaktiven Modulen und Bewertungen.",
-        "cta": "BVS Campus Link",
-        "details": [
-          "Selbstbestimmte Online-Module",
-          "Interaktive Bewertungen",
-          "Zertifikat nach Abschluss"
-        ]
+        "title": "Step 1 | E-Learning",
+        "description": "Complete your training online at your own pace with interactive modules and assessments. 15 hours total, fully flexible.",
+        "cta": "Start"
       },
       "practiceDay": {
-        "title": "Schritt 2 | Praxistag",
-        "description": "Nehmen Sie an praktischen Trainingssitzungen mit erfahrenen Assistenten und realen Übungsmöglichkeiten teil.",
-        "cta": "BVS Buchungslink",
-        "details": [
-          "Präsenz-Trainingssitzungen",
-          "Praktische Übungen",
-          "Vernetzung mit anderen Assistenten"
-        ]
+        "title": "Step 2 | Practice Day",
+        "description": "Practice real-word scenarios in our hands-on training session with your fellow aspiring assistants.",
+        "cta": "BVS Booking Portal"
       },
       "partner": {
         "title": "Partners",
-        "description": "Zugang zu spezialisierter Ausbildung durch unsere Partnerorganisationen mit zusätzlichen Unterstützungsressourcen.",
-        "cta": "Partner-Portal Link",
-        "details": [
-          "Partner-spezifische Inhalte",
-          "Zusätzliche Unterstützungsressourcen",
-          "Spezialisierte Zertifizierungen"
-        ]
-      },
-      "details": "Details"
+        "description": "Your employer is already a partner of ours? Find out how to join.",
+        "cta": "Partner Portal"
+      }
     },
     "aurelian": {
       "title": "Our inspiration",
