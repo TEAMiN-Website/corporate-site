@@ -32,9 +32,9 @@ const SpAss: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-white dark:bg-gray-900">
-      {/* Hero Section with Diagonal Split - Image Left, Text Right */}
+      {/* Hero Section */}
       <section className="min-h-screen relative overflow-hidden">
-        {/* Background Image - now covers entire hero section */}
+        {/* Background Image */}
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
@@ -43,34 +43,30 @@ const SpAss: React.FC = () => {
           }}
         ></div>
 
-        {/* Subtle overlay for better text readability on image */}
-        <div className="absolute inset-0 bg-black/10 dark:bg-black/20" style={{
-          clipPath: 'polygon(0% 0%, 70% 0%, 50% 100%, 0% 100%)'
+        {/* Beige overlay covering whole background - 60% opacity */}
+        <div className="absolute inset-0" style={{
+          backgroundColor: 'rgba(247, 236, 213, 0.6)'
         }}></div>
 
-        {/* Diagonal gradient overlay on the right - using Flashpoint color */}
-        <div className="absolute inset-0 dark:hidden" style={{
-          backgroundColor: 'rgba(247, 236, 213, 0.85)',
-          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
-        }}></div>
-        <div className="absolute inset-0 hidden dark:block" style={{
-          backgroundColor: 'rgba(31, 41, 55, 0.85)',
-          clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
-        }}></div>
-
-        {/* Text Content on Flashpoint Overlay */}
-        <div className="relative z-10 flex items-center justify-end min-h-screen">
-          <div className="w-full lg:w-[42%] text-right pl-16 lg:pl-4 lg:pr-16 py-20 lg:py-0">
-            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-gray-900 dark:text-white uppercase">
+        {/* Text Content - Centered */}
+        <div className="relative z-10 flex items-center justify-center min-h-screen">
+          <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
+            <img
+              src="/TEAMiN Logo short copy.png"
+              alt="TEAMiN Logo"
+              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+              style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(9%) saturate(480%) hue-rotate(37deg) brightness(96%) contrast(90%)' }}
+            />
+            <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase">
               <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span><br />
-              INKLUSION DURCH SPORT-ASSISTENZ
+              <span className="text-[#3F3E34]">INKLUSION DURCH SPORT-ASSISTENZ</span>
             </h1>
-            <p className="text-2xl lg:text-3xl leading-relaxed mb-10 text-gray-700 dark:text-gray-300">
+            <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed" style={{ color: '#3F3E34' }}>
               {t('spassNew.hero.subtitle')}
             </p>
-            <div className="flex flex-col sm:flex-row flex-wrap gap-5 justify-end">
-              <button className="px-10 py-4 text-2xl font-semibold text-white bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-full hover:shadow-xl transition-all duration-300 hover:-translate-y-1 uppercase tracking-wide">
-                Das ist SpAss
+            <div className="flex justify-center">
+              <button className="bg-white px-10 py-4 rounded-full font-semibold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wide">
+                <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">Das ist SpAss</span>
               </button>
             </div>
           </div>
