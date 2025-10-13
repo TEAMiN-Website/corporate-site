@@ -27,11 +27,11 @@ const Home: React.FC = () => {
         }}></div>
 
         <div className="relative z-10 flex items-center justify-center min-h-screen">
-          <div className="w-full max-w-4xl text-center px-8 pb-32 flex flex-col items-center">
+          <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-0 flex flex-col items-center">
             <img
               src="/TEAMiN Logo short copy.png"
               alt="TEAMiN Logo"
-              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30"
+              className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-0"
             />
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
               {t('homeNew.hero.title')}
