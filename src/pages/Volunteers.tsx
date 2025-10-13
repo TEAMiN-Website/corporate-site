@@ -352,14 +352,14 @@ const Volunteers: React.FC = () => {
             </h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8">
-            {(t('volunteersNew.getStarted.options', { returnObjects: true }) as any[]).map((entry: any, index: number) => (
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {(t('volunteersNew.getStarted.options', { returnObjects: true }) as any[]).filter((_: any, index: number) => index !== 1).map((entry: any, index: number) => (
               <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden flex flex-col">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
                 <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>
                 <Link
-                  to={index === 0 ? "/signup" : index === 1 ? "/aurelian" : "/contact"}
+                  to={index === 0 ? "/signup" : "/contact"}
                   className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#71B554] transition-colors duration-300"
                 >
                   {entry.cta}
