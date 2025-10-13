@@ -18,15 +18,15 @@ const PartnerNetwork: React.FC = () => {
     { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 103 },
     { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154 },
     { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', size: 'medium', angle: 206 },
-    { id: 'ava', name: 'ava', role: 'Technologieplattform', size: 'small', angle: 257 },
+    { id: 'ava', name: 'ava', role: 'Technologie-\nPartner', size: 'small', angle: 257 },
     { id: 'bmftr', name: 'BMFSFJ', role: 'Finanzierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 309 },
   ];
 
   const getSizeInPx = (size: 'small' | 'medium' | 'large'): number => {
     switch (size) {
-      case 'small': return 85;
-      case 'medium': return 110;
-      case 'large': return 140;
+      case 'small': return 102;
+      case 'medium': return 132;
+      case 'large': return 168;
     }
   };
 
@@ -42,12 +42,12 @@ const PartnerNetwork: React.FC = () => {
     });
   };
 
-  const radius = 280;
+  const radius = 220;
 
   return (
     <div className="relative w-full py-24 px-6 bg-[#F7ECD5] overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="relative mx-auto" style={{ width: '700px', height: '700px', maxWidth: '90vw', maxHeight: '90vw' }}>
+        <div className="relative mx-auto" style={{ width: '600px', height: '600px', maxWidth: '90vw', maxHeight: '90vw' }}>
           <div
             className="absolute inset-0 rounded-full"
             style={{
@@ -140,7 +140,7 @@ const PartnerNetwork: React.FC = () => {
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <span className="text-center font-semibold text-white text-sm leading-tight">
+                    <span className="text-center font-semibold text-white text-sm leading-tight whitespace-pre-line">
                       {partner.role}
                     </span>
                   </div>
