@@ -4,15 +4,15 @@ import Header from './Header';
 import Footer from './Footer';
 
 const Layout: React.FC = () => {
-  return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 transition-colors duration-200">
-      <Header />
-      <main className="pt-20">
-        <Outlet />
-      </main>
-      <Footer />
-    </div>
-  );
+ return (
+ <div className="min-h-screen bg-white transition-colors duration-200">
+ <Header />
+ <main className="pt-20">
+ <Outlet />
+ </main>
+ <Footer />
+ </div>
+ );
 };
 
 export default Layout;
