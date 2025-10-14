@@ -221,8 +221,6 @@
     "subtitle": "Bereit, der inklusiven Sportbewegung beizutreten? Wir sind hier, um Athleten, Familien, Freiwilligen und Vereinen zu helfen, sich mit den richtigen Möglichkeiten zu verbinden.",
     "infoTitle": "Kontaktinformationen",
     "info": {
-      "phone": "Telefon",
-      "phoneValue": "+49 (0) 931 31-86601",
       "email": "E-Mail",
       "emailValue": "sportassistenz@uni-wuerzburg.de",
       "address": "Adresse",
@@ -593,6 +591,212 @@
           ]
         }
       ]
+    }
+  },
+  "impressum": {
+    "title": "Impressum",
+    "legalInfo": {
+      "title": "Angaben gemäß § 5 TMG",
+      "content": "TEAMiN - Sport-Assistenz Programm\nJulius-Maximilians-Universität Würzburg\nInstitut für Sportwissenschaft\nJudenbühlweg 11\n97082 Würzburg\nDeutschland"
+    },
+    "contact": {
+      "title": "Kontakt",
+      "email": "E-Mail: sportassistenz@uni-wuerzburg.de"
+    },
+    "representatives": {
+      "title": "Vertretungsberechtigte",
+      "projectLead1": "Projektleitung: Dr. Christiane Reuter",
+      "projectLead2": "Projektleitung: Prof. Dr. David Rygl"
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss",
+      "contentLiability": {
+        "title": "Haftung für Inhalte",
+        "content": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen."
+      },
+      "linkLiability": {
+        "title": "Haftung für Links",
+        "content": "Unser Angebot enthält Links zu externen Webseiten Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen."
+      }
+    },
+    "copyright": {
+      "title": "Urheberrecht",
+      "content": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+    }
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung",
+    "overview": {
+      "title": "1. Datenschutz auf einen Blick",
+      "generalInfo": {
+        "title": "Allgemeine Hinweise",
+        "content": "Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen."
+      }
+    },
+    "dataCollection": {
+      "title": "2. Datenerfassung auf dieser Website",
+      "responsible": {
+        "title": "Wer ist verantwortlich für die Datenerfassung?",
+        "content": "Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Dessen Kontaktdaten können Sie dem Impressum dieser Website entnehmen."
+      },
+      "howWeCollect": {
+        "title": "Wie erfassen wir Ihre Daten?",
+        "content": "Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen. Hierbei kann es sich z.B. um Daten handeln, die Sie in ein Kontaktformular eingeben."
+      },
+      "whatFor": {
+        "title": "Wofür nutzen wir Ihre Daten?",
+        "content": "Ein Teil der Daten wird erhoben, um eine fehlerfreie Bereitstellung der Website zu gewährleisten. Andere Daten können zur Analyse Ihres Nutzerverhaltens verwendet werden."
+      }
+    },
+    "analyticsTools": {
+      "title": "3. Analyse-Tools und Tools von Drittanbietern",
+      "content": "Beim Besuch dieser Website kann Ihr Surf-Verhalten statistisch ausgewertet werden. Das geschieht vor allem mit sogenannten Analyseprogrammen. Detaillierte Informationen zu diesen Analyseprogrammen finden Sie in der folgenden Datenschutzerklärung."
+    },
+    "rights": {
+      "title": "4. Ihre Rechte",
+      "intro": "Sie haben jederzeit das Recht:",
+      "items": [
+        "Auskunft über Ihre bei uns gespeicherten Daten zu erhalten",
+        "Berichtigung unrichtiger personenbezogener Daten zu verlangen",
+        "Löschung Ihrer bei uns gespeicherten Daten zu verlangen",
+        "Einschränkung der Datenverarbeitung zu verlangen",
+        "Widerspruch gegen die Verarbeitung Ihrer Daten einzulegen",
+        "Datenübertragbarkeit zu verlangen"
+      ]
+    },
+    "cookies": {
+      "title": "5. Cookies",
+      "content": "Unsere Website verwendet Cookies. Das sind kleine Textdateien, die Ihr Webbrowser auf Ihrem Endgerät speichert. Cookies helfen uns dabei, unser Angebot nutzerfreundlicher, effektiver und sicherer zu machen."
+    },
+    "contactSection": {
+      "title": "Kontakt",
+      "content": "Bei Fragen zum Datenschutz können Sie sich jederzeit an uns wenden:",
+      "email": "E-Mail: sportassistenz@uni-wuerzburg.de"
+    }
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen",
+    "scope": {
+      "title": "1. Geltungsbereich",
+      "content": "Diese Nutzungsbedingungen regeln die Nutzung der Website von TEAMiN und des Sport-Assistenz Programms (SpAss). Mit dem Zugriff auf die Website oder der Nutzung unserer Dienste erklären Sie sich mit diesen Bedingungen einverstanden."
+    },
+    "websiteUse": {
+      "title": "2. Nutzung der Website",
+      "content": "Die Inhalte dieser Website sind urheberrechtlich geschützt. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des Betreibers."
+    },
+    "registration": {
+      "title": "3. Registrierung und Teilnahme",
+      "intro": "Die Teilnahme am Sport-Assistenz Programm erfordert eine Registrierung. Sie verpflichten sich, wahrheitsgemäße und vollständige Angaben zu machen und diese aktuell zu halten.",
+      "commitments": "Als Sport-Assistent verpflichten Sie sich:",
+      "items": [
+        "Die Ausbildung vollständig zu absolvieren",
+        "Die Grundsätze inklusiver Sportassistenz zu befolgen",
+        "Vertrauliche Informationen zu schützen",
+        "Professionell und respektvoll zu agieren"
+      ]
+    },
+    "liability": {
+      "title": "4. Haftungsausschluss",
+      "content": "TEAMiN übernimmt keine Haftung für Schäden, die durch die Nutzung der Website oder die Teilnahme am Programm entstehen, es sei denn, diese beruhen auf Vorsatz oder grober Fahrlässigkeit."
+    },
+    "dataProtection": {
+      "title": "5. Datenschutz",
+      "content": "Die Verarbeitung personenbezogener Daten erfolgt gemäß unserer Datenschutzerklärung. Diese können Sie unter dem Menüpunkt \"Datenschutz\" einsehen."
+    },
+    "changes": {
+      "title": "6. Änderungen der Nutzungsbedingungen",
+      "content": "Wir behalten uns das Recht vor, diese Nutzungsbedingungen jederzeit zu ändern. Über wesentliche Änderungen werden registrierte Nutzer per E-Mail informiert."
+    },
+    "finalProvisions": {
+      "title": "7. Schlussbestimmungen",
+      "content": "Es gilt das Recht der Bundesrepublik Deutschland. Sollten einzelne Bestimmungen dieser Nutzungsbedingungen unwirksam sein, bleibt die Wirksamkeit der übrigen Bestimmungen davon unberührt."
+    },
+    "contactSection": {
+      "title": "Kontakt",
+      "content": "Bei Fragen zu den Nutzungsbedingungen können Sie uns kontaktieren:",
+      "email": "E-Mail: sportassistenz@uni-wuerzburg.de"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "categories": [
+      {
+        "title": "Allgemeine Fragen",
+        "items": [
+          {
+            "question": "Was ist TEAMiN?",
+            "answer": "TEAMiN ist ein Netzwerk zur Förderung inklusiven Sports in Bayern durch das Sport-Assistenz (SpAss) Programm. Wir verbinden Menschen mit Behinderungen mit qualifiziert ausgebildeten Sport-Assistent:innen und Sportvereinen."
+          },
+          {
+            "question": "Was ist das SpAss Programm?",
+            "answer": "SpAss (Sport-Assistenz) ist unser umfassendes Trainingsprogramm, das Freiwillige darauf vorbereitet, Sportler:innen mit Behinderungen in regulären Sportvereinen zu unterstützen. Das Programm umfasst Online-Lernen und praktisches Training."
+          },
+          {
+            "question": "Wie kann ich mitmachen?",
+            "answer": "Sie können entweder als Sport-Assistent teilnehmen (nach Absolvierung der Ausbildung) oder als Sportler:in mit Behinderung unsere Vermittlungsdienste nutzen. Kontaktieren Sie uns für weitere Informationen."
+          }
+        ]
+      },
+      {
+        "title": "Für Sport-Assistent:innen",
+        "items": [
+          {
+            "question": "Welche Voraussetzungen muss ich erfüllen?",
+            "answer": "Sie benötigen Interesse am Sport, Empathie und die Bereitschaft, Menschen mit Behinderungen zu unterstützen. Sporterfahrung ist hilfreich, aber keine Voraussetzung. Die Ausbildung ist kostenlos."
+          },
+          {
+            "question": "Wie viel Zeitaufwand ist erforderlich?",
+            "answer": "Anfängliche Ausbildung: ~15 Stunden online + 1 ganzer Praxistag. Laufendes Engagement: 2-4 Stunden pro Woche für mindestens 3 Monate. Der Zeitplan ist flexibel und wird mit Ihrem vermittelten Sportler abgestimmt."
+          },
+          {
+            "question": "Bekomme ich eine Vergütung?",
+            "answer": "Die Tätigkeit als Sport-Assistent ist ehrenamtlich. Sie erhalten jedoch eine kostenlose, zertifizierte Ausbildung und wertvolle Erfahrungen im Bereich inklusiver Sport."
+          },
+          {
+            "question": "Was passiert nach der Ausbildung?",
+            "answer": "Nach erfolgreichem Abschluss werden Sie mit Sportler:innen und Vereinen vermittelt, die zu Ihren Fähigkeiten und Ihrem Zeitplan passen. Sie erhalten weiterhin Unterstützung durch unser Netzwerk."
+          }
+        ]
+      },
+      {
+        "title": "Für Sportler:innen",
+        "items": [
+          {
+            "question": "Wer kann das Angebot nutzen?",
+            "answer": "Menschen mit Behinderungen jeden Alters, die am Vereinssport teilnehmen möchten und dabei Unterstützung benötigen."
+          },
+          {
+            "question": "Welche Sportarten sind verfügbar?",
+            "answer": "Wir arbeiten mit verschiedenen Sportvereinen in ganz Bayern zusammen, die unterschiedliche Sportarten anbieten. Wir helfen Ihnen, eine Sportart und einen Verein zu finden, der zu Ihren Interessen und Fähigkeiten passt."
+          },
+          {
+            "question": "Wie lange dauert die Unterstützung?",
+            "answer": "Die Dauer variiert je nach individuellen Bedürfnissen. Ziel ist es, die Unterstützung schrittweise zu reduzieren, während Sie sich im Verein integrieren und selbstständiger werden."
+          },
+          {
+            "question": "Was kostet die Teilnahme?",
+            "answer": "Die Vermittlung und Begleitung durch TEAMiN ist kostenlos. Für die Vereinsmitgliedschaft gelten die regulären Vereinsbeiträge."
+          }
+        ]
+      },
+      {
+        "title": "Für Vereine",
+        "items": [
+          {
+            "question": "Wie kann unser Verein Partner werden?",
+            "answer": "Kontaktieren Sie uns direkt. Wir unterstützen Vereine dabei, inklusiver zu werden durch Beratung, ausgebildete Sport-Assistent:innen und Best-Practice-Austausch."
+          },
+          {
+            "question": "Welche Unterstützung erhalten Vereine?",
+            "answer": "Partner-Vereine erhalten Zugang zu ausgebildeten Sport-Assistent:innen, Anleitung zu inklusiven Praktiken, Networking-Möglichkeiten und Unterstützung bei der Integration von Sportler:innen mit Behinderungen."
+          }
+        ]
+      }
+    ],
+    "moreQuestions": {
+      "title": "Weitere Fragen?",
+      "description": "Wenn Sie weitere Fragen haben, kontaktieren Sie uns gerne!",
+      "email": "E-Mail: sportassistenz@uni-wuerzburg.de"
     }
   }
 }
