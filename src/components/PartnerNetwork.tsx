@@ -7,23 +7,30 @@ interface Partner {
   logo?: string;
   size: 'small' | 'medium' | 'large';
   angle: number;
-  customRadius?: number;
 }
 
 const PartnerNetwork: React.FC = () => {
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
-    { id: 'bvs', name: 'BVS Bayern', role: 'Infrastruktur', logo: '/BVS Logo.png', size: 'large', angle: 0, customRadius: 160 },
-    { id: 'uni', name: 'Uni Würzburg', role: 'Fachexpertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51, customRadius: 160 },
-    { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 103 },
-    { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154 },
-    { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', size: 'medium', angle: 206 },
+    { id: 'bvs', name: 'BVS Bayern', role: 'Infrastruktur', logo: '/BVS Logo.png', size: 'large', angle: 0 },
+    { id: 'uni', name: 'Uni Würzburg', role: 'Fachexpertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
+    { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
+    { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
+    { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', size: 'medium', angle: 205.6 },
     { id: 'ava', name: 'ava', role: 'Technologie-\nPartner', size: 'small', angle: 257 },
-    { id: 'bmftr', name: 'BMFSFJ', role: 'Finanzierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 309 },
+    { id: 'bmftr', name: 'BMFSFJ', role: 'Finanzierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
 
+  // Toggle this to use importance-based sizing (true) or uniform sizing (false)
+  const useImportanceBasedSizing = false;
+
   const getSizeInPx = (size: 'small' | 'medium' | 'large'): number => {
+    if (!useImportanceBasedSizing) {
+      return 132; // Uniform medium size for all circles
+    }
+    
+    // Importance-based sizing (when enabled)
     switch (size) {
       case 'small': return 102;
       case 'medium': return 132;
@@ -76,9 +83,8 @@ const PartnerNetwork: React.FC = () => {
           {partners.map((partner) => {
             const size = getSizeInPx(partner.size);
             const angleRad = (partner.angle * Math.PI) / 180;
-            const partnerRadius = partner.customRadius || radius;
-            const x = Math.cos(angleRad) * partnerRadius;
-            const y = Math.sin(angleRad) * partnerRadius;
+            const x = Math.cos(angleRad) * radius;
+            const y = Math.sin(angleRad) * radius;
             const isFlipped = flippedCards.has(partner.id);
 
             return (
@@ -115,7 +121,7 @@ const PartnerNetwork: React.FC = () => {
                   }}
                 >
                   <div
-                    className="absolute w-full h-full rounded-full bg-white shadow-lg flex items-center justify-center p-4"
+                    className="absolute w-full h-full rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center p-4"
                     style={{
                       backfaceVisibility: 'hidden',
                       WebkitBackfaceVisibility: 'hidden',
