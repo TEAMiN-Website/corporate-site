@@ -149,8 +149,8 @@ const Header: React.FC = () => {
  onClick={handleDropdownItemClick}
  className={`block px-4 py-2 text-sm transition-colors duration-200 ${
  location.pathname === dropdownItem.id 
- ? 'bg-blue-50  text-blue-600 ' 
- : 'text-gray-700 hover:bg-gray-50 hover:bg-gray-700'
+ ? 'bg-blue-50 text-blue-600' 
+ : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
  }`}
  >
  {dropdownItem.label}
@@ -173,11 +173,11 @@ const Header: React.FC = () => {
  {/* Language Toggle */}
  <button
  onClick={toggleLanguage}
- className="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100 hover:bg-gray-800 transition-colors duration-200"
+ className="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
  aria-label="Toggle language"
  >
- <Globe className="w-5 h-5 text-gray-600 " />
- <span className="text-sm font-medium text-gray-600 ">
+ <Globe className="w-5 h-5 text-gray-600" />
+ <span className="text-sm font-medium text-gray-600">
  {i18n.language.toUpperCase()}
  </span>
  </button>
@@ -187,20 +187,20 @@ const Header: React.FC = () => {
  <div className="lg:hidden flex items-center space-x-2">
  <button
  onClick={toggleLanguage}
- className="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100 hover:bg-gray-800 transition-colors duration-200"
+ className="flex items-center space-x-1 p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
  aria-label="Toggle language"
  >
- <Globe className="w-4 h-4 text-gray-600 " />
- <span className="text-xs font-medium text-gray-600 ">
+ <Globe className="w-4 h-4 text-gray-600" />
+ <span className="text-xs font-medium text-gray-600">
  {i18n.language.toUpperCase()}
  </span>
  </button>
 
  <button
- className="p-2 rounded-md hover:bg-gray-100 hover:bg-gray-800 transition-colors duration-200"
+ className="p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
  onClick={() => setIsMenuOpen(!isMenuOpen)}
  >
- {isMenuOpen ? <X className="w-6 h-6 text-gray-600 " /> : <Menu className="w-6 h-6 text-gray-600 " />}
+ {isMenuOpen ? <X className="w-6 h-6 text-gray-600" /> : <Menu className="w-6 h-6 text-gray-600" />}
  </button>
  </div>
  </div>
@@ -234,8 +234,8 @@ const Header: React.FC = () => {
  }}
  className={`block px-3 py-2 text-sm rounded-md transition-all duration-300 ${
  location.pathname === dropdownItem.id 
- ? 'bg-blue-50  text-blue-600 ' 
- : 'text-gray-600 hover:text-blue-600 hover:text-blue-400'
+ ? 'bg-blue-50 text-blue-600' 
+ : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
  }`}
  >
  {dropdownItem.label}
