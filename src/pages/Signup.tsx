@@ -30,16 +30,16 @@ const Signup: React.FC = () => {
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
  />
- <h1 className="text-4xl lghover:text-5xl xlhover:text-6xl font-bold text-white mb-6 leading-tight uppercase">
+ <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
  {t('signupNew.hero.title')}
  </h1>
- <p className="text-xl lghover:text-2xl text-white mb-8 opacity-90 leading-relaxed">
+ <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
  {t('signupNew.hero.subtitle')}
  </p>
  <div className="flex justify-center mb-8">
  <button
  onClick={scrollToNextSection}
- className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hoverhover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+ className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
  {t('signupNew.hero.cta')}
  </button>
@@ -58,7 +58,7 @@ const Signup: React.FC = () => {
  <section className="py-24 bg-white">
  <div className="max-w-6xl mx-auto px-4">
  <div className="text-center mb-20">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-[#3F3E34] mb-6">
+ <h2 className="text-4xl md:text-5xl font-bold text-[#3F3E34] mb-6">
  {t('signupNew.training.title')}
  </h2>
  </div>
@@ -96,7 +96,7 @@ const Signup: React.FC = () => {
  href="https://campus.bvs-bayern.com/login/signup.php"
  target="_blank"
  rel="noopener noreferrer"
- className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hoverhover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
+ className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
  >
  {t('signupNew.training.elearning.cta')} <ExternalLink className="w-4 h-4" />
  </a>
@@ -135,7 +135,7 @@ const Signup: React.FC = () => {
  href="https://bvs-bayern.com/aus+fortbildung/spass/spass-praesenztag/"
  target="_blank"
  rel="noopener noreferrer"
- className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hoverhover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
+ className="w-full bg-[#D86D55] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2"
  >
  {t('signupNew.training.practiceDay.cta')} <ExternalLink className="w-4 h-4" />
  </a>
@@ -165,7 +165,7 @@ const Signup: React.FC = () => {
  <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.partner.description')}</p>
  </div>
  
- <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold hoverhover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
+ <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
  {t('signupNew.training.partner.cta')} <ExternalLink className="w-4 h-4" />
  </button>
  </div>
@@ -196,7 +196,7 @@ const Signup: React.FC = () => {
 
  <div className="relative z-10 text-center">
  <h2 className="text-4xl font-bold text-white mb-6">{t('signupNew.aurelian.title')}</h2>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hoverhover:bg-white hoverhover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
+ <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
  {t('signupNew.aurelian.cta')}
  </button>
  </div>

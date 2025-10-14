@@ -62,16 +62,16 @@ const About: React.FC = () => {
  {/* Text Content on Gradient Overlay */}
  <div className="relative z-10 flex items-center justify-end min-h-screen">
  <div className="w-full lg:w-[42%] text-right pr-8 lg:pr-16 py-20 lg:py-0">
- <h1 className="text-4xl lghover:text-5xl xlhover:text-6xl font-bold mb-8 leading-tight text-white uppercase">
+ <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-white uppercase">
  {t('about.hero.title')}
  </h1>
- <p className="text-xl lghover:text-2xl leading-relaxed text-white/95 mb-10">
+ <p className="text-xl lg:text-2xl leading-relaxed text-white/95 mb-10">
  {t('about.hero.subtitle')}
  </p>
  <div className="flex justify-end">
  <Link
  to="/signup"
- className="inline-block px-10 py-4 text-xl font-semibold text-white bg-white/20 backdrop-blur-sm border-2 border-white rounded-full hoverhover:bg-white hoverhover:text-[#D86D55] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wide"
+ className="inline-block px-10 py-4 text-xl font-semibold text-white bg-white/20 backdrop-blur-sm border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wide"
  >
  {t('about.hero.cta')}
  </Link>
@@ -83,7 +83,7 @@ const About: React.FC = () => {
  {/* Who We Are, Mission & Vision Section - Three Tiles */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
  {t('about.missionVision.heading')}
  </h2>
 
@@ -144,7 +144,7 @@ const About: React.FC = () => {
  {/* Text Content */}
  <div className="relative z-10 flex items-center justify-end min-h-[600px] px-4 py-16">
  <div className="max-w-xl text-left relative z-10 mr-8 lg:mr-16">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-white mb-6 leading-tight">
+ <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
  {t('about.inclusion.heading')}
  </h2>
  <p className="text-lg text-white leading-relaxed opacity-95">
@@ -157,7 +157,7 @@ const About: React.FC = () => {
  {/* Team Section */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-center mb-6 text-[#3F3E34]">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#3F3E34]">
  {t('about.team.heading')}
  </h2>
  <p className="text-xl text-center text-[#B3ADAA] mb-16 max-w-3xl mx-auto">
@@ -193,7 +193,7 @@ const About: React.FC = () => {
  {/* Partners Section */}
  <section className="py-24 bg-white ">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-center mb-16 text-[#3F3E34] ">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34] ">
  {t('about.partners.heading')}
  </h2>
 
@@ -248,7 +248,7 @@ const About: React.FC = () => {
  {/* CTA Section - Three Tiles */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
  {t('about.cta.heading')}
  </h2>
 
@@ -271,7 +271,7 @@ const About: React.FC = () => {
  <p className="text-[#B3ADAA] mb-6 italic">{t('about.cta.volunteering.description')}</p>
  <Link
  to="/volunteers"
- className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hoverhover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+ className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
  >
  {t('about.cta.volunteering.button')}
  </Link>
@@ -296,7 +296,7 @@ const About: React.FC = () => {
  <p className="text-[#B3ADAA] mb-6 italic">{t('about.cta.athletes.description')}</p>
  <Link
  to="/athletes"
- className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hoverhover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+ className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
  >
  {t('about.cta.athletes.button')}
  </Link>

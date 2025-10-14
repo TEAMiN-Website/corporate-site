@@ -75,16 +75,16 @@ const Home: React.FC = () => {
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
  />
- <h1 className="text-4xl lghover:text-5xl xlhover:text-6xl font-bold text-white mb-6 leading-tight uppercase">
+ <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
  {t('homeNew.hero.title')}
  </h1>
- <p className="text-xl lghover:text-2xl text-white mb-8 opacity-90 leading-relaxed">
+ <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
  {t('homeNew.hero.subtitle')}
  </p>
  <div className="flex justify-center mb-8">
  <button
  onClick={scrollToNextSection}
- className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hoverhover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+ className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
  {t('homeNew.hero.cta')}
  </button>
@@ -112,7 +112,7 @@ const Home: React.FC = () => {
  </div>
 
  <div className="max-w-6xl mx-auto px-4 relative z-10">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-center mb-16 text-[#3F3E34] uppercase">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34] uppercase">
  {t('homeNew.paths.title')}
  </h2>
 
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
  <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.becomeAssistant.description')}</p>
  <Link
  to="/volunteers"
- className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hoverhover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+ className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
  >
  {t('homeNew.paths.becomeAssistant.cta')}
  </Link>
@@ -160,7 +160,7 @@ const Home: React.FC = () => {
  <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.athletesFamilies.description')}</p>
  <Link
  to="/athletes"
- className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hoverhover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
+ className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
  >
  {t('homeNew.paths.athletesFamilies.cta')}
  </Link>
@@ -224,7 +224,7 @@ const Home: React.FC = () => {
  <section className="py-24 text-white relative overflow-hidden parallax-section dark-overlay">
  
  <div className="max-w-4xl mx-auto px-4 relative z-10">
- <h2 className="text-4xl mdhover:text-5xl font-bold text-center mb-16 text-white">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
  {t('homeNew.contact.title')}
  </h2>
 
@@ -293,7 +293,7 @@ const Home: React.FC = () => {
  <button
  type="submit"
  disabled={isSubmitting}
- className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabledhover:translate-y-0 flex items-center justify-center"
+ className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:translate-y-0 flex items-center justify-center"
  >
  {isSubmitting ? (
  <>

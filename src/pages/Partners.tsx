@@ -9,7 +9,7 @@ const Partners: React.FC = () => {
  <div className="py-16 lg:py-24">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <div className="text-center mb-12">
- <h1 className="text-3xl lghover:text-4xl font-cooper-hewitt-book font-normal text-gray-900 mb-4">
+ <h1 className="text-3xl lg:text-4xl font-cooper-hewitt-book font-normal text-gray-900 mb-4">
  {t('partners.title')}
  </h1>
  <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">

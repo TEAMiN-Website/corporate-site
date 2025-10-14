@@ -222,8 +222,11 @@
     "infoTitle": "Kontaktinformationen",
     "info": {
       "phone": "Telefon",
+      "phoneValue": "+49 (0) 931 31-86601",
       "email": "E-Mail",
-      "address": "Adresse"
+      "emailValue": "sportassistenz@uni-wuerzburg.de",
+      "address": "Adresse",
+      "addressValue": "Würzburg, Bayern, Deutschland"
     },
     "form": {
       "title": "Sende uns eine Nachricht",
@@ -411,32 +414,32 @@
   },
   "signupNew": {
     "hero": {
-      "title": "Ready to make a difference?",
-      "subtitle": "Join our community of sport assistants. Get certified with flexible online learning and hands-on practice.",
-      "cta": "Sign up"
+      "title": "Bereit, etwas zu bewegen?",
+      "subtitle": "Werde Teil unserer Community von Sportassistent:innen. Erhalte deine Zertifizierung durch flexibles Online-Lernen und praktisches Training.",
+      "cta": "Jetzt anmelden"
     },
     "training": {
-      "title": "BEGIN YOUR TRAINING",
+      "title": "BEGINNE DEINE AUSBILDUNG",
       "elearning": {
-        "title": "Step 1 | E-Learning",
-        "description": "Complete your training online at your own pace with interactive modules and assessments. 15 hours total, fully flexible.",
-        "cta": "Register on BVS Campus"
+        "title": "Schritt 1 | E-Learning",
+        "description": "Absolviere dein Training online in deinem eigenen Tempo mit interaktiven Modulen und Tests. Insgesamt 15 Stunden, völlig flexibel.",
+        "cta": "Auf BVS Campus registrieren"
       },
       "practiceDay": {
-        "title": "Step 2 | Practice Day",
-        "description": "Practice real-word scenarios in our hands-on training session with your fellow aspiring assistants.",
-        "cta": "Sign up on BVS Portal"
+        "title": "Schritt 2 | Praxistag",
+        "description": "Übe reale Szenarien in unserer praktischen Trainingseinheit mit deinen zukünftigen Kolleg:innen.",
+        "cta": "Im BVS Portal anmelden"
       },
       "partner": {
-        "title": "Partners",
-        "description": "Your employer is already a partner of ours? Find out how to join.",
-        "cta": "Partner Portal"
+        "title": "Partner",
+        "description": "Dein Arbeitgeber ist bereits Partner von uns? Finde heraus, wie du teilnehmen kannst.",
+        "cta": "Partner-Portal"
       },
-      "note": "The E-Learning and our Practice Day booking are hosted by our partner Behinderten- und Rehabilitationssportverband Bayern e.V."
+      "note": "Das E-Learning und die Buchung unseres Praxistags werden von unserem Partner Behinderten- und Rehabilitationssportverband Bayern e.V. gehostet."
     },
     "aurelian": {
-      "title": "Our Inspiration",
-      "cta": "Meet Aurelian"
+      "title": "Unsere Inspiration",
+      "cta": "Aurelian kennenlernen"
     }
   },
   "spassNew": {

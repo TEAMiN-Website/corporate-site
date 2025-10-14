@@ -222,8 +222,11 @@
     "infoTitle": "Contact Information",
     "info": {
       "phone": "Phone",
+      "phoneValue": "+49 (0) 931 31-86601",
       "email": "Email",
-      "address": "Address"
+      "emailValue": "sportassistenz@uni-wuerzburg.de",
+      "address": "Address",
+      "addressValue": "Würzburg, Bavaria, Germany"
     },
     "form": {
       "title": "Send us a Message",
