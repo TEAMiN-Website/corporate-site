@@ -53,7 +53,7 @@ const CookieConsent: React.FC<CookieConsentProps> = ({ onAccept, onDecline }) =>
  </div>
  <button
  onClick={handleDecline}
- className="p-2 hoverhover:bg-gray-100 hover:bg-gray-800 rounded-lg transition-colors duration-200"
+ className="p-2 hover:bg-gray-100 hover:bg-gray-800 rounded-lg transition-colors duration-200"
  >
  <X className="w-5 h-5 text-gray-500 " />
  </button>
@@ -93,20 +93,20 @@ const CookieConsent: React.FC<CookieConsentProps> = ({ onAccept, onDecline }) =>
  <div className="flex flex-col sm:flex-row gap-3">
  <button
  onClick={() => setShowDetails(!showDetails)}
- className="text-blue-600 hoverhover:text-blue-700 hover:text-blue-300 font-medium text-sm transition-colors duration-200"
+ className="text-blue-600 hover:text-blue-700 hover:text-blue-300 font-medium text-sm transition-colors duration-200"
  >
  {showDetails ? t('cookieConsent.hideDetails') : t('cookieConsent.showDetails')}
  </button>
  <div className="flex flex-col sm:flex-row gap-3 sm:ml-auto">
  <button
  onClick={handleDecline}
- className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hoverhover:bg-gray-50 hover:bg-gray-800 transition-colors duration-200"
+ className="px-6 py-3 border border-gray-300 text-gray-700 rounded-lg font-semibold hover:bg-gray-50 hover:bg-gray-800 transition-colors duration-200"
  >
  {t('cookieConsent.decline')}
  </button>
  <button
  onClick={handleAccept}
- className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hoverhover:bg-blue-700 transition-colors duration-200"
+ className="px-6 py-3 bg-blue-600 text-white rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200"
  >
  {t('cookieConsent.accept')}
  </button>

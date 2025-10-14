@@ -11,8 +11,14 @@
   background-size: cover;
   background-position: center top;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
+}
+
+/* Use fixed attachment only on desktop for better mobile performance */
+@media (min-width: 1024px) {
+  .parallax-section {
+    background-attachment: fixed;
+  }
 }
 
 .volunteers-hero-parallax {
@@ -20,8 +26,13 @@
   background-size: cover;
   background-position: 15% center;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  .volunteers-hero-parallax {
+    background-attachment: fixed;
+  }
 }
 
 .signup-hero-parallax {
@@ -29,8 +40,13 @@
   background-size: cover;
   background-position: center 20%;
   background-repeat: no-repeat;
-  background-attachment: fixed;
   position: relative;
+}
+
+@media (min-width: 1024px) {
+  .signup-hero-parallax {
+    background-attachment: fixed;
+  }
 }
 
 /* Section overlays */
@@ -114,4 +130,34 @@
     font-family: 'Inter', sans-serif;
     font-weight: 400; /* Book weight */
   }
+
+  /* Enhanced focus states for accessibility */
+  *:focus-visible {
+    outline: 3px solid #71B554;
+    outline-offset: 2px;
+  }
+
+  button:focus-visible,
+  a:focus-visible,
+  input:focus-visible,
+  textarea:focus-visible,
+  select:focus-visible {
+    outline: 3px solid #71B554;
+    outline-offset: 2px;
+  }
+
+  /* Remove default focus outline for mouse users */
+  *:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  /* Minimum touch target size for mobile accessibility */
+  @media (max-width: 1023px) {
+    button,
+    a {
+      min-height: 44px;
+      min-width: 44px;
+    }
+  }
 }
+

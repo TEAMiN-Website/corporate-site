@@ -13,6 +13,10 @@ import Signup from './pages/Signup';
 import Partners from './pages/Partners';
 import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
+import Impressum from './pages/Impressum';
+import Privacy from './pages/Privacy';
+import Terms from './pages/Terms';
+import FAQ from './pages/FAQ';
 import './i18n';
 
 function App() {
@@ -40,13 +44,17 @@ const AppContent: React.FC = () => {
  <Route index element={<Home />} />
  <Route path="about" element={<About />} />
  <Route path="spass" element={<SpAss />} />
- <Route path="athletes" element={<Athletes />} />
- <Route path="aurelian" element={<Aurelian />} />
- <Route path="volunteers" element={<Volunteers />} />
- <Route path="signup" element={<Signup />} />
- <Route path="partners" element={<Partners />} />
- <Route path="contact" element={<Contact />} />
- <Route path="*" element={<NotFound />} />
+       <Route path="athletes" element={<Athletes />} />
+       <Route path="aurelian" element={<Aurelian />} />
+       <Route path="volunteers" element={<Volunteers />} />
+       <Route path="signup" element={<Signup />} />
+       <Route path="partners" element={<Partners />} />
+       <Route path="contact" element={<Contact />} />
+       <Route path="impressum" element={<Impressum />} />
+       <Route path="privacy" element={<Privacy />} />
+       <Route path="terms" element={<Terms />} />
+       <Route path="faq" element={<FAQ />} />
+       <Route path="*" element={<NotFound />} />
  </Route>
  </Routes>
  <CookieConsent

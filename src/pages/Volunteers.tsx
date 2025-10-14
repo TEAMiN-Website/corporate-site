@@ -1,12 +1,35 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronLeft, ChevronRight, ChevronDown } from 'lucide-react';
+import { ChevronLeft, ChevronRight, ChevronDown, Play, Pause } from 'lucide-react';
+
+interface Testimonial {
+  quote: string;
+  name: string;
+}
+
+interface BenefitCard {
+  title: string;
+  description: string;
+}
+
+interface JourneyStep {
+  title: string;
+  description: string;
+}
+
+interface GetStartedOption {
+  title: string;
+  description: string;
+  cta: string;
+}
 
 const Volunteers: React.FC = () => {
  const { t } = useTranslation();
  const [currentTestimonial, setCurrentTestimonial] = useState(0);
- const testimonials = t('volunteersNew.stories.testimonials', { returnObjects: true }) as any[];
+ const [isPlaying, setIsPlaying] = useState(true);
+ const carouselRef = useRef<HTMLDivElement>(null);
+ const testimonials = t('volunteersNew.stories.testimonials', { returnObjects: true }) as Testimonial[];
 
  const nextTestimonial = () => {
  setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
@@ -14,6 +37,42 @@ const Volunteers: React.FC = () => {
 
  const prevTestimonial = () => {
  setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+ };
+
+ // Auto-play carousel
+ useEffect(() => {
+ if (!isPlaying) return;
+
+ const interval = setInterval(() => {
+ nextTestimonial();
+ }, 5000);
+
+ return () => clearInterval(interval);
+ }, [isPlaying, testimonials.length]);
+
+ // Keyboard navigation
+ useEffect(() => {
+ const handleKeyDown = (event: KeyboardEvent) => {
+ if (carouselRef.current && carouselRef.current.contains(document.activeElement)) {
+ if (event.key === 'ArrowLeft') {
+ event.preventDefault();
+ prevTestimonial();
+ } else if (event.key === 'ArrowRight') {
+ event.preventDefault();
+ nextTestimonial();
+ } else if (event.key === ' ' || event.key === 'Enter') {
+ event.preventDefault();
+ setIsPlaying((prev) => !prev);
+ }
+ }
+ };
+
+ document.addEventListener('keydown', handleKeyDown);
+ return () => document.removeEventListener('keydown', handleKeyDown);
+ }, []);
+
+ const togglePlayPause = () => {
+ setIsPlaying((prev) => !prev);
  };
 
  const scrollToNextSection = () => {
@@ -43,16 +102,16 @@ const Volunteers: React.FC = () => {
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
  />
- <h1 className="text-4xl lghover:text-5xl xlhover:text-6xl font-bold text-white mb-6 leading-tight uppercase">
+ <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
  {t('volunteersNew.hero.title')}
  </h1>
- <p className="text-xl lghover:text-2xl text-white mb-8 opacity-90 leading-relaxed">
+ <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
  {t('volunteersNew.hero.subtitle')}
  </p>
  <div className="flex justify-center mb-8">
  <button
  onClick={scrollToNextSection}
- className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hoverhover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+ className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
  {t('volunteersNew.hero.joinNow')}
  </button>
@@ -81,7 +140,7 @@ const Volunteers: React.FC = () => {
 
  <div className="max-w-6xl mx-auto px-4 relative z-10">
  <div className="text-center mb-16">
- <h2 className="text-4xl lghover:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
+ <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
  {t('volunteersNew.benefits.title')}
  </h2>
  <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto italic">
@@ -89,8 +148,8 @@ const Volunteers: React.FC = () => {
  </p>
  </div>
 
- <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
- {(t('volunteersNew.benefits.cards', { returnObjects: true }) as any[]).map((card: any, index: number) => {
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+ {(t('volunteersNew.benefits.cards', { returnObjects: true }) as BenefitCard[]).map((card, index) => {
  const backgrounds = [
  { image: '/assistant page tile sharing.jpg', overlay: 'rgba(216, 109, 85, 0.6)' },
  { image: '/assistant page tile flexible.jpg', overlay: 'rgba(63, 62, 52, 0.6)' },
@@ -99,7 +158,7 @@ const Volunteers: React.FC = () => {
  ];
  return (
  <div key={index} className="relative p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
- <img src={backgrounds[index].image} alt="" className="absolute inset-0 w-full h-full object-cover" />
+ <img loading="lazy" src={backgrounds[index].image} alt="" className="absolute inset-0 w-full h-full object-cover" />
  <div className="absolute inset-0" style={{ backgroundColor: backgrounds[index].overlay }}></div>
  <div className="relative z-10 text-center">
  <h3 className="text-2xl font-bold text-white mb-4">{card.title}</h3>
@@ -126,7 +185,7 @@ const Volunteers: React.FC = () => {
 
  <div className="max-w-6xl mx-auto px-4 relative z-10">
  <div className="text-center mb-16">
- <h2 className="text-4xl lghover:text-5xl font-bold text-white mb-6 uppercase">
+ <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
  {t('volunteersNew.journey.title')}
  </h2>
  <p className="text-xl text-white italic">
@@ -137,8 +196,8 @@ const Volunteers: React.FC = () => {
  <div className="relative">
  <div className="absolute top-1/2 left-0 right-0 h-1 bg-white/30 transform -translate-y-1/2 hidden lg:block"></div>
 
- <div className="grid lg:grid-cols-4 gap-8">
- {(t('volunteersNew.journey.steps', { returnObjects: true }) as any[]).map((step: any, index: number) => (
+           <div className="grid lg:grid-cols-4 gap-8">
+ {(t('volunteersNew.journey.steps', { returnObjects: true }) as JourneyStep[]).map((step, index) => (
  <div key={index} className="text-center relative h-full">
  <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
  <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.85)' }}>
@@ -168,7 +227,7 @@ const Volunteers: React.FC = () => {
 
  <div className="max-w-7xl mx-auto px-4 relative z-10">
  <div className="text-center mb-16">
- <h2 className="text-4xl lghover:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
+ <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
  Your Contribution
  </h2>
  </div>
@@ -279,21 +338,26 @@ const Volunteers: React.FC = () => {
  </div>
 
  <div className="max-w-3xl mx-auto px-4 relative z-10">
- <div className="text-center mb-16">
- <h2 className="text-4xl lghover:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
- Testimonials {t('volunteersNew.stories.title')}
- </h2>
- </div>
-
- <div className="relative">
+         <div className="text-center mb-16">
+           <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
+             {t('volunteersNew.stories.title')}
+           </h2>
+         </div> <div className="relative" ref={carouselRef} tabIndex={0} role="region" aria-label="Testimonials carousel" aria-live="polite">
  {/* Carousel Container */}
  <div className="bg-white p-10 lg:p-12 rounded-2xl shadow-xl">
- <div className="mb-6">
+ <div className="mb-6 flex justify-between items-center">
  <svg className="w-12 h-12 text-[#D86D55] opacity-50" fill="currentColor" viewBox="0 0 24 24">
  <path d="M14.017 21v-7.391c0-5.704 3.731-9.57 8.983-10.609l.995 2.151c-2.432.917-3.995 3.638-3.995 5.849h4v10h-9.983zm-14.017 0v-7.391c0-5.704 3.748-9.57 9-10.609l.996 2.151c-2.433.917-3.996 3.638-3.996 5.849h3.983v10h-9.983z"/>
  </svg>
+ <button
+ onClick={togglePlayPause}
+ className="p-2 rounded-full bg-gray-200 hover:bg-gray-300 transition-colors duration-200"
+ aria-label={isPlaying ? 'Pause carousel' : 'Play carousel'}
+ >
+ {isPlaying ? <Pause className="w-5 h-5 text-gray-700" /> : <Play className="w-5 h-5 text-gray-700" />}
+ </button>
  </div>
- <p className="text-xl lghover:text-2xl text-[#B3ADAA] italic mb-8 leading-relaxed min-h-[160px]">
+ <p className="text-xl lg:text-2xl text-[#B3ADAA] italic mb-8 leading-relaxed min-h-[160px]">
  "{testimonials[currentTestimonial]?.quote}"
  </p>
  <p className="font-semibold text-[#D86D55] text-lg">— {testimonials[currentTestimonial]?.name}</p>
@@ -302,14 +366,14 @@ const Volunteers: React.FC = () => {
  {/* Navigation Buttons */}
  <button
  onClick={prevTestimonial}
- className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-16 bg-white text-[#D86D55] p-3 rounded-full shadow-lg hoverhover:bg-[#D86D55] hoverhover:text-white transition-all duration-300 hover:scale-110"
+ className="absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 lg:-translate-x-16 bg-white text-[#D86D55] p-3 rounded-full shadow-lg hover:bg-[#D86D55] hover:text-white transition-all duration-300 hover:scale-110"
  aria-label="Previous testimonial"
  >
  <ChevronLeft className="w-6 h-6" />
  </button>
  <button
  onClick={nextTestimonial}
- className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-16 bg-white text-[#D86D55] p-3 rounded-full shadow-lg hoverhover:bg-[#D86D55] hoverhover:text-white transition-all duration-300 hover:scale-110"
+ className="absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 lg:translate-x-16 bg-white text-[#D86D55] p-3 rounded-full shadow-lg hover:bg-[#D86D55] hover:text-white transition-all duration-300 hover:scale-110"
  aria-label="Next testimonial"
  >
  <ChevronRight className="w-6 h-6" />
@@ -324,9 +388,10 @@ const Volunteers: React.FC = () => {
  className={`w-3 h-3 rounded-full transition-all duration-300 ${
  index === currentTestimonial
  ? 'bg-[#D86D55] w-8'
- : 'bg-gray-300 hoverhover:bg-gray-400'
+ : 'bg-gray-300 hover:bg-gray-400'
  }`}
  aria-label={`Go to testimonial ${index + 1}`}
+ aria-current={index === currentTestimonial ? 'true' : 'false'}
  />
  ))}
  </div>
@@ -347,20 +412,20 @@ const Volunteers: React.FC = () => {
 
  <div className="max-w-6xl mx-auto px-4 relative z-10">
  <div className="text-center mb-16">
- <h2 className="text-4xl lghover:text-5xl font-bold text-white mb-6 uppercase">
+ <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
  {t('volunteersNew.getStarted.title')}
  </h2>
  </div>
 
- <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
- {(t('volunteersNew.getStarted.options', { returnObjects: true }) as any[]).filter((_: any, index: number) => index !== 1).map((entry: any, index: number) => (
+         <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+ {(t('volunteersNew.getStarted.options', { returnObjects: true }) as GetStartedOption[]).filter((_, index) => index !== 1).map((entry, index) => (
  <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
  <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
  <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>
  <Link
  to={index === 0 ? "/signup" : "/contact"}
- className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hoverhover:bg-[#71B554] transition-colors duration-300"
+ className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#71B554] transition-colors duration-300"
  >
  {entry.cta}
  </Link>

@@ -221,9 +221,10 @@
     "subtitle": "Ready to join the inclusive sports movement? We're here to help athletes, families, volunteers, and clubs connect with the right opportunities.",
     "infoTitle": "Contact Information",
     "info": {
-      "phone": "Phone",
       "email": "Email",
-      "address": "Address"
+      "emailValue": "sportassistenz@uni-wuerzburg.de",
+      "address": "Address",
+      "addressValue": "Würzburg, Bavaria, Germany"
     },
     "form": {
       "title": "Send us a Message",
@@ -590,6 +591,212 @@
           ]
         }
       ]
+    }
+  },
+  "impressum": {
+    "title": "Legal Notice",
+    "legalInfo": {
+      "title": "Information pursuant to § 5 TMG",
+      "content": "TEAMiN - Sport-Assistenz Program\nJulius-Maximilians-Universität Würzburg\nInstitute of Sport Science\nJudenbühlweg 11\n97082 Würzburg\nGermany"
+    },
+    "contact": {
+      "title": "Contact",
+      "email": "Email: sportassistenz@uni-wuerzburg.de"
+    },
+    "representatives": {
+      "title": "Authorized Representatives",
+      "projectLead1": "Project Lead: Dr. Christiane Reuter",
+      "projectLead2": "Project Lead: Prof. Dr. David Rygl"
+    },
+    "disclaimer": {
+      "title": "Disclaimer",
+      "contentLiability": {
+        "title": "Liability for Content",
+        "content": "The contents of our pages have been created with the greatest care. However, we cannot guarantee the accuracy, completeness and timeliness of the content."
+      },
+      "linkLiability": {
+        "title": "Liability for Links",
+        "content": "Our website contains links to external third-party websites over whose content we have no influence. Therefore, we cannot accept any liability for this external content."
+      }
+    },
+    "copyright": {
+      "title": "Copyright",
+      "content": "The content and works created by the site operators on these pages are subject to German copyright law. Duplication, processing, distribution, and any kind of exploitation beyond the scope of copyright law require the written consent of the respective author or creator."
+    }
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "overview": {
+      "title": "1. Privacy at a Glance",
+      "generalInfo": {
+        "title": "General Information",
+        "content": "The following information provides a simple overview of what happens to your personal data when you visit this website."
+      }
+    },
+    "dataCollection": {
+      "title": "2. Data Collection on This Website",
+      "responsible": {
+        "title": "Who is responsible for data collection?",
+        "content": "Data processing on this website is carried out by the website operator. You can find their contact details in the Legal Notice of this website."
+      },
+      "howWeCollect": {
+        "title": "How do we collect your data?",
+        "content": "On the one hand, your data is collected when you provide it to us. This can be, for example, data that you enter into a contact form."
+      },
+      "whatFor": {
+        "title": "What do we use your data for?",
+        "content": "Some of the data is collected to ensure error-free provision of the website. Other data may be used to analyze your user behavior."
+      }
+    },
+    "analyticsTools": {
+      "title": "3. Analytics Tools and Third-Party Tools",
+      "content": "When visiting this website, your surfing behavior may be statistically evaluated. This is done primarily with so-called analysis programs. Detailed information on these analysis programs can be found in the following privacy policy."
+    },
+    "rights": {
+      "title": "4. Your Rights",
+      "intro": "You have the right at any time to:",
+      "items": [
+        "Obtain information about your data stored with us",
+        "Request correction of inaccurate personal data",
+        "Request deletion of your data stored with us",
+        "Request restriction of data processing",
+        "Object to the processing of your data",
+        "Request data portability"
+      ]
+    },
+    "cookies": {
+      "title": "5. Cookies",
+      "content": "Our website uses cookies. These are small text files that your web browser stores on your device. Cookies help us to make our offer more user-friendly, effective and secure."
+    },
+    "contactSection": {
+      "title": "Contact",
+      "content": "If you have any questions about data protection, you can contact us at any time:",
+      "email": "Email: sportassistenz@uni-wuerzburg.de"
+    }
+  },
+  "terms": {
+    "title": "Terms of Use",
+    "scope": {
+      "title": "1. Scope",
+      "content": "These Terms of Use govern the use of the TEAMiN website and the Sport-Assistenz Program (SpAss). By accessing the website or using our services, you agree to these terms."
+    },
+    "websiteUse": {
+      "title": "2. Use of the Website",
+      "content": "The content of this website is protected by copyright. Reproduction, editing, distribution and any kind of exploitation beyond the limits of copyright law require the written consent of the operator."
+    },
+    "registration": {
+      "title": "3. Registration and Participation",
+      "intro": "Participation in the Sport-Assistenz Program requires registration. You undertake to provide truthful and complete information and to keep it up to date.",
+      "commitments": "As a Sport Assistant, you commit to:",
+      "items": [
+        "Complete the training in full",
+        "Follow the principles of inclusive sport assistance",
+        "Protect confidential information",
+        "Act professionally and respectfully"
+      ]
+    },
+    "liability": {
+      "title": "4. Disclaimer",
+      "content": "TEAMiN assumes no liability for damages arising from the use of the website or participation in the program, unless these are based on intent or gross negligence."
+    },
+    "dataProtection": {
+      "title": "5. Data Protection",
+      "content": "The processing of personal data is carried out in accordance with our privacy policy. You can view this under the menu item 'Privacy Policy'."
+    },
+    "changes": {
+      "title": "6. Changes to Terms of Use",
+      "content": "We reserve the right to change these Terms of Use at any time. Registered users will be informed about significant changes by email."
+    },
+    "finalProvisions": {
+      "title": "7. Final Provisions",
+      "content": "The law of the Federal Republic of Germany applies. Should individual provisions of these Terms of Use be ineffective, the validity of the remaining provisions remains unaffected."
+    },
+    "contactSection": {
+      "title": "Contact",
+      "content": "If you have any questions about the Terms of Use, you can contact us:",
+      "email": "Email: sportassistenz@uni-wuerzburg.de"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "categories": [
+      {
+        "title": "General Questions",
+        "items": [
+          {
+            "question": "What is TEAMiN?",
+            "answer": "TEAMiN is a network for promoting inclusive sports in Bavaria through the Sport-Assistenz (SpAss) program. We connect people with disabilities with qualified trained sport assistants and sports clubs."
+          },
+          {
+            "question": "What is the SpAss Program?",
+            "answer": "SpAss (Sport-Assistenz) is our comprehensive training program that prepares volunteers to support athletes with disabilities in mainstream sports clubs. The program includes online learning and practical training."
+          },
+          {
+            "question": "How can I participate?",
+            "answer": "You can either participate as a sport assistant (after completing the training) or use our placement services as an athlete with disabilities. Contact us for more information."
+          }
+        ]
+      },
+      {
+        "title": "For Sport Assistants",
+        "items": [
+          {
+            "question": "What are the requirements?",
+            "answer": "You need an interest in sports, empathy, and the willingness to support people with disabilities. Sports experience is helpful but not required. The training is free of charge."
+          },
+          {
+            "question": "How much time commitment is required?",
+            "answer": "Initial training: ~15 hours online + 1 full practice day. Ongoing commitment: 2-4 hours per week for at least 3 months. The schedule is flexible and coordinated with your matched athlete."
+          },
+          {
+            "question": "Will I be compensated?",
+            "answer": "The work as a sport assistant is voluntary. However, you receive free, certified training and valuable experience in inclusive sports."
+          },
+          {
+            "question": "What happens after the training?",
+            "answer": "After successful completion, you will be matched with athletes and clubs that fit your skills and schedule. You continue to receive support through our network."
+          }
+        ]
+      },
+      {
+        "title": "For Athletes",
+        "items": [
+          {
+            "question": "Who can use the service?",
+            "answer": "People with disabilities of all ages who want to participate in club sports and need support."
+          },
+          {
+            "question": "Which sports are available?",
+            "answer": "We work with various sports clubs across Bavaria offering different sports. We help match you with a sport and club that fits your interests and abilities."
+          },
+          {
+            "question": "How long does the support last?",
+            "answer": "The duration varies depending on individual needs. The goal is to gradually reduce support as you integrate into the club and become more independent."
+          },
+          {
+            "question": "What does participation cost?",
+            "answer": "The placement and support through TEAMiN is free. Regular club membership fees apply for club membership."
+          }
+        ]
+      },
+      {
+        "title": "For Sports Clubs",
+        "items": [
+          {
+            "question": "How can our club become a partner?",
+            "answer": "Contact us directly. We support clubs in becoming more inclusive through consultation, trained sport assistants, and best practice exchange."
+          },
+          {
+            "question": "What support do clubs receive?",
+            "answer": "Partner clubs get access to trained sport assistants, guidance on inclusive practices, networking opportunities, and support in integrating athletes with disabilities."
+          }
+        ]
+      }
+    ],
+    "moreQuestions": {
+      "title": "More Questions?",
+      "description": "If you have additional questions, feel free to contact us!",
+      "email": "Email: sportassistenz@uni-wuerzburg.de"
     }
   }
 }

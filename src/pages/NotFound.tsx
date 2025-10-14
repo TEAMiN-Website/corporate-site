@@ -21,7 +21,7 @@ const NotFound: React.FC = () => {
                 <div className="flex justify-center">
                     <Link
                         to="/"
-                        className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hoverhover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
+                        className="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 flex items-center justify-center space-x-2"
                     >
                         <Home className="w-5 h-5" />
                         <span>{t('notFound.goHome')}</span>

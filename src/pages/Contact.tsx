@@ -48,16 +48,16 @@ const Contact: React.FC = () => {
  };
 
  const contactInfo = [
- { icon: Phone, label: t('contact.info.phone'), value: '+49 (0) 931 123-4567' },
- { icon: Mail, label: t('contact.info.email'), value: 'info@teaminklusion.de' },
- { icon: MapPin, label: t('contact.info.address'), value: 'Würzburg, Bavaria, Germany' }
+   { icon: Phone, label: t('contact.info.phone'), value: t('contact.info.phoneValue') },
+   { icon: Mail, label: t('contact.info.email'), value: t('contact.info.emailValue') },
+   { icon: MapPin, label: t('contact.info.address'), value: t('contact.info.addressValue') }
  ];
 
  return (
  <div className="py-16 lg:py-24 bg-gray-900 text-white">
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <div className="text-center mb-12">
- <h1 className="text-3xl lghover:text-4xl font-cooper-hewitt-book font-normal mb-4">
+ <h1 className="text-3xl lg:text-4xl font-cooper-hewitt-book font-normal mb-4">
  {t('contact.title')}
  </h1>
  <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
@@ -154,7 +154,7 @@ const Contact: React.FC = () => {
  <button
  type="submit"
  disabled={isSubmitting}
- className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hoverhover:bg-blue-700 transition-colors duration-200 disabledhover:bg-gray-600 disabled:cursor-not-allowed flex items-center justify-center"
+ className="w-full bg-blue-600 text-white px-8 py-4 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200 disabled:bg-gray-600 disabled:cursor-not-allowed flex items-center justify-center"
  >
  {isSubmitting ? (
  <>

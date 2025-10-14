@@ -1,0 +1,94 @@
+import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
+import { ChevronDown } from 'lucide-react';
+
+interface FAQItem {
+  question: string;
+  answer: string;
+}
+
+interface FAQCategory {
+  title: string;
+  items: FAQItem[];
+}
+
+const FAQ: React.FC = () => {
+  const { t } = useTranslation();
+  const [activeItems, setActiveItems] = useState<Set<string>>(new Set());
+
+  const toggleItem = (categoryIndex: number, itemIndex: number) => {
+    const key = `${categoryIndex}-${itemIndex}`;
+    const newActiveItems = new Set(activeItems);
+    if (newActiveItems.has(key)) {
+      newActiveItems.delete(key);
+    } else {
+      newActiveItems.add(key);
+    }
+    setActiveItems(newActiveItems);
+  };
+
+  const faqData: FAQCategory[] = t('faq.categories', { returnObjects: true }) as FAQCategory[];
+
+  return (
+    <div className="py-16 lg:py-24 bg-gray-50">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+        <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+          {t('faq.title')}
+        </h1>
+        
+        <div className="space-y-8">
+          {faqData.map((category, categoryIndex) => (
+            <div key={categoryIndex} className="bg-white rounded-lg shadow-lg p-6">
+              <h2 className="text-2xl font-semibold text-gray-900 mb-6 pb-4 border-b-2 border-gradient-to-r from-[#D86D55] to-[#71B554]">
+                {category.title}
+              </h2>
+              
+              <div className="space-y-4">
+                {category.items.map((item, itemIndex) => {
+                  const key = `${categoryIndex}-${itemIndex}`;
+                  const isActive = activeItems.has(key);
+                  
+                  return (
+                    <div key={itemIndex} className="border-b border-gray-200 pb-4 last:border-b-0">
+                      <button
+                        onClick={() => toggleItem(categoryIndex, itemIndex)}
+                        className="w-full flex justify-between items-center text-left hover:text-[#D86D55] transition-colors duration-200"
+                      >
+                        <span className="text-lg font-semibold text-gray-900 pr-4">
+                          {item.question}
+                        </span>
+                        <ChevronDown 
+                          className={`w-6 h-6 flex-shrink-0 transition-transform duration-200 ${
+                            isActive ? 'rotate-180' : ''
+                          }`}
+                        />
+                      </button>
+                      
+                      {isActive && (
+                        <div className="mt-3 text-gray-700 leading-relaxed">
+                          {item.answer}
+                        </div>
+                      )}
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div className="mt-12 bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-lg shadow-lg p-8 text-center text-white">
+          <h2 className="text-2xl font-bold mb-4">{t('faq.moreQuestions.title')}</h2>
+          <p className="text-lg mb-6">
+            {t('faq.moreQuestions.description')}
+          </p>
+          <div className="space-y-2">
+            <p>{t('faq.moreQuestions.email')}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default FAQ;
