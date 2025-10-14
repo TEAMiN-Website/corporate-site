@@ -46,7 +46,7 @@ const Footer: React.FC = () => {
  <span className="text-gray-600 text-sm">sportassistenz@uni-wuerzburg.de</span>
  <button
  onClick={handleCopyEmail}
- className="ml-2 p-1 hoverhover:bg-gray-200 rounded transition-colors duration-200"
+ className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors duration-200"
  aria-label="Copy email address"
  >
  {copied ? (
@@ -66,7 +66,7 @@ const Footer: React.FC = () => {
  <Link
  key={link.to}
  to={link.to}
- className="block text-gray-600 hoverhover:text-gray-900 hover:text-gray-100 transition-colors duration-200"
+ className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
  >
  {link.label}
  </Link>
@@ -81,7 +81,7 @@ const Footer: React.FC = () => {
  <Link
  key={link.to}
  to={link.to}
- className="block text-gray-600 hoverhover:text-gray-900 hover:text-gray-100 transition-colors duration-200"
+ className="block text-gray-600 hover:text-gray-900 transition-colors duration-200"
  >
  {link.label}
  </Link>
