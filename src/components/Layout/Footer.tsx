@@ -33,29 +33,36 @@ const Footer: React.FC = () => {
  <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
  <div className="grid md:grid-cols-4 gap-8">
  <div className="md:col-span-2">
- <div className="flex items-center space-x-2 mb-4">
+ <div className="flex items-center space-x-2 mb-6">
  <img 
  src="TEAMiN Logo.png" 
  alt="TEAMiN Logo" 
  className="h-10 w-auto object-contain"
  />
  </div>
- <div className="flex items-center space-x-3">
- <div className="flex items-center space-x-2 bg-gray-100 rounded-lg px-4 py-2">
- <Mail className="w-5 h-5 text-gray-600" />
- <span className="text-gray-600 text-sm">sportassistenz@uni-wuerzburg.de</span>
+ <p className="text-gray-600 mb-4 max-w-md">
+ {t('footer.description')}
+ </p>
+ <div className="flex items-center space-x-2 group">
+ <Mail className="w-4 h-4 text-gray-500" />
+ <span 
+ className="text-gray-700 text-sm font-medium cursor-pointer select-all hover:text-gray-900 transition-colors duration-200"
+ title="Click to select and copy"
+ >
+ sportassistenz@uni-wuerzburg.de
+ </span>
  <button
  onClick={handleCopyEmail}
- className="ml-2 p-1 hover:bg-gray-200 rounded transition-colors duration-200"
+ className="p-1.5 hover:bg-gray-100 rounded-md transition-colors duration-200 opacity-0 group-hover:opacity-100"
  aria-label="Copy email address"
+ title={copied ? "Copied!" : "Copy email"}
  >
  {copied ? (
- <Check className="w-3.5 h-3.5 text-green-600" />
+ <Check className="w-4 h-4 text-green-600" />
  ) : (
- <Copy className="w-3.5 h-3.5 text-gray-600" />
+ <Copy className="w-4 h-4 text-gray-500" />
  )}
  </button>
- </div>
  </div>
  </div>
  
