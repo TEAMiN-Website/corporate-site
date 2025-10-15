@@ -56,9 +56,15 @@ const PartnerNetwork: React.FC = () => {
     <div className="relative w-full py-24 px-6 bg-[#F7ECD5] overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 uppercase">
-            OUR PARTNERS ENABLING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-6">
+            HAVING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span> TOGETHER
           </h2>
+          <p className="text-gray-900 text-lg leading-relaxed">
+            Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers.
+          </p>
+          <p className="text-gray-900 text-lg leading-relaxed mt-4 italic">
+            Hover over the circles to discover each partner's contributions to SpAss.
+          </p>
         </div>
         <div className="relative mx-auto" style={{ width: '630px', height: '630px', maxWidth: '90vw', maxHeight: '90vw' }}>
           <div
@@ -161,14 +167,6 @@ const PartnerNetwork: React.FC = () => {
               </div>
             );
           })}
-        </div>
-
-        <div className="text-center mt-16 max-w-2xl mx-auto">
-          <p className="text-gray-700 text-lg">
-            <span className="hidden md:inline">Hover over</span>
-            <span className="md:hidden">Tap</span>
-            {' '}the circles to discover each partner's role in the SpAss network
-          </p>
         </div>
       </div>
     </div>
