@@ -15,13 +15,13 @@ const PartnerNetwork: React.FC = () => {
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
-    { id: 'bvs', name: 'BVS Bayern', role: 'Infrastruktur', logo: '/BVS Logo.png', size: 'large', angle: 0 },
-    { id: 'uni', name: 'Uni Würzburg', role: 'Fachexpertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
-    { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
-    { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
-    { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', customIcon: true, size: 'medium', angle: 205.6 },
-    { id: 'ava', name: 'ava', role: 'Technologie-\nPartner', logo: '/ava_logo.png', size: 'small', angle: 257 },
-    { id: 'bmftr', name: 'BMFSFJ', role: 'Finanzierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
+    { id: 'bvs', name: 'BVS Bayern', role: 'Infra­struktur', logo: '/BVS Logo.png', size: 'large', angle: 0 },
+    { id: 'uni', name: 'Uni Würzburg', role: 'Fach­expertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
+    { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Admini­stration Ehren­amt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
+    { id: 'adidas', name: 'Adidas', role: 'Ehren­amtliche Unter­stützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
+    { id: 'sportvereine', name: 'Sportvereine', role: 'Sport­angebote', customIcon: true, size: 'medium', angle: 205.6 },
+    { id: 'ava', name: 'ava', role: 'Techno­logie-Partner', logo: '/ava_logo.png', size: 'small', angle: 257 },
+    { id: 'bmftr', name: 'BMFSFJ', role: 'Finan­zierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
 
   // Toggle this to use importance-based sizing (true) or uniform sizing (false)
@@ -204,7 +204,15 @@ const PartnerNetwork: React.FC = () => {
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <span className={`text-center font-semibold text-white leading-tight whitespace-pre-line ${isMobile ? 'text-xs' : 'text-sm'}`}>
+                    <span
+                      className={`text-center font-semibold text-white leading-tight px-1 ${isMobile ? 'text-sm' : 'text-sm md:text-base'}`}
+                      style={{
+                        hyphens: 'manual',
+                        wordWrap: 'break-word',
+                        overflowWrap: 'break-word',
+                        lineHeight: '1.25',
+                      }}
+                    >
                       {partner.role}
                     </span>
                   </div>
