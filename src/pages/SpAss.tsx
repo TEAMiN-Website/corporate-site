@@ -23,7 +23,6 @@ interface FaqCategory {
 
 const SpAss: React.FC = () => {
  const { t } = useTranslation();
- const [timelineExpanded, setTimelineExpanded] = useState(true);
  const [currentSlide, setCurrentSlide] = useState(0);
  const [isPlaying, setIsPlaying] = useState(true);
  const [activeFaqItems, setActiveFaqItems] = useState<Set<string>>(new Set());
@@ -202,77 +201,73 @@ const SpAss: React.FC = () => {
  <div className="h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55] opacity-30" />
 
  {/* How It Works Timeline Section */}
- <section className="py-24 px-6 relative">
- {/* Background Image */}
- <div
- className="absolute inset-0 bg-cover bg-center"
- style={{
- backgroundImage: 'url("/assistant picture 3.jpg")',
- backgroundPosition: 'center 20%'
- }}
+ <section className="py-48 relative overflow-hidden">
+ <div className="absolute inset-0">
+ <img
+ src="assistant picture 3 copy.jpg"
+ alt="Inclusive running event with wheelchair participant"
+ className="w-full h-full object-cover"
+ style={{ objectPosition: 'center 30%' }}
  />
- {/* Base Overlay */}
- <div className="absolute inset-0 bg-[#3F3E34]/20 [#3F3E34]/40" />
+ <div className="absolute inset-0 bg-gray-900/60"></div>
+ </div>
 
- <div className="max-w-7xl mx-auto relative z-10">
- <div className="text-center max-w-4xl mx-auto mb-12">
- <h2 className="text-5xl md:text-6xl font-bold text-white drop-shadow-lg">
- {t('spassNew.timeline.title')}
+ <div className="max-w-6xl mx-auto px-4 relative z-10">
+ <div className="text-center mb-16">
+ <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
+ How SpAss Works
  </h2>
- </div>
-
- <div className="max-w-5xl mx-auto">
- <button
- onClick={() => setTimelineExpanded(!timelineExpanded)}
- className="w-full px-8 py-5 bg-gradient-to-r from-[#D86D55] to-[#71B554] text-white border-none rounded-2xl text-lg font-semibold cursor-pointer mb-10 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wider flex items-center justify-center gap-3"
- >
- {t('spassNew.timeline.toggleButton')}
- <ChevronDown className={`w-6 h-6 transition-transform duration-300 ${timelineExpanded ? '' : '-rotate-90'}`} />
- </button>
-
- <div
- className={`grid md:grid-cols-2 gap-16 relative bg-[#F7ECD5]/85  backdrop-blur-sm rounded-3xl shadow-xl overflow-hidden transition-all duration-500 ${
- timelineExpanded ? 'max-h-[1000px] p-10 opacity-100' : 'max-h-0 p-0 opacity-0'
- }`}
- >
- <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-1 bg-gradient-to-b from-[#71B554] to-[#D86D55] -translate-x-1/2" />
-
- <div className="px-5">
- <div className="text-2xl font-bold mb-8 text-gray-900 text-center p-4 bg-white/90  rounded-xl">
- {t('spassNew.timeline.assistantJourney.title')}
- </div>
- {(t('spassNew.timeline.assistantJourney.steps', { returnObjects: true }) as TimelineStep[]).map((step, index) => (
- <div key={index} className="mb-10 relative pl-14">
- <span className="absolute left-0 top-0 w-9 h-9 bg-gradient-to-br from-[#D86D55] to-[#71B554] text-white rounded-full flex items-center justify-center font-bold">
- {index + 1}
- </span>
- <h4 className="text-lg font-semibold mb-2 text-gray-900 ">
- {step.title}
- </h4>
- <p className="text-sm text-gray-700 leading-relaxed">
- {step.description}
+ <p className="text-xl text-white italic">
+ From qualification to independence—together
  </p>
  </div>
- ))}
+
+ <div className="relative">
+ <div className="absolute top-1/2 left-0 right-0 h-1 bg-white/30 transform -translate-y-1/2 hidden lg:block"></div>
+
+ <div className="grid lg:grid-cols-4 gap-8">
+ {/* Step 1 */}
+ <div className="text-center relative h-full">
+ <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
+ <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
+ 1
+ </div>
+ <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Assistant Qualification</h3>
+ <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">Aspiring assistants complete comprehensive training: 15 hours of self-paced e-learning and a full-day practical workshop to ensure they're ready to provide meaningful support.</p>
+ </div>
  </div>
 
- <div className="px-5">
- <div className="text-2xl font-bold mb-8 text-gray-900 text-center p-4 bg-white/90  rounded-xl">
- {t('spassNew.timeline.athleteJourney.title')}
+ {/* Step 2 */}
+ <div className="text-center relative h-full">
+ <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
+ <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
+ 2
  </div>
- {(t('spassNew.timeline.athleteJourney.steps', { returnObjects: true }) as TimelineStep[]).map((step, index) => (
- <div key={index} className="mb-10 relative pl-14">
- <span className="absolute left-0 top-0 w-9 h-9 bg-gradient-to-br from-[#D86D55] to-[#71B554] text-white rounded-full flex items-center justify-center font-bold">
- {index + 1}
- </span>
- <h4 className="text-lg font-semibold mb-2 text-gray-900 ">
- {step.title}
- </h4>
- <p className="text-sm text-gray-700 leading-relaxed">
- {step.description}
- </p>
+ <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Registration & Matching</h3>
+ <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">Athletes and assistants register with partnering organizations like Lebenshilfe. Based on preferences, skills, schedules, and needs, the right matches are made through the ava platform.</p>
  </div>
- ))}
+ </div>
+
+ {/* Step 3 */}
+ <div className="text-center relative h-full">
+ <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
+ <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
+ 3
+ </div>
+ <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">First Steps & Sports Participation</h3>
+ <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">Athletes and assistants get to know each other, choose the sport and club together, and begin regular participation. Support from Lebenshilfe and the TEAMiN community is there for the first sessions and beyond.</p>
+ </div>
+ </div>
+
+ {/* Step 4 */}
+ <div className="text-center relative h-full">
+ <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
+ <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
+ 4
+ </div>
+ <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Fostering Independence</h3>
+ <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">The goal is always independence through personal growth, strong team relationships, and community integration. Over time, support naturally reduces as athletes become fully part of their teams.</p>
+ </div>
  </div>
  </div>
  </div>
