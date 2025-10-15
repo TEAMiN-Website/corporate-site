@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { useTranslation } from 'react-i18next';
+import { useNavigate } from 'react-router-dom';
 import { ChevronDown, Quote, Play, Pause } from 'lucide-react';
 import PartnerNetwork from '../components/PartnerNetwork';
 
@@ -23,6 +24,7 @@ interface FaqCategory {
 
 const SpAss: React.FC = () => {
  const { t } = useTranslation();
+ const navigate = useNavigate();
  const [currentSlide, setCurrentSlide] = useState(0);
  const [isPlaying, setIsPlaying] = useState(true);
  const [activeFaqItems, setActiveFaqItems] = useState<Set<string>>(new Set());
@@ -553,7 +555,7 @@ const SpAss: React.FC = () => {
  {t('spassNew.pathways.assistant.description')}
  </p>
  </div>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ <button onClick={() => navigate('/volunteers')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
  Register now
  </button>
  </div>
@@ -572,7 +574,7 @@ const SpAss: React.FC = () => {
  {t('spassNew.pathways.athlete.description')}
  </p>
  </div>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ <button onClick={() => navigate('/athletes')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
  {t('spassNew.pathways.athlete.cta1')}
  </button>
  </div>
@@ -591,7 +593,7 @@ const SpAss: React.FC = () => {
  Partner with TEAMiN to make sports inclusive. Whether you are a sports club wanting guidance, company wanting to do good or an inclusive initiative seeking to connect.
  </p>
  </div>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ <button onClick={() => navigate('/partners')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
  {t('spassNew.pathways.organization.cta')}
  </button>
  </div>
