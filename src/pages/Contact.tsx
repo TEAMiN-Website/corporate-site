@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Phone, Mail, MapPin, CheckCircle, AlertCircle } from 'lucide-react';
+import { Mail, MapPin, CheckCircle, AlertCircle } from 'lucide-react';
 import { submitContactForm } from '../utils/contactService';
 
 const Contact: React.FC = () => {
@@ -48,7 +48,6 @@ const Contact: React.FC = () => {
  };
 
  const contactInfo = [
-   { icon: Phone, label: t('contact.info.phone'), value: t('contact.info.phoneValue') },
    { icon: Mail, label: t('contact.info.email'), value: t('contact.info.emailValue') },
    { icon: MapPin, label: t('contact.info.address'), value: t('contact.info.addressValue') }
  ];
