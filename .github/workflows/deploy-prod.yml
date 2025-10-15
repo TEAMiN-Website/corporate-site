@@ -14,8 +14,6 @@ on:
         default: "prd"
         type: choice
         options:
-          - dev
-          - uat
           - prd
 
 jobs:
