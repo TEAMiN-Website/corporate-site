@@ -1,10 +1,12 @@
 import React, { useState } from 'react';
+import RunningPeopleIcon from './Icons/RunningPeopleIcon';
 
 interface Partner {
   id: string;
   name: string;
   role: string;
   logo?: string;
+  customIcon?: boolean;
   size: 'small' | 'medium' | 'large';
   angle: number;
 }
@@ -17,7 +19,7 @@ const PartnerNetwork: React.FC = () => {
     { id: 'uni', name: 'Uni Würzburg', role: 'Fachexpertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
     { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
     { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
-    { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', size: 'medium', angle: 205.6 },
+    { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', customIcon: true, size: 'medium', angle: 205.6 },
     { id: 'ava', name: 'ava', role: 'Technologie-\nPartner', logo: '/ava_logo.png', size: 'small', angle: 257 },
     { id: 'bmftr', name: 'BMFSFJ', role: 'Finanzierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
@@ -174,7 +176,14 @@ const PartnerNetwork: React.FC = () => {
                       WebkitBackfaceVisibility: 'hidden',
                     }}
                   >
-                    {partner.logo ? (
+                    {partner.customIcon ? (
+                      <div className="flex flex-col items-center justify-center w-full h-full">
+                        <RunningPeopleIcon className="w-[55%] h-[55%] mb-1" />
+                        <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-[0.6rem]' : 'text-xs'} leading-tight`}>
+                          {partner.name}
+                        </span>
+                      </div>
+                    ) : partner.logo ? (
                       <img
                         src={partner.logo}
                         alt={partner.name}
