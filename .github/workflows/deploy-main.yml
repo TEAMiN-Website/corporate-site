@@ -14,9 +14,7 @@ on:
         default: "uat"
         type: choice
         options:
-          - dev
           - uat
-          - prod
 
 jobs:
   build-and-deploy:

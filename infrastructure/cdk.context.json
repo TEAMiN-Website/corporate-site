@@ -18,6 +18,16 @@
     "StorageBucketName": "team-corporate-site-uat",
     "DomainName": "uat.teaminklusion.de",
     "CertificateArn": "arn:aws:acm:us-east-1:777208094115:certificate/2451a2a3-3a0b-4f39-b795-b9c0d1fd8cd3"
+  },  
+  "prd": {
+    "Account": "777208094115",
+    "Region": "eu-west-1",
+    "ApplicationName": "TeamIn Corporate Site",
+    "ApplicationCode": "tsp",
+    "Environment": "prd",
+    "StorageBucketName": "team-corporate-site-prd",
+    "DomainName": "prd.teaminklusion.de",
+    "CertificateArn": "arn:aws:acm:us-east-1:777208094115:certificate/2451a2a3-3a0b-4f39-b795-b9c0d1fd8cd3"
   },
   "cli-telemetry": false
 }
