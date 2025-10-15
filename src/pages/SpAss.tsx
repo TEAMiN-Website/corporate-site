@@ -547,14 +547,14 @@ const SpAss: React.FC = () => {
  <div className="relative z-10 h-full flex flex-col justify-between">
  <div>
  <h3 className="text-3xl font-bold mb-4 text-white">
- {t('spassNew.pathways.assistant.title')}
+ For Sport Assistants
  </h3>
  <p className="text-lg text-white/90 mb-6 leading-relaxed">
  {t('spassNew.pathways.assistant.description')}
  </p>
  </div>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
- {t('spassNew.pathways.assistant.cta1')}
+ <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ Register now
  </button>
  </div>
  </div>
@@ -566,13 +566,13 @@ const SpAss: React.FC = () => {
  <div className="relative z-10 h-full flex flex-col justify-between">
  <div>
  <h3 className="text-3xl font-bold mb-4 text-white">
- {t('spassNew.pathways.athlete.title')}
+ For Athletes
  </h3>
  <p className="text-lg text-white/90 mb-6 leading-relaxed">
  {t('spassNew.pathways.athlete.description')}
  </p>
  </div>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
+ <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
  {t('spassNew.pathways.athlete.cta1')}
  </button>
  </div>
@@ -585,13 +585,13 @@ const SpAss: React.FC = () => {
  <div className="relative z-10 h-full flex flex-col justify-between">
  <div>
  <h3 className="text-3xl font-bold mb-4 text-white">
- {t('spassNew.pathways.organization.title')}
+ For Organizations
  </h3>
  <p className="text-lg text-white/90 mb-6 leading-relaxed">
- {t('spassNew.pathways.organization.description')}
+ Partner with TEAMiN to make sports inclusive. Whether you are a sports club wanting guidance, company wanting to do good or an inclusive initiative seeking to connect.
  </p>
  </div>
- <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 uppercase tracking-wider">
+ <button className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
  {t('spassNew.pathways.organization.cta')}
  </button>
  </div>
