@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
  const [copied, setCopied] = useState(false);
 
  const handleCopyEmail = () => {
- navigator.clipboard.writeText('sportassistenz@uni-wuerzburg.de');
+ navigator.clipboard.writeText('kontakt@teaminklusion.de');
  setCopied(true);
  setTimeout(() => setCopied(false), 2000);
  };
@@ -45,11 +45,11 @@ const Footer: React.FC = () => {
  </p>
  <div className="flex items-center space-x-2 group">
  <Mail className="w-4 h-4 text-gray-500" />
- <span 
+ <span
  className="text-gray-700 text-sm font-medium cursor-pointer select-all hover:text-gray-900 transition-colors duration-200"
  title="Click to select and copy"
  >
- sportassistenz@uni-wuerzburg.de
+ kontakt@teaminklusion.de
  </span>
  <button
  onClick={handleCopyEmail}
