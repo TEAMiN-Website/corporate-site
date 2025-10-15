@@ -25,12 +25,32 @@ const PartnerNetwork: React.FC = () => {
   // Toggle this to use importance-based sizing (true) or uniform sizing (false)
   const useImportanceBasedSizing = false;
 
-  const getSizeInPx = (size: 'small' | 'medium' | 'large'): number => {
+  const getSizeInPx = (size: 'small' | 'medium' | 'large', isMobile: boolean, isTablet: boolean): number => {
     if (!useImportanceBasedSizing) {
-      return 132; // Uniform medium size for all circles
+      // Uniform sizing with responsive scaling
+      if (isMobile) return 70; // 50% reduction for mobile
+      if (isTablet) return 100; // 25% reduction for tablet
+      return 132; // Desktop size
     }
-    
-    // Importance-based sizing (when enabled)
+
+    // Importance-based sizing (when enabled) with responsive scaling
+    if (isMobile) {
+      switch (size) {
+        case 'small': return 55; // ~45% reduction
+        case 'medium': return 70; // ~47% reduction
+        case 'large': return 85; // ~49% reduction
+      }
+    }
+
+    if (isTablet) {
+      switch (size) {
+        case 'small': return 75; // ~26% reduction
+        case 'medium': return 100; // ~24% reduction
+        case 'large': return 125; // ~26% reduction
+      }
+    }
+
+    // Desktop sizes
     switch (size) {
       case 'small': return 102;
       case 'medium': return 132;
@@ -50,23 +70,39 @@ const PartnerNetwork: React.FC = () => {
     });
   };
 
-  const radius = 220;
+  // Responsive radius based on screen size
+  const [isMobile, setIsMobile] = useState(false);
+  const [isTablet, setIsTablet] = useState(false);
+
+  React.useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth < 640);
+      setIsTablet(window.innerWidth >= 640 && window.innerWidth < 1024);
+    };
+
+    handleResize();
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
+
+  const radius = isMobile ? 110 : isTablet ? 165 : 220; // 50% for mobile, 75% for tablet
+  const containerSize = isMobile ? 315 : isTablet ? 470 : 630; // Matches radius scaling
 
   return (
-    <div className="relative w-full py-24 px-6 bg-[#F7ECD5] overflow-hidden">
+    <div className="relative w-full py-12 sm:py-16 md:py-24 px-4 sm:px-6 bg-[#F7ECD5] overflow-hidden">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center max-w-4xl mx-auto mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-6">
+        <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12 md:mb-16">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-4 sm:mb-6">
             HAVING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> TOGETHER
           </h2>
-          <p className="text-gray-900 text-lg leading-relaxed">
+          <p className="text-gray-900 text-base sm:text-lg leading-relaxed px-2">
             Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers.
           </p>
-          <p className="text-gray-900 text-lg leading-relaxed mt-4 italic">
-            Hover over the circles to discover each partner's contributions to SpAss.
+          <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed mt-3 sm:mt-4 italic px-2">
+            {isMobile ? 'Tap the circles to discover each partner\'s contributions to SpAss.' : 'Hover over the circles to discover each partner\'s contributions to SpAss.'}
           </p>
         </div>
-        <div className="relative mx-auto" style={{ width: '630px', height: '630px', maxWidth: '90vw', maxHeight: '90vw' }}>
+        <div className="relative mx-auto" style={{ width: `${containerSize}px`, height: `${containerSize}px`, maxWidth: '90vw', maxHeight: '90vw' }}>
           <div
             className="absolute inset-0 rounded-full"
             style={{
@@ -79,7 +115,7 @@ const PartnerNetwork: React.FC = () => {
 
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10">
             <h3
-              className="text-4xl md:text-5xl font-bold text-center whitespace-nowrap"
+              className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold text-center whitespace-nowrap"
               style={{
                 background: 'linear-gradient(135deg, #D86D55, #71B554)',
                 WebkitBackgroundClip: 'text',
@@ -92,7 +128,7 @@ const PartnerNetwork: React.FC = () => {
           </div>
 
           {partners.map((partner) => {
-            const size = getSizeInPx(partner.size);
+            const size = getSizeInPx(partner.size, isMobile, isTablet);
             const angleRad = (partner.angle * Math.PI) / 180;
             const x = Math.cos(angleRad) * radius;
             const y = Math.sin(angleRad) * radius;
@@ -132,7 +168,7 @@ const PartnerNetwork: React.FC = () => {
                   }}
                 >
                   <div
-                    className="absolute w-full h-full rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center p-4"
+                    className="absolute w-full h-full rounded-full bg-white/90 backdrop-blur-sm shadow-lg border border-white/20 flex items-center justify-center p-2 sm:p-3 md:p-4"
                     style={{
                       backfaceVisibility: 'hidden',
                       WebkitBackfaceVisibility: 'hidden',
@@ -142,24 +178,24 @@ const PartnerNetwork: React.FC = () => {
                       <img
                         src={partner.logo}
                         alt={partner.name}
-                        className="max-w-[80%] max-h-[80%] object-contain"
+                        className="max-w-[75%] max-h-[75%] sm:max-w-[80%] sm:max-h-[80%] object-contain"
                       />
                     ) : (
-                      <span className="text-center font-semibold text-gray-700 text-sm">
+                      <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-xs' : 'text-sm'}`}>
                         {partner.name}
                       </span>
                     )}
                   </div>
 
                   <div
-                    className="absolute w-full h-full rounded-full bg-[#3F3E34] shadow-lg flex items-center justify-center p-4"
+                    className="absolute w-full h-full rounded-full bg-[#3F3E34] shadow-lg flex items-center justify-center p-2 sm:p-3 md:p-4"
                     style={{
                       backfaceVisibility: 'hidden',
                       WebkitBackfaceVisibility: 'hidden',
                       transform: 'rotateY(180deg)',
                     }}
                   >
-                    <span className="text-center font-semibold text-white text-sm leading-tight whitespace-pre-line">
+                    <span className={`text-center font-semibold text-white leading-tight whitespace-pre-line ${isMobile ? 'text-xs' : 'text-sm'}`}>
                       {partner.role}
                     </span>
                   </div>
