@@ -3,7 +3,7 @@
     "home": "Home",
     "about": "About TEAMiN",
     "spass": "SpAss Program",
-    "athletes": "Sportler:innen",
+    "athletes": "Athletes",
     "aurelian": "Meet Aurelian",
     "volunteers": "Assistants",
     "signup": "Sign Up",
@@ -76,7 +76,7 @@
       "bvs": "Research partner in the BMFTR funded research project 'SpAss' contributing project members as well as access to e-learning and booking infrastructure and valuable network of sports clubs in Bavaria.",
       "uniWuerzburg": "Research partner in the BMFTR funded research project 'SpAss' contributing project members, deep academic knowledge around inclusive sports, qualification for assistants, ongoing research around sports assistance.",
       "bmftr": "Funds the research project via the datipilot program.",
-      "lebenshilfe": "They match Sportler:innen and volunteers and take care of all administration.",
+      "lebenshilfe": "They match athletes and volunteers and take care of all administration.",
       "adidas": "Supports the project as a strategic partner through employee volunteering in the form of pro bono consulting and sports assistants as well as financial support."
     },
     "cta": {
@@ -87,7 +87,7 @@
         "button": "Learn More"
       },
       "athletes": {
-        "title": "Sportler:innen",
+        "title": "Athletes",
         "description": "Find your place in sports with qualified support and welcoming communities.",
         "button": "Get Started"
       },
@@ -363,7 +363,7 @@
         },
         {
           "quote": "Once a month we go to the Sunday disco together. It's hard for me to stop because we've built a connection. She wouldn't have anyone else - and I personally enjoy it too.",
-          "name": "Mina, Special Needs Teacher & Leisure Assistant"
+          "name": "Mina, Special Education Teacher & Leisure Assistant"
         }
       ]
     },
