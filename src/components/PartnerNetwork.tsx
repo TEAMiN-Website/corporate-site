@@ -57,7 +57,7 @@ const PartnerNetwork: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-6">
-            HAVING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">Sp<span className="lowercase">A</span>ss</span> TOGETHER
+            HAVING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> TOGETHER
           </h2>
           <p className="text-gray-900 text-lg leading-relaxed">
             Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers.
