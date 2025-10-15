@@ -178,7 +178,10 @@ const PartnerNetwork: React.FC = () => {
                   >
                     {partner.customIcon ? (
                       <div className="flex flex-col items-center justify-center w-full h-full">
-                        <div className="text-4xl sm:text-5xl mb-1">🏃🏃</div>
+                        <div className="text-3xl sm:text-4xl mb-1 flex gap-0.5">
+                          <span>🏃</span>
+                          <span>🏃</span>
+                        </div>
                         <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-[0.6rem]' : 'text-xs'} leading-tight`}>
                           {partner.name}
                         </span>
