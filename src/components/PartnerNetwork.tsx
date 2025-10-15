@@ -18,7 +18,7 @@ const PartnerNetwork: React.FC = () => {
     { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Administration Ehrenamt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
     { id: 'adidas', name: 'Adidas', role: 'Ehrenamtliche Unterstützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
     { id: 'sportvereine', name: 'Sportvereine', role: 'Sportangebote', size: 'medium', angle: 205.6 },
-    { id: 'ava', name: 'ava', role: 'Technologie-\nPartner', size: 'small', angle: 257 },
+    { id: 'ava', name: 'ava', role: 'Technologie-\nPartner', logo: '/ava_logo.png', size: 'small', angle: 257 },
     { id: 'bmftr', name: 'BMFSFJ', role: 'Finanzierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
 
