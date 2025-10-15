@@ -26,6 +26,8 @@ const SpAss: React.FC = () => {
  const [currentSlide, setCurrentSlide] = useState(0);
  const [isPlaying, setIsPlaying] = useState(true);
  const [activeFaqItems, setActiveFaqItems] = useState<Set<string>>(new Set());
+ const [elearningExpanded, setElearningExpanded] = useState(false);
+ const [practiceDayExpanded, setPracticeDayExpanded] = useState(false);
  const carouselRef = useRef<HTMLDivElement>(null);
 
  const stories = t('spassNew.stories.testimonials', { returnObjects: true }) as Testimonial[];
@@ -267,6 +269,189 @@ const SpAss: React.FC = () => {
  </div>
  <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Fostering Independence</h3>
  <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">The goal is always independence through personal growth, strong team relationships, and community integration. Over time, support naturally reduces as athletes become fully part of their teams.</p>
+ </div>
+ </div>
+ </div>
+ </div>
+ </div>
+ </section>
+
+ {/* Section Divider */}
+ <div className="h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55] opacity-30" />
+
+ {/* Qualification Section */}
+ <section className="py-24 px-6 bg-[#F7ECD5]/50">
+ <div className="max-w-6xl mx-auto">
+ <div className="text-center mb-16">
+ <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
+ State-of-the-Art Sport Assistant Qualification
+ </h2>
+ <p className="text-xl text-gray-700 italic">
+ Making <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> safe and effective through online and in-person training
+ </p>
+ </div>
+
+ {/* E-Learning Modules Accordion */}
+ <div className="mb-8">
+ <button
+ onClick={() => setElearningExpanded(!elearningExpanded)}
+ className="w-full flex items-center justify-between p-6 rounded-2xl bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white hover:shadow-lg transition-all duration-300"
+ aria-expanded={elearningExpanded}
+ >
+ <span className="text-xl font-semibold">E-Learning Modules (15 hours online)</span>
+ <ChevronDown
+ className={`w-6 h-6 transition-transform duration-300 ${elearningExpanded ? 'rotate-180' : ''}`}
+ />
+ </button>
+
+ <div
+ className={`overflow-hidden transition-all duration-500 ${elearningExpanded ? 'max-h-[3000px] opacity-100' : 'max-h-0 opacity-0'}`}
+ >
+ <div className="mt-6 grid md:grid-cols-2 gap-6">
+ {/* Module 1 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 1: Introduction</h4>
+ <p className="text-gray-700">
+ Understand the course structure, organizational details, and the importance of sport assistance for inclusion.
+ </p>
+ </div>
+
+ {/* Module 2 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 2: People with Disabilities</h4>
+ <p className="text-gray-700">
+ Learn about different types of disabilities, the diversity within this community, and the barriers they face in sports participation.
+ </p>
+ </div>
+
+ {/* Module 3 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 3: Inclusion</h4>
+ <p className="text-gray-700">
+ Explore what inclusion means, why it matters, and how targeted measures can create meaningful participation in society and sports.
+ </p>
+ </div>
+
+ {/* Module 4 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 4: Accessibility</h4>
+ <p className="text-gray-700">
+ Identify barriers to participation and understand how accessible design enables independence and inclusion in sports settings.
+ </p>
+ </div>
+
+ {/* Module 5 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 5: Sport and Movement</h4>
+ <p className="text-gray-700">
+ Discover why physical activity matters for health and wellbeing, and the specific challenges people with disabilities face in accessing sports.
+ </p>
+ </div>
+
+ {/* Module 6 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 6: Sport and Inclusion</h4>
+ <p className="text-gray-700">
+ Apply practical models and frameworks for creating inclusive sports activities in diverse groups and mainstream club settings.
+ </p>
+ </div>
+
+ {/* Module 7 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 7: Assistance</h4>
+ <p className="text-gray-700">
+ Define the role of a sport assistant, understand your responsibilities, and learn how to provide effective, empowering support.
+ </p>
+ </div>
+
+ {/* Module 8 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 8: Prevention</h4>
+ <p className="text-gray-700">
+ Recognize risks and warning signs, particularly around safeguarding, and learn how to create safe, respectful sports environments.
+ </p>
+ </div>
+
+ {/* Module 9 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 9: Essential Competencies</h4>
+ <p className="text-gray-700">
+ Develop key skills including communication, feedback, empathy, and adaptability that make you an effective assistant.
+ </p>
+ </div>
+
+ {/* Module 10 */}
+ <div className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300">
+ <h4 className="text-lg font-bold text-[#71B554] mb-2">Module 10: Knowledge Assessment</h4>
+ <p className="text-gray-700">
+ Apply and consolidate everything you've learned through practical scenarios and comprehensive testing.
+ </p>
+ </div>
+ </div>
+ </div>
+ </div>
+
+ {/* Practice Day Accordion */}
+ <div className="mb-8">
+ <button
+ onClick={() => setPracticeDayExpanded(!practiceDayExpanded)}
+ className="w-full flex items-center justify-between p-6 rounded-2xl bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white hover:shadow-lg transition-all duration-300"
+ aria-expanded={practiceDayExpanded}
+ >
+ <span className="text-xl font-semibold">Practice Day (Full-day hands-on workshop)</span>
+ <ChevronDown
+ className={`w-6 h-6 transition-transform duration-300 ${practiceDayExpanded ? 'rotate-180' : ''}`}
+ />
+ </button>
+
+ <div
+ className={`overflow-hidden transition-all duration-500 ${practiceDayExpanded ? 'max-h-[3000px] opacity-100' : 'max-h-0 opacity-0'}`}
+ >
+ <div className="mt-6 bg-white p-8 rounded-xl shadow-md">
+ <p className="text-gray-700 text-lg mb-8 leading-relaxed">
+ Experience disability perspectives firsthand and build confidence through practical, experiential learning with experienced trainers and fellow aspiring assistants.
+ </p>
+
+ <div className="space-y-6">
+ {/* Component 1 */}
+ <div className="border-l-4 border-[#71B554] pl-6">
+ <h4 className="text-xl font-bold text-gray-900 mb-2">Experiencing Different Perspectives</h4>
+ <p className="text-gray-700">
+ Practice using wheelchairs, blindfolds, and other adaptive equipment to understand the challenges and possibilities of adapted sports firsthand.
+ </p>
+ </div>
+
+ {/* Component 2 */}
+ <div className="border-l-4 border-[#D86D55] pl-6">
+ <h4 className="text-xl font-bold text-gray-900 mb-2">Adapted Sports Activities</h4>
+ <p className="text-gray-700">
+ Learn and play blind football, wheelchair basketball, and other inclusive games. Discover how to modify activities so everyone can participate meaningfully.
+ </p>
+ </div>
+
+ {/* Component 3 */}
+ <div className="border-l-4 border-[#71B554] pl-6">
+ <h4 className="text-xl font-bold text-gray-900 mb-2">Your Role as Assistant</h4>
+ <p className="text-gray-700">
+ Explore what it means to support "with" someone rather than doing things "for" them. Practice empowering approaches through group exercises and role-plays.
+ </p>
+ </div>
+
+ {/* Component 4 */}
+ <div className="border-l-4 border-[#D86D55] pl-6">
+ <h4 className="text-xl font-bold text-gray-900 mb-2">Prevention & Safety</h4>
+ <p className="text-gray-700">
+ Understand boundaries, proximity, and how to create safe, respectful environments for all participants.
+ </p>
+ </div>
+
+ {/* Component 5 */}
+ <div className="border-l-4 border-[#71B554] pl-6">
+ <h4 className="text-xl font-bold text-gray-900 mb-2">Building Confidence</h4>
+ <p className="text-gray-700">
+ Work through real scenarios, address fears and questions, and leave feeling prepared to start your journey as a sport assistant.
+ </p>
+ </div>
  </div>
  </div>
  </div>
