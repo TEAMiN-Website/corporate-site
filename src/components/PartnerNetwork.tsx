@@ -208,12 +208,22 @@ const PartnerNetwork: React.FC = () => {
                     }}
                   >
                     <span
-                      className={`text-center font-semibold text-white leading-tight px-1 ${isMobile ? 'text-sm' : 'text-sm md:text-base'}`}
+                      className={`text-center font-semibold text-white px-1 ${
+                        partner.size === 'large'
+                          ? (isMobile ? 'text-[15px]' : 'text-[16px]')
+                          : partner.size === 'medium'
+                          ? (isMobile ? 'text-[13px]' : 'text-[14px]')
+                          : (isMobile ? 'text-[12px]' : 'text-[13px]')
+                      }`}
                       style={{
                         hyphens: 'manual',
                         wordWrap: 'break-word',
                         overflowWrap: 'break-word',
-                        lineHeight: '1.25',
+                        lineHeight: '1.2',
+                        display: '-webkit-box',
+                        WebkitLineClamp: 2,
+                        WebkitBoxOrient: 'vertical',
+                        overflow: 'hidden',
                       }}
                     >
                       {partner.role}
