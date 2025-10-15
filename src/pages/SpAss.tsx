@@ -278,7 +278,7 @@ const SpAss: React.FC = () => {
  <div className="h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55] opacity-30" />
 
  {/* Success Stories Carousel */}
- <section className="py-24 px-6 relative bg-gray-900">
+ <section className="py-24 px-6 relative bg-gray-900 hidden">
  {/* Background Image */}
  <div
  className="absolute inset-0 opacity-40"
