@@ -783,6 +783,15 @@
         "mobile": "Tap the circles to discover each partner's contributions to SpAss.",
         "desktop": "Hover over the circles to discover each partner's contributions to SpAss."
       },
+      "names": {
+        "bvs": "BVS Bayern",
+        "uni": "Uni Würzburg",
+        "lebenshilfe": "Lebenshilfe",
+        "adidas": "Adidas",
+        "sportvereine": "Sports Clubs",
+        "ava": "ava",
+        "bmftr": "BMFSFJ"
+      },
       "roles": {
         "bvs": "Infrastructure",
         "uni": "Expert Knowledge",

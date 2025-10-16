@@ -4,7 +4,6 @@ import RunningPeopleIcon from './Icons/RunningPeopleIcon';
 
 interface Partner {
   id: string;
-  name: string;
   logo?: string;
   customIcon?: boolean;
   size: 'small' | 'medium' | 'large';
@@ -16,13 +15,13 @@ const PartnerNetwork: React.FC = () => {
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
-    { id: 'bvs', name: 'BVS Bayern', logo: '/BVS Logo.png', size: 'large', angle: 0 },
-    { id: 'uni', name: 'Uni Würzburg', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
-    { id: 'lebenshilfe', name: 'Lebenshilfe', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
-    { id: 'adidas', name: 'Adidas', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
-    { id: 'sportvereine', name: 'Sportvereine', customIcon: true, size: 'medium', angle: 205.6 },
-    { id: 'ava', name: 'ava', logo: '/ava_logo.png', size: 'small', angle: 257 },
-    { id: 'bmftr', name: 'BMFSFJ', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
+    { id: 'bvs', logo: '/BVS Logo.png', size: 'large', angle: 0 },
+    { id: 'uni', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
+    { id: 'lebenshilfe', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
+    { id: 'adidas', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
+    { id: 'sportvereine', customIcon: true, size: 'medium', angle: 205.6 },
+    { id: 'ava', logo: '/ava_logo.png', size: 'small', angle: 257 },
+    { id: 'bmftr', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
 
   // Toggle this to use importance-based sizing (true) or uniform sizing (false)
@@ -191,18 +190,18 @@ const PartnerNetwork: React.FC = () => {
                           <span>🏃</span>
                         </div>
                         <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-[0.6rem]' : 'text-xs'} leading-tight`}>
-                          {partner.name}
+                          {t(`spassPage.partners.names.${partner.id}`)}
                         </span>
                       </div>
                     ) : partner.logo ? (
                       <img
                         src={partner.logo}
-                        alt={partner.name}
+                        alt={t(`spassPage.partners.names.${partner.id}`)}
                         className="max-w-[75%] max-h-[75%] sm:max-w-[80%] sm:max-h-[80%] object-contain"
                       />
                     ) : (
                       <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-xs' : 'text-sm'}`}>
-                        {partner.name}
+                        {t(`spassPage.partners.names.${partner.id}`)}
                       </span>
                     )}
                   </div>

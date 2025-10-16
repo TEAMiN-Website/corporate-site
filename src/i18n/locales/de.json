@@ -783,6 +783,15 @@
         "mobile": "Tippe auf die Kreise, um die Beiträge jedes Partners zu SpAss zu entdecken.",
         "desktop": "Fahre mit der Maus über die Kreise, um die Beiträge jedes Partners zu SpAss zu entdecken."
       },
+      "names": {
+        "bvs": "BVS Bayern",
+        "uni": "Uni Würzburg",
+        "lebenshilfe": "Lebenshilfe",
+        "adidas": "Adidas",
+        "sportvereine": "Sportvereine",
+        "ava": "ava",
+        "bmftr": "BMFSFJ"
+      },
       "roles": {
         "bvs": "Infra­struktur",
         "uni": "Fach­expertise",
