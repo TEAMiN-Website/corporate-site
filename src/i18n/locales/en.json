@@ -778,6 +778,21 @@
       "title": "HAVING SpAss TOGETHER",
       "description": "Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers."
     },
+    "partners": {
+      "instruction": {
+        "mobile": "Tap the circles to discover each partner's contributions to SpAss.",
+        "desktop": "Hover over the circles to discover each partner's contributions to SpAss."
+      },
+      "roles": {
+        "bvs": "Infrastructure",
+        "uni": "Expert Knowledge",
+        "lebenshilfe": "Volunteer Administration",
+        "adidas": "Volunteer Support",
+        "sportvereine": "Sports Offerings",
+        "ava": "Technology Partner",
+        "bmftr": "Funding"
+      }
+    },
     "howItWorks": {
       "title": "HOW SpAss WORKS",
       "subtitle": "From qualification to independence—together",

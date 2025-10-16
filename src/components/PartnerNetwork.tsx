@@ -5,7 +5,6 @@ import RunningPeopleIcon from './Icons/RunningPeopleIcon';
 interface Partner {
   id: string;
   name: string;
-  role: string;
   logo?: string;
   customIcon?: boolean;
   size: 'small' | 'medium' | 'large';
@@ -17,13 +16,13 @@ const PartnerNetwork: React.FC = () => {
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
-    { id: 'bvs', name: 'BVS Bayern', role: 'Infra­struktur', logo: '/BVS Logo.png', size: 'large', angle: 0 },
-    { id: 'uni', name: 'Uni Würzburg', role: 'Fach­expertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
-    { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Admini­stration Ehren­amt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
-    { id: 'adidas', name: 'Adidas', role: 'Ehren­amtliche Unter­stützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
-    { id: 'sportvereine', name: 'Sportvereine', role: 'Sport­angebote', customIcon: true, size: 'medium', angle: 205.6 },
-    { id: 'ava', name: 'ava', role: 'Techno­logie-Partner', logo: '/ava_logo.png', size: 'small', angle: 257 },
-    { id: 'bmftr', name: 'BMFSFJ', role: 'Finan­zierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
+    { id: 'bvs', name: 'BVS Bayern', logo: '/BVS Logo.png', size: 'large', angle: 0 },
+    { id: 'uni', name: 'Uni Würzburg', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
+    { id: 'lebenshilfe', name: 'Lebenshilfe', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
+    { id: 'adidas', name: 'Adidas', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
+    { id: 'sportvereine', name: 'Sportvereine', customIcon: true, size: 'medium', angle: 205.6 },
+    { id: 'ava', name: 'ava', logo: '/ava_logo.png', size: 'small', angle: 257 },
+    { id: 'bmftr', name: 'BMFSFJ', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
 
   // Toggle this to use importance-based sizing (true) or uniform sizing (false)
@@ -110,7 +109,7 @@ const PartnerNetwork: React.FC = () => {
             {t('spassPage.together.description')}
           </p>
           <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed mt-3 sm:mt-4 italic px-2">
-            {isMobile ? 'Tap the circles to discover each partner\'s contributions to SpAss.' : 'Hover over the circles to discover each partner\'s contributions to SpAss.'}
+            {isMobile ? t('spassPage.partners.instruction.mobile') : t('spassPage.partners.instruction.desktop')}
           </p>
         </div>
         <div className="relative mx-auto" style={{ width: `${containerSize}px`, height: `${containerSize}px`, maxWidth: '90vw', maxHeight: '90vw' }}>
@@ -235,7 +234,7 @@ const PartnerNetwork: React.FC = () => {
                         overflow: 'hidden',
                       }}
                     >
-                      {partner.role}
+                      {t(`spassPage.partners.roles.${partner.id}`)}
                     </span>
                   </div>
                 </div>

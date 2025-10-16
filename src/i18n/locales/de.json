@@ -778,6 +778,21 @@
       "title": "GEMEINSAM SpAss HABEN",
       "description": "Unsere Sportassistenz-Lösung SpAss wird durch viele vielfältige Partner:innen ermöglicht. Von der Förderung durch das BMFTR über das fundierte Wissen und die Netzwerke von BVS Bayern und Uni Würzburg bis hin zur strategischen Unterstützung durch adidas Corporate Volunteers."
     },
+    "partners": {
+      "instruction": {
+        "mobile": "Tippe auf die Kreise, um die Beiträge jedes Partners zu SpAss zu entdecken.",
+        "desktop": "Fahre mit der Maus über die Kreise, um die Beiträge jedes Partners zu SpAss zu entdecken."
+      },
+      "roles": {
+        "bvs": "Infra­struktur",
+        "uni": "Fach­expertise",
+        "lebenshilfe": "Admini­stration Ehren­amt",
+        "adidas": "Ehren­amtliche Unter­stützung",
+        "sportvereine": "Sport­angebote",
+        "ava": "Techno­logie-Partner",
+        "bmftr": "Finan­zierung"
+      }
+    },
     "howItWorks": {
       "title": "WIE SpAss FUNKTIONIERT",
       "subtitle": "Von der Qualifizierung zur Unabhängigkeit – gemeinsam",
