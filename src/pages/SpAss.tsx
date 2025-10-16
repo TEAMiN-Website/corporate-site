@@ -161,7 +161,14 @@ const SpAss: React.FC = () => {
         <div className="max-w-7xl mx-auto relative z-10">
           <div className="text-center max-w-4xl mx-auto mb-20">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
-              {t('spassPage.origins.title')}
+              {t('spassPage.origins.title').split('SpAss').map((part, index, array) => (
+                <React.Fragment key={index}>
+                  {part}
+                  {index < array.length - 1 && (
+                    <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>
+                  )}
+                </React.Fragment>
+              ))}
             </h2>
             <p className="text-xl text-white">
               {t('spassPage.origins.subtitle')}
