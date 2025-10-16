@@ -764,6 +764,7 @@
   "spassPage": {
     "hero": {
       "title": "INKLUSIVE TEAMS DURCH SPORT-ASSISTENZ",
+      "subtitle": "Wir nutzen die Kraft von Gemeinschaften, um die eigenständige Teilnahme von Sportler:innen in regulären Sportvereinen zu unterstützen.",
       "explore": "Entdecke SpAss"
     },
     "origins": {
@@ -819,6 +820,16 @@
         "title": "Für Organisationen",
         "description": "Kooperiere mit TEAMiN, um Sport inklusiv zu machen. Egal ob du ein Sportverein bist, der Beratung sucht, ein Unternehmen, das Gutes tun möchte, oder eine inklusive Initiative, die sich vernetzen will.",
         "cta": "Partner werden"
+      }
+    },
+    "qualification": {
+      "title": "Modernste Sport-Assistenz-Qualifizierung",
+      "subtitle": "SpAss sicher und effektiv machen durch Online- und Präsenztraining",
+      "elearning": {
+        "title": "E-Learning Module (15 Stunden online)"
+      },
+      "practiceDay": {
+        "title": "Praxistag (Ganztägiger praktischer Workshop)"
       }
     }
   },

@@ -764,6 +764,7 @@
   "spassPage": {
     "hero": {
       "title": "INCLUSIVE TEAMS THROUGH SPORT ASSISTANCE",
+      "subtitle": "We leverage the power of communities to support athletes' independent participation in regular sports clubs.",
       "explore": "Explore SpAss"
     },
     "origins": {
@@ -819,6 +820,16 @@
         "title": "For Organizations",
         "description": "Partner with TEAMiN to make sports inclusive. Whether you are a sports club wanting guidance, company wanting to do good or an inclusive initiative seeking to connect.",
         "cta": "Partner With Us"
+      }
+    },
+    "qualification": {
+      "title": "State-of-the-Art Sport Assistant Qualification",
+      "subtitle": "Making SpAss safe and effective through online and in-person training",
+      "elearning": {
+        "title": "E-Learning Modules (15 hours online)"
+      },
+      "practiceDay": {
+        "title": "Practice Day (Full-day hands-on workshop)"
       }
     }
   },

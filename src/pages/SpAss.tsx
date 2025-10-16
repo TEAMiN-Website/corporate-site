@@ -134,7 +134,7 @@ const SpAss: React.FC = () => {
  {t('spassPage.hero.title')}
  </p>
  <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed" style={{ color: '#3F3E34' }}>
- We leverage the power of communities to support athletes' independent participation in regular sports clubs.
+ {t('spassPage.hero.subtitle')}
  </p>
  <div className="flex justify-center mb-8">
  <button
@@ -251,10 +251,10 @@ const SpAss: React.FC = () => {
  <div className="max-w-6xl mx-auto">
  <div className="text-center mb-16">
  <h2 className="text-4xl lg:text-5xl font-bold text-gray-900 mb-6">
- State-of-the-Art Sport Assistant Qualification
+ {t('spassPage.qualification.title')}
  </h2>
  <p className="text-xl text-gray-700 italic">
- Making <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> safe and effective through online and in-person training
+ {t('spassPage.qualification.subtitle')}
  </p>
  </div>
 
@@ -265,7 +265,7 @@ const SpAss: React.FC = () => {
  className="w-full flex items-center justify-between p-6 rounded-2xl bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white hover:shadow-lg transition-all duration-300"
  aria-expanded={elearningExpanded}
  >
- <span className="text-xl font-semibold">E-Learning Modules (15 hours online)</span>
+ <span className="text-xl font-semibold">{t('spassPage.qualification.elearning.title')}</span>
  <ChevronDown
  className={`w-6 h-6 transition-transform duration-300 ${elearningExpanded ? 'rotate-180' : ''}`}
  />
@@ -365,7 +365,7 @@ const SpAss: React.FC = () => {
  className="w-full flex items-center justify-between p-6 rounded-2xl bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white hover:shadow-lg transition-all duration-300"
  aria-expanded={practiceDayExpanded}
  >
- <span className="text-xl font-semibold">Practice Day (Full-day hands-on workshop)</span>
+ <span className="text-xl font-semibold">{t('spassPage.qualification.practiceDay.title')}</span>
  <ChevronDown
  className={`w-6 h-6 transition-transform duration-300 ${practiceDayExpanded ? 'rotate-180' : ''}`}
  />
