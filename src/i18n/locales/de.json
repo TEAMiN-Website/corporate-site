@@ -717,6 +717,211 @@
       "email": "E-Mail: sportassistenz@uni-wuerzburg.de"
     }
   },
+  "contribution": {
+    "title": "DEIN BEITRAG",
+    "yourRole": {
+      "title": "Deine Rolle als Assistent:in",
+      "subtitle": "Du lernst:",
+      "points": [
+        "Sportler:innen mit den richtigen Sportvereinen und Möglichkeiten zu verbinden",
+        "Zwischen Sportler:innen, Familien, Vereinen und Trainer:innen zu koordinieren",
+        "Praktische Unterstützung während Training und Wettkämpfen zu leisten",
+        "Kommunikation und Selbstbestimmung für Sportler:innen zu ermöglichen"
+      ]
+    },
+    "commitment": {
+      "title": "Das Engagement",
+      "initial": {
+        "label": "Anfängliche Ausbildung:",
+        "hours": "~15 Stunden selbstgesteuerte E-Learning",
+        "workshop": "1 ganztägiger praktischer Workshop"
+      },
+      "ongoing": {
+        "label": "Laufend:",
+        "hours": "2-3 Stunden pro Woche minimum",
+        "duration": "Mindestens 3 Monate Verpflichtung"
+      },
+      "timeframe": "~2-4h/Woche",
+      "comparison": "= 20% der durchschnittlichen Streaming-Zeit",
+      "note": "(Durchschnittliche Streaming-Zeit: 2h/Woche)"
+    },
+    "support": {
+      "title": "Unsere Unterstützung",
+      "qualification": {
+        "title": "Moderne Qualifizierung",
+        "description": "Flexibles Online-Lernen + praktische Übungen"
+      },
+      "community": {
+        "title": "Engagierte Community",
+        "description": "Vernetze dich mit anderen Assistent:innen"
+      },
+      "resources": {
+        "title": "Weiterentwickelnde Ressourcen",
+        "description": "Kontinuierliche Unterstützung und aktualisierte Materialien"
+      }
+    }
+  },
+  "spassPage": {
+    "hero": {
+      "title": "INKLUSIVE TEAMS DURCH SPORT-ASSISTENZ",
+      "subtitle": "Wir nutzen die Kraft von Gemeinschaften, um die eigenständige Teilnahme von Sportler:innen in regulären Sportvereinen zu unterstützen.",
+      "explore": "Entdecke SpAss"
+    },
+    "origins": {
+      "title": "DIE URSPRÜNGE VON SpAss",
+      "subtitle": "Von der Sportassistenz-Forschung zum Netzwerk",
+      "description1": "Das Projekt läuft bis März 2026 und wird von der Forscherin Dr. Christiane Reuter von der Universität Würzburg und dem Vizepräsidenten des BVS Bayern Prof. Dr. David Rygl geleitet.",
+      "description2": "Basierend auf einem Pilotprojekt in Würzburg von Dr. Reuter im Jahr 2023, konzentriert sich das laufende Forschungsprojekt darauf, wie wir unsere Sportassistenz-Lösung durch vielfältige Partnerschaften in bestehende Gemeinschaften, Organisationen und Institutionen integrieren können.",
+      "description3": "Zu diesem Zweck verwenden wir designbasierte Forschung und state-of-the-art Marketing, um attraktive, nutzerzentrierte Lösungen zu schaffen. Unser dualer Fokus – Forschung und Design – generiert wertvolle Daten zur inklusiven Sportteilnahme und schafft gleichzeitig nachhaltige Wege zu inklusiven Sportgemeinschaften."
+    },
+    "together": {
+      "title": "GEMEINSAM SpAss HABEN",
+      "description": "Unsere Sportassistenz-Lösung SpAss wird durch viele vielfältige Partner:innen ermöglicht. Von der Förderung durch das BMFTR über das fundierte Wissen und die Netzwerke von BVS Bayern und Uni Würzburg bis hin zur strategischen Unterstützung durch adidas Corporate Volunteers."
+    },
+    "partners": {
+      "instruction": {
+        "mobile": "Tippe auf die Kreise, um die Beiträge jedes Partners zu SpAss zu entdecken.",
+        "desktop": "Fahre mit der Maus über die Kreise, um die Beiträge jedes Partners zu SpAss zu entdecken."
+      },
+      "names": {
+        "bvs": "BVS Bayern",
+        "uni": "Uni Würzburg",
+        "lebenshilfe": "Lebenshilfe",
+        "adidas": "Adidas",
+        "sportvereine": "Sportvereine",
+        "ava": "ava",
+        "bmftr": "BMFSFJ"
+      },
+      "roles": {
+        "bvs": "Infra­struktur",
+        "uni": "Fach­expertise",
+        "lebenshilfe": "Admini­stration Ehren­amt",
+        "adidas": "Ehren­amtliche Unter­stützung",
+        "sportvereine": "Sport­angebote",
+        "ava": "Techno­logie-Partner",
+        "bmftr": "Finan­zierung"
+      }
+    },
+    "howItWorks": {
+      "title": "WIE SpAss FUNKTIONIERT",
+      "subtitle": "Von der Qualifizierung zur Unabhängigkeit – gemeinsam",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Assistent:innen-Qualifizierung",
+          "description": "Angehende Assistent:innen absolvieren eine umfassende Ausbildung: 15 Stunden selbstgesteuertes E-Learning und einen ganztägigen praktischen Workshop."
+        },
+        {
+          "number": "2",
+          "title": "Registrierung & Matching",
+          "description": "Sportler:innen und Assistent:innen registrieren sich bei Partnerorganisationen wie der Lebenshilfe. Basierend auf Vorlieben und Verfügbarkeit erfolgt das Matching über die ava-Plattform."
+        },
+        {
+          "number": "3",
+          "title": "Erste Schritte & Sportteilnahme",
+          "description": "Sportler:innen und Assistent:innen lernen sich kennen, wählen gemeinsam Sportart und Verein aus. Die unterstützende Community ist bei den ersten Einheiten und darüber hinaus da."
+        },
+        {
+          "number": "4",
+          "title": "Unabhängigkeit fördern",
+          "description": "Das Ziel ist immer Unabhängigkeit durch persönliches Wachstum, starke Teambeziehungen und die vollständige Integration ins Team."
+        }
+      ]
+    },
+    "becomePart": {
+      "title": "Werde Teil von SpAss",
+      "assistants": {
+        "title": "Für Assistent:innen",
+        "description": "Nutze deine Leidenschaft für Sport, um einen sinnvollen Beitrag zu leisten. Erhalte zertifizierte Ausbildung und unterstütze Sportler:innen auf ihrem Weg zur Unabhängigkeit.",
+        "cta": "Jetzt registrieren"
+      },
+      "athletes": {
+        "title": "Für Sportler:innen",
+        "description": "Finde deinen Platz im Sport mit qualifizierter Unterstützung. Tritt einem Mainstream-Verein bei mit maßgeschneiderter Assistenz, die dir hilft, erfolgreich zu sein und dazuzugehören.",
+        "cta": "Jetzt starten"
+      },
+      "organizations": {
+        "title": "Für Organisationen",
+        "description": "Kooperiere mit TEAMiN, um Sport inklusiv zu machen. Egal ob du ein Sportverein bist, der Beratung sucht, ein Unternehmen, das Gutes tun möchte, oder eine inklusive Initiative, die sich vernetzen will.",
+        "cta": "Partner werden"
+      }
+    },
+    "qualification": {
+      "title": "Hochwertige Sport-Assistenz-Qualifizierung",
+      "subtitle": "SpAss sicher und effektiv gestalten durch Online- und Präsenztraining",
+      "elearning": {
+        "title": "E-Learning-Module (15 Stunden online)",
+        "modules": [
+          {
+            "title": "Modul 1: Einführung",
+            "description": "Verstehe die Kursstruktur, organisatorische Details und die Bedeutung der Sportassistenz für Inklusion."
+          },
+          {
+            "title": "Modul 2: Menschen mit Behinderungen",
+            "description": "Lerne verschiedene Arten von Behinderungen kennen, die Vielfalt innerhalb dieser Community und die Barrieren, denen sie bei der Sportteilnahme begegnen."
+          },
+          {
+            "title": "Modul 3: Inklusion",
+            "description": "Erforsche, was Inklusion bedeutet, warum sie wichtig ist und wie gezielte Maßnahmen sinnvolle Teilhabe in Gesellschaft und Sport schaffen können."
+          },
+          {
+            "title": "Modul 4: Barrierefreiheit",
+            "description": "Identifiziere Teilhabebarrieren und verstehe, wie barrierefreies Design Unabhängigkeit und Inklusion im Sport ermöglicht."
+          },
+          {
+            "title": "Modul 5: Sport und Bewegung",
+            "description": "Entdecke, warum körperliche Aktivität für Gesundheit und Wohlbefinden wichtig ist und welche spezifischen Herausforderungen Menschen mit Behinderungen beim Sportzugang haben."
+          },
+          {
+            "title": "Modul 6: Sport und Inklusion",
+            "description": "Wende praktische Modelle und Frameworks an, um inklusive Sportaktivitäten in diversen Gruppen und Mainstream-Vereinssettings zu gestalten."
+          },
+          {
+            "title": "Modul 7: Assistenz",
+            "description": "Definiere die Rolle einer Sport-Assistent:in, verstehe deine Verantwortung und lerne, wie du effektive, empowernde Unterstützung leistest."
+          },
+          {
+            "title": "Modul 8: Prävention",
+            "description": "Erkenne Risiken und Warnzeichen, insbesondere rund um Schutzmaßnahmen, und lerne, wie du sichere, respektvolle Sportumgebungen schaffst."
+          },
+          {
+            "title": "Modul 9: Wesentliche Kompetenzen",
+            "description": "Entwickle Schlüsselkompetenzen wie Kommunikation, Feedback, Empathie und Anpassungsfähigkeit, die dich zu einer effektiven Assistenz machen."
+          },
+          {
+            "title": "Modul 10: Wissensüberprüfung",
+            "description": "Wende alles Gelernte an und festige es durch praktische Szenarien und umfassende Tests."
+          }
+        ]
+      },
+      "practiceDay": {
+        "title": "Praxistag (Ganztägiger praktischer Workshop)",
+        "description": "Erlebe Behinderungsperspektiven aus erster Hand und baue Selbstvertrauen durch praktisches, erfahrungsorientiertes Lernen mit erfahrenen Trainer:innen und anderen angehenden Assistent:innen auf.",
+        "activities": [
+          {
+            "title": "Verschiedene Perspektiven erleben",
+            "description": "Übe den Umgang mit Rollstühlen, Augenbinden und anderer adaptiver Ausrüstung, um die Herausforderungen und Möglichkeiten des adaptierten Sports aus erster Hand zu verstehen."
+          },
+          {
+            "title": "Adaptierte Sportaktivitäten",
+            "description": "Lerne und spiele Blindenfußball, Rollstuhlbasketball und andere inklusive Spiele. Entdecke, wie du Aktivitäten so anpasst, dass alle sinnvoll teilnehmen können."
+          },
+          {
+            "title": "Deine Rolle als Assistent:in",
+            "description": "Erforsche, was es bedeutet, jemanden \"mit\" ihm zu unterstützen, anstatt Dinge \"für\" ihn zu tun. Übe empowernde Ansätze durch Gruppenübungen und Rollenspiele."
+          },
+          {
+            "title": "Prävention & Sicherheit",
+            "description": "Verstehe Grenzen, Nähe und wie man sichere, respektvolle Umgebungen für alle Teilnehmer:innen schafft."
+          },
+          {
+            "title": "Selbstvertrauen aufbauen",
+            "description": "Arbeite durch reale Szenarien, gehe auf Ängste und Fragen ein und fühle dich vorbereitet, deine Reise als Sport-Assistent:in zu beginnen."
+          }
+        ]
+      }
+    }
+  },
   "faq": {
     "title": "Häufig gestellte Fragen",
     "categories": [

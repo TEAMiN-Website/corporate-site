@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import RunningPeopleIcon from './Icons/RunningPeopleIcon';
 
 interface Partner {
   id: string;
-  name: string;
-  role: string;
   logo?: string;
   customIcon?: boolean;
   size: 'small' | 'medium' | 'large';
@@ -12,16 +11,17 @@ interface Partner {
 }
 
 const PartnerNetwork: React.FC = () => {
+  const { t } = useTranslation();
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
-    { id: 'bvs', name: 'BVS Bayern', role: 'Infra­struktur', logo: '/BVS Logo.png', size: 'large', angle: 0 },
-    { id: 'uni', name: 'Uni Würzburg', role: 'Fach­expertise', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
-    { id: 'lebenshilfe', name: 'Lebenshilfe', role: 'Admini­stration Ehren­amt', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
-    { id: 'adidas', name: 'Adidas', role: 'Ehren­amtliche Unter­stützung', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
-    { id: 'sportvereine', name: 'Sportvereine', role: 'Sport­angebote', customIcon: true, size: 'medium', angle: 205.6 },
-    { id: 'ava', name: 'ava', role: 'Techno­logie-Partner', logo: '/ava_logo.png', size: 'small', angle: 257 },
-    { id: 'bmftr', name: 'BMFSFJ', role: 'Finan­zierung', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
+    { id: 'bvs', logo: '/BVS Logo.png', size: 'large', angle: 0 },
+    { id: 'uni', logo: '/Universität_Würzburg_Logo.svg.png', size: 'large', angle: 51.4 },
+    { id: 'lebenshilfe', logo: '/Bundesvereinigung_Lebenshilfe_logo.png', size: 'medium', angle: 102.8 },
+    { id: 'adidas', logo: '/adidas logo.png', size: 'medium', angle: 154.2 },
+    { id: 'sportvereine', customIcon: true, size: 'medium', angle: 205.6 },
+    { id: 'ava', logo: '/ava_logo.png', size: 'small', angle: 257 },
+    { id: 'bmftr', logo: '/BMFTR_Logo.svg.png', size: 'small', angle: 308.4 },
   ];
 
   // Toggle this to use importance-based sizing (true) or uniform sizing (false)
@@ -95,13 +95,20 @@ const PartnerNetwork: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-4 sm:mb-6">
-            HAVING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> TOGETHER
+            {t('spassPage.together.title').split('SpAss').map((part, index, array) => (
+              <React.Fragment key={index}>
+                {part}
+                {index < array.length - 1 && (
+                  <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span>
+                )}
+              </React.Fragment>
+            ))}
           </h2>
           <p className="text-gray-900 text-base sm:text-lg leading-relaxed px-2">
-            Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers.
+            {t('spassPage.together.description')}
           </p>
           <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed mt-3 sm:mt-4 italic px-2">
-            {isMobile ? 'Tap the circles to discover each partner\'s contributions to SpAss.' : 'Hover over the circles to discover each partner\'s contributions to SpAss.'}
+            {isMobile ? t('spassPage.partners.instruction.mobile') : t('spassPage.partners.instruction.desktop')}
           </p>
         </div>
         <div className="relative mx-auto" style={{ width: `${containerSize}px`, height: `${containerSize}px`, maxWidth: '90vw', maxHeight: '90vw' }}>
@@ -183,18 +190,18 @@ const PartnerNetwork: React.FC = () => {
                           <span>🏃</span>
                         </div>
                         <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-[0.6rem]' : 'text-xs'} leading-tight`}>
-                          {partner.name}
+                          {t(`spassPage.partners.names.${partner.id}`)}
                         </span>
                       </div>
                     ) : partner.logo ? (
                       <img
                         src={partner.logo}
-                        alt={partner.name}
+                        alt={t(`spassPage.partners.names.${partner.id}`)}
                         className="max-w-[75%] max-h-[75%] sm:max-w-[80%] sm:max-h-[80%] object-contain"
                       />
                     ) : (
                       <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-xs' : 'text-sm'}`}>
-                        {partner.name}
+                        {t(`spassPage.partners.names.${partner.id}`)}
                       </span>
                     )}
                   </div>
@@ -226,7 +233,7 @@ const PartnerNetwork: React.FC = () => {
                         overflow: 'hidden',
                       }}
                     >
-                      {partner.role}
+                      {t(`spassPage.partners.roles.${partner.id}`)}
                     </span>
                   </div>
                 </div>
