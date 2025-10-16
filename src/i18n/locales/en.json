@@ -717,6 +717,111 @@
       "email": "Email: sportassistenz@uni-wuerzburg.de"
     }
   },
+  "contribution": {
+    "title": "YOUR CONTRIBUTION",
+    "yourRole": {
+      "title": "Your Role as an Assistant",
+      "subtitle": "You'll learn to:",
+      "points": [
+        "Connect athletes with the right sports clubs and opportunities",
+        "Coordinate between athletes, families, clubs, and trainers",
+        "Provide hands-on support during training and competitions",
+        "Enable communication and self-determination for athletes"
+      ]
+    },
+    "commitment": {
+      "title": "The Commitment",
+      "initial": {
+        "label": "Initial Training:",
+        "hours": "~15 hours self-paced e-learning",
+        "workshop": "1 full-day practical workshop"
+      },
+      "ongoing": {
+        "label": "Ongoing:",
+        "hours": "2-3 hours per week minimum",
+        "duration": "At least 3 months commitment"
+      },
+      "timeframe": "~2-4h/week",
+      "comparison": "= 20% of average streaming time",
+      "note": "(Average Streaming: 2h/week)"
+    },
+    "support": {
+      "title": "Our Support",
+      "qualification": {
+        "title": "Modern qualification",
+        "description": "Flexible online learning + hands-on practice"
+      },
+      "community": {
+        "title": "Dedicated community",
+        "description": "Connect with fellow assistants"
+      },
+      "resources": {
+        "title": "Evolving resources",
+        "description": "Continuous support and updated materials"
+      }
+    }
+  },
+  "spassPage": {
+    "hero": {
+      "title": "INCLUSIVE TEAMS THROUGH SPORT ASSISTANCE",
+      "explore": "Explore SpAss"
+    },
+    "origins": {
+      "title": "THE ORIGINS OF SpAss",
+      "subtitle": "From sport assistance research to network",
+      "description1": "It will run until March 2026 and is headed by the Universität Würzburg-based researcher Dr. Christiane Reuter and BVS Bayern Vice President Prof. Dr. David Rygl.",
+      "description2": "Based on a pilot in Würzburg by Dr. Reuter in 2023, the ongoing research project focuses on how to integrate our sport assistance solution into existing communities, organizations, and institutions through diverse partnerships.",
+      "description3": "To this end, we use design-based research and state-of-the-art marketing to create attractive, user-centered solutions. Our dual focus—research and design—generates valuable data on inclusive sports participation while building sustainable pathways towards inclusive sports communities."
+    },
+    "together": {
+      "title": "HAVING SpAss TOGETHER",
+      "description": "Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers."
+    },
+    "howItWorks": {
+      "title": "HOW SpAss WORKS",
+      "subtitle": "From qualification to independence—together",
+      "steps": [
+        {
+          "number": "1",
+          "title": "Assistant Qualification",
+          "description": "Aspiring assistants complete comprehensive training: 15 hours of self-paced e-learning and a full-day hands-on workshop."
+        },
+        {
+          "number": "2",
+          "title": "Registration & Matching",
+          "description": "Athletes and assistants register with partnering organizations like Lebenshilfe. Based on preferences and availability, matching happens through the ava platform."
+        },
+        {
+          "number": "3",
+          "title": "First Steps & Sports Participation",
+          "description": "Athletes and assistants get to know each other, choose the sport and club together. The supportive community is there for the first sessions and beyond."
+        },
+        {
+          "number": "4",
+          "title": "Fostering Independence",
+          "description": "The goal is always independence through personal growth, strong team relationships, and becoming a fully part of their teams."
+        }
+      ]
+    },
+    "becomePart": {
+      "title": "Become Part of SpAss",
+      "assistants": {
+        "title": "For Assistants",
+        "description": "Use your passion for sports to make a meaningful impact. Get certified training and support athletes on their journey to independence.",
+        "cta": "Register now"
+      },
+      "athletes": {
+        "title": "For Athletes",
+        "description": "Find your place in sports with qualified support. Join a mainstream club with assistance tailored to help you succeed and belong.",
+        "cta": "Get Started"
+      },
+      "organizations": {
+        "title": "For Organizations",
+        "description": "Partner with TEAMiN to make sports inclusive. Whether you are a sports club wanting guidance, company wanting to do good or an inclusive initiative seeking to connect.",
+        "cta": "Partner With Us"
+      }
+    }
+  },
   "faq": {
     "title": "Frequently Asked Questions",
     "categories": [
