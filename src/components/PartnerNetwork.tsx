@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTranslation } from 'react-i18next';
 import RunningPeopleIcon from './Icons/RunningPeopleIcon';
 
 interface Partner {
@@ -12,6 +13,7 @@ interface Partner {
 }
 
 const PartnerNetwork: React.FC = () => {
+  const { t } = useTranslation();
   const [flippedCards, setFlippedCards] = useState<Set<string>>(new Set());
 
   const partners: Partner[] = [
@@ -95,10 +97,17 @@ const PartnerNetwork: React.FC = () => {
       <div className="max-w-7xl mx-auto">
         <div className="text-center max-w-4xl mx-auto mb-8 sm:mb-12 md:mb-16">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-gray-900 uppercase mb-4 sm:mb-6">
-            HAVING <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> TOGETHER
+            {t('spassPage.together.title').split('SpAss').map((part, index, array) => (
+              <React.Fragment key={index}>
+                {part}
+                {index < array.length - 1 && (
+                  <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span>
+                )}
+              </React.Fragment>
+            ))}
           </h2>
           <p className="text-gray-900 text-base sm:text-lg leading-relaxed px-2">
-            Our sportassistant solution SpAss is made possible by many diverse partners. From the funding we receive from the BMFTR to the deep knowledge and networks shared by BVS Bayern and Uni Würzburg to the strategic support from adidas corporate volunteers.
+            {t('spassPage.together.description')}
           </p>
           <p className="text-gray-900 text-sm sm:text-base md:text-lg leading-relaxed mt-3 sm:mt-4 italic px-2">
             {isMobile ? 'Tap the circles to discover each partner\'s contributions to SpAss.' : 'Hover over the circles to discover each partner\'s contributions to SpAss.'}
