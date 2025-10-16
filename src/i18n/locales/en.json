@@ -826,10 +826,75 @@
       "title": "State-of-the-Art Sport Assistant Qualification",
       "subtitle": "Making SpAss safe and effective through online and in-person training",
       "elearning": {
-        "title": "E-Learning Modules (15 hours online)"
+        "title": "E-Learning Modules (15 hours online)",
+        "modules": [
+          {
+            "title": "Module 1: Introduction",
+            "description": "Understand the course structure, organizational details, and the importance of sport assistance for inclusion."
+          },
+          {
+            "title": "Module 2: People with Disabilities",
+            "description": "Learn about different types of disabilities, the diversity within this community, and the barriers they face in sports participation."
+          },
+          {
+            "title": "Module 3: Inclusion",
+            "description": "Explore what inclusion means, why it matters, and how targeted measures can create meaningful participation in society and sports."
+          },
+          {
+            "title": "Module 4: Accessibility",
+            "description": "Identify barriers to participation and understand how accessible design enables independence and inclusion in sports settings."
+          },
+          {
+            "title": "Module 5: Sport and Movement",
+            "description": "Discover why physical activity matters for health and wellbeing, and the specific challenges people with disabilities face in accessing sports."
+          },
+          {
+            "title": "Module 6: Sport and Inclusion",
+            "description": "Apply practical models and frameworks for creating inclusive sports activities in diverse groups and mainstream club settings."
+          },
+          {
+            "title": "Module 7: Assistance",
+            "description": "Define the role of a sport assistant, understand your responsibilities, and learn how to provide effective, empowering support."
+          },
+          {
+            "title": "Module 8: Prevention",
+            "description": "Recognize risks and warning signs, particularly around safeguarding, and learn how to create safe, respectful sports environments."
+          },
+          {
+            "title": "Module 9: Essential Competencies",
+            "description": "Develop key skills including communication, feedback, empathy, and adaptability that make you an effective assistant."
+          },
+          {
+            "title": "Module 10: Knowledge Assessment",
+            "description": "Apply and consolidate everything you've learned through practical scenarios and comprehensive testing."
+          }
+        ]
       },
       "practiceDay": {
-        "title": "Practice Day (Full-day hands-on workshop)"
+        "title": "Practice Day (Full-day hands-on workshop)",
+        "description": "Experience disability perspectives firsthand and build confidence through practical, experiential learning with experienced trainers and fellow aspiring assistants.",
+        "activities": [
+          {
+            "title": "Experiencing Different Perspectives",
+            "description": "Practice using wheelchairs, blindfolds, and other adaptive equipment to understand the challenges and possibilities of adapted sports firsthand."
+          },
+          {
+            "title": "Adapted Sports Activities",
+            "description": "Learn and play blind football, wheelchair basketball, and other inclusive games. Discover how to modify activities so everyone can participate meaningfully."
+          },
+          {
+            "title": "Your Role as Assistant",
+            "description": "Explore what it means to support \"with\" someone rather than doing things \"for\" them. Practice empowering approaches through group exercises and role-plays."
+          },
+          {
+            "title": "Prevention & Safety",
+            "description": "Understand boundaries, proximity, and how to create safe, respectful environments for all participants."
+          },
+          {
+            "title": "Building Confidence",
+            "description": "Work through real scenarios, address fears and questions, and leave feeling prepared to start your journey as a sport assistant."
+          }
+        ]
       }
     }
   },

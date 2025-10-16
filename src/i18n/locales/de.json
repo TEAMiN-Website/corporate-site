@@ -823,13 +823,78 @@
       }
     },
     "qualification": {
-      "title": "Modernste Sport-Assistenz-Qualifizierung",
-      "subtitle": "SpAss sicher und effektiv machen durch Online- und Präsenztraining",
+      "title": "Hochwertige Sport-Assistenz-Qualifizierung",
+      "subtitle": "SpAss sicher und effektiv gestalten durch Online- und Präsenztraining",
       "elearning": {
-        "title": "E-Learning Module (15 Stunden online)"
+        "title": "E-Learning-Module (15 Stunden online)",
+        "modules": [
+          {
+            "title": "Modul 1: Einführung",
+            "description": "Verstehe die Kursstruktur, organisatorische Details und die Bedeutung der Sportassistenz für Inklusion."
+          },
+          {
+            "title": "Modul 2: Menschen mit Behinderungen",
+            "description": "Lerne verschiedene Arten von Behinderungen kennen, die Vielfalt innerhalb dieser Community und die Barrieren, denen sie bei der Sportteilnahme begegnen."
+          },
+          {
+            "title": "Modul 3: Inklusion",
+            "description": "Erforsche, was Inklusion bedeutet, warum sie wichtig ist und wie gezielte Maßnahmen sinnvolle Teilhabe in Gesellschaft und Sport schaffen können."
+          },
+          {
+            "title": "Modul 4: Barrierefreiheit",
+            "description": "Identifiziere Teilhabebarrieren und verstehe, wie barrierefreies Design Unabhängigkeit und Inklusion im Sport ermöglicht."
+          },
+          {
+            "title": "Modul 5: Sport und Bewegung",
+            "description": "Entdecke, warum körperliche Aktivität für Gesundheit und Wohlbefinden wichtig ist und welche spezifischen Herausforderungen Menschen mit Behinderungen beim Sportzugang haben."
+          },
+          {
+            "title": "Modul 6: Sport und Inklusion",
+            "description": "Wende praktische Modelle und Frameworks an, um inklusive Sportaktivitäten in diversen Gruppen und Mainstream-Vereinssettings zu gestalten."
+          },
+          {
+            "title": "Modul 7: Assistenz",
+            "description": "Definiere die Rolle einer Sport-Assistent:in, verstehe deine Verantwortung und lerne, wie du effektive, empowernde Unterstützung leistest."
+          },
+          {
+            "title": "Modul 8: Prävention",
+            "description": "Erkenne Risiken und Warnzeichen, insbesondere rund um Schutzmaßnahmen, und lerne, wie du sichere, respektvolle Sportumgebungen schaffst."
+          },
+          {
+            "title": "Modul 9: Wesentliche Kompetenzen",
+            "description": "Entwickle Schlüsselkompetenzen wie Kommunikation, Feedback, Empathie und Anpassungsfähigkeit, die dich zu einer effektiven Assistenz machen."
+          },
+          {
+            "title": "Modul 10: Wissensüberprüfung",
+            "description": "Wende alles Gelernte an und festige es durch praktische Szenarien und umfassende Tests."
+          }
+        ]
       },
       "practiceDay": {
-        "title": "Praxistag (Ganztägiger praktischer Workshop)"
+        "title": "Praxistag (Ganztägiger praktischer Workshop)",
+        "description": "Erlebe Behinderungsperspektiven aus erster Hand und baue Selbstvertrauen durch praktisches, erfahrungsorientiertes Lernen mit erfahrenen Trainer:innen und anderen angehenden Assistent:innen auf.",
+        "activities": [
+          {
+            "title": "Verschiedene Perspektiven erleben",
+            "description": "Übe den Umgang mit Rollstühlen, Augenbinden und anderer adaptiver Ausrüstung, um die Herausforderungen und Möglichkeiten des adaptierten Sports aus erster Hand zu verstehen."
+          },
+          {
+            "title": "Adaptierte Sportaktivitäten",
+            "description": "Lerne und spiele Blindenfußball, Rollstuhlbasketball und andere inklusive Spiele. Entdecke, wie du Aktivitäten so anpasst, dass alle sinnvoll teilnehmen können."
+          },
+          {
+            "title": "Deine Rolle als Assistent:in",
+            "description": "Erforsche, was es bedeutet, jemanden \"mit\" ihm zu unterstützen, anstatt Dinge \"für\" ihn zu tun. Übe empowernde Ansätze durch Gruppenübungen und Rollenspiele."
+          },
+          {
+            "title": "Prävention & Sicherheit",
+            "description": "Verstehe Grenzen, Nähe und wie man sichere, respektvolle Umgebungen für alle Teilnehmer:innen schafft."
+          },
+          {
+            "title": "Selbstvertrauen aufbauen",
+            "description": "Arbeite durch reale Szenarien, gehe auf Ängste und Fragen ein und fühle dich vorbereitet, deine Reise als Sport-Assistent:in zu beginnen."
+          }
+        ]
       }
     }
   },
