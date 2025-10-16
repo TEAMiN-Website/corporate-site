@@ -228,47 +228,37 @@ const Volunteers: React.FC = () => {
  <div className="max-w-7xl mx-auto px-4 relative z-10">
  <div className="text-center mb-16">
  <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6 uppercase">
- Your Contribution
+ {t('contribution.title')}
  </h2>
  </div>
 
  <div className="grid md:grid-cols-3 gap-8">
  {/* Tile 1: Your Role as an Assistant */}
  <div className="p-8 rounded-2xl shadow-lg" style={{ backgroundColor: 'rgba(216, 109, 85, 0.6)' }}>
- <h3 className="text-2xl font-bold text-white mb-6 text-center">Your Role as an Assistant</h3>
- <p className="text-white mb-4 font-semibold">You'll learn to:</p>
+ <h3 className="text-2xl font-bold text-white mb-6 text-center">{t('contribution.yourRole.title')}</h3>
+ <p className="text-white mb-4 font-semibold">{t('contribution.yourRole.subtitle')}</p>
  <ul className="space-y-3 text-white">
- <li className="flex items-start gap-2">
- <span>🤝</span>
- <span>Connect athletes with the right sports clubs and opportunities</span>
+ {(t('contribution.yourRole.points', { returnObjects: true }) as string[]).map((point, idx) => (
+ <li key={idx} className="flex items-start gap-2">
+ <span>{['🤝', '🔍', '💪', '💬'][idx]}</span>
+ <span>{point}</span>
  </li>
- <li className="flex items-start gap-2">
- <span>🔍</span>
- <span>Coordinate between athletes, families, clubs, and trainers</span>
- </li>
- <li className="flex items-start gap-2">
- <span>💪</span>
- <span>Provide hands-on support during training and competitions</span>
- </li>
- <li className="flex items-start gap-2">
- <span>💬</span>
- <span>Enable communication and self-determination for athletes</span>
- </li>
+ ))}
  </ul>
  </div>
 
  {/* Tile 2: The Commitment */}
  <div className="p-8 rounded-2xl shadow-lg" style={{ backgroundColor: 'rgba(216, 109, 85, 0.6)' }}>
- <h3 className="text-2xl font-bold text-white mb-6 text-center">The Commitment</h3>
+ <h3 className="text-2xl font-bold text-white mb-6 text-center">{t('contribution.commitment.title')}</h3>
 
  {/* Equation Layout */}
  <div className="flex items-start gap-4 mb-4">
  {/* Initial Training Column */}
  <div className="flex-1">
- <p className="text-white font-semibold mb-2">Initial Training:</p>
+ <p className="text-white font-semibold mb-2">{t('contribution.commitment.initial.label')}</p>
  <ul className="text-white text-sm space-y-1">
- <li>~15 hours self-paced e-learning</li>
- <li>1 full-day practical workshop</li>
+ <li>{t('contribution.commitment.initial.hours')}</li>
+ <li>{t('contribution.commitment.initial.workshop')}</li>
  </ul>
  </div>
 
@@ -277,45 +267,45 @@ const Volunteers: React.FC = () => {
 
  {/* Ongoing Column */}
  <div className="flex-1">
- <p className="text-white font-semibold mb-2">Ongoing:</p>
+ <p className="text-white font-semibold mb-2">{t('contribution.commitment.ongoing.label')}</p>
  <ul className="text-white text-sm space-y-1">
- <li>2-3 hours per week minimum</li>
- <li>At least 3 months commitment</li>
+ <li>{t('contribution.commitment.ongoing.hours')}</li>
+ <li>{t('contribution.commitment.ongoing.duration')}</li>
  </ul>
  </div>
  </div>
 
  {/* Equals and Result */}
  <div className="border-t-2 border-white/30 pt-4 mt-4">
- <p className="text-white text-center font-semibold mb-1">~2-4h/week</p>
- <p className="text-white text-center text-lg font-bold mb-2">= 20% of average streaming time</p>
- <p className="text-white text-center text-xs opacity-80">(Average streaming: 21h/week)</p>
+ <p className="text-white text-center font-semibold mb-1">{t('contribution.commitment.timeframe')}</p>
+ <p className="text-white text-center text-lg font-bold mb-2">{t('contribution.commitment.comparison')}</p>
+ <p className="text-white text-center text-xs opacity-80">{t('contribution.commitment.note')}</p>
  </div>
  </div>
 
  {/* Tile 3: Our Support */}
  <div className="p-8 rounded-2xl shadow-lg" style={{ backgroundColor: 'rgba(216, 109, 85, 0.6)' }}>
- <h3 className="text-2xl font-bold text-white mb-6 text-center">Our Support</h3>
+ <h3 className="text-2xl font-bold text-white mb-6 text-center">{t('contribution.support.title')}</h3>
  <ul className="space-y-4 text-white">
  <li className="flex items-start gap-2">
  <span>🎓</span>
  <div>
- <p className="font-semibold">Modern qualification</p>
- <p className="text-sm">Flexible online learning + hands-on practice</p>
+ <p className="font-semibold">{t('contribution.support.qualification.title')}</p>
+ <p className="text-sm">{t('contribution.support.qualification.description')}</p>
  </div>
  </li>
  <li className="flex items-start gap-2">
  <span>👥</span>
  <div>
- <p className="font-semibold">Dedicated community</p>
- <p className="text-sm">Connect with fellow assistants</p>
+ <p className="font-semibold">{t('contribution.support.community.title')}</p>
+ <p className="text-sm">{t('contribution.support.community.description')}</p>
  </div>
  </li>
  <li className="flex items-start gap-2">
  <span>📚</span>
  <div>
- <p className="font-semibold">Evolving resources</p>
- <p className="text-sm">Continuous support and updated materials</p>
+ <p className="font-semibold">{t('contribution.support.resources.title')}</p>
+ <p className="text-sm">{t('contribution.support.resources.description')}</p>
  </div>
  </li>
  </ul>

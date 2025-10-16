@@ -131,7 +131,7 @@ const SpAss: React.FC = () => {
  <span className="text-[#3F3E34] text-2xl lg:text-3xl xl:text-4xl font-normal">by TEAMiN</span>
  </h1>
  <p className="text-4xl lg:text-5xl xl:text-6xl mb-4 opacity-90 leading-relaxed font-bold uppercase" style={{ color: '#3F3E34' }}>
- Inclusive teams through sport assistance
+ {t('spassPage.hero.title')}
  </p>
  <p className="text-xl lg:text-2xl mb-8 opacity-90 leading-relaxed" style={{ color: '#3F3E34' }}>
  We leverage the power of communities to support athletes' independent participation in regular sports clubs.
@@ -141,7 +141,7 @@ const SpAss: React.FC = () => {
  onClick={scrollToNextSection}
  className="bg-white px-10 py-4 rounded-full font-semibold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">Explore SpAss</span>
+ <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">{t('spassPage.hero.explore')}</span>
  </button>
  </div>
  <div className="flex justify-center">
@@ -169,10 +169,10 @@ const SpAss: React.FC = () => {
  <div className="max-w-7xl mx-auto relative z-10">
  <div className="text-center max-w-4xl mx-auto mb-20">
  <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">
- THE ORIGINS OF <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>
+ {t('spassPage.origins.title')}
  </h2>
  <p className="text-xl text-white">
- From sport assistance research to network
+ {t('spassPage.origins.subtitle')}
  </p>
  </div>
 
@@ -181,16 +181,13 @@ const SpAss: React.FC = () => {
  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D86D55] to-[#71B554] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
  <div className="text-gray-700 leading-relaxed space-y-3">
  <p>
- SpAss is the sport assistance solution developed in an ongoing 18 months research project funded by the BMFTR program DATIpilot.
+ {t('spassPage.origins.description1')}
  </p>
  <p>
- It will run until March 2026 and is headed by the Universität Würzburg-based researcher Dr. Christiane Reuter and BVS Bayern Vice President Prof. Dr. David Rygl.
+ {t('spassPage.origins.description2')}
  </p>
  <p>
- Based on a pilot in Würzburg by Dr. Reuter in 2023, the ongoing research project focuses on how to integrate our sport assistance solution into existing communities, organizations, and institutions through diverse partnerships.
- </p>
- <p>
- To this end, we use design-based research and state-of-the-art marketing to create attractive, user-centered solutions. Our dual focus—research and design—generates valuable data on inclusive sports participation while building sustainable pathways towards inclusive sports communities.
+ {t('spassPage.origins.description3')}
  </p>
  </div>
  </div>
@@ -219,10 +216,10 @@ const SpAss: React.FC = () => {
  <div className="max-w-6xl mx-auto px-4 relative z-10">
  <div className="text-center mb-16">
  <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
- How <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent" style={{ textTransform: 'none' }}>SpAss</span> Works
+ {t('spassPage.howItWorks.title')}
  </h2>
  <p className="text-xl text-white italic">
- From qualification to independence—together
+ {t('spassPage.howItWorks.subtitle')}
  </p>
  </div>
 
@@ -230,49 +227,17 @@ const SpAss: React.FC = () => {
  <div className="absolute top-1/2 left-0 right-0 h-1 bg-white/30 transform -translate-y-1/2 hidden lg:block"></div>
 
  <div className="grid lg:grid-cols-4 gap-8">
- {/* Step 1 */}
- <div className="text-center relative h-full">
+ {(t('spassPage.howItWorks.steps', { returnObjects: true }) as Array<{number: string, title: string, description: string}>).map((step, index) => (
+ <div key={index} className="text-center relative h-full">
  <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
  <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
- 1
+ {step.number}
  </div>
- <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Assistant Qualification</h3>
- <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">Aspiring assistants complete comprehensive training: 15 hours of self-paced e-learning and a full-day practical workshop to ensure they're ready to provide meaningful support.</p>
- </div>
- </div>
-
- {/* Step 2 */}
- <div className="text-center relative h-full">
- <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
- <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
- 2
- </div>
- <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Registration & Matching</h3>
- <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">Athletes and assistants register with partnering organizations like Lebenshilfe. Based on preferences, skills, schedules, and needs, the right matches are made through the ava platform.</p>
+ <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">{step.title}</h3>
+ <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">{step.description}</p>
  </div>
  </div>
-
- {/* Step 3 */}
- <div className="text-center relative h-full">
- <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
- <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
- 3
- </div>
- <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">First Steps & Sports Participation</h3>
- <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">Athletes and assistants get to know each other, choose the sport and club together, and begin regular participation. Support from Lebenshilfe and the TEAMiN community is there for the first sessions and beyond.</p>
- </div>
- </div>
-
- {/* Step 4 */}
- <div className="text-center relative h-full">
- <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
- <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
- 4
- </div>
- <h3 className="text-xl font-bold text-[#3F3E34] mb-3 shrink-0">Fostering Independence</h3>
- <p className="text-[#3F3E34] text-sm leading-relaxed flex-grow">The goal is always independence through personal growth, strong team relationships, and community integration. Over time, support naturally reduces as athletes become fully part of their teams.</p>
- </div>
- </div>
+ ))}
  </div>
  </div>
  </div>
@@ -549,14 +514,14 @@ const SpAss: React.FC = () => {
  <div className="relative z-10 h-full flex flex-col justify-between">
  <div>
  <h3 className="text-3xl font-bold mb-4 text-white">
- For Sport Assistants
+ {t('spassPage.becomePart.assistants.title')}
  </h3>
  <p className="text-lg text-white/90 mb-6 leading-relaxed">
- {t('spassNew.pathways.assistant.description')}
+ {t('spassPage.becomePart.assistants.description')}
  </p>
  </div>
  <button onClick={() => navigate('/volunteers')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
- Register now
+ {t('spassPage.becomePart.assistants.cta')}
  </button>
  </div>
  </div>
@@ -568,14 +533,14 @@ const SpAss: React.FC = () => {
  <div className="relative z-10 h-full flex flex-col justify-between">
  <div>
  <h3 className="text-3xl font-bold mb-4 text-white">
- For Athletes
+ {t('spassPage.becomePart.athletes.title')}
  </h3>
  <p className="text-lg text-white/90 mb-6 leading-relaxed">
- {t('spassNew.pathways.athlete.description')}
+ {t('spassPage.becomePart.athletes.description')}
  </p>
  </div>
  <button onClick={() => navigate('/athletes')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
- {t('spassNew.pathways.athlete.cta1')}
+ {t('spassPage.becomePart.athletes.cta')}
  </button>
  </div>
  </div>
@@ -587,14 +552,14 @@ const SpAss: React.FC = () => {
  <div className="relative z-10 h-full flex flex-col justify-between">
  <div>
  <h3 className="text-3xl font-bold mb-4 text-white">
- For Organizations
+ {t('spassPage.becomePart.organizations.title')}
  </h3>
  <p className="text-lg text-white/90 mb-6 leading-relaxed">
- Partner with TEAMiN to make sports inclusive. Whether you are a sports club wanting guidance, company wanting to do good or an inclusive initiative seeking to connect.
+ {t('spassPage.becomePart.organizations.description')}
  </p>
  </div>
  <button onClick={() => navigate('/partners')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
- {t('spassNew.pathways.organization.cta')}
+ {t('spassPage.becomePart.organizations.cta')}
  </button>
  </div>
  </div>
