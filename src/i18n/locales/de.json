@@ -117,15 +117,9 @@
     ]
   },
   "athletes": {
-    "title": "Für Athleten & Familien",
-    "description": "Wir verbinden Menschen mit Behinderungen und ihre Familien mit Sportmöglichkeiten in ganz Bayern und bieten die Unterstützung, die sie brauchen, um ihren Platz in Mainstream-Sportvereinen zu finden.",
-    "services": [
-      "Personalisierte Vereinsvermittlung",
-      "Familien-Unterstützungsprogramme",
-      "Fortlaufende Betreuung",
-      "Barrierefreiheits-Ressourcen"
-    ],
-    "getConnected": "Verbinden"
+    "title": "Bereit, Teil des Teams zu werden?",
+    "description": "Finde zusammen mit deiner Sportassistent:in einen Sport, der dir Freude macht. Eine Gemeinschaft, in der ihr das beste auseinander rausholt. Wir begleiten dich dabei Schritt für Schritt zur Selbstständigkeit.",
+    "getConnected": "Finde heraus wie"
   },
   "aurelian": {
     "title": "Aurelian kennenlernen",

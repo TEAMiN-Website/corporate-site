@@ -117,15 +117,9 @@
     ]
   },
   "athletes": {
-    "title": "For Athletes & Families",
-    "description": "We connect people with disabilities and their families to sports opportunities throughout Bavaria, providing the support needed to find your place in mainstream sports clubs.",
-    "services": [
-      "Personalized club matching",
-      "Family support programs",
-      "Ongoing mentorship",
-      "Accessibility resources"
-    ],
-    "getConnected": "Get Connected"
+    "title": "Ready to Become Part of the Team?",
+    "description": "Find a sport you love together with your sports assistant. A community where you bring out the best in each other. We accompany you step by step towards independence.",
+    "getConnected": "Find Out How"
   },
   "aurelian": {
     "title": "Meet Aurelian",
