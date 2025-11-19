@@ -18,7 +18,7 @@ const Athletes: React.FC = () => {
   return (
     <div>
       <section className="min-h-screen relative overflow-hidden hero-section athletes-hero-parallax">
-        <div className="absolute inset-0 bg-black/10"></div>
+        <div className="absolute inset-0 bg-black/40"></div>
 
         <div className="absolute inset-0" style={{
           backgroundColor: 'rgba(113, 181, 84, 0.6)'
