@@ -88,25 +88,20 @@ const Partners: React.FC = () => {
         </div>
       </section>
 
-      {/* Message Section */}
+      {/* Message and Partner Types Section */}
       <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-[#F7ECD5]"></div>
+        <div className="absolute inset-0 bg-[#F7ECD5] dark:bg-[#F7ECD5]"></div>
 
-        <div className="max-w-4xl mx-auto px-4 relative z-10">
+        <div className="max-w-4xl mx-auto px-4 relative z-10 mb-16">
           <p className="text-2xl lg:text-3xl text-[#3F3E34] text-center leading-relaxed">
             {t('partners.message')}
           </p>
         </div>
-      </section>
-
-      {/* Partner Types Section */}
-      <section className="py-24 relative overflow-hidden">
-        <div className="absolute inset-0 bg-white dark:bg-[#3F3E34]"></div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {(t('partners.types', { returnObjects: true }) as Array<{title: string, image: string, items: string[]}>).map((type, index) => (
-              <div key={index} className="bg-white dark:bg-[#2A2928] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+              <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
                 <div className="relative h-48 overflow-hidden">
                   <img
                     src={type.image}
@@ -116,11 +111,11 @@ const Partners: React.FC = () => {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 right-4 text-2xl font-bold text-white">{type.title}</h3>
                 </div>
-                <div className="p-6 flex-grow">
+                <div className="p-6 flex-grow bg-[#3F3E34]">
                   <ul className="space-y-3">
                     {type.items.map((item, itemIndex) => (
-                      <li key={itemIndex} className="text-[#3F3E34] dark:text-[#F7ECD5] leading-relaxed flex items-start">
-                        <span className="text-[#71B554] mr-2 mt-1">•</span>
+                      <li key={itemIndex} className="text-[#F7ECD5] leading-relaxed flex items-start">
+                        <span className="text-[#F7ECD5] mr-2 mt-1">•</span>
                         <span>{item}</span>
                       </li>
                     ))}
