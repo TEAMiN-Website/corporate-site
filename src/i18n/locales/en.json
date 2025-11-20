@@ -129,6 +129,17 @@
         "Low Self-Confidence"
       ],
       "description": "People with disabilities face many barriers when wanting to participate independently in sports. Missing accessible programs, lack of transportation, societal prejudices, and often low self-confidence make access to sports difficult. TEAMiN addresses exactly these challenges: We create inclusive sports environments where qualified assistants provide temporary support and guide athletes step by step towards independence. This transforms exclusion into genuine participation."
+    },
+    "assistantSupport": {
+      "title": "OUR SPORTS ASSISTANTS SUPPORT YOU",
+      "intro": "Together, you decide how to shape the sports assistance according to your needs. Your sports assistant helps you from the first steps towards a sports club to independent participation as a team member.",
+      "items": [
+        "Organizing the search for the right program",
+        "Communication with clubs, trainers and team members",
+        "Transportation to the sports facility",
+        "Integration into the sports community"
+      ],
+      "insurance": "SPORTS ASSISTANTS ARE COVERED BY HEALTH INSURANCE"
     }
   },
   "aurelian": {

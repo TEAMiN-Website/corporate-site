@@ -129,6 +129,17 @@
         "Niedriges Selbstvertrauen"
       ],
       "description": "Menschen mit Behinderungen stoßen auf viele Barrieren, wenn sie eigenständig Sport treiben möchten. Fehlende barrierefreie Angebote, mangelnder Transport, gesellschaftliche Vorurteile und ein oft niedriges Selbstvertrauen erschweren den Zugang zum Sport. TEAMiN setzt genau hier an: Wir schaffen inklusive Sportumgebungen, in denen qualifizierte Assistent:innen temporäre Unterstützung bieten und Sportler:innen Schritt für Schritt zur Selbstständigkeit begleiten. So wird aus Ausgrenzung echte Teilhabe."
+    },
+    "assistantSupport": {
+      "title": "UNSERE SPORTASSISTENT:INNEN UNTERSTÜTZEN DICH",
+      "intro": "Ihr bestimmt gemeinsam, wie ihr die Sportassistenz gestaltet, ganz nach euren Bedürfnissen. Deine Sportassistent:in hilft dir von den ersten Schritten in Richtung Sportverein bis zur selbstständigen Teilhabe als Teammitglied.",
+      "items": [
+        "Organisation der Suche nach dem passenden Angebot",
+        "Kommunikation mit Vereinen, Trainer:innen und Teammitgliedern",
+        "Transport hin zur Sportstätte",
+        "Integration in die Sportgemeinschaft"
+      ],
+      "insurance": "SPORTASSISTENT:INNEN WERDEN DURCH DIE PFLEGEKASSE ABGEDECKT"
     }
   },
   "aurelian": {

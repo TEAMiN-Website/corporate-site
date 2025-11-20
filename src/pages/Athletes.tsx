@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Search, MessageCircle, Car, Users } from 'lucide-react';
 
 interface BarrierTile {
   label: string;
@@ -103,6 +103,80 @@ const Athletes: React.FC = () => {
           <div className="max-w-4xl mx-auto">
             <p className="text-lg text-[#3F3E34] leading-relaxed text-center">
               {t('athletes.barriers.description')}
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Sports Assistant Support Section */}
+      <section className="py-24 bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4">
+          <div className="text-center mb-12">
+            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] dark:text-white mb-6">
+              {t('athletes.assistantSupport.title')}
+            </h2>
+          </div>
+
+          {/* Full-width Image */}
+          <div className="w-full mb-12 rounded-2xl overflow-hidden shadow-2xl">
+            <img
+              src="/assistant picture 2 copy copy.jpg"
+              alt="Sports assistant meeting with athlete"
+              className="w-full h-auto object-cover"
+              loading="lazy"
+            />
+          </div>
+
+          {/* Introduction Paragraph */}
+          <div className="max-w-4xl mx-auto mb-16 text-center">
+            <p className="text-xl lg:text-2xl text-[#3F3E34] dark:text-gray-300 leading-relaxed">
+              {t('athletes.assistantSupport.intro')}
+            </p>
+          </div>
+
+          {/* Support Items with Icons */}
+          <div className="grid md:grid-cols-2 gap-12 max-w-5xl mx-auto mb-16">
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <Search className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <p className="text-lg text-[#3F3E34] dark:text-gray-300 leading-relaxed">
+                {(t('athletes.assistantSupport.items', { returnObjects: true }) as string[])[0]}
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <MessageCircle className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <p className="text-lg text-[#3F3E34] dark:text-gray-300 leading-relaxed">
+                {(t('athletes.assistantSupport.items', { returnObjects: true }) as string[])[1]}
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <Car className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <p className="text-lg text-[#3F3E34] dark:text-gray-300 leading-relaxed">
+                {(t('athletes.assistantSupport.items', { returnObjects: true }) as string[])[2]}
+              </p>
+            </div>
+
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <Users className="w-16 h-16 text-[#71B554]" strokeWidth={1.5} />
+              </div>
+              <p className="text-lg text-[#3F3E34] dark:text-gray-300 leading-relaxed">
+                {(t('athletes.assistantSupport.items', { returnObjects: true }) as string[])[3]}
+              </p>
+            </div>
+          </div>
+
+          {/* Insurance Coverage Statement */}
+          <div className="text-center">
+            <p className="text-3xl lg:text-4xl font-bold text-[#71B554] uppercase leading-tight">
+              {t('athletes.assistantSupport.insurance')}
             </p>
           </div>
         </div>
