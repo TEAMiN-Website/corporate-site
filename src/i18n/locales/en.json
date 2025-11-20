@@ -140,6 +140,21 @@
         "Integration into the sports community"
       ],
       "insurance": "SPORTS ASSISTANTS ARE COVERED BY HEALTH INSURANCE"
+    },
+    "getStarted": {
+      "title": "READY TO JOIN THE TEAM?",
+      "options": [
+        {
+          "title": "Find Open Support Services",
+          "description": "Contact the Open Support Services (Offene Hilfe) of Lebenshilfe near you. This link will take you to a map where you can find the right location.",
+          "cta": "Start Search"
+        },
+        {
+          "title": "Contact",
+          "description": "Write us your questions, ideas or concerns. We'll get back to you quickly.",
+          "email": "kontakt@teaminklusion.de"
+        }
+      ]
     }
   },
   "aurelian": {

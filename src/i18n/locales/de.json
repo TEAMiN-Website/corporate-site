@@ -140,6 +140,21 @@
         "Integration in die Sportgemeinschaft"
       ],
       "insurance": "SPORTASSISTENT:INNEN WERDEN DURCH DIE PFLEGEKASSE ABGEDECKT"
+    },
+    "getStarted": {
+      "title": "BEREIT, TEIL DES TEAMS ZU WERDEN?",
+      "options": [
+        {
+          "title": "Offene Hilfe Stelle finden",
+          "description": "Kontaktiere jetzt die Offene Hilfe Stelle der Lebenshilfe in deiner Nähe. Über diesen Link gelangst du zu einer Karte, auf der du die richtige Stelle findest.",
+          "cta": "Zur Suche"
+        },
+        {
+          "title": "Kontakt",
+          "description": "Schreib uns deine Fragen, Ideen oder Anliegen. Wir melden uns schnell zurück.",
+          "email": "kontakt@teaminklusion.de"
+        }
+      ]
     }
   },
   "aurelian": {

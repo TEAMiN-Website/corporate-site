@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, Search, MessageCircle, Car, Users } from 'lucide-react';
+import { ChevronDown, Search, MessageCircle, Car, Users, Mail, Copy } from 'lucide-react';
 
 interface BarrierTile {
   label: string;
@@ -182,6 +182,60 @@ const Athletes: React.FC = () => {
             <p className="text-3xl lg:text-4xl font-bold text-[#71B554] uppercase leading-tight">
               {t('athletes.assistantSupport.insurance')}
             </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Get Started Section */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src="Aurelian 1 copy.jpg"
+            alt="Two people having friendly conversation"
+            className="w-full h-full object-cover object-top"
+          />
+          <div className="absolute inset-0" style={{ backgroundColor: 'rgba(113, 181, 84, 0.2)' }}></div>
+        </div>
+
+        <div className="max-w-6xl mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white mb-6 uppercase">
+              {t('athletes.getStarted.title')}
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            {(t('athletes.getStarted.options', { returnObjects: true }) as Array<{title: string, description: string, cta?: string, email?: string}>).map((entry, index) => (
+              <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden flex flex-col">
+                <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
+                <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
+                <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>
+                {entry.cta ? (
+                  <a
+                    href="https://www.lebenshilfe.de/informieren/familie/offene-hilfen"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-block bg-[#71B554] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#5a9443] transition-colors duration-300"
+                  >
+                    {entry.cta}
+                  </a>
+                ) : (
+                  <div className="flex items-center justify-center space-x-2 group">
+                    <Mail className="w-5 h-5 text-[#71B554]" />
+                    <span className="text-[#3F3E34] font-medium">{entry.email}</span>
+                    <button
+                      onClick={() => {
+                        navigator.clipboard.writeText(entry.email || '');
+                      }}
+                      className="p-1.5 hover:bg-gray-100 rounded-md transition-colors duration-200 opacity-0 group-hover:opacity-100"
+                      aria-label="Copy email address"
+                    >
+                      <Copy className="w-4 h-4 text-[#71B554]" />
+                    </button>
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
       </section>
