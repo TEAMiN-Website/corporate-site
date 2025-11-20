@@ -110,9 +110,10 @@ const Athletes: React.FC = () => {
 
       {/* Sports Assistant Support Section */}
       <section className="bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-4 pt-24">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] dark:text-white mb-6">
+        {/* Green Title Section */}
+        <div className="bg-[#71B554] py-16 flex items-center justify-center">
+          <div className="max-w-6xl mx-auto px-4">
+            <h2 className="text-4xl lg:text-5xl font-bold text-white text-center">
               {t('athletes.assistantSupport.title')}
             </h2>
           </div>
