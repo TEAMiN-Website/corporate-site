@@ -225,6 +225,11 @@
     }
   },
   "partners": {
+    "hero": {
+      "title": "ZUSAMMEN BRINGEN WIR INKLUSION VORAN",
+      "subtitle": "Ob Sportverein, Schule oder lokales Unternehmen, wir helfen euch mit Qualifizierung und motivierenden Möglichkeiten, beizutragen. Ganz nach euren Bedürfnissen."
+    },
+    "message": "Teilt eure Ressourcen, euer Wissen, eure Gemeinschaften und werdet Teil echter Beziehungen, Erfolge und Geschichten. Tragt auf eure Weise zur Inklusion bei - Wir unterstützen euch!",
     "title": "Unsere Partner",
     "subtitle": "Zusammenarbeit mit führenden Organisationen zur Schaffung systematischer Veränderungen im bayerischen Sport.",
     "list": [

@@ -225,6 +225,11 @@
     }
   },
   "partners": {
+    "hero": {
+      "title": "TOGETHER WE ADVANCE INCLUSION",
+      "subtitle": "Whether you're a sports club, school, or local business, we help you contribute with training and motivating opportunities. Tailored to your needs."
+    },
+    "message": "Share your resources, knowledge, and communities to become part of real relationships, achievements, and stories. Contribute to inclusion in your own way - We support you!",
     "title": "Our Partners",
     "subtitle": "Working together with leading organizations to create systematic change in Bavarian sports.",
     "list": [

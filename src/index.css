@@ -63,6 +63,20 @@
   }
 }
 
+.partners-hero-parallax {
+  background-image: url('/partner%20picture.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .partners-hero-parallax {
+    background-attachment: fixed;
+  }
+}
+
 /* Section overlays */
 .hero-overlay::before {
   content: '';
