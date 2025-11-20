@@ -150,6 +150,12 @@
           "cta": "Zur Suche"
         },
         {
+          "title": "ava-Plattform nutzen",
+          "description": "Unser Partner ava bietet eine vollumfängliche, kostenlose Plattform, auf der Sportler:innen und Assistent:innen gematcht werden.",
+          "cta": "Registrier dich",
+          "link": "https://www.ava-sport.de"
+        },
+        {
           "title": "Kontakt",
           "description": "Schreib uns deine Fragen, Ideen oder Anliegen. Wir melden uns schnell zurück.",
           "email": "kontakt@teaminklusion.de"

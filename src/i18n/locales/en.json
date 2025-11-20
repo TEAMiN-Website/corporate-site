@@ -150,6 +150,12 @@
           "cta": "Start Search"
         },
         {
+          "title": "Use the ava Platform",
+          "description": "Our partner ava offers a comprehensive, free platform where athletes and assistants are matched together.",
+          "cta": "Register Now",
+          "link": "https://www.ava-sport.de"
+        },
+        {
           "title": "Contact",
           "description": "Write us your questions, ideas or concerns. We'll get back to you quickly.",
           "email": "kontakt@teaminklusion.de"
