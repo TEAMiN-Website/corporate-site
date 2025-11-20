@@ -1,6 +1,45 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown } from 'lucide-react';
+import { ChevronDown, Copy } from 'lucide-react';
+
+const ContactButton: React.FC = () => {
+  const { t } = useTranslation();
+  const [isHovered, setIsHovered] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
+
+  const handleClick = () => {
+    if (isHovered) {
+      navigator.clipboard.writeText('kontakt@teaminklusion.de');
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  };
+
+  return (
+    <div className="relative inline-block">
+      <button
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={handleClick}
+        className="bg-[#3F3E34] text-[#F7ECD5] px-8 py-4 rounded-full font-semibold hover:bg-[#2A2928] transition-all duration-300 flex items-center space-x-2 group"
+      >
+        {isHovered ? (
+          <>
+            <span>kontakt@teaminklusion.de</span>
+            <Copy className="w-5 h-5" />
+          </>
+        ) : (
+          <span>{t('partners.cta')}</span>
+        )}
+      </button>
+      {showCopied && (
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#71B554] text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+          {t('partners.copied')}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Partners: React.FC = () => {
   const { t } = useTranslation();
@@ -57,6 +96,43 @@ const Partners: React.FC = () => {
           <p className="text-2xl lg:text-3xl text-[#3F3E34] text-center leading-relaxed">
             {t('partners.message')}
           </p>
+        </div>
+      </section>
+
+      {/* Partner Types Section */}
+      <section className="py-24 relative overflow-hidden">
+        <div className="absolute inset-0 bg-white dark:bg-[#3F3E34]"></div>
+
+        <div className="max-w-7xl mx-auto px-4 relative z-10">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {(t('partners.types', { returnObjects: true }) as Array<{title: string, image: string, items: string[]}>).map((type, index) => (
+              <div key={index} className="bg-white dark:bg-[#2A2928] rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={type.image}
+                    alt={type.title}
+                    className="w-full h-full object-cover"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                  <h3 className="absolute bottom-4 left-4 right-4 text-2xl font-bold text-white">{type.title}</h3>
+                </div>
+                <div className="p-6 flex-grow">
+                  <ul className="space-y-3">
+                    {type.items.map((item, itemIndex) => (
+                      <li key={itemIndex} className="text-[#3F3E34] dark:text-[#F7ECD5] leading-relaxed flex items-start">
+                        <span className="text-[#71B554] mr-2 mt-1">•</span>
+                        <span>{item}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
+            ))}
+          </div>
+
+          <div className="flex justify-center mt-12">
+            <ContactButton />
+          </div>
         </div>
       </section>
     </div>

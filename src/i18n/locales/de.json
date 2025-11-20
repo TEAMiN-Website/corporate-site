@@ -236,6 +236,46 @@
       "subtitle": "Ob Sportverein, Schule oder lokales Unternehmen, wir helfen euch mit Qualifizierung und motivierenden Möglichkeiten, beizutragen. Ganz nach euren Bedürfnissen."
     },
     "message": "Teilt eure Ressourcen, euer Wissen, eure Gemeinschaften und werdet Teil echter Beziehungen, Erfolge und Geschichten. Tragt auf eure Weise zur Inklusion bei - Wir unterstützen euch!",
+    "types": [
+      {
+        "title": "Sportvereine",
+        "image": "/Hochsprung Sportvereine-min copy.jpg",
+        "items": [
+          "Der Wunsch, neue Mitgliedsgruppen und Förderungen zu erschließen?",
+          "Bereit für die ersten inklusiven Angebote, aber du wünschst dir Hilfe?",
+          "Beschäftigte Übungsleitungen, die Unterstützung brauchen?"
+        ]
+      },
+      {
+        "title": "Gemeinnützige Organisationen",
+        "image": "/Ehrenamt Partner Page.jpg",
+        "items": [
+          "Ihr möchtet euren Kund:innen moderne Sportassistenz bieten?",
+          "Ihr habt ähnliche oder ergänzende Angebote?",
+          "Ihr habt Zugang zu potenziellen Ehrenamtlichen?"
+        ]
+      },
+      {
+        "title": "Unternehmen",
+        "image": "/Workshop Partner Page-min.jpg",
+        "items": [
+          "Dir ist eine starke lokale Verwurzlung zu deinen Kund:innen wichtig?",
+          "Deine Mitarbeitenden und Kolleg:innen wünschen sich, etwas gutes zu tun?",
+          "Du hast Ressourcen, Wissen und Netzwerke, die du teilen kannst?"
+        ]
+      },
+      {
+        "title": "Tile 4",
+        "image": "/placeholder.jpg",
+        "items": [
+          "Item 1",
+          "Item 2",
+          "Item 3"
+        ]
+      }
+    ],
+    "cta": "Schreib uns",
+    "copied": "E-Mail kopiert!",
     "title": "Unsere Partner",
     "subtitle": "Zusammenarbeit mit führenden Organisationen zur Schaffung systematischer Veränderungen im bayerischen Sport.",
     "list": [

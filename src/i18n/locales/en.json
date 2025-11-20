@@ -236,6 +236,46 @@
       "subtitle": "Whether you're a sports club, school, or local business, we help you contribute with training and motivating opportunities. Tailored to your needs."
     },
     "message": "Share your resources, knowledge, and communities to become part of real relationships, achievements, and stories. Contribute to inclusion in your own way - We support you!",
+    "types": [
+      {
+        "title": "Sports Clubs",
+        "image": "/Hochsprung Sportvereine-min copy.jpg",
+        "items": [
+          "Want to reach new member groups and funding opportunities?",
+          "Ready for your first inclusive programs but need support?",
+          "Have busy instructors who need assistance?"
+        ]
+      },
+      {
+        "title": "Non-Profit Organizations",
+        "image": "/Ehrenamt Partner Page.jpg",
+        "items": [
+          "Want to offer modern sports assistance to your clients?",
+          "Have similar or complementary programs?",
+          "Have access to potential volunteers?"
+        ]
+      },
+      {
+        "title": "Companies",
+        "image": "/Workshop Partner Page-min.jpg",
+        "items": [
+          "Is strong local community connection important to you?",
+          "Do your employees want to make a positive impact?",
+          "Have resources, knowledge, and networks to share?"
+        ]
+      },
+      {
+        "title": "Tile 4",
+        "image": "/placeholder.jpg",
+        "items": [
+          "Item 1",
+          "Item 2",
+          "Item 3"
+        ]
+      }
+    ],
+    "cta": "Contact Us",
+    "copied": "Email copied!",
     "title": "Our Partners",
     "subtitle": "Working together with leading organizations to create systematic change in Bavarian sports.",
     "list": [
