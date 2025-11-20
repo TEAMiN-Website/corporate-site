@@ -109,24 +109,27 @@ const Athletes: React.FC = () => {
       </section>
 
       {/* Sports Assistant Support Section */}
-      <section className="py-24 bg-white dark:bg-gray-900">
-        <div className="max-w-6xl mx-auto px-4">
+      <section className="bg-white dark:bg-gray-900">
+        <div className="max-w-6xl mx-auto px-4 pt-24">
           <div className="text-center mb-12">
             <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] dark:text-white mb-6">
               {t('athletes.assistantSupport.title')}
             </h2>
           </div>
+        </div>
 
-          {/* Full-width Image */}
-          <div className="w-full mb-12 rounded-2xl overflow-hidden shadow-2xl">
-            <img
-              src="/assistant picture 2 copy copy.jpg"
-              alt="Sports assistant meeting with athlete"
-              className="w-full h-auto object-cover"
-              loading="lazy"
-            />
-          </div>
+        {/* Full-width Image - Breaking out of container */}
+        <div className="w-full mb-12 overflow-hidden">
+          <img
+            src="/assistant picture 2 copy copy.jpg"
+            alt="Sports assistant meeting with athlete"
+            className="w-full h-[400px] md:h-[500px] lg:h-[600px] object-cover"
+            style={{ objectPosition: 'center 25%' }}
+            loading="lazy"
+          />
+        </div>
 
+        <div className="max-w-6xl mx-auto px-4 pb-24">
           {/* Introduction Paragraph */}
           <div className="max-w-4xl mx-auto mb-16 text-center">
             <p className="text-xl lg:text-2xl text-[#3F3E34] dark:text-gray-300 leading-relaxed">
