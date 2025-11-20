@@ -119,7 +119,17 @@
   "athletes": {
     "title": "Bereit, Teil des Teams zu werden?",
     "description": "Finde zusammen mit deiner Sportassistent:in einen Sport, der dir Freude macht. Eine Gemeinschaft, in der ihr das beste auseinander rausholt. Wir begleiten dich dabei Schritt für Schritt zur Selbstständigkeit.",
-    "getConnected": "Finde heraus wie"
+    "getConnected": "Finde heraus wie",
+    "barriers": {
+      "title": "Selbständigkeit ist nicht selbstverständlich",
+      "tiles": [
+        "Mangelnde Angebote",
+        "Fehlender Transport",
+        "Vorurteile",
+        "Niedriges Selbstvertrauen"
+      ],
+      "description": "Menschen mit Behinderungen stoßen auf viele Barrieren, wenn sie eigenständig Sport treiben möchten. Fehlende barrierefreie Angebote, mangelnder Transport, gesellschaftliche Vorurteile und ein oft niedriges Selbstvertrauen erschweren den Zugang zum Sport. TEAMiN setzt genau hier an: Wir schaffen inklusive Sportumgebungen, in denen qualifizierte Assistent:innen temporäre Unterstützung bieten und Sportler:innen Schritt für Schritt zur Selbstständigkeit begleiten. So wird aus Ausgrenzung echte Teilhabe."
+    }
   },
   "aurelian": {
     "title": "Aurelian kennenlernen",

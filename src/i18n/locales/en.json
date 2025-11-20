@@ -119,7 +119,17 @@
   "athletes": {
     "title": "Ready to Become Part of the Team?",
     "description": "Find a sport you love together with your sports assistant. A community where you bring out the best in each other. We accompany you step by step towards independence.",
-    "getConnected": "Find Out How"
+    "getConnected": "Find Out How",
+    "barriers": {
+      "title": "Independence Is Not a Given",
+      "tiles": [
+        "Lack of Opportunities",
+        "Missing Transportation",
+        "Prejudices",
+        "Low Self-Confidence"
+      ],
+      "description": "People with disabilities face many barriers when wanting to participate independently in sports. Missing accessible programs, lack of transportation, societal prejudices, and often low self-confidence make access to sports difficult. TEAMiN addresses exactly these challenges: We create inclusive sports environments where qualified assistants provide temporary support and guide athletes step by step towards independence. This transforms exclusion into genuine participation."
+    }
   },
   "aurelian": {
     "title": "Meet Aurelian",
