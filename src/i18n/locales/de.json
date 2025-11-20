@@ -235,7 +235,7 @@
       "title": "ZUSAMMEN BRINGEN WIR INKLUSION VORAN",
       "subtitle": "Ob Sportverein, Schule oder lokales Unternehmen, wir helfen euch mit Qualifizierung und motivierenden Möglichkeiten, beizutragen. Ganz nach euren Bedürfnissen."
     },
-    "message": "Teilt eure Ressourcen, euer Wissen, eure Gemeinschaften und werdet Teil echter Beziehungen, Erfolge und Geschichten. Tragt auf eure Weise zur Inklusion bei - Wir unterstützen euch!",
+    "message": "Inklusion lebt vom Einsatz mutiger Helfer:innen aus bestehenden Gemeinschaften. Es braucht Empathische Assistenz, Organisationstalente, Marketinggenies, IT-Expert:innen. Das kann nicht eine Organisation alleine leisten. Deshalb braucht es starke Partner wie dich und viele andere, die Inklusion bereits Tatkräftig voranbringen.\n\nTeilt eure Ressourcen, euer Wissen, eure Gemeinschaften und werdet Teil echter Erfolgsgeschichten in deiner Region. Wir unterstützen euch, auf eure Weise zu Inklusion beizutragen. Ganz individuell.",
     "types": [
       {
         "title": "Sportvereine",
@@ -267,6 +267,7 @@
     ],
     "cta": "Schreib uns",
     "copied": "E-Mail kopiert!",
+    "networkTitle": "UNSERE PARTNER",
     "title": "Unsere Partner",
     "subtitle": "Zusammenarbeit mit führenden Organisationen zur Schaffung systematischer Veränderungen im bayerischen Sport.",
     "list": [
