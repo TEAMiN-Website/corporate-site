@@ -263,15 +263,6 @@
           "Do your employees want to make a positive impact?",
           "Have resources, knowledge, and networks to share?"
         ]
-      },
-      {
-        "title": "Tile 4",
-        "image": "/placeholder.jpg",
-        "items": [
-          "Item 1",
-          "Item 2",
-          "Item 3"
-        ]
       }
     ],
     "cta": "Contact Us",

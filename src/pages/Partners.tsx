@@ -99,7 +99,7 @@ const Partners: React.FC = () => {
         </div>
 
         <div className="max-w-7xl mx-auto px-4 relative z-10">
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {(t('partners.types', { returnObjects: true }) as Array<{title: string, image: string, items: string[]}>).map((type, index) => (
               <div key={index} className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
                 <div className="relative h-48 overflow-hidden">
