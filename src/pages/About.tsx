@@ -173,36 +173,6 @@ const About: React.FC = () => {
  </div>
  </section>
 
- {/* Inclusion Understanding Section with Diagonal Split */}
- <section className="min-h-[600px] relative overflow-hidden">
- {/* Background Image - Left 50% */}
- <div className="absolute top-0 left-0 bottom-0 w-[50%]">
- <img
- src="Inklusion sign.jpg"
- alt="Inklusion"
- className="w-full h-full object-cover"
- style={{ objectPosition: '30% center' }}
- />
- </div>
-
- {/* Diagonal Gradient Overlay - Right 50% */}
- <div className="absolute inset-0 bg-gradient-to-br from-[#71B554] to-[#D86D55]" style={{
- clipPath: 'polygon(50% 0%, 100% 0%, 100% 100%, 30% 100%)'
- }}></div>
-
- {/* Text Content */}
- <div className="relative z-10 flex items-center justify-end min-h-[600px] px-4 py-16">
- <div className="max-w-xl text-left relative z-10 mr-8 lg:mr-16">
- <h2 className="text-4xl md:text-5xl font-bold text-white mb-6 leading-tight">
- {t('about.inclusion.heading')}
- </h2>
- <p className="text-lg text-white leading-relaxed opacity-95">
- {t('about.inclusion.description')}
- </p>
- </div>
- </div>
- </section>
-
  {/* Team Section */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
