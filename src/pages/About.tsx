@@ -40,7 +40,7 @@ const About: React.FC = () => {
  return (
  <div>
  {/* Hero Section with Diagonal Split - Image on Left, Overlay on Right */}
- <section className="min-h-screen relative overflow-hidden hero-section parallax-section hero-overlay">
+ <section className="min-h-screen relative overflow-hidden hero-section about-hero-parallax hero-overlay">
  {/* Subtle overlay for better text readability */}
  <div className="absolute inset-0 bg-black/10"></div>
 

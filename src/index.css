@@ -49,6 +49,20 @@
   }
 }
 
+.about-hero-parallax {
+  background-image: url('/TEAMiN%20Network.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .about-hero-parallax {
+    background-attachment: fixed;
+  }
+}
+
 .athletes-hero-parallax {
   background-image: url('/Aurelian%20Team%20Zensiert.jpg');
   background-size: cover;
