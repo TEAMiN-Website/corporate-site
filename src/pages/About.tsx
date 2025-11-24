@@ -40,40 +40,38 @@ const About: React.FC = () => {
  return (
  <div>
  {/* Hero Section with Diagonal Split - Image on Left, Overlay on Right */}
- <section className="min-h-screen relative overflow-hidden">
- {/* Background Image - covers entire section */}
- <div
- className="absolute inset-0 bg-cover bg-center"
- style={{
- backgroundImage: 'url("TEAMiN About Hero copy.jpg")',
- backgroundPosition: '15% center'
- }}
- ></div>
-
+ <section className="min-h-screen relative overflow-hidden hero-section parallax-section hero-overlay">
  {/* Subtle overlay for better text readability */}
  <div className="absolute inset-0 bg-black/10"></div>
 
- {/* Diagonal gradient overlay on the right - same width as SpAss with 85% opacity */}
- <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55] to-[#71B554]" style={{
- opacity: 0.85,
- clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
+ <div className="absolute inset-0" style={{
+ backgroundColor: 'rgba(216, 109, 85, 0.6)'
+ }}></div>
+
+ <div className="absolute inset-0" style={{
+ backgroundColor: 'rgba(247, 236, 213, 0.6)'
  }}></div>
 
  {/* Text Content on Gradient Overlay */}
- <div className="relative z-10 flex items-center justify-end min-h-screen">
- <div className="w-full lg:w-[42%] text-right pr-8 lg:pr-16 py-20 lg:py-0">
- <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight text-white uppercase">
+ <div className="relative z-10 flex items-center justify-center min-h-screen">
+ <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
+ <img
+ src="/TEAMIN_logo_small.svg"
+ alt="TEAMiN Logo"
+ className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+ />
+ <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight text-white uppercase">
  {t('about.hero.title')}
  </h1>
- <p className="text-xl lg:text-2xl leading-relaxed text-white/95 mb-10">
+ <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
  {t('about.hero.subtitle')}
  </p>
- <div className="flex justify-end">
+ <div className="flex justify-center mb-8">
  <Link
  to="/signup"
- className="inline-block px-10 py-4 text-xl font-semibold text-white bg-white/20 backdrop-blur-sm border-2 border-white rounded-full hover:bg-white hover:text-[#D86D55] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl uppercase tracking-wide"
+ className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- {t('about.hero.cta')}
+ Lern uns kennen
  </Link>
  </div>
  </div>
