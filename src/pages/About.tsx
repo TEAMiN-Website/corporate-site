@@ -81,7 +81,7 @@ const About: React.FC = () => {
  className="absolute inset-0 bg-cover bg-center"
  style={{ backgroundImage: 'url("/Angebote-min copy copy.jpg")' }}
  ></div>
- <div className="absolute inset-0 bg-[#3F3E34]/[0.42]"></div>
+ <div className="absolute inset-0 bg-[#3F3E34]/75"></div>
  <div className="relative z-10 py-24">
  <div className="max-w-7xl mx-auto px-4">
  <div className="grid md:grid-cols-3 gap-12 mb-16">
