@@ -18,15 +18,21 @@ const Signup: React.FC = () => {
  return (
  <div>
  {/* Hero Section */}
- <section className="min-h-screen relative overflow-hidden hero-section signup-hero-parallax">
+ <section className="min-h-screen relative overflow-hidden hero-section parallax-section hero-overlay">
  <div className="absolute inset-0 bg-black/10"></div>
 
- <div className="absolute inset-0 bg-[#D86D55]/40"></div>
+ <div className="absolute inset-0" style={{
+ backgroundColor: 'rgba(216, 109, 85, 0.6)'
+ }}></div>
+
+ <div className="absolute inset-0" style={{
+ backgroundColor: 'rgba(247, 236, 213, 0.6)'
+ }}></div>
 
  <div className="relative z-10 flex items-center justify-center min-h-screen">
  <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
  <img
- src="/TEAMiN Logo short copy.png"
+ src="/TEAMIN_logo_small.svg"
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
  />
@@ -41,7 +47,7 @@ const Signup: React.FC = () => {
  onClick={scrollToNextSection}
  className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- {t('signupNew.hero.cta')}
+ Lern uns kennen
  </button>
  </div>
  <div className="flex justify-center">
