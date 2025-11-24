@@ -125,38 +125,48 @@ const About: React.FC = () => {
  {/* Who We Are, Mission & Vision Section - Three Tiles */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-wide" style={{ color: '#3F3E34' }}>
+ WARUM ES UNS GIBT
+ </h2>
 
  <div className="grid md:grid-cols-3 gap-8">
  {/* Who We Are Tile */}
- <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+ <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
  <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
- <div className="relative z-10 p-10">
+ <div className="relative z-10 p-10 flex flex-col flex-grow">
  <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.whoWeAre.title')}</h3>
- <p className="text-lg text-white leading-relaxed">
+ <p className="text-lg text-white leading-relaxed flex-grow">
  {t('about.missionVision.whoWeAre.description')}
  </p>
  </div>
  </div>
 
  {/* Mission Tile */}
- <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+ <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
  <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
- <div className="relative z-10 p-10">
+ <div className="relative z-10 p-10 flex flex-col flex-grow">
  <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.mission.title')}</h3>
- <p className="text-lg text-white leading-relaxed">
+ <p className="text-lg text-white leading-relaxed flex-grow">
  {t('about.missionVision.mission.description')}
  </p>
  </div>
  </div>
 
  {/* Vision Tile */}
- <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+ <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
  <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
- <div className="relative z-10 p-10">
+ <div className="relative z-10 p-10 flex flex-col flex-grow">
  <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.vision.title')}</h3>
- <p className="text-lg text-white leading-relaxed">
+ <p className="text-lg text-white leading-relaxed flex-grow mb-6">
  {t('about.missionVision.vision.description')}
  </p>
+ <Link
+ to="/spass"
+ className="inline-block text-center px-8 py-3 rounded-full font-semibold text-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+ style={{ backgroundColor: '#F7ECD5', color: '#D86D55' }}
+ >
+ Erkunde SpAss
+ </Link>
  </div>
  </div>
  </div>
