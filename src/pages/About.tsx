@@ -75,6 +75,53 @@ const About: React.FC = () => {
  </div>
  </section>
 
+ {/* Statistics Section with Background Image */}
+ <section className="relative min-h-[600px] overflow-hidden">
+ <div
+ className="absolute inset-0 bg-cover bg-center"
+ style={{ backgroundImage: 'url("/Angebote-min copy copy.jpg")' }}
+ ></div>
+ <div className="absolute inset-0 bg-[#3F3E34]/[0.42]"></div>
+ <div className="relative z-10 py-24">
+ <div className="max-w-7xl mx-auto px-4">
+ <div className="grid md:grid-cols-3 gap-12 mb-16">
+ <div className="text-center">
+ <div className="text-7xl md:text-8xl font-bold mb-4" style={{ color: '#D86D55' }}>
+ {t('about.statistics.stat1.number')}
+ </div>
+ <p className="text-xl md:text-2xl text-white leading-relaxed font-semibold">
+ {t('about.statistics.stat1.text')}
+ </p>
+ </div>
+ <div className="text-center">
+ <div className="text-7xl md:text-8xl font-bold mb-4" style={{ color: '#F7ECD5' }}>
+ {t('about.statistics.stat2.number')}
+ </div>
+ <p className="text-xl md:text-2xl text-white leading-relaxed font-semibold">
+ {t('about.statistics.stat2.text')}
+ </p>
+ </div>
+ <div className="text-center">
+ <div className="text-7xl md:text-8xl font-bold mb-4" style={{ color: '#71B554' }}>
+ {t('about.statistics.stat3.number')}
+ </div>
+ <p className="text-xl md:text-2xl text-white leading-relaxed font-semibold">
+ {t('about.statistics.stat3.text')}
+ </p>
+ </div>
+ </div>
+ <div className="max-w-5xl mx-auto space-y-6">
+ <p className="text-xl text-white leading-relaxed">
+ {t('about.statistics.paragraph1')}
+ </p>
+ <p className="text-xl text-white leading-relaxed">
+ {t('about.statistics.paragraph2')}
+ </p>
+ </div>
+ </div>
+ </div>
+ </section>
+
  {/* Who We Are, Mission & Vision Section - Three Tiles */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
