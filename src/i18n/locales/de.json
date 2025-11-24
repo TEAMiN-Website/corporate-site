@@ -24,18 +24,17 @@
       "cta": "Jetzt mitmachen"
     },
     "missionVision": {
-      "heading": "Wer wir sind",
       "whoWeAre": {
-        "title": "Wer wir sind",
-        "description": "TEAMiN ist ein kollaboratives Netzwerk aus Forschungseinrichtungen, Sportorganisationen und Community-Partnern, die gemeinsam daran arbeiten, die Sportkultur in Bayern zu transformieren. Wir verbinden akademische Expertise mit praktischer Erfahrung, um dauerhaften Wandel zu schaffen."
+        "title": "WER WIR SIND",
+        "description": "TEAMiN ist ein inklusives Netzwerk aus Forschungseinrichtungen, gemeinnützigen Organisationen und Community-Partnern. Zusammen machen wir Gemeinschaften Schritt für Schritt inklusiver."
       },
       "mission": {
-        "title": "Unsere Mission",
-        "description": "Wir schaffen systematische Wege zur Inklusion, indem wir qualifizierte Sportassistent:innen ausbilden, die Menschen mit Behinderungen ermöglichen, selbstständig in regulären Sportvereinen teilzunehmen. Unser evidenzbasierter Ansatz gewährleistet nachhaltige Integration."
+        "title": "WAS WIR MÖCHTEN",
+        "description": "Alle Menschen brauchen Zugehörigkeit, um gesund zu sein. Deshalb streben wir nach Gemeinschaften, in denen Menschen unabhängig von ihren Fähigkeiten willkommen sind und kreativ mitwirken können."
       },
       "vision": {
-        "title": "Unsere Vision",
-        "description": "Ein Bayern, in dem jeder Sportverein wirklich inklusiv ist, in dem Menschen mit Behinderungen als geschätzte Mitglieder teilnehmen und temporäre Unterstützung zu dauerhafter Unabhängigkeit und Zugehörigkeit führt."
+        "title": "WIE WIR BEITRAGEN",
+        "description": "Dafür unterstützen wir systematisch inklusiven Wandel. Durch unsere erste Initiative \"SpAss\" bilden wir ehrenamtliche Sportassistenzen aus, die Menschen mit Beeinträchtigung selbstständige Teilhabe am Breitensport ermöglichen."
       }
     },
     "inclusion": {

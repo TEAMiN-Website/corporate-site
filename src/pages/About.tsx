@@ -78,42 +78,39 @@ const About: React.FC = () => {
  {/* Who We Are, Mission & Vision Section - Three Tiles */}
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
- {t('about.missionVision.heading')}
- </h2>
 
  <div className="grid md:grid-cols-3 gap-8">
  {/* Who We Are Tile */}
- <div className="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
- <div className="flex items-center justify-center w-16 h-16 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10 rounded-2xl mb-6">
- <Users className="w-8 h-8 text-[#71B554]" />
- </div>
- <h3 className="text-3xl font-bold mb-6 text-[#3F3E34]">{t('about.missionVision.whoWeAre.title')}</h3>
- <p className="text-lg text-[#B3ADAA] leading-relaxed">
+ <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+ <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
+ <div className="relative z-10 p-10">
+ <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.whoWeAre.title')}</h3>
+ <p className="text-lg text-white leading-relaxed">
  {t('about.missionVision.whoWeAre.description')}
  </p>
  </div>
+ </div>
 
  {/* Mission Tile */}
- <div className="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
- <div className="flex items-center justify-center w-16 h-16 bg-[#D86D55]/10 rounded-2xl mb-6">
- <Target className="w-8 h-8 text-[#D86D55]" />
- </div>
- <h3 className="text-3xl font-bold mb-6 text-[#3F3E34]">{t('about.missionVision.mission.title')}</h3>
- <p className="text-lg text-[#B3ADAA] leading-relaxed">
+ <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+ <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
+ <div className="relative z-10 p-10">
+ <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.mission.title')}</h3>
+ <p className="text-lg text-white leading-relaxed">
  {t('about.missionVision.mission.description')}
  </p>
  </div>
+ </div>
 
  {/* Vision Tile */}
- <div className="bg-white rounded-3xl p-10 shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
- <div className="flex items-center justify-center w-16 h-16 bg-[#71B554]/10 rounded-2xl mb-6">
- <Eye className="w-8 h-8 text-[#71B554]" />
- </div>
- <h3 className="text-3xl font-bold mb-6 text-[#3F3E34]">{t('about.missionVision.vision.title')}</h3>
- <p className="text-lg text-[#B3ADAA] leading-relaxed">
+ <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
+ <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
+ <div className="relative z-10 p-10">
+ <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.vision.title')}</h3>
+ <p className="text-lg text-white leading-relaxed">
  {t('about.missionVision.vision.description')}
  </p>
+ </div>
  </div>
  </div>
  </div>
