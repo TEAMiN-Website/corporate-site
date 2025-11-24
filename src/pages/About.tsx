@@ -48,15 +48,12 @@ const About: React.FC = () => {
  backgroundColor: 'rgba(216, 109, 85, 0.6)'
  }}></div>
 
- <div className="absolute inset-0" style={{
- backgroundColor: 'rgba(247, 236, 213, 0.6)'
- }}></div>
-
  {/* Text Content on Gradient Overlay */}
  <div className="relative z-10 flex items-center justify-center min-h-screen">
  <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
  <img
  src="/TEAMIN_logo_small.svg"
+ style={{ filter: 'brightness(0) invert(1)' }}
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
  />
