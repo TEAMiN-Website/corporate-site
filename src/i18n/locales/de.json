@@ -8,7 +8,8 @@
     "volunteers": "Assistent:innen",
     "signup": "Anmelden",
     "partners": "Partner",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "photos": "Fotos"
   },
   "home": {
     "title": "Gemeinschaften schaffen, in denen jeder durch Sport dazugehört",
@@ -994,6 +995,13 @@
         ]
       }
     }
+  },
+  "photos": {
+    "title": "Fotos",
+    "description": "Entdecken Sie Einblicke in unsere inklusive Sportgemeinschaft",
+    "close": "Schließen",
+    "previous": "Zurück",
+    "next": "Weiter"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",

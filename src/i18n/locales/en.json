@@ -8,7 +8,8 @@
     "volunteers": "Assistants",
     "signup": "Sign Up",
     "partners": "Partners",
-    "contact": "Contact"
+    "contact": "Contact",
+    "photos": "Photos"
   },
   "home": {
     "title": "Building Communities Where Everyone Belongs Through Sports",
@@ -994,6 +995,13 @@
         ]
       }
     }
+  },
+  "photos": {
+    "title": "Photos",
+    "description": "Explore moments from our inclusive sports community",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
   },
   "faq": {
     "title": "Frequently Asked Questions",

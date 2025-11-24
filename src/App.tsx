@@ -17,6 +17,7 @@ import Impressum from './pages/Impressum';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import FAQ from './pages/FAQ';
+import Photos from './pages/Photos';
 import './i18n';
 import { initializeAnalytics, removeAnalytics, trackPageView } from './utils/analytics';
 
@@ -73,6 +74,7 @@ const AppContent: React.FC = () => {
                               <Route path="privacy" element={<Privacy />} />
                               <Route path="terms" element={<Terms />} />
                               <Route path="faq" element={<FAQ />} />
+                              <Route path="photos" element={<Photos />} />
                               <Route path="*" element={<NotFound />} />
                         </Route>
                   </Routes>
