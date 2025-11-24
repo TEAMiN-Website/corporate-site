@@ -45,7 +45,7 @@ const About: React.FC = () => {
  <div className="absolute inset-0 bg-black/10"></div>
 
  <div className="absolute inset-0" style={{
- backgroundColor: 'rgba(216, 109, 85, 0.6)'
+ backgroundColor: 'rgba(216, 109, 85, 0.42)'
  }}></div>
 
  {/* Text Content on Gradient Overlay */}
