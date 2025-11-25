@@ -23,6 +23,27 @@
       "subtitle": "Building communities where everyone belongs through systematic sport assistance and sustainable inclusion.",
       "cta": "Join Now"
     },
+    "statistics": {
+      "stat1": {
+        "number": "50%",
+        "text": "of people with disabilities rate their health as poor"
+      },
+      "stat2": {
+        "number": "55%",
+        "text": "of people with disabilities say they never exercise"
+      },
+      "stat3": {
+        "number": "79%",
+        "text": "of children with intellectual disabilities are not members of sports clubs"
+      },
+      "paragraph1": "The consequences of limited access to community and sports for people with disabilities reflect and reinforce broader societal trends. Many of us, with and without disabilities, don't move enough, experience loneliness, and face barriers when trying to change that.",
+      "paragraph2": "However, systemic barriers such as inaccessible facilities, lack of transportation, prejudices, and missing programs affect some of us more than others. And that is exactly what we address through inclusive solutions supported by strong partnerships.",
+      "paragraph3": {
+        "part1": "Our first solution is the sports assistance program \"SpAss\", which promotes participation in recreational sports. As part of a publicly funded project, it trains volunteer sports assistants and connects them with athletes through ",
+        "linkText": "partners",
+        "part2": " like Lebenshilfe and avaAssist. In the future, TEAMiN aims to support inclusion in various communities. In Bavaria and beyond."
+      }
+    },
     "missionVision": {
       "heading": "Who We Are",
       "whoWeAre": {

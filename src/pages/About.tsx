@@ -117,6 +117,13 @@ const About: React.FC = () => {
  <p className="text-xl text-white leading-relaxed">
  {t('about.statistics.paragraph2')}
  </p>
+ <p className="text-xl text-white leading-relaxed">
+ {t('about.statistics.paragraph3.part1')}
+ <a href="#partner-section" className="underline hover:text-[#71B554] transition-colors">
+ {t('about.statistics.paragraph3.linkText')}
+ </a>
+ {t('about.statistics.paragraph3.part2')}
+ </p>
  </div>
  </div>
  </div>
@@ -210,7 +217,7 @@ const About: React.FC = () => {
  </section>
 
  {/* Partners Section */}
- <section className="py-24 bg-white ">
+ <section id="partner-section" className="py-24 bg-white ">
  <div className="max-w-6xl mx-auto px-4">
  <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34] ">
  {t('about.partners.heading')}
