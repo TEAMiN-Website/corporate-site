@@ -228,10 +228,10 @@ const About: React.FC = () => {
  </section>
 
  {/* Partners Section */}
- <section id="partner-section" className="py-24 bg-white ">
+ <section id="partner-section" className="py-24 bg-gradient-to-b from-[#71B554] to-[#D86D55]">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34] ">
- {t('about.partners.heading')}
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white uppercase tracking-wide">
+ UNSERE PARTNER
  </h2>
 
  <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
@@ -253,7 +253,7 @@ const About: React.FC = () => {
  >
  {/* Front of card */}
  <div
- className="absolute inset-0 w-full h-full bg-white rounded-2xl shadow-lg flex items-center justify-center p-6 backface-hidden"
+ className="absolute inset-0 w-full h-full bg-[#F7ECD5] rounded-2xl shadow-lg flex items-center justify-center p-6 backface-hidden"
  style={{ backfaceVisibility: 'hidden' }}
  >
  <img
@@ -265,7 +265,7 @@ const About: React.FC = () => {
 
  {/* Back of card */}
  <div
- className="absolute inset-0 w-full h-full bg-gradient-to-br from-[#D86D55] to-[#71B554] text-white rounded-2xl shadow-lg p-4 flex items-center justify-center backface-hidden"
+ className="absolute inset-0 w-full h-full bg-transparent text-white rounded-2xl shadow-lg p-4 flex items-center justify-center backface-hidden border-2 border-white"
  style={{
  backfaceVisibility: 'hidden',
  transform: 'rotateY(180deg)'
