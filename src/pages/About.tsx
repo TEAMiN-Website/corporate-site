@@ -283,85 +283,66 @@ const About: React.FC = () => {
  </div>
  </section>
 
- {/* CTA Section - Three Tiles */}
- <section className="py-24 bg-[#F7ECD5]">
- <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-[#3F3E34]">
- {t('about.cta.heading')}
+ {/* CTA Section - Erkunde SpAss */}
+ <section className="py-24 px-6 bg-[#F7ECD5]/50">
+ <div className="max-w-7xl mx-auto">
+ <div className="text-center max-w-4xl mx-auto mb-20">
+ <h2 className="text-5xl md:text-6xl font-bold text-gray-900">
+ ERKUNDE <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>
  </h2>
+ </div>
 
  <div className="grid md:grid-cols-3 gap-10">
- {/* Volunteering Card - Game Heat */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
- <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
-
- <div className="h-48 relative overflow-hidden">
- <img
- src="assistant picture 1.jpg"
- alt="Become a volunteer"
- className="w-full h-full object-cover"
- />
- <div className="absolute inset-0 bg-[#D86D55]/10"></div>
+ <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+ <img loading="lazy" src="/assistant picture 2 crop copy.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+ <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/90 to-[#D86D55]/80" />
+ <div className="relative z-10 h-full flex flex-col justify-between">
+ <div>
+ <h3 className="text-3xl font-bold mb-4 text-white">
+ {t('spassPage.becomePart.assistants.title')}
+ </h3>
+ <p className="text-lg text-white/90 mb-6 leading-relaxed">
+ {t('spassPage.becomePart.assistants.description')}
+ </p>
  </div>
-
- <div className="p-8 text-center">
- <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('about.cta.volunteering.title')}</h3>
- <p className="text-[#B3ADAA] mb-6 italic">{t('about.cta.volunteering.description')}</p>
- <Link
- to="/volunteers"
- className="inline-block bg-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
- >
- {t('about.cta.volunteering.button')}
+ <Link to="/volunteers" className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ {t('spassPage.becomePart.assistants.cta')}
  </Link>
  </div>
  </div>
 
- {/* Athletes & Families Card - Match Green */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
- <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
-
- <div className="h-48 relative overflow-hidden">
- <img
- src="athlete 2.jpg"
- alt="Athletes and families"
- className="w-full h-full object-cover"
- />
- <div className="absolute inset-0 bg-[#71B554]/10"></div>
+ <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+ <img loading="lazy" src="/athlete 1.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+ <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80" />
+ <div className="relative z-10 h-full flex flex-col justify-between">
+ <div>
+ <h3 className="text-3xl font-bold mb-4 text-white">
+ {t('spassPage.becomePart.athletes.title')}
+ </h3>
+ <p className="text-lg text-white/90 mb-6 leading-relaxed">
+ {t('spassPage.becomePart.athletes.description')}
+ </p>
  </div>
-
- <div className="p-8 text-center">
- <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('about.cta.athletes.title')}</h3>
- <p className="text-[#B3ADAA] mb-6 italic">{t('about.cta.athletes.description')}</p>
- <Link
- to="/athletes"
- className="inline-block bg-[#71B554] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:bg-gradient-to-r hover:from-[#71B554] hover:to-[#D86D55] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
- >
- {t('about.cta.athletes.button')}
+ <Link to="/athletes" className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ {t('spassPage.becomePart.athletes.cta')}
  </Link>
  </div>
  </div>
 
- {/* SpAss Program Card - Gradient */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative">
- <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
-
- <div className="h-48 relative overflow-hidden">
- <img
- src="assistant picture 2.jpg"
- alt="SpAss Program"
- className="w-full h-full object-cover"
- />
- <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
+ <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+ <img loading="lazy" src="/partner picture-min.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
+ <div className="absolute inset-0 bg-gradient-to-br from-[#3F3E34]/90 to-[#3F3E34]/85" />
+ <div className="relative z-10 h-full flex flex-col justify-between">
+ <div>
+ <h3 className="text-3xl font-bold mb-4 text-white">
+ {t('spassPage.becomePart.organizations.title')}
+ </h3>
+ <p className="text-lg text-white/90 mb-6 leading-relaxed">
+ {t('spassPage.becomePart.organizations.description')}
+ </p>
  </div>
-
- <div className="p-8 text-center">
- <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('about.cta.spass.title')}</h3>
- <p className="text-[#B3ADAA] mb-6 italic">{t('about.cta.spass.description')}</p>
- <Link
- to="/spass"
- className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold uppercase tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
- >
- {t('about.cta.spass.button')}
+ <Link to="/partners" className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ {t('spassPage.becomePart.organizations.cta')}
  </Link>
  </div>
  </div>
