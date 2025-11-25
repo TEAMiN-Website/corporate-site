@@ -84,13 +84,14 @@
           "photo": "Jakob_Prechtl-removebg-preview.png"
         },
         {
+          "name": "Michelle Ziermann",
+          "role": "Projektmitarbeiterin Universität Würzburg - Verantwortlich für Qualifizierung und Forschung",
+          "photo": "Michelle_Ziermann-removebg-preview.png"
+        },
+        {
           "name": "Tim Noppeney",
           "role": "Projektmitarbeiter BVS Bayern - Verantwortlich für Nutzer:innen-Forschung und Marketing",
           "photo": "tim-noppeney-removebg-preview.png"
-        },
-        {
-          "name": "Michael Zimmermann",
-          "role": "Projektmitarbeiter Universität Würzburg - Verantwortlich für Qualifizierung und Forschung"
         }
       ]
     },
