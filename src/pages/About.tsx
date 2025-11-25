@@ -259,7 +259,8 @@ const About: React.FC = () => {
  <img
  src={partner.logo}
  alt={partner.name}
- className="max-w-full max-h-full object-contain"
+ className={`max-w-full max-h-full object-contain ${index === 2 ? 'scale-130' : ''}`}
+ style={index === 2 ? { transform: 'scale(1.3)' } : {}}
  />
  </div>
 
@@ -271,7 +272,7 @@ const About: React.FC = () => {
  transform: 'rotateY(180deg)'
  }}
  >
- <p className="text-xs leading-relaxed text-center">
+ <p className="text-sm leading-relaxed text-center">
  {partner.description}
  </p>
  </div>
