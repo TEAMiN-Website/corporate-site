@@ -184,34 +184,37 @@ const About: React.FC = () => {
  </section>
 
  {/* Team Section */}
- <section className="py-24 bg-[#F7ECD5]">
+ <section className="py-24 bg-[#3F3E34]">
  <div className="max-w-6xl mx-auto px-4">
- <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-[#3F3E34]">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-6 text-white uppercase tracking-wide">
  {t('about.team.heading')}
  </h2>
- <p className="text-xl text-center text-[#B3ADAA] mb-16 max-w-3xl mx-auto">
+ <p className="text-xl text-center text-white/80 mb-16 max-w-3xl mx-auto">
  {t('about.team.subtitle')}
  </p>
 
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
  {teamMembers.map((member, index) => (
- <div key={index} className="p-[2px] bg-gradient-to-br from-red-500 to-green-500 rounded-2xl shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2">
- <div className="bg-white rounded-2xl overflow-hidden">
+ <div key={index} className="flex flex-col items-center">
+ <div className="relative mb-6">
+ <div className="absolute inset-0 rounded-full bg-gradient-to-b from-[#71B554] to-[#D86D55] p-[3px]">
+ <div className="w-full h-full rounded-full bg-[#F7ECD5] flex items-center justify-center overflow-hidden">
  {member.photo ? (
  <img
  src={member.photo}
  alt={member.name}
- className="w-full h-64 object-cover"
+ className="w-full h-full object-cover"
  />
  ) : (
- <div className="w-full h-64 bg-gray-200 flex items-center justify-center">
  <Users className="w-16 h-16 text-gray-400" />
- </div>
  )}
- <div className="p-4 text-center">
- <h3 className="text-gray-900 text-xl font-semibold mb-1">{member.name}</h3>
- <p className="text-gray-600 text-sm">{member.role}</p>
  </div>
+ </div>
+ <div className="w-56 h-56 rounded-full"></div>
+ </div>
+ <div className="text-center">
+ <h3 className="text-white text-xl font-semibold mb-2">{member.name}</h3>
+ <p className="text-white/70 text-sm">{member.role}</p>
  </div>
  </div>
  ))}
