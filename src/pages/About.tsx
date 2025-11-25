@@ -32,6 +32,11 @@ const About: React.FC = () => {
  name: 'Adidas',
  logo: 'adidas logo.png',
  description: t('about.partners.adidas')
+ },
+ {
+ name: 'avaAssist',
+ logo: 'ava_logo.png',
+ description: t('about.partners.ava')
  }
  ];
 
