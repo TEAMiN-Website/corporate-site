@@ -31,7 +31,6 @@ const Header: React.FC = () => {
  ]
  },
  { id: '/partners', label: t('nav.partners') },
- { id: '/photos', label: t('nav.photos') },
  ];
 
  const toggleLanguage = () => {
