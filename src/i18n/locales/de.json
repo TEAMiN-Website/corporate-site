@@ -24,6 +24,7 @@
       "cta": "Jetzt mitmachen"
     },
     "statistics": {
+      "heading": "WARUM ES UNS GIBT",
       "stat1": {
         "number": "50%",
         "text": "aller Menschen mit Behinderung schätzen ihre Gesundheit als schlecht ein"
@@ -45,6 +46,7 @@
       }
     },
     "missionVision": {
+      "heading": "INKLUSION BRAUCHT GEMEINSCHAFT",
       "whoWeAre": {
         "title": "WER WIR SIND",
         "description": "TEAMiN ist ein inklusives Netzwerk aus Forschungseinrichtungen, gemeinnützigen Organisationen und Community-Partnern. Zusammen machen wir Gemeinschaften Schritt für Schritt inklusiver."

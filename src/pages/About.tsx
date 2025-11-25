@@ -84,6 +84,9 @@ const About: React.FC = () => {
  <div className="absolute inset-0 bg-[#3F3E34]/[0.85]"></div>
  <div className="relative z-10 py-24">
  <div className="max-w-7xl mx-auto px-4">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-wide text-white">
+ {t('about.statistics.heading')}
+ </h2>
  <div className="grid md:grid-cols-3 gap-12 mb-16">
  <div className="text-center">
  <div className="text-7xl md:text-8xl font-bold mb-4" style={{ color: '#D86D55' }}>
@@ -133,7 +136,7 @@ const About: React.FC = () => {
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-6xl mx-auto px-4">
  <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 uppercase tracking-wide" style={{ color: '#3F3E34' }}>
- WARUM ES UNS GIBT
+ {t('about.missionVision.heading')}
  </h2>
 
  <div className="grid md:grid-cols-3 gap-8">

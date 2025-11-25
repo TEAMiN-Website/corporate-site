@@ -24,6 +24,7 @@
       "cta": "Join Now"
     },
     "statistics": {
+      "heading": "WHY WE EXIST",
       "stat1": {
         "number": "50%",
         "text": "of people with disabilities rate their health as poor"
@@ -45,7 +46,7 @@
       }
     },
     "missionVision": {
-      "heading": "Who We Are",
+      "heading": "INCLUSION NEEDS COMMUNITY",
       "whoWeAre": {
         "title": "Who We Are",
         "description": "TEAMiN is a collaborative network of research institutions, sports organizations, and community partners working together to transform sports culture in Bavaria. We combine academic expertise with practical experience to create lasting change."
