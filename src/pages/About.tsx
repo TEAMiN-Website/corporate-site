@@ -61,6 +61,7 @@ const About: React.FC = () => {
  style={{ filter: 'brightness(0) invert(1)' }}
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+ fetchpriority="high"
  />
  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-6 leading-tight text-white uppercase">
  {t('about.hero.title')}
@@ -209,6 +210,7 @@ const About: React.FC = () => {
  src={member.photo}
  alt={member.name}
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  ) : (
  <Users className="w-16 h-16 text-gray-400" />
@@ -261,6 +263,7 @@ const About: React.FC = () => {
  alt={partner.name}
  className={`max-w-full max-h-full object-contain ${index === 2 ? 'scale-130' : ''}`}
  style={index === 2 ? { transform: 'scale(1.3)' } : {}}
+ loading="lazy"
  />
  </div>
 

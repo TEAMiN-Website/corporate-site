@@ -156,6 +156,7 @@ const PartnerNetworkSection: React.FC = () => {
                         src={partner.logo}
                         alt={t(`spassPage.partners.names.${partner.id}`)}
                         className="max-w-[75%] max-h-[75%] sm:max-w-[80%] sm:max-h-[80%] object-contain"
+                        loading="lazy"
                       />
                     ) : (
                       <span className={`text-center font-semibold text-gray-700 ${isMobile ? 'text-xs' : 'text-sm'}`}>
@@ -274,6 +275,7 @@ const Partners: React.FC = () => {
               style={{ filter: 'brightness(0) invert(1)' }}
               alt="TEAMiN Logo"
               className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+              fetchpriority="high"
             />
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
               {t('partners.hero.title')}
@@ -310,6 +312,7 @@ const Partners: React.FC = () => {
                     src={type.image}
                     alt={type.title}
                     className="w-full h-full object-cover"
+                    loading="lazy"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
                   <h3 className="absolute bottom-4 left-4 right-4 text-2xl font-bold text-white">{type.title}</h3>

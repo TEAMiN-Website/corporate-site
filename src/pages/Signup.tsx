@@ -29,6 +29,7 @@ const Signup: React.FC = () => {
  src="/TEAMiN Logo short copy.png"
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+ fetchpriority="high"
  />
  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
  {t('signupNew.hero.title')}
@@ -74,10 +75,11 @@ const Signup: React.FC = () => {
  
  {/* Background Image with Overlay */}
  <div className="absolute inset-0">
- <img 
+ <img
  src="elearning-min.jpg"
  alt="E-learning background"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#D86D55]/80"></div>
  </div>
@@ -113,10 +115,11 @@ const Signup: React.FC = () => {
  
  {/* Background Image with Overlay */}
  <div className="absolute inset-0">
- <img 
+ <img
  src="athlete 7-min-min.jpg"
  alt="Praxistag background"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#D86D55]/80"></div>
  </div>
@@ -147,10 +150,11 @@ const Signup: React.FC = () => {
  <div className="bg-[#3F3E34] p-10 text-center relative overflow-hidden h-48">
  {/* Background Image with Overlay */}
  <div className="absolute inset-0">
- <img 
+ <img
  src="partner picture-min.jpg"
  alt="Partner background"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
  </div>
@@ -191,6 +195,7 @@ const Signup: React.FC = () => {
  alt="Aurelian smiling in sports jersey"
  className="absolute inset-0 w-full h-full object-cover"
  style={{ objectPosition: 'center 20%' }}
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80"></div>
 
