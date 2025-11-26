@@ -1,21 +1,48 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
-import { ChevronDown, CheckCircle, AlertCircle } from 'lucide-react';
-import { submitContactForm } from '../utils/contactService';
+import { ChevronDown, Copy } from 'lucide-react';
+
+const ContactButton: React.FC = () => {
+ const [isHovered, setIsHovered] = useState(false);
+ const [showCopied, setShowCopied] = useState(false);
+
+ const handleClick = () => {
+  if (isHovered) {
+   navigator.clipboard.writeText('kontakt@teaminklusion.de');
+   setShowCopied(true);
+   setTimeout(() => setShowCopied(false), 2000);
+  }
+ };
+
+ return (
+  <div className="relative inline-block">
+   <button
+    onMouseEnter={() => setIsHovered(true)}
+    onMouseLeave={() => setIsHovered(false)}
+    onClick={handleClick}
+    className="bg-[#3F3E34] text-[#F7ECD5] px-8 py-4 rounded-full font-semibold hover:bg-[#2A2928] transition-all duration-300 flex items-center space-x-2 group"
+   >
+    {isHovered ? (
+     <>
+      <span>kontakt@teaminklusion.de</span>
+      <Copy className="w-5 h-5" />
+     </>
+    ) : (
+     <span>Schreib uns</span>
+    )}
+   </button>
+   {showCopied && (
+    <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#71B554] text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+     Kopiert!
+    </div>
+   )}
+  </div>
+ );
+};
 
 const Home: React.FC = () => {
  const { t } = useTranslation();
- const [formData, setFormData] = useState({
- name: '',
- email: '',
- message: ''
- });
- const [isSubmitting, setIsSubmitting] = useState(false);
- const [submitStatus, setSubmitStatus] = useState<{
- type: 'success' | 'error' | null;
- message: string;
- }>({ type: null, message: '' });
 
  const scrollToNextSection = () => {
  const heroSection = document.querySelector('.hero-section');
@@ -25,37 +52,6 @@ const Home: React.FC = () => {
  nextSection.scrollIntoView({ behavior: 'smooth' });
  }
  }
- };
-
- const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
- setFormData({
- ...formData,
- [e.target.name]: e.target.value
- });
- };
-
- const handleSubmit = async (e: React.FormEvent) => {
- e.preventDefault();
- setIsSubmitting(true);
- setSubmitStatus({ type: null, message: '' });
-
- const result = await submitContactForm(formData);
-
- if (result.success) {
- setSubmitStatus({
- type: 'success',
- message: t('contact.form.success') || 'Thank you for contacting us! We will get back to you soon.',
- });
- // Reset form
- setFormData({ name: '', email: '', message: '' });
- } else {
- setSubmitStatus({
- type: 'error',
- message: result.message || t('contact.form.error') || 'Something went wrong. Please try again.',
- });
- }
-
- setIsSubmitting(false);
  };
 
  return (
@@ -229,92 +225,30 @@ const Home: React.FC = () => {
 
  {/* Contact Section */}
  <section className="py-24 text-white relative overflow-hidden parallax-section dark-overlay">
- 
+
  <div className="max-w-4xl mx-auto px-4 relative z-10">
  <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
  {t('homeNew.contact.title')}
  </h2>
 
- <div className="bg-[#F7ECD5]/95 backdrop-blur-sm p-12 md:p-16 rounded-3xl shadow-xl relative overflow-hidden z-10">
- {/* Decorative gradient circle */}
- <div className="absolute -top-1/2 -right-1/2 w-full h-full bg-gradient-radial from-[#71B554]/10 to-transparent rounded-full"></div>
- 
- {/* Status Messages */}
- {submitStatus.type === 'success' && (
- <div className="mb-6 p-4 bg-green-100 border-2 border-green-500 rounded-xl flex items-start space-x-3 relative z-10">
- <CheckCircle className="w-5 h-5 text-green-600 flex-shrink-0 mt-0.5" />
- <p className="text-green-800 font-medium">{submitStatus.message}</p>
- </div>
- )}
- 
- {submitStatus.type === 'error' && (
- <div className="mb-6 p-4 bg-red-100 border-2 border-red-500 rounded-xl flex items-start space-x-3 relative z-10">
- <AlertCircle className="w-5 h-5 text-red-600 flex-shrink-0 mt-0.5" />
- <p className="text-red-800 font-medium">{submitStatus.message}</p>
- </div>
- )}
- 
- <form onSubmit={handleSubmit} className="relative z-10 space-y-6">
- <div>
- <label className="block text-sm font-semibold !text-[#3F3E34] mb-2 uppercase tracking-wider">
- {t('homeNew.contact.form.name')}
- </label>
- <input
- type="text"
- name="name"
- value={formData.name}
- onChange={handleChange}
- className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base text-gray-900 transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
- required
+ <div className="max-w-2xl mx-auto">
+ <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+ <div className="relative h-64 overflow-hidden">
+ <img
+ src="/postkasten.jpg"
+ alt="Contact"
+ className="w-full h-full object-cover"
+ loading="lazy"
  />
+ <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
  </div>
-
- <div>
- <label className="block text-sm font-semibold !text-[#3F3E34] mb-2 uppercase tracking-wider">
- {t('homeNew.contact.form.email')}
- </label>
- <input
- type="email"
- name="email"
- value={formData.email}
- onChange={handleChange}
- className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base text-gray-900 transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
- required
- />
+ <div className="p-8 flex-grow bg-[#F7ECD5] flex flex-col items-center justify-center text-center">
+ <p className="text-[#3F3E34] text-xl md:text-2xl leading-relaxed mb-8">
+ Fragen, Ideen, Sorgen? Wir freuen uns auf deine Email 😊
+ </p>
+ <ContactButton />
  </div>
-
- <div>
- <label className="block text-sm font-semibold !text-[#3F3E34] mb-2 uppercase tracking-wider">
- {t('homeNew.contact.form.message')}
- </label>
- <textarea
- name="message"
- value={formData.message}
- onChange={handleChange}
- rows={4}
- className="w-full px-4 py-4 bg-white border-2 border-transparent rounded-xl text-base text-gray-900 resize-vertical transition-all duration-300 focus:outline-none focus:border-[#71B554] focus:shadow-lg focus:shadow-[#71B554]/10"
- required
- ></textarea>
  </div>
-
- <button
- type="submit"
- disabled={isSubmitting}
- className="w-full bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-4 rounded-full font-semibold text-lg uppercase tracking-wider hover:-translate-y-1 hover:shadow-xl transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed disabled:translate-y-0 flex items-center justify-center"
- >
- {isSubmitting ? (
- <>
- <svg className="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
- <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
- <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
- </svg>
- {t('homeNew.contact.form.submitting') || 'Sending...'}
- </>
- ) : (
- t('homeNew.contact.form.send')
- )}
- </button>
- </form>
  </div>
  </div>
  </section>
