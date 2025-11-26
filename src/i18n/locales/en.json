@@ -172,13 +172,14 @@
         {
           "title": "Find Open Support Services",
           "description": "Contact the Open Support Services (Offene Hilfe) of Lebenshilfe near you. This link will take you to a map where you can find the right location.",
-          "cta": "Start Search"
+          "cta": "Start Search",
+          "link": "https://www.lebenshilfe.de/standorte#/search"
         },
         {
           "title": "Use the ava Platform",
           "description": "Our partner ava offers a comprehensive, free platform where athletes and assistants are matched together.",
           "cta": "Register Now",
-          "link": "https://www.ava-sport.de"
+          "link": "https://www.ava.services/"
         },
         {
           "title": "Contact",
