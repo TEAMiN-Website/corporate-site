@@ -1,11 +1,21 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
-import { Target, Eye, Users, CheckCircle } from 'lucide-react';
+import { Target, Eye, Users, CheckCircle, ChevronDown } from 'lucide-react';
 
 const About: React.FC = () => {
  const { t } = useTranslation();
  const [flippedPartner, setFlippedPartner] = useState<number | null>(null);
+
+ const scrollToNextSection = () => {
+  const heroSection = document.querySelector('.hero-section');
+  if (heroSection) {
+   const nextSection = heroSection.nextElementSibling;
+   if (nextSection) {
+    nextSection.scrollIntoView({ behavior: 'smooth' });
+   }
+  }
+ };
 
  const partners = [
  {
@@ -70,12 +80,18 @@ const About: React.FC = () => {
  {t('about.hero.subtitle')}
  </p>
  <div className="flex justify-center mb-8">
- <Link
- to="/signup"
+ <button
+ onClick={scrollToNextSection}
  className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
  Lern uns kennen
- </Link>
+ </button>
+ </div>
+ <div className="flex justify-center">
+ <ChevronDown
+ className="w-12 h-12 text-white animate-bounce cursor-pointer"
+ onClick={scrollToNextSection}
+ />
  </div>
  </div>
  </div>
