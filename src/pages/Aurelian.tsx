@@ -77,51 +77,6 @@ const Aurelian: React.FC = () => {
  </div>
  </section>
 
- {/* Impact Section */}
- <section className="py-24 bg-white">
- <div className="max-w-6xl mx-auto px-4">
- <div className="text-center mb-16">
- <h2 className="text-4xl lg:text-5xl font-bold text-[#71B554] mb-6">
- The Impact
- </h2>
- <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
- How sport assistance changed everything
- </p>
- </div>
-
- <div className="grid md:grid-cols-3 gap-8">
- <div className="text-center">
- <div className="flex justify-center mb-6 text-6xl">
- 💪
- </div>
- <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Physical Development</h3>
- <p className="text-lg text-[#B3ADAA]">
- Improved coordination, fitness, and football-specific skills through regular training and expert guidance.
- </p>
- </div>
- <div className="text-center">
- <div className="flex justify-center mb-6 text-6xl">
- 💚
- </div>
- <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Social Integration</h3>
- <p className="text-lg text-[#B3ADAA]">
- Built lasting friendships with teammates and became a valued member of the club community.
- </p>
- </div>
- <div className="text-center">
- <div className="flex justify-center mb-6 text-6xl">
- 🧗‍♀️
- </div>
- <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Independence</h3>
- <p className="text-lg text-[#B3ADAA]">
- Developed confidence and skills to participate independently without continuous assistance.
- </p>
- </div>
- </div>
- </div>
- </section>
-
-
  {/* Diagonal Split Section with Carousel */}
  <section className="min-h-screen relative overflow-hidden">
  {/* Carousel Images - Left 60% */}
