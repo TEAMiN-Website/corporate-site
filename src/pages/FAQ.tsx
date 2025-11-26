@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
   return (
     <div className="py-16 lg:py-24 bg-[#3F3E34]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-[#F7ECD5] mb-4 text-center">
+        <h1 className="text-4xl font-bold text-[#F7ECD5] mb-4 text-center uppercase">
           {t('faq.title')}
         </h1>
 
