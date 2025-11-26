@@ -54,17 +54,17 @@ const Aurelian: React.FC = () => {
  fetchpriority="high"
  />
  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
- LERN AURELIAN KENNEN
+ {t('aurelian.title')}
  </h1>
  <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
- Jedes Team braucht Inspiration. Unsere sind die Geschichten der Sportler:innen, die Dank Assistenz ihre Träume und Ambitionen verwirklichen können.
+ {t('aurelian.hero.description')}
  </p>
  <div className="flex justify-center mb-8">
  <button
  onClick={scrollToNextSection}
  className="bg-white text-[#71B554] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- Lies seine Geschichte
+ {t('nav.aurelian')}
  </button>
  </div>
  <div className="flex justify-center">
@@ -118,7 +118,7 @@ const Aurelian: React.FC = () => {
  {/* Title Overlay at Top */}
  <div className="absolute top-0 left-0 right-0 z-10 pt-8 lg:pt-12 px-6 lg:px-12">
  <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight uppercase text-center">
- DIE WIRKUNG VON ASSISTENZ
+ {t('about.statistics.heading')}
  </h2>
  </div>
 
@@ -143,10 +143,10 @@ const Aurelian: React.FC = () => {
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-4xl mx-auto px-4 text-center">
  <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
- Start Your Own Journey
+ {t('about.cta.heading')}
  </h2>
  <p className="text-xl text-[#B3ADAA] mb-12 max-w-2xl mx-auto">
- Whether you're an athlete looking for support or want to become a sport assistant, TEAMiN is here to help you belong.
+ {t('homeNew.paths.title')}
  </p>
 
  <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -154,13 +154,13 @@ const Aurelian: React.FC = () => {
  to="/athletes"
  className="bg-[#71B554] text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-[#5FA044] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- I'm an Athlete
+ {t('about.cta.athletes.title')}
  </Link>
  <Link
  to="/volunteers"
  className="bg-[#D86D55] text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- Become an Assistant
+ {t('about.cta.volunteering.title')}
  </Link>
  </div>
  </div>
