@@ -8,7 +8,8 @@
     "volunteers": "Assistants",
     "signup": "Sign Up",
     "partners": "Partners",
-    "contact": "Contact"
+    "contact": "Contact",
+    "photos": "Photos"
   },
   "home": {
     "title": "Building Communities Where Everyone Belongs Through Sports",
@@ -22,8 +23,30 @@
       "subtitle": "Building communities where everyone belongs through systematic sport assistance and sustainable inclusion.",
       "cta": "Join Now"
     },
+    "statistics": {
+      "heading": "WHY WE EXIST",
+      "stat1": {
+        "number": "50%",
+        "text": "of people with disabilities rate their health as poor"
+      },
+      "stat2": {
+        "number": "55%",
+        "text": "of people with disabilities say they never exercise"
+      },
+      "stat3": {
+        "number": "79%",
+        "text": "of children with intellectual disabilities are not members of sports clubs"
+      },
+      "paragraph1": "The consequences of limited access to community and sports for people with disabilities reflect and reinforce broader societal trends. Many of us, with and without disabilities, don't move enough, experience loneliness, and face barriers when trying to change that.",
+      "paragraph2": "However, systemic barriers such as inaccessible facilities, lack of transportation, prejudices, and missing programs affect some of us more than others. And that is exactly what we address through inclusive solutions supported by strong partnerships.",
+      "paragraph3": {
+        "part1": "Our first solution is the sports assistance program \"SpAss\", which promotes participation in recreational sports. As part of a publicly funded project, it trains volunteer sports assistants and connects them with athletes through ",
+        "linkText": "partners",
+        "part2": " like Lebenshilfe and avaAssist. In the future, TEAMiN aims to support inclusion in various communities. In Bavaria and beyond."
+      }
+    },
     "missionVision": {
-      "heading": "Who We Are",
+      "heading": "INCLUSION NEEDS COMMUNITY",
       "whoWeAre": {
         "title": "Who We Are",
         "description": "TEAMiN is a collaborative network of research institutions, sports organizations, and community partners working together to transform sports culture in Bavaria. We combine academic expertise with practical experience to create lasting change."
@@ -42,8 +65,8 @@
       "description": "For us, inclusion means more than just participation – it's about genuine belonging and self-determination. We believe that everyone has the right to experience sports in a supportive environment that addresses individual needs. Through systematic approaches, evidence-based methods, and community-centered support, we create sustainable structures that enable people with disabilities to participate independently in club life over the long term."
     },
     "team": {
-      "heading": "Our Team",
-      "subtitle": "A diverse group of researchers, practitioners, and community leaders dedicated to making sports accessible for everyone.",
+      "heading": "OUR TEAM",
+      "subtitle": "A diverse group of researchers, educators, and designers dedicated to inclusive sports.",
       "members": [
         {
           "name": "Dr. Christiane Reuter",
@@ -53,7 +76,7 @@
         {
           "name": "Prof. Dr. David Rygl",
           "role": "Project Lead BVS Bayern",
-          "photo": "rygl.png"
+          "photo": "rygl portrait.png"
         },
         {
           "name": "Jakob Prechtl",
@@ -61,23 +84,25 @@
           "photo": "Jakob_Prechtl-removebg-preview.png"
         },
         {
+          "name": "Michelle Ziermann",
+          "role": "Project Member University of Würzburg - Responsible for qualification and research",
+          "photo": "Michelle_Ziermann-removebg-preview.png"
+        },
+        {
           "name": "Tim Noppeney",
           "role": "Project Member BVS Bayern - Responsible for user research and marketing",
           "photo": "tim-noppeney-removebg-preview.png"
-        },
-        {
-          "name": "Michael Zimmermann",
-          "role": "Project Member University of Würzburg - Responsible for qualification and research"
         }
       ]
     },
     "partners": {
       "heading": "Our Partners",
-      "bvs": "Research partner in the BMFTR funded research project 'SpAss' contributing project members as well as access to e-learning and booking infrastructure and valuable network of sports clubs in Bavaria.",
-      "uniWuerzburg": "Research partner in the BMFTR funded research project 'SpAss' contributing project members, deep academic knowledge around inclusive sports, qualification for assistants, ongoing research around sports assistance.",
+      "bvs": "Partner in the funded research project 'SpAss' contributing project members as well as access to e-learning and booking infrastructure and valuable network of sports clubs in Bavaria.",
+      "uniWuerzburg": "Partner in the funded research project 'SpAss' contributing project members, deep academic knowledge around inclusive sports, qualification for assistants, ongoing research around sports assistance.",
       "bmftr": "Funds the research project via the datipilot program.",
       "lebenshilfe": "They match athletes and volunteers and take care of all administration.",
-      "adidas": "Supports the project as a strategic partner through employee volunteering in the form of pro bono consulting and sports assistants as well as financial support."
+      "adidas": "Supports the project as a strategic partner through employee volunteering in the form of pro bono consulting and sports assistants as well as financial support.",
+      "ava": "avaAssist is our technology partner with years of experience in educating, connecting and supporting people seeking and offering assistance."
     },
     "cta": {
       "heading": "Get Involved",
@@ -117,15 +142,51 @@
     ]
   },
   "athletes": {
-    "title": "For Athletes & Families",
-    "description": "We connect people with disabilities and their families to sports opportunities throughout Bavaria, providing the support needed to find your place in mainstream sports clubs.",
-    "services": [
-      "Personalized club matching",
-      "Family support programs",
-      "Ongoing mentorship",
-      "Accessibility resources"
-    ],
-    "getConnected": "Get Connected"
+    "title": "Ready to Become Part of the Team?",
+    "description": "Find a sport you love together with your sports assistant. A community where you bring out the best in each other. We accompany you step by step towards independence.",
+    "getConnected": "Find Out How",
+    "barriers": {
+      "title": "Independence Is Not a Given",
+      "tiles": [
+        "Lack of Opportunities",
+        "Missing Transportation",
+        "Prejudices",
+        "Low Self-Confidence"
+      ],
+      "description": "People with disabilities face many barriers when wanting to participate independently in sports. Missing accessible programs, lack of transportation, societal prejudices, and often low self-confidence make access to sports difficult. TEAMiN addresses exactly these challenges: We create inclusive sports environments where qualified assistants provide temporary support and guide athletes step by step towards independence. This transforms exclusion into genuine participation."
+    },
+    "assistantSupport": {
+      "title": "OUR SPORTS ASSISTANTS SUPPORT YOU",
+      "intro": "Together, you decide how to shape the sports assistance according to your needs. Your sports assistant helps you from the first steps towards a sports club to independent participation as a team member.",
+      "items": [
+        "Organizing the search for the right program",
+        "Communication with clubs, trainers and team members",
+        "Transportation to the sports facility",
+        "Integration into the sports community"
+      ],
+      "insurance": "SPORTS ASSISTANTS ARE COVERED BY HEALTH INSURANCE"
+    },
+    "getStarted": {
+      "title": "READY TO JOIN THE TEAM NOW?",
+      "options": [
+        {
+          "title": "Find Open Support Services",
+          "description": "Contact the Open Support Services (Offene Hilfe) of Lebenshilfe near you. This link will take you to a map where you can find the right location.",
+          "cta": "Start Search"
+        },
+        {
+          "title": "Use the ava Platform",
+          "description": "Our partner ava offers a comprehensive, free platform where athletes and assistants are matched together.",
+          "cta": "Register Now",
+          "link": "https://www.ava-sport.de"
+        },
+        {
+          "title": "Contact",
+          "description": "Write us your questions, ideas or concerns. We'll get back to you quickly.",
+          "email": "kontakt@teaminklusion.de"
+        }
+      ]
+    }
   },
   "aurelian": {
     "title": "Meet Aurelian",
@@ -195,6 +256,43 @@
     }
   },
   "partners": {
+    "hero": {
+      "title": "TOGETHER WE ADVANCE INCLUSION",
+      "subtitle": "Whether you're a sports club, school, or local business, we help you contribute with training and motivating opportunities. Tailored to your needs."
+    },
+    "message": "Inclusion thrives through the commitment of courageous helpers from existing communities. It requires empathetic assistants, organizational talents, marketing geniuses, IT experts. No single organization can achieve this alone. That's why we need strong partners like you and many others who are already actively advancing inclusion.\n\nShare your resources, knowledge, and communities to become part of real success stories in your region. We support you in contributing to inclusion in your own way. Completely individualized.",
+    "types": [
+      {
+        "title": "Sports Clubs",
+        "image": "/Hochsprung Sportvereine-min copy.jpg",
+        "items": [
+          "Want to reach new member groups and funding opportunities?",
+          "Ready for your first inclusive programs but need support?",
+          "Have busy instructors who need assistance?"
+        ]
+      },
+      {
+        "title": "Non-Profit Organizations",
+        "image": "/Ehrenamt Partner Page.jpg",
+        "items": [
+          "Want to offer modern sports assistance to your clients?",
+          "Have similar or complementary programs?",
+          "Have access to potential volunteers?"
+        ]
+      },
+      {
+        "title": "Companies",
+        "image": "/Workshop Partner Page-min.jpg",
+        "items": [
+          "Is strong local community connection important to you?",
+          "Do your employees want to make a positive impact?",
+          "Have resources, knowledge, and networks to share?"
+        ]
+      }
+    ],
+    "cta": "Contact Us",
+    "copied": "Email copied!",
+    "networkTitle": "OUR PARTNERS",
     "title": "Our Partners",
     "subtitle": "Working together with leading organizations to create systematic change in Bavarian sports.",
     "list": [
@@ -921,6 +1019,13 @@
         ]
       }
     }
+  },
+  "photos": {
+    "title": "Photos",
+    "description": "Explore moments from our inclusive sports community",
+    "close": "Close",
+    "previous": "Previous",
+    "next": "Next"
   },
   "faq": {
     "title": "Frequently Asked Questions",

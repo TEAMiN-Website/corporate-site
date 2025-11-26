@@ -71,9 +71,11 @@ const Home: React.FC = () => {
  <div className="relative z-10 flex items-center justify-center min-h-screen">
  <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
  <img
- src="/TEAMiN Logo short copy.png"
+ src="/TEAMIN_logo_small.svg"
+            style={{ filter: 'brightness(0) invert(1)' }}
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+ fetchpriority="high"
  />
  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
  {t('homeNew.hero.title')}
@@ -107,6 +109,7 @@ const Home: React.FC = () => {
  src="/Slide1.jpg"
  alt="Pattern background"
  className="absolute inset-0 w-full h-full object-cover opacity-30"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#F7ECD5]/60 "></div>
  </div>
@@ -126,6 +129,7 @@ const Home: React.FC = () => {
  src="assistant picture 1.jpg"
  alt="People of different ages helping and supporting in sports"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#D86D55]/10"></div>
  </div>
@@ -151,6 +155,7 @@ const Home: React.FC = () => {
  src="athlete 2.jpg"
  alt="Families doing sports together - parents and children actively participating"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#71B554]/10"></div>
  </div>
@@ -176,6 +181,7 @@ const Home: React.FC = () => {
  src="TEAMiN Network.jpg"
  alt="Team network imagery - diverse group, collaborative, inclusive community"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
  </div>
@@ -201,6 +207,7 @@ const Home: React.FC = () => {
  src="athlete 7-min.jpg"
  alt="Diverse sports and activities - variety of possibilities, welcoming environment"
  className="w-full h-full object-cover"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
  </div>

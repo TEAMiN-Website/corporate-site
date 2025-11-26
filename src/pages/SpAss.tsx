@@ -115,10 +115,11 @@ const SpAss: React.FC = () => {
         <div className="relative z-10 flex items-center justify-center min-h-screen">
           <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
             <img
-              src="/TEAMiN Logo short copy.png"
+              src="/TEAMIN_logo_small.svg"
               alt="TEAMiN Logo"
               className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
               style={{ filter: 'brightness(0) saturate(100%) invert(22%) sepia(9%) saturate(480%) hue-rotate(37deg) brightness(96%) contrast(90%)' }}
+              fetchpriority="high"
             />
             <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-4 leading-tight">
               <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">SpAss</span>{' '}
@@ -155,6 +156,7 @@ const SpAss: React.FC = () => {
             src="/SpAss Datipilot Photo.jpg"
             alt="DATIpilot award ceremony"
             className="absolute inset-0 w-full h-full object-cover object-[center_35%]"
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
         </div>
@@ -205,6 +207,7 @@ const SpAss: React.FC = () => {
             alt="Inclusive running event with wheelchair participant"
             className="w-full h-full object-cover"
             style={{ objectPosition: 'center 30%' }}
+            loading="lazy"
           />
           <div className="absolute inset-0 bg-gray-900/60"></div>
         </div>

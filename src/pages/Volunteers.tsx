@@ -98,9 +98,11 @@ const Volunteers: React.FC = () => {
  <div className="relative z-10 flex items-center justify-center min-h-screen">
  <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
  <img
- src="/TEAMiN Logo short copy.png"
+ src="/TEAMIN_logo_small.svg"
+              style={{ filter: 'brightness(0) invert(1)' }}
  alt="TEAMiN Logo"
  className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+ fetchpriority="high"
  />
  <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
  {t('volunteersNew.hero.title')}
@@ -134,6 +136,7 @@ const Volunteers: React.FC = () => {
  src="/Slide1.jpg"
  alt="Pattern background"
  className="absolute inset-0 w-full h-full object-cover opacity-30"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#F7ECD5]/60"></div>
  </div>
@@ -179,6 +182,7 @@ const Volunteers: React.FC = () => {
  alt="Inclusive running event with wheelchair participant"
  className="w-full h-full object-cover"
  style={{ objectPosition: 'center 30%' }}
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-gray-900/60"></div>
  </div>
@@ -221,6 +225,7 @@ const Volunteers: React.FC = () => {
  src="/Slide1.jpg"
  alt="Pattern background"
  className="absolute inset-0 w-full h-full object-cover opacity-30"
+ loading="lazy"
  />
  <div className="absolute inset-0 bg-[#F7ECD5]/60"></div>
  </div>

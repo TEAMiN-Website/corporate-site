@@ -8,7 +8,8 @@
     "volunteers": "Assistent:innen",
     "signup": "Anmelden",
     "partners": "Partner",
-    "contact": "Kontakt"
+    "contact": "Kontakt",
+    "photos": "Fotos"
   },
   "home": {
     "title": "Gemeinschaften schaffen, in denen jeder durch Sport dazugehört",
@@ -18,23 +19,45 @@
   },
   "about": {
     "hero": {
-      "title": "TEAMiN: Das inklusive Netzwerk",
-      "subtitle": "Wir bauen Gemeinschaften, in denen jeder durch systematische Sportassistenz und nachhaltige Inklusion dazugehört.",
+      "title": "TEAMiN: DAS INKLUSIVE NETZWERK",
+      "subtitle": "Wir entwickeln systematische Lösungen, um Gemeinschaften für alle zugänglich zu machen.",
       "cta": "Jetzt mitmachen"
     },
+    "statistics": {
+      "heading": "WARUM ES UNS GIBT",
+      "stat1": {
+        "number": "50%",
+        "text": "aller Menschen mit Behinderung schätzen ihre Gesundheit als schlecht ein"
+      },
+      "stat2": {
+        "number": "55%",
+        "text": "aller Menschen mit Behinderung sagen, sie treiben nie Sport"
+      },
+      "stat3": {
+        "number": "79%",
+        "text": "aller Kinder mit Geistiger Beinderung sind nicht im Verein"
+      },
+      "paragraph1": "Die Folgen des erschwerten Zugangs zu Gemeinschaft und Sport für Menschen mit Beeinträchtigung spiegeln und verstärken gesamtgesellschaftliche Trends. Viele von uns, mit und ohne Beeinträchtigung, bewegen sich zu selten, erleben Einsamkeit und haben Barrieren zu überwinden, wenn sie das ändern möchten.",
+      "paragraph2": "Jedoch schränken systemische Barrieren wie unzugängliche Bauten, mangelnder Transport, Vorurteile und fehlende Angebote manche von uns mehr ein als andere. Und genau das gehen wir durch inklusive Lösungen an, die von starken Partnerschaften getragen werden.",
+      "paragraph3": {
+        "part1": "Unsere erste Lösung ist das Sportassistenzprogramm \"SpAss\", das Teilhabe im Breitensport fördert. Das im Rahmen eines öffentlich geförderten Projekts ehrenamtliche Sportassistent:innen ausbildet und über ",
+        "linkText": "Partner",
+        "part2": " wie Lebenshilfe und avaAssist mit Sportler:innen zusammenbringt. In Zukunft strebt TEAMiN an, Inklusion in verschiedensten Gemeinschaften zu unterstützen. In Bayern und darüber hinaus."
+      }
+    },
     "missionVision": {
-      "heading": "Wer wir sind",
+      "heading": "INKLUSION BRAUCHT GEMEINSCHAFT",
       "whoWeAre": {
-        "title": "Wer wir sind",
-        "description": "TEAMiN ist ein kollaboratives Netzwerk aus Forschungseinrichtungen, Sportorganisationen und Community-Partnern, die gemeinsam daran arbeiten, die Sportkultur in Bayern zu transformieren. Wir verbinden akademische Expertise mit praktischer Erfahrung, um dauerhaften Wandel zu schaffen."
+        "title": "WER WIR SIND",
+        "description": "TEAMiN ist ein inklusives Netzwerk aus Forschungseinrichtungen, gemeinnützigen Organisationen und Community-Partnern. Zusammen machen wir Gemeinschaften Schritt für Schritt inklusiver."
       },
       "mission": {
-        "title": "Unsere Mission",
-        "description": "Wir schaffen systematische Wege zur Inklusion, indem wir qualifizierte Sportassistent:innen ausbilden, die Menschen mit Behinderungen ermöglichen, selbstständig in regulären Sportvereinen teilzunehmen. Unser evidenzbasierter Ansatz gewährleistet nachhaltige Integration."
+        "title": "WAS WIR MÖCHTEN",
+        "description": "Alle Menschen brauchen Zugehörigkeit, um gesund zu sein. Deshalb streben wir nach Gemeinschaften, in denen Menschen unabhängig von ihren Fähigkeiten willkommen sind und kreativ mitwirken können."
       },
       "vision": {
-        "title": "Unsere Vision",
-        "description": "Ein Bayern, in dem jeder Sportverein wirklich inklusiv ist, in dem Menschen mit Behinderungen als geschätzte Mitglieder teilnehmen und temporäre Unterstützung zu dauerhafter Unabhängigkeit und Zugehörigkeit führt."
+        "title": "WIE WIR BEITRAGEN",
+        "description": "Dafür unterstützen wir systematisch inklusiven Wandel. Durch unsere erste Initiative \"SpAss\" bilden wir ehrenamtliche Sportassistenzen aus, die Menschen mit Beeinträchtigung selbstständige Teilhabe am Breitensport ermöglichen."
       }
     },
     "inclusion": {
@@ -42,8 +65,8 @@
       "description": "Inklusion bedeutet für uns mehr als nur Teilhabe – es geht um echte Zugehörigkeit und Selbstbestimmung. Wir glauben daran, dass jeder Mensch das Recht hat, Sport in einem unterstützenden Umfeld zu erleben, das auf individuelle Bedürfnisse eingeht. Durch systematische Ansätze, evidenzbasierte Methoden und gemeinschaftszentrierte Unterstützung schaffen wir nachhaltige Strukturen, die Menschen mit Behinderungen ermöglichen, langfristig unabhängig am Vereinsleben teilzunehmen."
     },
     "team": {
-      "heading": "Unser Team",
-      "subtitle": "Eine vielfältige Gruppe von Forschern, Praktikern und Community-Führern, die sich dafür einsetzen, Sport für alle zugänglich zu machen.",
+      "heading": "UNSER TEAM",
+      "subtitle": "Eine vielfältige Gruppe von Forscher:innen, Pädagog:innen und Designer:innen, die sich für inklusiven Sport einsetzen.",
       "members": [
         {
           "name": "Dr. Christiane Reuter",
@@ -53,7 +76,7 @@
         {
           "name": "Prof. Dr. David Rygl",
           "role": "Projektleitung BVS Bayern",
-          "photo": "rygl.png"
+          "photo": "rygl portrait.png"
         },
         {
           "name": "Jakob Prechtl",
@@ -61,23 +84,25 @@
           "photo": "Jakob_Prechtl-removebg-preview.png"
         },
         {
+          "name": "Michelle Ziermann",
+          "role": "Projektmitarbeiterin Universität Würzburg - Verantwortlich für Qualifizierung und Forschung",
+          "photo": "Michelle_Ziermann-removebg-preview.png"
+        },
+        {
           "name": "Tim Noppeney",
           "role": "Projektmitarbeiter BVS Bayern - Verantwortlich für Nutzer:innen-Forschung und Marketing",
           "photo": "tim-noppeney-removebg-preview.png"
-        },
-        {
-          "name": "Michael Zimmermann",
-          "role": "Projektmitarbeiter Universität Würzburg - Verantwortlich für Qualifizierung und Forschung"
         }
       ]
     },
     "partners": {
       "heading": "Unsere Partner",
-      "bvs": "Forschungspartner im BMFTR-geförderten Forschungsprojekt 'SpAss', der Projektmitarbeiter sowie Zugang zu E-Learning- und Buchungsinfrastruktur und wertvollem Netzwerk von Sportvereinen in Bayern beisteuert.",
-      "uniWuerzburg": "Forschungspartner im BMFTR-geförderten Forschungsprojekt 'SpAss', der Projektmitarbeiter, tiefes akademisches Wissen rund um inklusiven Sport, Qualifikation für Assistent:innen und laufende Forschung zur Sportassistenz beisteuert.",
+      "bvs": "Partner im geförderten Forschungsprojekt 'SpAss', der Projektmitarbeiter sowie Zugang zu E-Learning- und Buchungsinfrastruktur und wertvollem Netzwerk von Sportvereinen in Bayern beisteuert.",
+      "uniWuerzburg": "Partner im geförderten Forschungsprojekt 'SpAss', der Projektmitarbeiter, tiefes akademisches Wissen rund um inklusiven Sport, Qualifikation für Assistent:innen und laufende Forschung zur Sportassistenz beisteuert.",
       "bmftr": "Finanziert das Forschungsprojekt über das datipilot-Programm.",
       "lebenshilfe": "Sie vermitteln Sportler:innen und Freiwillige und kümmern sich um die gesamte Administration.",
-      "adidas": "Unterstützt das Projekt als strategischer Partner durch Mitarbeiter-Volunteering in Form von Pro-Bono-Beratung und Sportassistent:innen sowie finanzielle Unterstützung."
+      "adidas": "Unterstützt das Projekt als strategischer Partner durch Mitarbeiter-Volunteering in Form von Pro-Bono-Beratung und Sportassistent:innen sowie finanzielle Unterstützung.",
+      "ava": "avaAssist ist unserer Technologiepartner mit jahrelanger Erfahrung in der Bildung, Vermittlung und Unterstützung von assistenzsuchenden und assistenzbietenden Personen."
     },
     "cta": {
       "heading": "Mitmachen",
@@ -117,15 +142,51 @@
     ]
   },
   "athletes": {
-    "title": "Für Athleten & Familien",
-    "description": "Wir verbinden Menschen mit Behinderungen und ihre Familien mit Sportmöglichkeiten in ganz Bayern und bieten die Unterstützung, die sie brauchen, um ihren Platz in Mainstream-Sportvereinen zu finden.",
-    "services": [
-      "Personalisierte Vereinsvermittlung",
-      "Familien-Unterstützungsprogramme",
-      "Fortlaufende Betreuung",
-      "Barrierefreiheits-Ressourcen"
-    ],
-    "getConnected": "Verbinden"
+    "title": "Bereit, Teil des Teams zu werden?",
+    "description": "Finde zusammen mit deiner Sportassistent:in einen Sport, der dir Freude macht. Eine Gemeinschaft, in der ihr das beste auseinander rausholt. Wir begleiten dich dabei Schritt für Schritt zur Selbstständigkeit.",
+    "getConnected": "Finde heraus wie",
+    "barriers": {
+      "title": "Selbständigkeit ist nicht selbstverständlich",
+      "tiles": [
+        "Mangelnde Angebote",
+        "Fehlender Transport",
+        "Vorurteile",
+        "Niedriges Selbstvertrauen"
+      ],
+      "description": "Menschen mit Behinderungen stoßen auf viele Barrieren, wenn sie eigenständig Sport treiben möchten. Fehlende barrierefreie Angebote, mangelnder Transport, gesellschaftliche Vorurteile und ein oft niedriges Selbstvertrauen erschweren den Zugang zum Sport. TEAMiN setzt genau hier an: Wir schaffen inklusive Sportumgebungen, in denen qualifizierte Assistent:innen temporäre Unterstützung bieten und Sportler:innen Schritt für Schritt zur Selbstständigkeit begleiten. So wird aus Ausgrenzung echte Teilhabe."
+    },
+    "assistantSupport": {
+      "title": "UNSERE SPORTASSISTENT:INNEN UNTERSTÜTZEN DICH",
+      "intro": "Ihr bestimmt gemeinsam, wie ihr die Sportassistenz gestaltet, ganz nach euren Bedürfnissen. Deine Sportassistent:in hilft dir von den ersten Schritten in Richtung Sportverein bis zur selbstständigen Teilhabe als Teammitglied.",
+      "items": [
+        "Organisation der Suche nach dem passenden Angebot",
+        "Kommunikation mit Vereinen, Trainer:innen und Teammitgliedern",
+        "Transport hin zur Sportstätte",
+        "Integration in die Sportgemeinschaft"
+      ],
+      "insurance": "SPORTASSISTENT:INNEN WERDEN DURCH DIE PFLEGEKASSE ABGEDECKT"
+    },
+    "getStarted": {
+      "title": "JETZT BEREIT, TEIL DES TEAMS ZU WERDEN?",
+      "options": [
+        {
+          "title": "Offene Hilfe Stelle finden",
+          "description": "Kontaktiere jetzt die Offene Hilfe Stelle der Lebenshilfe in deiner Nähe. Über diesen Link gelangst du zu einer Karte, auf der du die richtige Stelle findest.",
+          "cta": "Zur Suche"
+        },
+        {
+          "title": "ava-Plattform nutzen",
+          "description": "Unser Partner ava bietet eine vollumfängliche, kostenlose Plattform, auf der Sportler:innen und Assistent:innen gematcht werden.",
+          "cta": "Registrier dich",
+          "link": "https://www.ava-sport.de"
+        },
+        {
+          "title": "Kontakt",
+          "description": "Schreib uns deine Fragen, Ideen oder Anliegen. Wir melden uns schnell zurück.",
+          "email": "kontakt@teaminklusion.de"
+        }
+      ]
+    }
   },
   "aurelian": {
     "title": "Aurelian kennenlernen",
@@ -195,6 +256,43 @@
     }
   },
   "partners": {
+    "hero": {
+      "title": "ZUSAMMEN BRINGEN WIR INKLUSION VORAN",
+      "subtitle": "Ob Sportverein, Schule oder lokales Unternehmen, wir helfen euch mit Qualifizierung und motivierenden Möglichkeiten, beizutragen. Ganz nach euren Bedürfnissen."
+    },
+    "message": "Inklusion lebt vom Einsatz mutiger Helfer:innen aus bestehenden Gemeinschaften. Es braucht Empathische Assistenz, Organisationstalente, Marketinggenies, IT-Expert:innen. Das kann nicht eine Organisation alleine leisten. Deshalb braucht es starke Partner wie dich und viele andere, die Inklusion bereits Tatkräftig voranbringen.\n\nTeile deine Ressourcen, dein Wissen, deine Gemeinschaften und werde Teil echter Erfolgsgeschichten in deiner Region. Wir unterstützen dich, auf deine Weise zu Inklusion beizutragen. Ganz individuell.",
+    "types": [
+      {
+        "title": "Sportvereine",
+        "image": "/Hochsprung Sportvereine-min copy.jpg",
+        "items": [
+          "Du möchtest neue Mitgliedsgruppen und Förderungen erschließen?",
+          "Du bist bereit für die ersten inklusiven Angebote, aber wünschst dir Hilfe?",
+          "Du hast beschäftigte Übungsleitungen, die Unterstützung brauchen?"
+        ]
+      },
+      {
+        "title": "Gemeinnützige Organisationen",
+        "image": "/Ehrenamt Partner Page.jpg",
+        "items": [
+          "Du möchtest deinen Kund:innen moderne Sportassistenz bieten?",
+          "Du hast ähnliche oder ergänzende Angebote?",
+          "Du hast Zugang zu potenziellen Ehrenamtlichen?"
+        ]
+      },
+      {
+        "title": "Unternehmen",
+        "image": "/Workshop Partner Page-min.jpg",
+        "items": [
+          "Dir ist eine starke lokale Verwurzlung zu deinen Kund:innen wichtig?",
+          "Deine Mitarbeitenden und Kolleg:innen wünschen sich, etwas gutes zu tun?",
+          "Du hast Ressourcen, Wissen und Netzwerke, die du teilen kannst?"
+        ]
+      }
+    ],
+    "cta": "Schreib uns",
+    "copied": "E-Mail kopiert!",
+    "networkTitle": "UNSERE PARTNER",
     "title": "Unsere Partner",
     "subtitle": "Zusammenarbeit mit führenden Organisationen zur Schaffung systematischer Veränderungen im bayerischen Sport.",
     "list": [
@@ -921,6 +1019,13 @@
         ]
       }
     }
+  },
+  "photos": {
+    "title": "Fotos",
+    "description": "Entdecken Sie Einblicke in unsere inklusive Sportgemeinschaft",
+    "close": "Schließen",
+    "previous": "Zurück",
+    "next": "Weiter"
   },
   "faq": {
     "title": "Häufig gestellte Fragen",
