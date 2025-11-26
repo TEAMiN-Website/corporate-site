@@ -30,42 +30,42 @@ const FAQ: React.FC = () => {
   const faqData: FAQCategory[] = t('faq.categories', { returnObjects: true }) as FAQCategory[];
 
   return (
-    <div className="py-16 lg:py-24 bg-gray-50">
+    <div className="py-16 lg:py-24 bg-[#3F3E34]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+        <h1 className="text-4xl font-bold text-[#F7ECD5] mb-4 text-center">
           {t('faq.title')}
         </h1>
-        
+
         <div className="space-y-8">
           {faqData.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6 pb-4 border-b-2 border-gradient-to-r from-[#D86D55] to-[#71B554]">
+            <div key={categoryIndex} className="bg-[#F7ECD5] rounded-lg shadow-lg p-6">
+              <h2 className="text-2xl font-semibold text-[#3F3E34] mb-6 pb-4 border-b-2 border-gradient-to-r from-[#D86D55] to-[#71B554]">
                 {category.title}
               </h2>
-              
+
               <div className="space-y-4">
                 {category.items.map((item, itemIndex) => {
                   const key = `${categoryIndex}-${itemIndex}`;
                   const isActive = activeItems.has(key);
-                  
+
                   return (
-                    <div key={itemIndex} className="border-b border-gray-200 pb-4 last:border-b-0">
+                    <div key={itemIndex} className="border-b border-[#3F3E34]/20 pb-4 last:border-b-0">
                       <button
                         onClick={() => toggleItem(categoryIndex, itemIndex)}
                         className="w-full flex justify-between items-center text-left hover:text-[#D86D55] transition-colors duration-200"
                       >
-                        <span className="text-lg font-semibold text-gray-900 pr-4">
+                        <span className="text-lg font-semibold text-[#3F3E34] pr-4">
                           {item.question}
                         </span>
-                        <ChevronDown 
-                          className={`w-6 h-6 flex-shrink-0 transition-transform duration-200 ${
+                        <ChevronDown
+                          className={`w-6 h-6 flex-shrink-0 transition-transform duration-200 text-[#3F3E34] ${
                             isActive ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
-                      
+
                       {isActive && (
-                        <div className="mt-3 text-gray-700 leading-relaxed">
+                        <div className="mt-3 text-[#3F3E34] leading-relaxed">
                           {item.answer}
                         </div>
                       )}
