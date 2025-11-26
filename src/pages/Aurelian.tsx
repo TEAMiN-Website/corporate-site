@@ -134,9 +134,6 @@ const Aurelian: React.FC = () => {
  <p className="text-lg lg:text-xl font-semibold mb-8 text-center">
  {t('aurelian.attribution')}
  </p>
- <p className="text-base lg:text-lg leading-relaxed text-center">
- {t('aurelian.descriptionShort')}
- </p>
  </div>
  </div>
  </section>
