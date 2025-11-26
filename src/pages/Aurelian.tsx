@@ -82,7 +82,7 @@ const Aurelian: React.FC = () => {
  {/* Carousel with Title Overlay */}
  <div className="relative">
  {/* Carousel Images */}
- <div className="relative h-[60vh] lg:h-[70vh] overflow-hidden">
+ <div className="relative h-[70vh] lg:h-[85vh] overflow-hidden">
  {carouselImages.map((image, index) => (
  <div
  key={image}
