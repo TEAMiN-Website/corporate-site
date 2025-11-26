@@ -77,10 +77,13 @@ const Aurelian: React.FC = () => {
  </div>
  </section>
 
- {/* Diagonal Split Section with Carousel */}
- <section className="min-h-screen relative overflow-hidden">
- {/* Carousel Images - Left 60% */}
- <div className="absolute top-0 left-0 bottom-0 w-[60%]">
+ {/* Centered Carousel Section */}
+ <section className="py-16 lg:py-24 bg-white">
+ <div className="max-w-6xl mx-auto px-4">
+ {/* Carousel with Title Overlay */}
+ <div className="relative mb-12">
+ {/* Carousel Images */}
+ <div className="relative h-[60vh] lg:h-[70vh] overflow-hidden rounded-lg">
  {carouselImages.map((image, index) => (
  <div
  key={image}
@@ -96,34 +99,20 @@ const Aurelian: React.FC = () => {
  />
  </div>
  ))}
+
+ {/* Dark overlay for title readability */}
+ <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent"></div>
  </div>
 
- {/* Diagonal Green Overlay - Right 40% */}
- <div className="absolute inset-0 bg-[#71B554]" style={{
- clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
- }}></div>
-
- {/* Text Content on Green Overlay */}
- <div className="relative z-10 flex items-center justify-end min-h-screen">
- <div className="w-full lg:w-[42%] text-white pl-16 lg:pl-4 pr-8 lg:pr-20 py-20 lg:py-0">
- <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase text-right">
- THE POWER <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">OF</span><br />
- SPORT ASSISTANCE
+ {/* Title Overlay at Top */}
+ <div className="absolute top-0 left-0 right-0 z-10 pt-8 lg:pt-12 px-6 lg:px-12">
+ <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight uppercase text-center">
+ DIE WIRKUNG VON ASSISTENZ
  </h2>
- <blockquote className="text-xl lg:text-2xl leading-relaxed mb-6 italic font-light text-right">
- "{t('aurelian.quoteShort')}"
- </blockquote>
- <p className="text-lg font-semibold mb-8 text-right">
- {t('aurelian.attribution')}
- </p>
- <p className="text-lg leading-relaxed text-right">
- {t('aurelian.descriptionShort')}
- </p>
- </div>
  </div>
 
  {/* Carousel Indicators */}
- <div className="absolute bottom-8 left-[15%] z-20 flex gap-2">
+ <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
  {carouselImages.map((_, index) => (
  <button
  key={index}
@@ -134,6 +123,21 @@ const Aurelian: React.FC = () => {
  aria-label={`Go to image ${index + 1}`}
  />
  ))}
+ </div>
+ </div>
+
+ {/* Green Content Section Below Carousel */}
+ <div className="bg-[#71B554] rounded-lg p-8 lg:p-12 text-white">
+ <blockquote className="text-xl lg:text-2xl xl:text-3xl leading-relaxed mb-8 italic font-light text-center">
+ "{t('aurelian.quoteShort')}"
+ </blockquote>
+ <p className="text-lg lg:text-xl font-semibold mb-8 text-center">
+ {t('aurelian.attribution')}
+ </p>
+ <p className="text-base lg:text-lg leading-relaxed text-center max-w-4xl mx-auto">
+ {t('aurelian.descriptionShort')}
+ </p>
+ </div>
  </div>
  </section>
 
