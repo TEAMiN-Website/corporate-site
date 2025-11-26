@@ -17,8 +17,7 @@ const Footer: React.FC = () => {
  { to: '/about', label: t('nav.about') },
  { to: '/spass', label: t('nav.spass') },
  { to: '/athletes', label: t('nav.athletes') },
- { to: '/volunteers', label: t('nav.volunteers') },
- { to: '/contact', label: t('nav.contact') }
+ { to: '/volunteers', label: t('nav.volunteers') }
  ];
 
  const legalLinks = [
