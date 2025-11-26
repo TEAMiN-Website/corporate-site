@@ -77,13 +77,12 @@ const Aurelian: React.FC = () => {
  </div>
  </section>
 
- {/* Centered Carousel Section */}
- <section className="py-16 lg:py-24 bg-white">
- <div className="max-w-6xl mx-auto px-4">
+ {/* Full Width Carousel Section */}
+ <section className="bg-white">
  {/* Carousel with Title Overlay */}
- <div className="relative mb-12">
+ <div className="relative">
  {/* Carousel Images */}
- <div className="relative h-[60vh] lg:h-[70vh] overflow-hidden rounded-lg">
+ <div className="relative h-[60vh] lg:h-[70vh] overflow-hidden">
  {carouselImages.map((image, index) => (
  <div
  key={image}
@@ -127,14 +126,15 @@ const Aurelian: React.FC = () => {
  </div>
 
  {/* Green Content Section Below Carousel */}
- <div className="bg-[#71B554] rounded-lg p-8 lg:p-12 text-white">
+ <div className="bg-[#71B554] p-8 lg:p-16 xl:p-20 text-white">
+ <div className="max-w-4xl mx-auto">
  <blockquote className="text-xl lg:text-2xl xl:text-3xl leading-relaxed mb-8 italic font-light text-center">
  "{t('aurelian.quoteShort')}"
  </blockquote>
  <p className="text-lg lg:text-xl font-semibold mb-8 text-center">
  {t('aurelian.attribution')}
  </p>
- <p className="text-base lg:text-lg leading-relaxed text-center max-w-4xl mx-auto">
+ <p className="text-base lg:text-lg leading-relaxed text-center">
  {t('aurelian.descriptionShort')}
  </p>
  </div>
