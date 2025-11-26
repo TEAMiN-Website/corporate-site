@@ -227,7 +227,7 @@ const Home: React.FC = () => {
  <section className="py-24 text-white relative overflow-hidden parallax-section dark-overlay">
 
  <div className="max-w-4xl mx-auto px-4 relative z-10">
- <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white">
+ <h2 className="text-4xl md:text-5xl font-bold text-center mb-16 text-white uppercase">
  {t('homeNew.contact.title')}
  </h2>
 
