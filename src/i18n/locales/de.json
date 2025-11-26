@@ -191,14 +191,22 @@
   },
   "aurelian": {
     "title": "Aurelian kennenlernen",
+    "heroTitle": "LERN AURELIAN KENNEN",
+    "heroSubtitle": "Jedes Team braucht Inspiration. Unsere sind die Geschichten der Sportler:innen, die Dank Assistenz ihre Träume und Ambitionen verwirklichen können.",
+    "readStory": "Lies seine Geschichte",
+    "impactTitle": "DIE WIRKUNG VON ASSISTENZ",
+    "quoteShort": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
+    "attribution": "Aurelian, Fußballspieler, 11 Jahre alt",
+    "ctaTitle": "Start Your Own Journey",
+    "ctaSubtitle": "Whether you're an athlete looking for support or want to become a sport assistant, TEAMiN is here to help you belong.",
+    "ctaAthlete": "I'm an Athlete",
+    "ctaAssistant": "Become an Assistant",
     "hero": {
       "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
       "description": "Aurelians Geschichte zeigt, wie TEAMiNs Sport-Assistenz-Programm echte Möglichkeiten für Sportler mit Behinderungen schafft. Durch qualifizierte Unterstützung und systematische Integration fand er nicht nur einen Sport, den er liebt, sondern eine Gemeinschaft, in der er wirklich dazugehört. Heute spielt Aurelian selbstständig mit seinem Team und hat die Fähigkeiten und das Selbstvertrauen entwickelt, um vollständig am Breitensport teilzunehmen."
     },
-    "quoteShort": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
     "descriptionShort": "Durch qualifizierte Unterstützung und systematische Integration fand Aurelian eine Gemeinschaft, in der er wirklich dazugehört. Heute spielt er selbstständig mit seinem Team.",
     "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
-    "attribution": "Aurelian, Fußballspieler, 11 Jahre alt",
     "stats": [
       { "number": "18", "label": "Monate im Programm" },
       { "number": "3", "label": "Sportarten ausprobiert" },
