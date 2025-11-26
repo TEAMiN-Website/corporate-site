@@ -29,43 +29,55 @@ const FAQ: React.FC = () => {
 
   const faqData: FAQCategory[] = t('faq.categories', { returnObjects: true }) as FAQCategory[];
 
+  const getCategoryColors = (index: number) => {
+    const colorMap = [
+      { bg: 'bg-[#F7ECD5]', text: 'text-[#3F3E34]', border: 'border-[#3F3E34]/20' },
+      { bg: 'bg-[#D86D55]', text: 'text-white', border: 'border-white/20' },
+      { bg: 'bg-[#71B554]', text: 'text-white', border: 'border-white/20' },
+      { bg: 'bg-[#3F3E34]', text: 'text-white', border: 'border-white/20' }
+    ];
+    return colorMap[index] || colorMap[0];
+  };
+
   return (
-    <div className="py-16 lg:py-24 bg-gray-50">
+    <div className="py-16 lg:py-24 bg-[#3F3E34]">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold text-gray-900 mb-4 text-center">
+        <h1 className="text-4xl font-bold text-[#F7ECD5] mb-4 text-center uppercase">
           {t('faq.title')}
         </h1>
-        
+
         <div className="space-y-8">
-          {faqData.map((category, categoryIndex) => (
-            <div key={categoryIndex} className="bg-white rounded-lg shadow-lg p-6">
-              <h2 className="text-2xl font-semibold text-gray-900 mb-6 pb-4 border-b-2 border-gradient-to-r from-[#D86D55] to-[#71B554]">
-                {category.title}
-              </h2>
-              
+          {faqData.map((category, categoryIndex) => {
+            const colors = getCategoryColors(categoryIndex);
+            return (
+              <div key={categoryIndex} className={`${colors.bg} rounded-lg shadow-lg p-6 border-4 border-[#F7ECD5]`}>
+                <h2 className={`text-2xl font-semibold ${colors.text} mb-6 pb-4 border-b-2 border-gradient-to-r from-[#D86D55] to-[#71B554]`}>
+                  {category.title}
+                </h2>
+
               <div className="space-y-4">
                 {category.items.map((item, itemIndex) => {
                   const key = `${categoryIndex}-${itemIndex}`;
                   const isActive = activeItems.has(key);
-                  
+
                   return (
-                    <div key={itemIndex} className="border-b border-gray-200 pb-4 last:border-b-0">
+                    <div key={itemIndex} className={`border-b ${colors.border} pb-4 last:border-b-0`}>
                       <button
                         onClick={() => toggleItem(categoryIndex, itemIndex)}
-                        className="w-full flex justify-between items-center text-left hover:text-[#D86D55] transition-colors duration-200"
+                        className={`w-full flex justify-between items-center text-left hover:opacity-80 transition-colors duration-200`}
                       >
-                        <span className="text-lg font-semibold text-gray-900 pr-4">
+                        <span className={`text-lg font-semibold ${colors.text} pr-4`}>
                           {item.question}
                         </span>
-                        <ChevronDown 
-                          className={`w-6 h-6 flex-shrink-0 transition-transform duration-200 ${
+                        <ChevronDown
+                          className={`w-6 h-6 flex-shrink-0 transition-transform duration-200 ${colors.text} ${
                             isActive ? 'rotate-180' : ''
                           }`}
                         />
                       </button>
-                      
+
                       {isActive && (
-                        <div className="mt-3 text-gray-700 leading-relaxed">
+                        <div className={`mt-3 ${colors.text} leading-relaxed`}>
                           {item.answer}
                         </div>
                       )}
@@ -74,7 +86,8 @@ const FAQ: React.FC = () => {
                 })}
               </div>
             </div>
-          ))}
+            );
+          })}
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-lg shadow-lg p-8 text-center text-white">

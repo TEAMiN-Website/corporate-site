@@ -11,7 +11,6 @@ import Aurelian from './pages/Aurelian';
 import Volunteers from './pages/Volunteers';
 import Signup from './pages/Signup';
 import Partners from './pages/Partners';
-import Contact from './pages/Contact';
 import NotFound from './pages/NotFound';
 import Impressum from './pages/Impressum';
 import Privacy from './pages/Privacy';
@@ -68,7 +67,6 @@ const AppContent: React.FC = () => {
                               <Route path="volunteers" element={<Volunteers />} />
                               <Route path="signup" element={<Signup />} />
                               <Route path="partners" element={<Partners />} />
-                              <Route path="contact" element={<Contact />} />
                               <Route path="impressum" element={<Impressum />} />
                               <Route path="privacy" element={<Privacy />} />
                               <Route path="terms" element={<Terms />} />

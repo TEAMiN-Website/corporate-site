@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
+import { ChevronDown } from 'lucide-react';
 
 const Aurelian: React.FC = () => {
  const { t } = useTranslation();
@@ -14,84 +15,74 @@ const Aurelian: React.FC = () => {
  return () => clearInterval(interval);
  }, []);
 
+ const scrollToNextSection = () => {
+ const heroSection = document.querySelector('.hero-section');
+ if (heroSection) {
+ const nextSection = heroSection.nextElementSibling;
+ if (nextSection) {
+ nextSection.scrollIntoView({ behavior: 'smooth' });
+ }
+ }
+ };
+
  return (
  <div>
  {/* Hero Section */}
- <section className="h-[85vh] relative overflow-hidden">
+ <section className="min-h-screen relative overflow-hidden hero-section">
  <div className="absolute inset-0">
  <img
  src="Aurelian 1-min.jpg"
  alt="Aurelian playing football"
  className="w-full h-full object-cover"
  style={{ objectPosition: 'center 20%' }}
+ fetchpriority="high"
  />
- <div className="absolute inset-0 bg-[#71B554]/40"></div>
+ <div className="absolute inset-0 bg-black/40"></div>
  </div>
 
- <div className="relative z-10 flex items-center justify-center h-full">
- <div className="text-center text-white max-w-4xl px-4">
- <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight" style={{ textShadow: '2px 3px 6px rgba(0,0,0,0.6)' }}>
- {t('aurelian.title')}
+ <div className="absolute inset-0" style={{
+ backgroundColor: 'rgba(113, 181, 84, 0.6)'
+ }}></div>
+
+ <div className="relative z-10 flex items-center justify-center min-h-screen">
+ <div className="w-full max-w-4xl text-center px-8 pb-32 pt-20 md:pt-32 lg:pt-24 xl:pt-0 flex flex-col items-center">
+ <img
+ src="/TEAMIN_logo_small.svg"
+ style={{ filter: 'brightness(0) invert(1)' }}
+ alt="TEAMiN Logo"
+ className="w-36 h-36 md:w-48 md:h-48 object-contain mb-16 opacity-30 mt-12 md:mt-16 lg:mt-12 xl:mt-0"
+ fetchpriority="high"
+ />
+ <h1 className="text-4xl lg:text-5xl xl:text-6xl font-bold text-white mb-6 leading-tight uppercase">
+ {t('aurelian.heroTitle')}
  </h1>
- <p className="text-2xl font-light mb-4 opacity-95" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
- Aurelian's Journey with TEAMiN
+ <p className="text-xl lg:text-2xl text-white mb-8 opacity-90 leading-relaxed">
+ {t('aurelian.heroSubtitle')}
  </p>
- <p className="text-lg max-w-2xl mx-auto opacity-90" style={{ textShadow: '1px 2px 4px rgba(0,0,0,0.5)' }}>
- Discover how sport assistance transformed one athlete's life
- </p>
+ <div className="flex justify-center mb-8">
+ <button
+ onClick={scrollToNextSection}
+ className="bg-white text-[#71B554] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+ >
+ {t('aurelian.readStory')}
+ </button>
  </div>
- </div>
- </section>
-
- {/* Impact Section */}
- <section className="py-24 bg-white">
- <div className="max-w-6xl mx-auto px-4">
- <div className="text-center mb-16">
- <h2 className="text-4xl lg:text-5xl font-bold text-[#71B554] mb-6">
- The Impact
- </h2>
- <p className="text-xl text-[#B3ADAA] max-w-3xl mx-auto">
- How sport assistance changed everything
- </p>
- </div>
-
- <div className="grid md:grid-cols-3 gap-8">
- <div className="text-center">
- <div className="flex justify-center mb-6 text-6xl">
- 💪
- </div>
- <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Physical Development</h3>
- <p className="text-lg text-[#B3ADAA]">
- Improved coordination, fitness, and football-specific skills through regular training and expert guidance.
- </p>
- </div>
- <div className="text-center">
- <div className="flex justify-center mb-6 text-6xl">
- 💚
- </div>
- <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Social Integration</h3>
- <p className="text-lg text-[#B3ADAA]">
- Built lasting friendships with teammates and became a valued member of the club community.
- </p>
- </div>
- <div className="text-center">
- <div className="flex justify-center mb-6 text-6xl">
- 🧗‍♀️
- </div>
- <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">Independence</h3>
- <p className="text-lg text-[#B3ADAA]">
- Developed confidence and skills to participate independently without continuous assistance.
- </p>
+ <div className="flex justify-center">
+ <ChevronDown
+ className="w-12 h-12 text-white animate-bounce cursor-pointer"
+ onClick={scrollToNextSection}
+ />
  </div>
  </div>
  </div>
  </section>
 
-
- {/* Diagonal Split Section with Carousel */}
- <section className="min-h-screen relative overflow-hidden">
- {/* Carousel Images - Left 60% */}
- <div className="absolute top-0 left-0 bottom-0 w-[60%]">
+ {/* Full Width Carousel Section */}
+ <section className="bg-white">
+ {/* Carousel with Title Overlay */}
+ <div className="relative">
+ {/* Carousel Images */}
+ <div className="relative h-[70vh] lg:h-[85vh] overflow-hidden">
  {carouselImages.map((image, index) => (
  <div
  key={image}
@@ -107,34 +98,32 @@ const Aurelian: React.FC = () => {
  />
  </div>
  ))}
- </div>
 
- {/* Diagonal Green Overlay - Right 40% */}
- <div className="absolute inset-0 bg-[#71B554]" style={{
- clipPath: 'polygon(60% 0%, 100% 0%, 100% 100%, 40% 100%)'
- }}></div>
+ {/* Dark overlay for title readability */}
+ <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent"></div>
 
- {/* Text Content on Green Overlay */}
- <div className="relative z-10 flex items-center justify-end min-h-screen">
- <div className="w-full lg:w-[42%] text-white pl-16 lg:pl-4 pr-8 lg:pr-20 py-20 lg:py-0">
- <h2 className="text-4xl lg:text-5xl xl:text-6xl font-bold mb-8 leading-tight uppercase text-right">
- THE POWER <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">OF</span><br />
- SPORT ASSISTANCE
- </h2>
- <blockquote className="text-xl lg:text-2xl leading-relaxed mb-6 italic font-light text-right">
+ {/* Green Content Section Overlay at Bottom */}
+ <div className="absolute bottom-0 left-0 right-0 z-10 bg-[#71B554]/75 p-6 lg:p-10 xl:p-12 text-white">
+ <div className="max-w-4xl mx-auto">
+ <blockquote className="text-lg lg:text-xl xl:text-2xl leading-relaxed mb-4 lg:mb-6 italic font-light text-center">
  "{t('aurelian.quoteShort')}"
  </blockquote>
- <p className="text-lg font-semibold mb-8 text-right">
+ <p className="text-base lg:text-lg font-semibold text-center">
  {t('aurelian.attribution')}
  </p>
- <p className="text-lg leading-relaxed text-right">
- {t('aurelian.descriptionShort')}
- </p>
  </div>
+ </div>
+ </div>
+
+ {/* Title Overlay at Top */}
+ <div className="absolute top-0 left-0 right-0 z-10 pt-8 lg:pt-12 px-6 lg:px-12">
+ <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold text-white leading-tight uppercase text-center">
+ {t('aurelian.impactTitle')}
+ </h2>
  </div>
 
  {/* Carousel Indicators */}
- <div className="absolute bottom-8 left-[15%] z-20 flex gap-2">
+ <div className="absolute bottom-6 left-1/2 transform -translate-x-1/2 z-20 flex gap-2">
  {carouselImages.map((_, index) => (
  <button
  key={index}
@@ -146,6 +135,7 @@ const Aurelian: React.FC = () => {
  />
  ))}
  </div>
+ </div>
  </section>
 
 
@@ -153,10 +143,10 @@ const Aurelian: React.FC = () => {
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-4xl mx-auto px-4 text-center">
  <h2 className="text-4xl lg:text-5xl font-bold text-[#3F3E34] mb-6">
- Start Your Own Journey
+ {t('aurelian.ctaTitle')}
  </h2>
  <p className="text-xl text-[#B3ADAA] mb-12 max-w-2xl mx-auto">
- Whether you're an athlete looking for support or want to become a sport assistant, TEAMiN is here to help you belong.
+ {t('aurelian.ctaSubtitle')}
  </p>
 
  <div className="flex flex-col sm:flex-row gap-6 justify-center">
@@ -164,13 +154,13 @@ const Aurelian: React.FC = () => {
  to="/athletes"
  className="bg-[#71B554] text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-[#5FA044] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- I'm an Athlete
+ {t('aurelian.ctaAthlete')}
  </Link>
  <Link
  to="/volunteers"
  className="bg-[#D86D55] text-white px-10 py-5 rounded-full text-lg font-semibold hover:bg-[#C55A47] transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
- Become an Assistant
+ {t('aurelian.ctaAssistant')}
  </Link>
  </div>
  </div>

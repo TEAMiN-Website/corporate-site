@@ -172,13 +172,14 @@
         {
           "title": "Offene Hilfe Stelle finden",
           "description": "Kontaktiere jetzt die Offene Hilfe Stelle der Lebenshilfe in deiner Nähe. Über diesen Link gelangst du zu einer Karte, auf der du die richtige Stelle findest.",
-          "cta": "Zur Suche"
+          "cta": "Zur Suche",
+          "link": "https://www.lebenshilfe.de/standorte#/search"
         },
         {
           "title": "ava-Plattform nutzen",
           "description": "Unser Partner ava bietet eine vollumfängliche, kostenlose Plattform, auf der Sportler:innen und Assistent:innen gematcht werden.",
           "cta": "Registrier dich",
-          "link": "https://www.ava-sport.de"
+          "link": "https://www.ava.services/"
         },
         {
           "title": "Kontakt",
@@ -190,14 +191,22 @@
   },
   "aurelian": {
     "title": "Aurelian kennenlernen",
+    "heroTitle": "LERN AURELIAN KENNEN",
+    "heroSubtitle": "Jedes Team braucht Inspiration. Unsere sind die Geschichten der Sportler:innen, die Dank Assistenz ihre Träume und Ambitionen verwirklichen können.",
+    "readStory": "Lies seine Geschichte",
+    "impactTitle": "DIE WIRKUNG VON ASSISTENZ",
+    "quoteShort": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
+    "attribution": "Aurelian, Fußballspieler, 11 Jahre alt",
+    "ctaTitle": "STARTE DEINE EIGENE REISE",
+    "ctaSubtitle": "Ob du Sportler:in bist und Unterstützung suchst oder Sportassistent:in werden möchtest, TEAMiN hilft dir dabei, dazuzugehören.",
+    "ctaAthlete": "Werde Sportler:in",
+    "ctaAssistant": "Werde Sportassistent:in",
     "hero": {
       "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
       "description": "Aurelians Geschichte zeigt, wie TEAMiNs Sport-Assistenz-Programm echte Möglichkeiten für Sportler mit Behinderungen schafft. Durch qualifizierte Unterstützung und systematische Integration fand er nicht nur einen Sport, den er liebt, sondern eine Gemeinschaft, in der er wirklich dazugehört. Heute spielt Aurelian selbstständig mit seinem Team und hat die Fähigkeiten und das Selbstvertrauen entwickelt, um vollständig am Breitensport teilzunehmen."
     },
-    "quoteShort": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
     "descriptionShort": "Durch qualifizierte Unterstützung und systematische Integration fand Aurelian eine Gemeinschaft, in der er wirklich dazugehört. Heute spielt er selbstständig mit seinem Team.",
     "quote": "Durch TEAMiNs Sport-Assistenz-Programm fand ich nicht nur einen Sport, den ich liebe, sondern eine Gemeinschaft, die mich so akzeptiert, wie ich bin. Die Unterstützung war da, als ich sie brauchte, und jetzt bin ich stolz, meine Teamkollegen wahre Freunde zu nennen.",
-    "attribution": "Aurelian, Fußballspieler, 11 Jahre alt",
     "stats": [
       { "number": "18", "label": "Monate im Programm" },
       { "number": "3", "label": "Sportarten ausprobiert" },
