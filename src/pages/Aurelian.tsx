@@ -101,6 +101,18 @@ const Aurelian: React.FC = () => {
 
  {/* Dark overlay for title readability */}
  <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-transparent to-transparent"></div>
+
+ {/* Green Content Section Overlay at Bottom */}
+ <div className="absolute bottom-0 left-0 right-0 z-10 bg-[#71B554]/75 p-6 lg:p-10 xl:p-12 text-white">
+ <div className="max-w-4xl mx-auto">
+ <blockquote className="text-lg lg:text-xl xl:text-2xl leading-relaxed mb-4 lg:mb-6 italic font-light text-center">
+ "{t('aurelian.quoteShort')}"
+ </blockquote>
+ <p className="text-base lg:text-lg font-semibold text-center">
+ {t('aurelian.attribution')}
+ </p>
+ </div>
+ </div>
  </div>
 
  {/* Title Overlay at Top */}
@@ -122,18 +134,6 @@ const Aurelian: React.FC = () => {
  aria-label={`Go to image ${index + 1}`}
  />
  ))}
- </div>
- </div>
-
- {/* Green Content Section Below Carousel */}
- <div className="bg-[#71B554] p-8 lg:p-16 xl:p-20 text-white">
- <div className="max-w-4xl mx-auto">
- <blockquote className="text-xl lg:text-2xl xl:text-3xl leading-relaxed mb-8 italic font-light text-center">
- "{t('aurelian.quoteShort')}"
- </blockquote>
- <p className="text-lg lg:text-xl font-semibold mb-8 text-center">
- {t('aurelian.attribution')}
- </p>
  </div>
  </div>
  </section>
