@@ -1129,25 +1129,11 @@
       },
       "items": [
         {
-          "title": "Getting Started Guide for Athletes",
-          "description": "Learn how to join a sports club with TEAMiN support and what to expect from your sport assistant.",
-          "category": "athletes",
-          "filename": "athlete-guide.pdf",
-          "size": "2.5 MB"
-        },
-        {
-          "title": "Sport Assistant Training Manual",
-          "description": "Comprehensive guide covering training modules, best practices, and support strategies for assistants.",
-          "category": "assistants",
-          "filename": "assistant-manual.pdf",
-          "size": "3.8 MB"
-        },
-        {
-          "title": "Inclusive Sports Club Toolkit",
-          "description": "Resources for sports clubs to create welcoming and accessible environments for all athletes.",
+          "title": "TEAMiN & SpAss Overview",
+          "description": "Comprehensive overview of TEAMiN's inclusive network and the SpAss (Sport-Assistenz) program, including training details, partnership opportunities, and how to get involved.",
           "category": "clubs",
-          "filename": "club-toolkit.pdf",
-          "size": "4.2 MB"
+          "filename": "TEAMiN & SpAss Übersicht.pdf",
+          "size": "1.2 MB"
         }
       ]
     }

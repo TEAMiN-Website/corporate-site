@@ -29,7 +29,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
   };
 
   const getResourcePath = () => {
-    return `/resources/${category}/${filename}`;
+    return `/${filename}`;
   };
 
   return (

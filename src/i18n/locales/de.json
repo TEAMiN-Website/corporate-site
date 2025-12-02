@@ -1129,25 +1129,11 @@
       },
       "items": [
         {
-          "title": "Einstiegsleitfaden für Sportler:innen",
-          "description": "Erfahren Sie, wie Sie mit TEAMiN-Unterstützung einem Sportverein beitreten und was Sie von Ihrer Sport-Assistenz erwarten können.",
-          "category": "athletes",
-          "filename": "athlete-guide.pdf",
-          "size": "2.5 MB"
-        },
-        {
-          "title": "Sportassistenz-Schulungshandbuch",
-          "description": "Umfassender Leitfaden mit Schulungsmodulen, Best Practices und Unterstützungsstrategien für Assistent:innen.",
-          "category": "assistants",
-          "filename": "assistant-manual.pdf",
-          "size": "3.8 MB"
-        },
-        {
-          "title": "Toolkit für inklusive Sportvereine",
-          "description": "Ressourcen für Sportvereine zur Schaffung einladender und zugänglicher Umgebungen für alle Sportler:innen.",
+          "title": "TEAMiN & SpAss Übersicht",
+          "description": "Umfassende Übersicht über das inklusive TEAMiN-Netzwerk und das SpAss (Sport-Assistenz) Programm, einschließlich Ausbildungsdetails, Partnerschaftsmöglichkeiten und wie Sie sich engagieren können.",
           "category": "clubs",
-          "filename": "club-toolkit.pdf",
-          "size": "4.2 MB"
+          "filename": "TEAMiN & SpAss Übersicht.pdf",
+          "size": "1.2 MB"
         }
       ]
     }
