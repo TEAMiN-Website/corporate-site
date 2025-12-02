@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
+import ResourceCard from '../components/ResourceCard';
 
 interface FAQItem {
   question: string;
@@ -10,6 +11,14 @@ interface FAQItem {
 interface FAQCategory {
   title: string;
   items: FAQItem[];
+}
+
+interface ResourceItem {
+  title: string;
+  description: string;
+  category: 'athletes' | 'assistants' | 'clubs';
+  filename: string;
+  size: string;
 }
 
 const FAQ: React.FC = () => {
@@ -28,6 +37,7 @@ const FAQ: React.FC = () => {
   };
 
   const faqData: FAQCategory[] = t('faq.categories', { returnObjects: true }) as FAQCategory[];
+  const resourceData: ResourceItem[] = t('faq.resources.items', { returnObjects: true }) as ResourceItem[];
 
   const getCategoryColors = (index: number) => {
     const colorMap = [
@@ -88,6 +98,30 @@ const FAQ: React.FC = () => {
             </div>
             );
           })}
+        </div>
+
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-[#F7ECD5] mb-4 uppercase">
+              {t('faq.resources.title')}
+            </h2>
+            <p className="text-lg text-[#F7ECD5]/80 max-w-3xl mx-auto">
+              {t('faq.resources.subtitle')}
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+            {resourceData.map((resource, index) => (
+              <ResourceCard
+                key={index}
+                title={resource.title}
+                description={resource.description}
+                category={resource.category}
+                filename={resource.filename}
+                size={resource.size}
+              />
+            ))}
+          </div>
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-lg shadow-lg p-8 text-center text-white">

@@ -1116,6 +1116,40 @@
       "title": "More Questions?",
       "description": "If you have additional questions, feel free to contact us!",
       "email": "Email: sportassistenz@uni-wuerzburg.de"
+    },
+    "resources": {
+      "title": "Resources & Downloads",
+      "subtitle": "Helpful documents and guides for athletes, assistants, and sports clubs",
+      "downloadButton": "Download PDF",
+      "fileSize": "File size",
+      "categories": {
+        "athletes": "For Athletes",
+        "assistants": "For Sport Assistants",
+        "clubs": "For Sports Clubs"
+      },
+      "items": [
+        {
+          "title": "Getting Started Guide for Athletes",
+          "description": "Learn how to join a sports club with TEAMiN support and what to expect from your sport assistant.",
+          "category": "athletes",
+          "filename": "athlete-guide.pdf",
+          "size": "2.5 MB"
+        },
+        {
+          "title": "Sport Assistant Training Manual",
+          "description": "Comprehensive guide covering training modules, best practices, and support strategies for assistants.",
+          "category": "assistants",
+          "filename": "assistant-manual.pdf",
+          "size": "3.8 MB"
+        },
+        {
+          "title": "Inclusive Sports Club Toolkit",
+          "description": "Resources for sports clubs to create welcoming and accessible environments for all athletes.",
+          "category": "clubs",
+          "filename": "club-toolkit.pdf",
+          "size": "4.2 MB"
+        }
+      ]
     }
   }
 }
