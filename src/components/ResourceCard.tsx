@@ -57,9 +57,6 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
             <span className="inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-[#3F3E34] text-[#F7ECD5]">
               {t(`faq.resources.categories.${category}`)}
             </span>
-            <span className="text-sm text-[#3F3E34]/60">
-              {t('faq.resources.fileSize')}: {size}
-            </span>
           </div>
 
           <a
