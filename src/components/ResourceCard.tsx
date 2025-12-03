@@ -31,9 +31,9 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
   const getResourcePath = () => {
     const bucketUrl = import.meta.env.VITE_S3_BUCKET_URL || '';
     if (bucketUrl) {
-      return `${bucketUrl}/${filename}`;
+      return `${bucketUrl}/resources/${filename}`;
     }
-    return `/${filename}`;
+    return `/resources/${filename}`;
   };
 
   return (
