@@ -17,6 +17,7 @@ interface ResourceItem {
   title: string;
   description: string;
   category: 'athletes' | 'assistants' | 'clubs';
+  section: 'general' | 'marketing';
   filename: string;
   size: string;
 }
@@ -110,18 +111,30 @@ const FAQ: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-            {resourceData.map((resource, index) => (
-              <ResourceCard
-                key={index}
-                title={resource.title}
-                description={resource.description}
-                category={resource.category}
-                filename={resource.filename}
-                size={resource.size}
-              />
-            ))}
-          </div>
+          {(['general', 'marketing'] as const).map((section) => {
+            const sectionResources = resourceData.filter((r) => r.section === section);
+            if (sectionResources.length === 0) return null;
+
+            return (
+              <div key={section} className="mb-12">
+                <h3 className="text-2xl font-bold text-[#F7ECD5] mb-6">
+                  {t(`faq.resources.sections.${section}`)}
+                </h3>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {sectionResources.map((resource, index) => (
+                    <ResourceCard
+                      key={index}
+                      title={resource.title}
+                      description={resource.description}
+                      category={resource.category}
+                      filename={resource.filename}
+                      size={resource.size}
+                    />
+                  ))}
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <div className="mt-12 bg-gradient-to-r from-[#D86D55] to-[#71B554] rounded-lg shadow-lg p-8 text-center text-white">

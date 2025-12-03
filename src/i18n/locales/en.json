@@ -1122,6 +1122,10 @@
       "subtitle": "Helpful documents and guides for athletes, assistants, and sports clubs",
       "downloadButton": "Download PDF",
       "fileSize": "File size",
+      "sections": {
+        "general": "General Information",
+        "marketing": "Marketing Materials"
+      },
       "categories": {
         "athletes": "For Athletes",
         "assistants": "For Sport Assistants",
@@ -1132,8 +1136,17 @@
           "title": "TEAMiN & SpAss Overview",
           "description": "Comprehensive overview of TEAMiN's inclusive network and the SpAss (Sport-Assistenz) program, including training details, partnership opportunities, and how to get involved.",
           "category": "clubs",
-          "filename": "TEAMiN-SpAss-Übersicht.pdf",
+          "section": "general",
+          "filename": "TEAMiN-SpAss-Uebersicht.pdf",
           "size": "1.4 MB"
+        },
+        {
+          "title": "SpAss Flyer for Assistants",
+          "description": "Informative A4 flyer to hand out to interested sport assistants with all important information about the SpAss program.",
+          "category": "assistants",
+          "section": "marketing",
+          "filename": "SpAss-Flyer-Assistenzen-A4.pdf",
+          "size": "2.1 MB"
         }
       ]
     }
