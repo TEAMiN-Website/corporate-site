@@ -9,7 +9,8 @@
     "signup": "Anmelden",
     "partners": "Partner",
     "contact": "Kontakt",
-    "photos": "Fotos"
+    "photos": "Fotos",
+    "faq": "FAQ & Ressourcen"
   },
   "home": {
     "title": "Gemeinschaften schaffen, in denen jeder durch Sport dazugehört",
@@ -356,7 +357,7 @@
       "impressum": "Impressum",
       "privacy": "Datenschutzerklärung",
       "terms": "Nutzungsbedingungen",
-      "faq": "Häufige Fragen"
+      "faq": "FAQ & Ressourcen"
     }
   },
   "common": {
@@ -1116,6 +1117,39 @@
       "title": "Weitere Fragen?",
       "description": "Wenn Sie weitere Fragen haben, kontaktieren Sie uns gerne!",
       "email": "E-Mail: sportassistenz@uni-wuerzburg.de"
+    },
+    "resources": {
+      "title": "Ressourcen & Downloads",
+      "subtitle": "Hilfreiche Dokumente und Leitfäden für Sportler:innen, Assistent:innen und Sportvereine",
+      "downloadButton": "PDF herunterladen",
+      "fileSize": "Dateigröße",
+      "sections": {
+        "general": "Allgemeine Informationen",
+        "marketing": "Werbematerial"
+      },
+      "categories": {
+        "athletes": "Für Sportler:innen",
+        "assistants": "Für Sportassistent:innen",
+        "clubs": "Für Sportvereine, Schulen und andere Organisationen"
+      },
+      "items": [
+        {
+          "title": "TEAMiN & SpAss Übersicht",
+          "description": "Umfassende Übersicht über das inklusive TEAMiN-Netzwerk und das SpAss (Sport-Assistenz) Programm, einschließlich Ausbildungsdetails, Partnerschaftsmöglichkeiten und wie Sie sich engagieren können.",
+          "category": "clubs",
+          "section": "general",
+          "filename": "TEAMiN-SpAss-Uebersicht.pdf",
+          "size": "1.4 MB"
+        },
+        {
+          "title": "SpAss Flyer Assistenzen",
+          "description": "Informativer A4-Flyer zum Austeilen an interessierte Sportassistent:innen mit allen wichtigen Informationen über das SpAss-Programm.",
+          "category": "clubs",
+          "section": "marketing",
+          "filename": "SpAss-Flyer-Assistenzen-A4.pdf",
+          "size": "2.1 MB"
+        }
+      ]
     }
   }
 }

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
+import ResourceCard from '../components/ResourceCard';
 
 interface FAQItem {
   question: string;
@@ -10,6 +11,15 @@ interface FAQItem {
 interface FAQCategory {
   title: string;
   items: FAQItem[];
+}
+
+interface ResourceItem {
+  title: string;
+  description: string;
+  category: 'athletes' | 'assistants' | 'clubs';
+  section: 'general' | 'marketing';
+  filename: string;
+  size: string;
 }
 
 const FAQ: React.FC = () => {
@@ -28,6 +38,7 @@ const FAQ: React.FC = () => {
   };
 
   const faqData: FAQCategory[] = t('faq.categories', { returnObjects: true }) as FAQCategory[];
+  const resourceData: ResourceItem[] = t('faq.resources.items', { returnObjects: true }) as ResourceItem[];
 
   const getCategoryColors = (index: number) => {
     const colorMap = [
@@ -86,6 +97,42 @@ const FAQ: React.FC = () => {
                 })}
               </div>
             </div>
+            );
+          })}
+        </div>
+
+        <div className="mt-16">
+          <div className="text-center mb-8">
+            <h2 className="text-4xl font-bold text-[#F7ECD5] mb-4 uppercase">
+              {t('faq.resources.title')}
+            </h2>
+            <p className="text-lg text-[#F7ECD5]/80 max-w-3xl mx-auto">
+              {t('faq.resources.subtitle')}
+            </p>
+          </div>
+
+          {(['general', 'marketing'] as const).map((section) => {
+            const sectionResources = resourceData.filter((r) => r.section === section);
+            if (sectionResources.length === 0) return null;
+
+            return (
+              <div key={section} className="mb-12">
+                <h3 className="text-2xl font-bold text-[#F7ECD5] mb-6">
+                  {t(`faq.resources.sections.${section}`)}
+                </h3>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
+                  {sectionResources.map((resource, index) => (
+                    <ResourceCard
+                      key={index}
+                      title={resource.title}
+                      description={resource.description}
+                      category={resource.category}
+                      filename={resource.filename}
+                      size={resource.size}
+                    />
+                  ))}
+                </div>
+              </div>
             );
           })}
         </div>
