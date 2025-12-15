@@ -148,24 +148,26 @@ export const initializeGoogleAnalytics = (): void => {
       return;
     }
 
-    // Create gtag script
+    // Initialize dataLayer first
+    (window as any).dataLayer = (window as any).dataLayer || [];
+    
+    // Define gtag function - must use 'arguments' to work correctly with GA
+    (window as any).gtag = function() {
+      (window as any).dataLayer.push(arguments);
+    };
+
+    // Send initial commands BEFORE loading the script
+    (window as any).gtag('js', new Date());
+    (window as any).gtag('config', GA_MEASUREMENT_ID, {
+      anonymize_ip: true, // GDPR compliance
+      cookie_flags: 'SameSite=None;Secure'
+    });
+
+    // Create and load gtag script
     const script = document.createElement('script');
     script.async = true;
     script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     document.head.appendChild(script);
-
-    // Initialize gtag
-    (window as any).dataLayer = (window as any).dataLayer || [];
-    function gtag(...args: any[]) {
-      (window as any).dataLayer.push(args);
-    }
-    (window as any).gtag = gtag;
-
-    gtag('js', new Date());
-    gtag('config', GA_MEASUREMENT_ID, {
-      anonymize_ip: true, // GDPR compliance
-      cookie_flags: 'SameSite=None;Secure'
-    });
   } catch (error) {
     console.error('Google Analytics: Initialization failed', error);
   }
