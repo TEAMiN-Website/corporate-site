@@ -2,10 +2,15 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { Link } from 'react-router-dom';
 import { Target, Eye, Users, CheckCircle, ChevronDown } from 'lucide-react';
+import { trackHeroCTAClick, trackTeamMemberViewed, trackAudiencePathSelected } from '../utils/analytics';
+import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 const About: React.FC = () => {
  const { t } = useTranslation();
  const [flippedPartner, setFlippedPartner] = useState<number | null>(null);
+ 
+ // Track scroll depth
+ useScrollDepthTracking();
 
  const scrollToNextSection = () => {
   const heroSection = document.querySelector('.hero-section');
@@ -81,7 +86,10 @@ const About: React.FC = () => {
  </p>
  <div className="flex justify-center mb-8">
  <button
- onClick={scrollToNextSection}
+ onClick={() => {
+   trackHeroCTAClick('/about', 'Lern uns kennen');
+   scrollToNextSection();
+ }}
  className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
  Lern uns kennen
@@ -217,7 +225,11 @@ const About: React.FC = () => {
 
  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
  {teamMembers.map((member, index) => (
- <div key={index} className="flex flex-col items-center">
+ <div 
+   key={index} 
+   className="flex flex-col items-center"
+   onMouseEnter={() => trackTeamMemberViewed(member.name)}
+ >
  <div className="relative mb-6">
  <div className="absolute inset-0 rounded-full bg-gradient-to-b from-[#71B554] to-[#D86D55] p-[3px]">
  <div className="w-full h-full rounded-full bg-[#F7ECD5] flex items-center justify-center overflow-hidden">
@@ -324,7 +336,11 @@ const About: React.FC = () => {
  {t('spassPage.becomePart.assistants.description')}
  </p>
  </div>
- <Link to="/volunteers" className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ <Link 
+   to="/volunteers" 
+   onClick={() => trackAudiencePathSelected('volunteer')}
+   className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider"
+ >
  {t('spassPage.becomePart.assistants.cta')}
  </Link>
  </div>
@@ -342,7 +358,11 @@ const About: React.FC = () => {
  {t('spassPage.becomePart.athletes.description')}
  </p>
  </div>
- <Link to="/athletes" className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ <Link 
+   to="/athletes" 
+   onClick={() => trackAudiencePathSelected('athlete')}
+   className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider"
+ >
  {t('spassPage.becomePart.athletes.cta')}
  </Link>
  </div>
@@ -360,7 +380,11 @@ const About: React.FC = () => {
  {t('spassPage.becomePart.organizations.description')}
  </p>
  </div>
- <Link to="/partners" className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+ <Link 
+   to="/partners" 
+   onClick={() => trackAudiencePathSelected('organization')}
+   className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider"
+ >
  {t('spassPage.becomePart.organizations.cta')}
  </Link>
  </div>

@@ -218,6 +218,148 @@ export const trackEvent = (eventName: string, parameters?: Record<string, any>):
   }
 };
 
+// ============================================
+// ENHANCED TRACKING FUNCTIONS
+// ============================================
+
+// --- User Journey Funnel Events ---
+
+export const trackSignupIntent = (userType: 'volunteer' | 'athlete' | 'organization'): void => {
+  trackEvent('signup_intent_shown', { user_type: userType });
+};
+
+export const trackExternalSignup = (destination: 'bvs_elearning' | 'bvs_praxistag' | 'ava_platform' | 'lebenshilfe' | string): void => {
+  trackEvent('external_signup_click', {
+    destination,
+    timestamp: new Date().toISOString()
+  });
+};
+
+export const trackContactFormStarted = (): void => {
+  trackEvent('contact_form_started');
+};
+
+export const trackContactFormSubmitted = (success: boolean): void => {
+  trackEvent('contact_form_submitted', { success });
+};
+
+export const trackEmailCopyClick = (location: 'footer' | 'partners_page' | 'contact_section' | string): void => {
+  trackEvent('email_copy_click', { location });
+};
+
+// --- Content Engagement Events ---
+
+export const trackFAQItemExpanded = (category: string, questionIndex: number, question: string): void => {
+  trackEvent('faq_item_expanded', { 
+    category, 
+    question_index: questionIndex,
+    question_text: question.substring(0, 100) // Truncate for readability
+  });
+};
+
+export const trackResourceDownload = (filename: string, category: string): void => {
+  trackEvent('resource_download', { filename, category });
+};
+
+export const trackTeamMemberViewed = (memberName: string): void => {
+  trackEvent('team_member_viewed', { member_name: memberName });
+};
+
+export const trackPartnerCardFlipped = (partnerId: string): void => {
+  trackEvent('partner_card_flipped', { partner_id: partnerId });
+};
+
+export const trackTestimonialViewed = (page: string, testimonialAuthor?: string): void => {
+  trackEvent('testimonial_viewed', { page, testimonial_author: testimonialAuthor });
+};
+
+// --- Navigation & Scroll Behavior ---
+
+export const trackSectionScroll = (sectionName: string, page: string): void => {
+  trackEvent('section_scroll', { 
+    section_name: sectionName, 
+    page,
+    timestamp: new Date().toISOString()
+  });
+};
+
+export const trackHeroCTAClick = (page: string, ctaText: string): void => {
+  trackEvent('hero_cta_click', { page, cta_text: ctaText });
+};
+
+export const trackDropdownNavUsed = (menuItem: string): void => {
+  trackEvent('dropdown_nav_used', { menu_item: menuItem });
+};
+
+export const trackLanguageSwitch = (fromLang: string, toLang: string): void => {
+  trackEvent('language_switch', { from_lang: fromLang, to_lang: toLang });
+};
+
+// Scroll depth tracking with debounce protection
+const _scrollDepthTracked: Set<string> = new Set();
+
+export const trackScrollDepth = (depthPercentage: 25 | 50 | 75 | 100, page: string): void => {
+  const key = `${page}-${depthPercentage}`;
+  if (_scrollDepthTracked.has(key)) return;
+  
+  _scrollDepthTracked.add(key);
+  trackEvent('scroll_depth', { depth_percentage: depthPercentage, page });
+};
+
+export const resetScrollDepthTracking = (): void => {
+  _scrollDepthTracked.clear();
+};
+
+// --- Cookie Consent Analytics ---
+
+let _cookieConsentShownTime: number | null = null;
+
+export const trackCookieConsentShown = (): void => {
+  _cookieConsentShownTime = Date.now();
+  trackEvent('cookie_consent_shown');
+};
+
+export const trackCookieConsentDecision = (decision: 'accepted' | 'declined'): void => {
+  const timeToDecision = _cookieConsentShownTime 
+    ? Math.round((Date.now() - _cookieConsentShownTime) / 1000) 
+    : null;
+  
+  trackEvent('cookie_consent_decision', { 
+    decision, 
+    time_to_decision_seconds: timeToDecision 
+  });
+};
+
+export const trackCookieDetailsExpanded = (): void => {
+  trackEvent('cookie_details_expanded');
+};
+
+// --- User Segmentation Events ---
+
+export const trackAudiencePathSelected = (userType: 'athlete' | 'volunteer' | 'organization'): void => {
+  trackEvent('audience_path_selected', { user_type: userType });
+};
+
+export const trackAurelianStoryViewed = (viewDuration?: number): void => {
+  trackEvent('aurelian_story_viewed', { view_duration_seconds: viewDuration });
+};
+
+// --- Outbound Link Tracking ---
+
+export const trackOutboundLinkClick = (url: string, linkText: string, page: string): void => {
+  trackEvent('outbound_link_click', { 
+    url, 
+    link_text: linkText.substring(0, 100), // Truncate for readability
+    page 
+  });
+};
+
+// --- Mobile Menu Tracking ---
+
+export const trackMobileMenuToggle = (isOpen: boolean): void => {
+  trackEvent('mobile_menu_toggle', { action: isOpen ? 'opened' : 'closed' });
+};
+
 // Remove analytics cookies and scripts (for GDPR compliance)
 export const removeAnalytics = (): void => {
   try {

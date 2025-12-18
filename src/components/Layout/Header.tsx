@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { Menu, X, Globe, ChevronDown } from 'lucide-react';
+import { trackLanguageSwitch, trackDropdownNavUsed, trackMobileMenuToggle } from '../../utils/analytics';
 
 const Header: React.FC = () => {
  const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -36,13 +37,19 @@ const Header: React.FC = () => {
  ];
 
  const toggleLanguage = () => {
- const newLang = i18n.language === 'en' ? 'de' : 'en';
+ const oldLang = i18n.language;
+ const newLang = oldLang === 'en' ? 'de' : 'en';
  i18n.changeLanguage(newLang);
  localStorage.setItem('language', newLang);
+ trackLanguageSwitch(oldLang, newLang);
  };
 
  const handleDropdownToggle = (itemId: string) => {
+ const isOpening = dropdownOpen !== itemId;
  setDropdownOpen(dropdownOpen === itemId ? null : itemId);
+ if (isOpening) {
+ trackDropdownNavUsed(itemId);
+ }
  };
 
  const handleDropdownItemClick = () => {
@@ -200,7 +207,11 @@ const Header: React.FC = () => {
 
  <button
  className="p-2 rounded-md hover:bg-gray-100 transition-colors duration-200"
- onClick={() => setIsMenuOpen(!isMenuOpen)}
+ onClick={() => {
+ const willBeOpen = !isMenuOpen;
+ setIsMenuOpen(willBeOpen);
+ trackMobileMenuToggle(willBeOpen);
+ }}
  >
  {isMenuOpen ? <X className="w-6 h-6 text-gray-600" /> : <Menu className="w-6 h-6 text-gray-600" />}
  </button>
