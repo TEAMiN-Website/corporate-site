@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import RunningPeopleIcon from './Icons/RunningPeopleIcon';
+import { trackPartnerCardFlipped } from '../utils/analytics';
 
 interface Partner {
   id: string;
@@ -67,6 +68,8 @@ const PartnerNetwork: React.FC = () => {
         newSet.delete(id);
       } else {
         newSet.add(id);
+        // Track partner card flip
+        trackPartnerCardFlipped(id);
       }
       return newSet;
     });

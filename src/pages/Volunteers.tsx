@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, ChevronDown, Play, Pause } from 'lucide-react';
+import { trackHeroCTAClick, trackTestimonialViewed, trackSignupIntent } from '../utils/analytics';
+import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 interface Testimonial {
   quote: string;
@@ -30,13 +32,25 @@ const Volunteers: React.FC = () => {
  const [isPlaying, setIsPlaying] = useState(true);
  const carouselRef = useRef<HTMLDivElement>(null);
  const testimonials = t('volunteersNew.stories.testimonials', { returnObjects: true }) as Testimonial[];
+ 
+ // Track scroll depth
+ useScrollDepthTracking();
+ 
+ // Track signup intent when page is viewed
+ useEffect(() => {
+   trackSignupIntent('volunteer');
+ }, []);
 
  const nextTestimonial = () => {
- setCurrentTestimonial((prev) => (prev + 1) % testimonials.length);
+ const newIndex = (currentTestimonial + 1) % testimonials.length;
+ setCurrentTestimonial(newIndex);
+ trackTestimonialViewed('/volunteers', testimonials[newIndex]?.name);
  };
 
  const prevTestimonial = () => {
- setCurrentTestimonial((prev) => (prev - 1 + testimonials.length) % testimonials.length);
+ const newIndex = (currentTestimonial - 1 + testimonials.length) % testimonials.length;
+ setCurrentTestimonial(newIndex);
+ trackTestimonialViewed('/volunteers', testimonials[newIndex]?.name);
  };
 
  // Auto-play carousel
@@ -112,7 +126,10 @@ const Volunteers: React.FC = () => {
  </p>
  <div className="flex justify-center mb-8">
  <button
- onClick={scrollToNextSection}
+ onClick={() => {
+   trackHeroCTAClick('/volunteers', t('volunteersNew.hero.joinNow'));
+   scrollToNextSection();
+ }}
  className="bg-white text-[#D86D55] px-10 py-4 rounded-full font-semibold text-xl hover:bg-gray-100 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
  >
  {t('volunteersNew.hero.joinNow')}

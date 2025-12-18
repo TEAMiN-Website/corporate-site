@@ -3,6 +3,8 @@ import { useTranslation } from 'react-i18next';
 import { useNavigate } from 'react-router-dom';
 import { ChevronDown, Quote, Play, Pause } from 'lucide-react';
 import PartnerNetwork from '../components/PartnerNetwork';
+import { trackHeroCTAClick, trackFAQItemExpanded, trackAudiencePathSelected, trackSectionScroll } from '../utils/analytics';
+import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 interface Testimonial {
   quote: string;
@@ -33,14 +35,21 @@ const SpAss: React.FC = () => {
   const carouselRef = useRef<HTMLDivElement>(null);
 
   const stories = t('spassNew.stories.testimonials', { returnObjects: true }) as Testimonial[];
+  
+  // Track scroll depth
+  useScrollDepthTracking();
 
-  const toggleFaq = (categoryIndex: number, itemIndex: number) => {
+  const toggleFaq = (categoryIndex: number, itemIndex: number, categoryTitle?: string, question?: string) => {
     const key = `${categoryIndex}-${itemIndex}`;
     const newActiveFaqItems = new Set(activeFaqItems);
     if (newActiveFaqItems.has(key)) {
       newActiveFaqItems.delete(key);
     } else {
       newActiveFaqItems.add(key);
+      // Track FAQ expansion
+      if (categoryTitle && question) {
+        trackFAQItemExpanded(categoryTitle, itemIndex, question);
+      }
     }
     setActiveFaqItems(newActiveFaqItems);
   };
@@ -133,7 +142,10 @@ const SpAss: React.FC = () => {
             </p>
             <div className="flex justify-center mb-8">
               <button
-                onClick={scrollToNextSection}
+                onClick={() => {
+                  trackHeroCTAClick('/spass', t('spassPage.hero.explore'));
+                  scrollToNextSection();
+                }}
                 className="bg-white px-10 py-4 rounded-full font-semibold text-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
               >
                 <span className="bg-gradient-to-r from-[#D86D55] to-[#71B554] bg-clip-text text-transparent">{t('spassPage.hero.explore')}</span>
@@ -416,7 +428,10 @@ const SpAss: React.FC = () => {
                     {t('spassPage.becomePart.assistants.description')}
                   </p>
                 </div>
-                <button onClick={() => navigate('/volunteers')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+                <button onClick={() => {
+                  trackAudiencePathSelected('volunteer');
+                  navigate('/volunteers');
+                }} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
                   {t('spassPage.becomePart.assistants.cta')}
                 </button>
               </div>
@@ -434,7 +449,10 @@ const SpAss: React.FC = () => {
                     {t('spassPage.becomePart.athletes.description')}
                   </p>
                 </div>
-                <button onClick={() => navigate('/athletes')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+                <button onClick={() => {
+                  trackAudiencePathSelected('athlete');
+                  navigate('/athletes');
+                }} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
                   {t('spassPage.becomePart.athletes.cta')}
                 </button>
               </div>
@@ -452,7 +470,10 @@ const SpAss: React.FC = () => {
                     {t('spassPage.becomePart.organizations.description')}
                   </p>
                 </div>
-                <button onClick={() => navigate('/partners')} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
+                <button onClick={() => {
+                  trackAudiencePathSelected('organization');
+                  navigate('/partners');
+                }} className="px-8 py-4 rounded-[25px] text-base font-semibold bg-white/10 text-white border-2 border-white backdrop-blur-sm hover:bg-white hover:text-gray-900 transition-all duration-300 tracking-wider">
                   {t('spassPage.becomePart.organizations.cta')}
                 </button>
               </div>
@@ -485,7 +506,7 @@ const SpAss: React.FC = () => {
                   return (
                     <div key={itemIndex} className="mb-5 border-b border-gray-300/20  pb-5">
                       <div
-                        onClick={() => toggleFaq(categoryIndex, itemIndex)}
+                        onClick={() => toggleFaq(categoryIndex, itemIndex, category.title, item.question)}
                         className="text-lg font-semibold text-gray-900 cursor-pointer flex justify-between items-center hover:text-[#D86D55] transition-colors duration-300"
                       >
                         <span>{item.question}</span>
