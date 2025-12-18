@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown } from 'lucide-react';
 import ResourceCard from '../components/ResourceCard';
+import { trackFAQItemExpanded } from '../utils/analytics';
+import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 interface FAQItem {
   question: string;
@@ -25,14 +27,19 @@ interface ResourceItem {
 const FAQ: React.FC = () => {
   const { t } = useTranslation();
   const [activeItems, setActiveItems] = useState<Set<string>>(new Set());
+  
+  // Track scroll depth
+  useScrollDepthTracking();
 
-  const toggleItem = (categoryIndex: number, itemIndex: number) => {
+  const toggleItem = (categoryIndex: number, itemIndex: number, categoryTitle: string, question: string) => {
     const key = `${categoryIndex}-${itemIndex}`;
     const newActiveItems = new Set(activeItems);
     if (newActiveItems.has(key)) {
       newActiveItems.delete(key);
     } else {
       newActiveItems.add(key);
+      // Track FAQ expansion
+      trackFAQItemExpanded(categoryTitle, itemIndex, question);
     }
     setActiveItems(newActiveItems);
   };
@@ -74,7 +81,7 @@ const FAQ: React.FC = () => {
                   return (
                     <div key={itemIndex} className={`border-b ${colors.border} pb-4 last:border-b-0`}>
                       <button
-                        onClick={() => toggleItem(categoryIndex, itemIndex)}
+                        onClick={() => toggleItem(categoryIndex, itemIndex, category.title, item.question)}
                         className={`w-full flex justify-between items-center text-left hover:opacity-80 transition-colors duration-200`}
                       >
                         <span className={`text-lg font-semibold ${colors.text} pr-4`}>

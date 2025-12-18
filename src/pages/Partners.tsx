@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { ChevronDown, Copy } from 'lucide-react';
+import { trackPartnerCardFlipped, trackEmailCopyClick } from '../utils/analytics';
+import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 interface Partner {
   id: string;
@@ -50,6 +52,8 @@ const PartnerNetworkSection: React.FC = () => {
         newSet.delete(id);
       } else {
         newSet.add(id);
+        // Track when a partner card is flipped to view details
+        trackPartnerCardFlipped(id);
       }
       return newSet;
     });
@@ -215,6 +219,7 @@ const ContactButton: React.FC = () => {
     if (isHovered) {
       navigator.clipboard.writeText('kontakt@teaminklusion.de');
       setShowCopied(true);
+      trackEmailCopyClick('partners_page');
       setTimeout(() => setShowCopied(false), 2000);
     }
   };
@@ -247,6 +252,9 @@ const ContactButton: React.FC = () => {
 
 const Partners: React.FC = () => {
   const { t } = useTranslation();
+  
+  // Track scroll depth
+  useScrollDepthTracking();
 
   const scrollToNextSection = () => {
     const heroSection = document.querySelector('.hero-section');

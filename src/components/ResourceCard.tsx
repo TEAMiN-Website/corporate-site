@@ -1,6 +1,7 @@
 import React from 'react';
 import { Download, FileText } from 'lucide-react';
 import { useTranslation } from 'react-i18next';
+import { trackResourceDownload } from '../utils/analytics';
 
 interface ResourceCardProps {
   title: string;
@@ -63,6 +64,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
             href={getResourcePath()}
             target="_blank"
             rel="noopener noreferrer"
+            onClick={() => trackResourceDownload(filename, category)}
             className={`inline-flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-colors duration-200 ${getCategoryColor(category)}`}
             aria-label={`${t('faq.resources.downloadButton')}: ${title}`}
           >
