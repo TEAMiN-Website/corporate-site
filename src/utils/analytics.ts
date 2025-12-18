@@ -225,32 +225,32 @@ export const trackEvent = (eventName: string, parameters?: Record<string, any>):
 // --- User Journey Funnel Events ---
 
 export const trackSignupIntent = (userType: 'volunteer' | 'athlete' | 'organization'): void => {
-  trackEvent('signup_intent_shown', { user_type: userType });
+  trackEvent('view_signup_page', { user_type: userType });
 };
 
 export const trackExternalSignup = (destination: 'bvs_elearning' | 'bvs_praxistag' | 'ava_platform' | 'lebenshilfe' | string): void => {
-  trackEvent('external_signup_click', {
+  trackEvent('click_external_registration', {
     destination,
     timestamp: new Date().toISOString()
   });
 };
 
 export const trackContactFormStarted = (): void => {
-  trackEvent('contact_form_started');
+  trackEvent('begin_contact_form');
 };
 
 export const trackContactFormSubmitted = (success: boolean): void => {
-  trackEvent('contact_form_submitted', { success });
+  trackEvent('submit_contact_form', { success });
 };
 
 export const trackEmailCopyClick = (location: 'footer' | 'partners_page' | 'contact_section' | string): void => {
-  trackEvent('email_copy_click', { location });
+  trackEvent('copy_email_address', { location });
 };
 
 // --- Content Engagement Events ---
 
 export const trackFAQItemExpanded = (category: string, questionIndex: number, question: string): void => {
-  trackEvent('faq_item_expanded', { 
+  trackEvent('expand_faq_item', { 
     category, 
     question_index: questionIndex,
     question_text: question.substring(0, 100) // Truncate for readability
@@ -258,25 +258,25 @@ export const trackFAQItemExpanded = (category: string, questionIndex: number, qu
 };
 
 export const trackResourceDownload = (filename: string, category: string): void => {
-  trackEvent('resource_download', { filename, category });
+  trackEvent('download_resource', { filename, category });
 };
 
 export const trackTeamMemberViewed = (memberName: string): void => {
-  trackEvent('team_member_viewed', { member_name: memberName });
+  trackEvent('view_team_member', { member_name: memberName });
 };
 
 export const trackPartnerCardFlipped = (partnerId: string): void => {
-  trackEvent('partner_card_flipped', { partner_id: partnerId });
+  trackEvent('view_partner_details', { partner_id: partnerId });
 };
 
 export const trackTestimonialViewed = (page: string, testimonialAuthor?: string): void => {
-  trackEvent('testimonial_viewed', { page, testimonial_author: testimonialAuthor });
+  trackEvent('view_testimonial', { page, testimonial_author: testimonialAuthor });
 };
 
 // --- Navigation & Scroll Behavior ---
 
 export const trackSectionScroll = (sectionName: string, page: string): void => {
-  trackEvent('section_scroll', { 
+  trackEvent('scroll_to_section', { 
     section_name: sectionName, 
     page,
     timestamp: new Date().toISOString()
@@ -284,15 +284,15 @@ export const trackSectionScroll = (sectionName: string, page: string): void => {
 };
 
 export const trackHeroCTAClick = (page: string, ctaText: string): void => {
-  trackEvent('hero_cta_click', { page, cta_text: ctaText });
+  trackEvent('click_hero_button', { page, cta_text: ctaText });
 };
 
 export const trackDropdownNavUsed = (menuItem: string): void => {
-  trackEvent('dropdown_nav_used', { menu_item: menuItem });
+  trackEvent('use_navigation_dropdown', { menu_item: menuItem });
 };
 
 export const trackLanguageSwitch = (fromLang: string, toLang: string): void => {
-  trackEvent('language_switch', { from_lang: fromLang, to_lang: toLang });
+  trackEvent('switch_language', { from_language: fromLang, to_language: toLang });
 };
 
 // Scroll depth tracking with debounce protection
@@ -303,7 +303,7 @@ export const trackScrollDepth = (depthPercentage: 25 | 50 | 75 | 100, page: stri
   if (_scrollDepthTracked.has(key)) return;
   
   _scrollDepthTracked.add(key);
-  trackEvent('scroll_depth', { depth_percentage: depthPercentage, page });
+  trackEvent('reach_scroll_depth', { depth_percentage: depthPercentage, page });
 };
 
 export const resetScrollDepthTracking = (): void => {
@@ -311,12 +311,13 @@ export const resetScrollDepthTracking = (): void => {
 };
 
 // --- Cookie Consent Analytics ---
+// Note: These events cannot be tracked client-side since analytics requires consent first
 
 let _cookieConsentShownTime: number | null = null;
 
 export const trackCookieConsentShown = (): void => {
   _cookieConsentShownTime = Date.now();
-  trackEvent('cookie_consent_shown');
+  trackEvent('show_cookie_banner');
 };
 
 export const trackCookieConsentDecision = (decision: 'accepted' | 'declined'): void => {
@@ -324,30 +325,30 @@ export const trackCookieConsentDecision = (decision: 'accepted' | 'declined'): v
     ? Math.round((Date.now() - _cookieConsentShownTime) / 1000) 
     : null;
   
-  trackEvent('cookie_consent_decision', { 
+  trackEvent('decide_cookie_consent', { 
     decision, 
     time_to_decision_seconds: timeToDecision 
   });
 };
 
 export const trackCookieDetailsExpanded = (): void => {
-  trackEvent('cookie_details_expanded');
+  trackEvent('expand_cookie_details');
 };
 
 // --- User Segmentation Events ---
 
 export const trackAudiencePathSelected = (userType: 'athlete' | 'volunteer' | 'organization'): void => {
-  trackEvent('audience_path_selected', { user_type: userType });
+  trackEvent('select_audience_path', { user_type: userType });
 };
 
 export const trackAurelianStoryViewed = (viewDuration?: number): void => {
-  trackEvent('aurelian_story_viewed', { view_duration_seconds: viewDuration });
+  trackEvent('view_aurelian_story', { view_duration_seconds: viewDuration });
 };
 
 // --- Outbound Link Tracking ---
 
 export const trackOutboundLinkClick = (url: string, linkText: string, page: string): void => {
-  trackEvent('outbound_link_click', { 
+  trackEvent('click_outbound_link', { 
     url, 
     link_text: linkText.substring(0, 100), // Truncate for readability
     page 
@@ -357,7 +358,7 @@ export const trackOutboundLinkClick = (url: string, linkText: string, page: stri
 // --- Mobile Menu Tracking ---
 
 export const trackMobileMenuToggle = (isOpen: boolean): void => {
-  trackEvent('mobile_menu_toggle', { action: isOpen ? 'opened' : 'closed' });
+  trackEvent('toggle_mobile_menu', { action: isOpen ? 'open' : 'close' });
 };
 
 // Remove analytics cookies and scripts (for GDPR compliance)
