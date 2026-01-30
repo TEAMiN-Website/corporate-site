@@ -1155,6 +1155,18 @@
           "size": "2.1 MB"
         }
       ]
+    },
+    "slideIn": {
+      "athlete": {
+        "teaser": "Ready for your team?",
+        "expanded": "Find your perfect match on ava.assist – the platform that connects athletes and assistants.",
+        "cta": "Register now"
+      },
+      "assistant": {
+        "teaser": "Ready to support someone?",
+        "expanded": "Find your perfect match on ava.assist – the platform that connects athletes and assistants.",
+        "cta": "Register now"
+      }
     }
   }
 }
