@@ -536,6 +536,11 @@
         "description": "Übe reale Szenarien in unserer praktischen Trainingseinheit mit deinen zukünftigen Kolleg:innen.",
         "cta": "Im BVS Portal anmelden"
       },
+      "teamUp": {
+        "title": "Step 3 | Team Up",
+        "description": "Finde dein SpAss-Match auf der Assistenz-Plattform ava.assist. Gemeinsam könnt ihr entscheiden, ob ihr euch bei einer eurer lokalen \"Offene Hilfe Stellen\" anmeldet oder die Verwaltung selbst übernehmt.",
+        "cta": "Bei ava.assist anmelden"
+      },
       "partner": {
         "title": "Partner",
         "description": "Dein Arbeitgeber ist bereits Partner von uns? Finde heraus, wie du teilnehmen kannst.",
