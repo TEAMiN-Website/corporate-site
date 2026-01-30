@@ -77,7 +77,7 @@ const Signup: React.FC = () => {
  </h2>
  </div>
 
- <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+ <div className="grid md:grid-cols-3 gap-8">
  {/* E-Learning Card */}
  <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
  <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
@@ -198,36 +198,6 @@ const Signup: React.FC = () => {
  >
  {t('signupNew.training.teamUp.cta')} <ExternalLink className="w-4 h-4" />
  </a>
- </div>
- </div>
-
- {/* SSO Partner Card */}
- <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#3F3E34]">
- <div className="bg-[#3F3E34] p-10 text-center relative overflow-hidden h-48">
- {/* Background Image with Overlay */}
- <div className="absolute inset-0">
- <img
- src="partner picture-min.jpg"
- alt="Partner background"
- className="w-full h-full object-cover"
- loading="lazy"
- />
- <div className="absolute inset-0 bg-[#3F3E34]/80"></div>
- </div>
- 
- <div className="relative z-10 h-full flex items-center justify-center">
- <h3 className="text-white text-2xl font-semibold mb-2">{t('signupNew.training.partner.title')}</h3>
- </div>
- </div>
- 
- <div className="p-8">
- <div className="bg-white p-5 rounded-xl mb-5 min-h-[80px] flex items-center justify-center">
- <p className="text-[#3F3E34] italic text-center">{t('signupNew.training.partner.description')}</p>
- </div>
- 
- <button className="w-full bg-[#3F3E34] text-white py-4 px-6 rounded-xl font-semibold hover:bg-[#2F2E24] transition-all duration-300 hover:-translate-y-1 hover:shadow-lg flex items-center justify-center gap-2">
- {t('signupNew.training.partner.cta')} <ExternalLink className="w-4 h-4" />
- </button>
  </div>
  </div>
  </div>
