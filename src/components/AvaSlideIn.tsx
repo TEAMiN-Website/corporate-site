@@ -69,12 +69,12 @@ export default function AvaSlideIn({ pageType }: AvaSlideInProps) {
 
   const colors = pageType === 'athlete'
     ? {
-        teaserBg: '#71B554',
-        ctaBg: '#71B554',
-      }
-    : {
         teaserBg: '#D86D55',
         ctaBg: '#D86D55',
+      }
+    : {
+        teaserBg: '#71B554',
+        ctaBg: '#71B554',
       };
 
   const teaserText = t(`faq.slideIn.${pageType}.teaser`);
