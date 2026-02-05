@@ -220,58 +220,59 @@ const Header: React.FC = () => {
       </div>
 
       {/* Mobile Menu */}
-      <div className={`lg:hidden bg-white border-t border-gray-200 overflow-hidden transition-all duration-300 ease-in-out ${
-        isMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
-      }`}>
-        <div className="px-4 py-2">
-          {navItems.map((item) => (
-            <div key={item.id}>
-              {item.dropdown ? (
-                <>
-                  <button
-                    onClick={() => handleDropdownToggle(item.id)}
-                    className={`flex items-center justify-between w-full rounded-md transition-all duration-300 px-3 py-3 text-base font-medium text-left min-h-[44px] ${getNavItemStyle(item.id, item.dropdown)}`}
-                    aria-label={`Toggle ${item.label} submenu`}
-                    aria-expanded={dropdownOpen === item.id}
+      {isMenuOpen && (
+        <div className="lg:hidden bg-white border-t border-gray-200">
+          <div className="px-4 py-2">
+            {navItems.map((item) => (
+              <div key={item.id}>
+                {item.dropdown ? (
+                  <>
+                    <button
+                      type="button"
+                      onClick={() => handleDropdownToggle(item.id)}
+                      className={`w-full flex items-center justify-between rounded-md transition-all duration-300 px-3 py-3 text-base font-medium text-left min-h-[44px] ${getNavItemStyle(item.id, item.dropdown)}`}
+                      aria-label={`Toggle ${item.label} submenu`}
+                      aria-expanded={dropdownOpen === item.id}
+                    >
+                      <span>{item.label}</span>
+                      <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${dropdownOpen === item.id ? 'rotate-180' : ''}`} />
+                    </button>
+                    {dropdownOpen === item.id && (
+                      <div className="ml-4 mt-2 space-y-1">
+                        {item.dropdown.map((dropdownItem) => (
+                          <Link
+                            key={dropdownItem.id}
+                            to={dropdownItem.id}
+                            onClick={() => {
+                              setIsMenuOpen(false);
+                              setDropdownOpen(null);
+                            }}
+                            className={`flex items-center px-4 py-3 text-sm rounded-md transition-all duration-300 min-h-[44px] ${
+                              location.pathname === dropdownItem.id
+                                ? 'bg-blue-50 text-blue-600 font-medium'
+                                : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
+                            }`}
+                          >
+                            {dropdownItem.label}
+                          </Link>
+                        ))}
+                      </div>
+                    )}
+                  </>
+                ) : (
+                  <Link
+                    to={item.id}
+                    onClick={() => setIsMenuOpen(false)}
+                    className={`flex items-center w-full text-left text-base font-medium rounded-md transition-all duration-300 min-h-[44px] ${item.id === '/' ? getNavItemStyle(item.id) : `px-3 py-2 ${getNavItemStyle(item.id)}`}`}
                   >
-                    <span>{item.label}</span>
-                    <ChevronDown className={`w-5 h-5 transition-transform duration-200 ${dropdownOpen === item.id ? 'rotate-180' : ''}`} />
-                  </button>
-                  {dropdownOpen === item.id && (
-                    <div className="ml-4 mt-2 space-y-1">
-                      {item.dropdown.map((dropdownItem) => (
-                        <Link
-                          key={dropdownItem.id}
-                          to={dropdownItem.id}
-                          onClick={() => {
-                            setIsMenuOpen(false);
-                            setDropdownOpen(null);
-                          }}
-                          className={`flex items-center px-4 py-3 text-sm rounded-md transition-all duration-300 min-h-[44px] ${
-                            location.pathname === dropdownItem.id
-                              ? 'bg-blue-50 text-blue-600 font-medium'
-                              : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
-                          }`}
-                        >
-                          {dropdownItem.label}
-                        </Link>
-                      ))}
-                    </div>
-                  )}
-                </>
-              ) : (
-                <Link
-                  to={item.id}
-                  onClick={() => setIsMenuOpen(false)}
-                  className={`block w-full text-left text-base font-medium rounded-md transition-all duration-300 ${item.id === '/' ? getNavItemStyle(item.id) : `px-3 py-2 ${getNavItemStyle(item.id)}`}`}
-                >
-                  {item.id === '/' ? <span>{item.label}</span> : item.label}
-                </Link>
-              )}
-            </div>
-          ))}
+                    {item.id === '/' ? <span>{item.label}</span> : item.label}
+                  </Link>
+                )}
+              </div>
+            ))}
+          </div>
         </div>
-      </div>
+      )}
     </nav>
   );
 };
