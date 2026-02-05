@@ -20,8 +20,8 @@ const Header: React.FC = () => {
       label: t('nav.athletes'),
       dropdown: [
         { id: '/athletes', label: t('nav.athletes') },
-        { id: '/aurelian', label: t('nav.aurelian') },
-        { id: '/faq', label: t('nav.faq') }
+        { id: '/athletes/aurelian', label: t('nav.aurelian') },
+        { id: '/athletes/faq', label: t('nav.faq') }
       ]
     },
     {
@@ -29,8 +29,8 @@ const Header: React.FC = () => {
       label: t('nav.volunteers'),
       dropdown: [
         { id: '/volunteers', label: t('nav.volunteers') },
-        { id: '/signup', label: t('nav.signup') },
-        { id: '/faq', label: t('nav.faq') }
+        { id: '/volunteers/signup', label: t('nav.signup') },
+        { id: '/volunteers/faq', label: t('nav.faq') }
       ]
     },
     { id: '/partners', label: t('nav.partners') },
