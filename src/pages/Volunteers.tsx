@@ -4,6 +4,7 @@ import { useTranslation } from 'react-i18next';
 import { ChevronLeft, ChevronRight, ChevronDown, Play, Pause } from 'lucide-react';
 import { trackHeroCTAClick, trackTestimonialViewed, trackSignupIntent } from '../utils/analytics';
 import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
+import AvaSlideIn from '../components/AvaSlideIn';
 
 interface Testimonial {
   quote: string;
@@ -446,6 +447,8 @@ const Volunteers: React.FC = () => {
  </div>
  </div>
  </section>
+
+ <AvaSlideIn pageType="assistant" />
  </div>
  );
 };

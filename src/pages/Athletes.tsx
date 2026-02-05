@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { ChevronDown, Search, MessageCircle, Car, Users, Mail, Copy } from 'lucide-react';
 import { trackHeroCTAClick, trackExternalSignup, trackEmailCopyClick, trackSignupIntent } from '../utils/analytics';
 import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
+import AvaSlideIn from '../components/AvaSlideIn';
 
 interface BarrierTile {
   label: string;
@@ -257,6 +258,8 @@ const Athletes: React.FC = () => {
           </div>
         </div>
       </section>
+
+      <AvaSlideIn pageType="athlete" />
     </div>
   );
 };

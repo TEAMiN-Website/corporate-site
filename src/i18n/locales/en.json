@@ -536,6 +536,11 @@
         "description": "Practice real-word scenarios in our hands-on training session with your fellow aspiring assistants.",
         "cta": "Sign up on BVS Portal"
       },
+      "teamUp": {
+        "title": "Step 3 | Team Up",
+        "description": "Find your SpAss match on the assistance platform ava.assist. Together, you can decide whether to sign up at one of your local \"Offene Hilfe Stellen\" or handle the admin yourself.",
+        "cta": "Join ava.assist"
+      },
       "partner": {
         "title": "Partners",
         "description": "Your employer is already a partner of ours? Find out how to join.",
@@ -1150,6 +1155,18 @@
           "size": "2.1 MB"
         }
       ]
+    },
+    "slideIn": {
+      "athlete": {
+        "teaser": "Ready for your team?",
+        "expanded": "Find your perfect match on ava.assist – the platform that connects athletes and assistants.",
+        "cta": "Register now"
+      },
+      "assistant": {
+        "teaser": "Ready to support someone?",
+        "expanded": "Find your perfect match on ava.assist – the platform that connects athletes and assistants.",
+        "cta": "Register now"
+      }
     }
   }
 }
