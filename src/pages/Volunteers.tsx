@@ -437,7 +437,7 @@ const Volunteers: React.FC = () => {
  <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
  <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>
  <Link
- to={index === 0 ? "/signup" : "/contact"}
+ to={index === 0 ? "/volunteers/signup" : "/contact"}
  className="inline-block bg-[#D86D55] text-white px-6 py-3 rounded-full font-semibold hover:bg-[#71B554] transition-colors duration-300"
  >
  {entry.cta}

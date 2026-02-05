@@ -63,14 +63,15 @@ const AppContent: React.FC = () => {
                               <Route path="about" element={<About />} />
                               <Route path="spass" element={<SpAss />} />
                               <Route path="athletes" element={<Athletes />} />
-                              <Route path="aurelian" element={<Aurelian />} />
+                              <Route path="athletes/aurelian" element={<Aurelian />} />
+                              <Route path="athletes/faq" element={<FAQ />} />
                               <Route path="volunteers" element={<Volunteers />} />
-                              <Route path="signup" element={<Signup />} />
+                              <Route path="volunteers/signup" element={<Signup />} />
+                              <Route path="volunteers/faq" element={<FAQ />} />
                               <Route path="partners" element={<Partners />} />
                               <Route path="impressum" element={<Impressum />} />
                               <Route path="privacy" element={<Privacy />} />
                               <Route path="terms" element={<Terms />} />
-                              <Route path="faq" element={<FAQ />} />
                               <Route path="*" element={<NotFound />} />
                         </Route>
                   </Routes>

@@ -109,7 +109,7 @@ const About: React.FC = () => {
  <section className="relative min-h-[600px] overflow-hidden">
  <div
  className="absolute inset-0 bg-cover bg-center"
- style={{ backgroundImage: 'url("/Angebote-min copy copy.jpg")' }}
+ style={{ backgroundImage: 'url("/Angebote-min.jpg")' }}
  ></div>
  <div className="absolute inset-0 bg-[#3F3E34]/[0.85]"></div>
  <div className="relative z-10 py-24">
