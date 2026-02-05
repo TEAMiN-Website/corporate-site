@@ -399,6 +399,11 @@
     },
     "paths": {
       "title": "Dein Weg zum inklusiven Sport",
+      "inclusiveMap": {
+        "title": "Inklusive Sportvereine und Organisationen in Bayern",
+        "description": "Hier findest Du eine Übersichtskarte mit inklusiven Sportangeboten, Veranstaltungen, Referent:innen oder Ansprechpartner:innen zum Thema Inklusion in Bayern.",
+        "cta": "Zur Karte"
+      },
       "becomeAssistant": {
         "title": "Für Sportassistent:innen",
         "description": "Begleite andere auf ihrer Sportreise und werde Teil der Community",

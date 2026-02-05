@@ -399,6 +399,11 @@
     },
     "paths": {
       "title": "Your Path to Inclusive Sport",
+      "inclusiveMap": {
+        "title": "Inclusive Sports Clubs and Organizations in Bavaria",
+        "description": "Here you'll find an overview map with inclusive sports offerings, events, speakers, and contact persons for inclusion topics in Bavaria.",
+        "cta": "View Map"
+      },
       "becomeAssistant": {
         "title": "For Sport Assistants",
         "description": "Accompany others on their sports journey and become part of the community",
