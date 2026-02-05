@@ -28,7 +28,7 @@ const ResourceCard: React.FC<ResourceCardProps> = ({
     const colorMap = {
       athletes: 'bg-[#71B554] hover:bg-[#5fa043]',
       assistants: 'bg-[#D86D55] hover:bg-[#c55d45]',
-      clubs: 'bg-[#3F3E34] hover:bg-[#2f2e24]',
+      clubs: 'bg-gradient-to-r from-[#D86D55] to-[#71B554] hover:opacity-90',
       both: 'bg-gradient-to-r from-[#D86D55] to-[#71B554] hover:opacity-90'
     };
     return colorMap[cat as keyof typeof colorMap] || colorMap.athletes;
