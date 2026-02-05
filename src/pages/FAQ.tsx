@@ -18,10 +18,12 @@ interface FAQCategory {
 interface ResourceItem {
   title: string;
   description: string;
-  category: 'athletes' | 'assistants' | 'clubs';
+  category: 'athletes' | 'assistants' | 'clubs' | 'both';
   section: 'general' | 'marketing';
-  filename: string;
-  size: string;
+  filename?: string;
+  size?: string;
+  externalUrl?: string;
+  buttonText?: string;
 }
 
 const FAQ: React.FC = () => {
@@ -136,6 +138,8 @@ const FAQ: React.FC = () => {
                       category={resource.category}
                       filename={resource.filename}
                       size={resource.size}
+                      externalUrl={resource.externalUrl}
+                      buttonText={resource.buttonText}
                     />
                   ))}
                 </div>

@@ -1133,6 +1133,7 @@
       "title": "Ressourcen & Downloads",
       "subtitle": "Hilfreiche Dokumente und Leitfäden für Sportler:innen, Assistent:innen und Sportvereine",
       "downloadButton": "PDF herunterladen",
+      "viewMapButton": "Zur Karte",
       "fileSize": "Dateigröße",
       "sections": {
         "general": "Allgemeine Informationen",
@@ -1141,9 +1142,18 @@
       "categories": {
         "athletes": "Für Sportler:innen",
         "assistants": "Für Sportassistent:innen",
-        "clubs": "Für Sportvereine, Schulen und andere Organisationen"
+        "clubs": "Für Sportvereine, Schulen und andere Organisationen",
+        "both": "Für Sportassistent:innen und Sportler:innen"
       },
       "items": [
+        {
+          "title": "Inklusive Sportvereine und Organisationen in Bayern",
+          "description": "Entdecke inklusive Sportvereine und Organisationen in Bayern auf der interaktiven Karte. Finde Angebote in deiner Nähe und werde Teil einer inklusiven Sportgemeinschaft.",
+          "category": "both",
+          "section": "general",
+          "externalUrl": "https://familiensportinklusiv.de/inklusionsmap/",
+          "buttonText": "Zur Karte"
+        },
         {
           "title": "TEAMiN & SpAss Übersicht",
           "description": "Umfassende Übersicht über das inklusive TEAMiN-Netzwerk und das SpAss (Sport-Assistenz) Programm, einschließlich Ausbildungsdetails, Partnerschaftsmöglichkeiten und wie Sie sich engagieren können.",

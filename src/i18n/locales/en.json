@@ -1132,6 +1132,7 @@
       "title": "Resources & Downloads",
       "subtitle": "Helpful documents and guides for athletes, assistants, and sports clubs",
       "downloadButton": "Download PDF",
+      "viewMapButton": "View Map",
       "fileSize": "File size",
       "sections": {
         "general": "General Information",
@@ -1140,9 +1141,18 @@
       "categories": {
         "athletes": "For Athletes",
         "assistants": "For Sport Assistants",
-        "clubs": "For Sports Clubs, Schools and Other Organizations"
+        "clubs": "For Sports Clubs, Schools and Other Organizations",
+        "both": "For Sport Assistants and Athletes"
       },
       "items": [
+        {
+          "title": "Inclusive Sports Clubs and Organizations in Bavaria",
+          "description": "Discover inclusive sports clubs and organizations in Bavaria on the interactive map. Find offerings near you and become part of an inclusive sports community.",
+          "category": "both",
+          "section": "general",
+          "externalUrl": "https://familiensportinklusiv.de/inklusionsmap/",
+          "buttonText": "View Map"
+        },
         {
           "title": "TEAMiN & SpAss Overview",
           "description": "Comprehensive overview of TEAMiN's inclusive network and the SpAss (Sport-Assistenz) program, including training details, partnership opportunities, and how to get involved.",
