@@ -228,13 +228,22 @@ const Header: React.FC = () => {
  <div key={item.id}>
  {item.dropdown ? (
  <>
+ <div className={`flex items-center justify-between rounded-md transition-all duration-300 ${getNavItemStyle(item.id, item.dropdown)}`}>
+ <Link
+ to={item.id}
+ onClick={() => setIsMenuOpen(false)}
+ className="flex-1 px-3 py-2 text-base font-medium text-left"
+ >
+ {item.label}
+ </Link>
  <button
  onClick={() => handleDropdownToggle(item.id)}
- className={`block w-full text-left px-3 py-2 text-base font-medium rounded-md transition-all duration-300 flex items-center justify-between ${getNavItemStyle(item.id, item.dropdown)}`}
+ className="px-3 py-2 hover:bg-black/5 rounded-md transition-colors duration-200"
+ aria-label={`Toggle ${item.label} submenu`}
  >
- <span>{item.label}</span>
  <ChevronDown className={`w-4 h-4 transition-transform duration-200 ${dropdownOpen === item.id ? 'rotate-180' : ''}`} />
  </button>
+ </div>
  {dropdownOpen === item.id && (
  <div className="ml-4 mt-2 space-y-1">
  {item.dropdown.map((dropdownItem) => (
@@ -246,8 +255,8 @@ const Header: React.FC = () => {
  setDropdownOpen(null);
  }}
  className={`block px-3 py-2 text-sm rounded-md transition-all duration-300 ${
- location.pathname === dropdownItem.id 
- ? 'bg-blue-50 text-blue-600' 
+ location.pathname === dropdownItem.id
+ ? 'bg-blue-50 text-blue-600'
  : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
  }`}
  >
