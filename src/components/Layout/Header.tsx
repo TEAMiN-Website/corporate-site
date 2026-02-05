@@ -221,7 +221,7 @@ const Header: React.FC = () => {
 
       {/* Mobile Menu */}
       <div className={`lg:hidden bg-white border-t border-gray-200 overflow-hidden transition-all duration-300 ease-in-out ${
-        isMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0'
+        isMenuOpen ? 'max-h-[600px] opacity-100' : 'max-h-0 opacity-0 pointer-events-none'
       }`}>
         <div className="px-4 py-2">
           {navItems.map((item) => (
@@ -247,7 +247,7 @@ const Header: React.FC = () => {
                             setIsMenuOpen(false);
                             setDropdownOpen(null);
                           }}
-                          className={`block px-4 py-3 text-sm rounded-md transition-all duration-300 min-h-[44px] flex items-center ${
+                          className={`flex items-center px-4 py-3 text-sm rounded-md transition-all duration-300 min-h-[44px] ${
                             location.pathname === dropdownItem.id
                               ? 'bg-blue-50 text-blue-600 font-medium'
                               : 'text-gray-700 hover:bg-gray-100 hover:text-gray-900'
