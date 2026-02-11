@@ -427,6 +427,10 @@
     },
     "contact": {
       "title": "Questions? Contact Us!",
+      "description": "Questions, ideas, concerns? We look forward to your email",
+      "cta": "Contact Us",
+      "copied": "Copied!",
+      "copy": "Copy Email",
       "form": {
         "name": "Name",
         "email": "Email",

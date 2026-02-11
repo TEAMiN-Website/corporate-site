@@ -427,6 +427,10 @@
     },
     "contact": {
       "title": "Fragen? Melde Dich bei uns!",
+      "description": "Fragen, Ideen, Sorgen? Wir freuen uns auf deine Email",
+      "cta": "Schreib uns",
+      "copied": "Kopiert!",
+      "copy": "E-Mail kopieren",
       "form": {
         "name": "Name",
         "email": "E-Mail",

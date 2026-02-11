@@ -6,6 +6,7 @@ import { trackEmailCopyClick, trackHeroCTAClick, trackAudiencePathSelected } fro
 import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 const ContactButton: React.FC = () => {
+ const { t } = useTranslation();
  const [isHovered, setIsHovered] = useState(false);
  const [showCopied, setShowCopied] = useState(false);
 
@@ -32,12 +33,12 @@ const ContactButton: React.FC = () => {
       <Copy className="w-5 h-5" />
      </>
     ) : (
-     <span>Schreib uns</span>
+     <span>{t('homeNew.contact.cta')}</span>
     )}
    </button>
    {showCopied && (
     <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#71B554] text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
-     Kopiert!
+     {t('homeNew.contact.copied')}
     </div>
    )}
   </div>
@@ -283,7 +284,7 @@ const Home: React.FC = () => {
  </div>
  <div className="p-8 flex-grow bg-[#F7ECD5] flex flex-col items-center justify-center text-center">
  <p className="text-[#3F3E34] text-xl md:text-2xl leading-relaxed mb-8">
- Fragen, Ideen, Sorgen? Wir freuen uns auf deine Email 😊
+ {t('homeNew.contact.description')}
  </p>
  <ContactButton />
  </div>
