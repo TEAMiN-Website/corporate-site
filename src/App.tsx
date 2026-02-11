@@ -74,6 +74,7 @@ const AppContent: React.FC = () => {
                               <Route path="impressum" element={<Impressum />} />
                               <Route path="privacy" element={<Privacy />} />
                               <Route path="terms" element={<Terms />} />
+                              <Route path="faq" element={<FAQ />} />
                               <Route path="*" element={<NotFound />} />
                         </Route>
                   </Routes>
