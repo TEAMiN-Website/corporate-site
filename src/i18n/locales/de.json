@@ -436,6 +436,27 @@
         "email": "E-Mail",
         "message": "Nachricht",
         "send": "Senden"
+      },
+      "cards": {
+        "general": {
+          "questions": "Möchtest du mehr erfahren, bevor die du mit dem E-Learning anfängst?",
+          "findClub": "Hast du Probleme, den passenden Sportverein zu finden?",
+          "practiceDay": "Gibt es in deiner Stadt oder Organisation Interesse an einem Praxistag?",
+          "exchange": "Oder möchtest du dich einfach zum Thema Inklusion in Sport und darüber hinaus austauschen?",
+          "whatever": "Was auch immer dein Anliegen"
+        },
+        "emergency": {
+          "title": "Probleme oder Notfälle bei der Assistenz?",
+          "text": "Melde dich bei der Ehrenamtsorganisation, die dich angestellt hat (Offene Hilfen). Finde jetzt deine Offene Hilfe Stelle",
+          "cta": "Zur Übersicht"
+        },
+        "ava": {
+          "title": "Fragen zu avaAssist?",
+          "text1": "Logge dich auf ava",
+          "text2": "ein und gehe zur Hilfe-Seite",
+          "text3": "Alternativ schick eine Email.",
+          "cta": "Schreib ava"
+        }
       }
     }
   },

@@ -436,6 +436,27 @@
         "email": "Email",
         "message": "Message",
         "send": "Send"
+      },
+      "cards": {
+        "general": {
+          "questions": "Would you like to learn more before starting the e-learning?",
+          "findClub": "Are you having trouble finding the right sports club?",
+          "practiceDay": "Is there interest in a practical training day in your city or organization?",
+          "exchange": "Or would you simply like to discuss the topic of inclusion in sports and beyond?",
+          "whatever": "Whatever your concern"
+        },
+        "emergency": {
+          "title": "Problems or Emergencies with Assistance?",
+          "text": "Contact the volunteer organization that employed you (Offene Hilfen). Find your Offene Hilfe office now",
+          "cta": "View Overview"
+        },
+        "ava": {
+          "title": "Questions about avaAssist?",
+          "text1": "Log in to ava",
+          "text2": "and go to the help page",
+          "text3": "Alternatively, send an email.",
+          "cta": "Contact ava"
+        }
       }
     }
   },
