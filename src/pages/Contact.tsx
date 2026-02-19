@@ -1,17 +1,48 @@
 import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Mail, Copy, Check } from 'lucide-react';
+import { Mail, Copy } from 'lucide-react';
+
+const ContactButton: React.FC = () => {
+  const { t } = useTranslation();
+  const [isHovered, setIsHovered] = useState(false);
+  const [showCopied, setShowCopied] = useState(false);
+
+  const handleClick = () => {
+    if (isHovered) {
+      navigator.clipboard.writeText('kontakt@teaminklusion.de');
+      setShowCopied(true);
+      setTimeout(() => setShowCopied(false), 2000);
+    }
+  };
+
+  return (
+    <div className="relative inline-block">
+      <button
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
+        onClick={handleClick}
+        className="bg-[#3F3E34] text-[#F7ECD5] px-8 py-4 rounded-full font-semibold hover:bg-[#2A2928] transition-all duration-300 flex items-center space-x-2 group"
+      >
+        {isHovered ? (
+          <>
+            <span>kontakt@teaminklusion.de</span>
+            <Copy className="w-5 h-5" />
+          </>
+        ) : (
+          <span>{t('homeNew.contact.cta')}</span>
+        )}
+      </button>
+      {showCopied && (
+        <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#71B554] text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
+          {t('homeNew.contact.copied')}
+        </div>
+      )}
+    </div>
+  );
+};
 
 const Contact: React.FC = () => {
   const { t } = useTranslation();
-  const [copied, setCopied] = useState(false);
-  const email = 'kontakt@teaminklusion.de';
-
-  const handleCopyEmail = () => {
-    navigator.clipboard.writeText(email);
-    setCopied(true);
-    setTimeout(() => setCopied(false), 2000);
-  };
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-[#F7ECD5] to-white dark:from-gray-900 dark:to-gray-800">
@@ -46,31 +77,8 @@ const Contact: React.FC = () => {
                   {t('homeNew.contact.description')}
                 </h2>
 
-                <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-8">
-                  <a
-                    href={`mailto:${email}`}
-                    className="bg-[#3F3E34] text-[#F7ECD5] px-8 py-4 rounded-full font-semibold hover:bg-[#2A2928] transition-all duration-300 flex items-center space-x-2"
-                  >
-                    <Mail className="w-5 h-5" />
-                    <span>{email}</span>
-                  </a>
-
-                  <button
-                    onClick={handleCopyEmail}
-                    className="bg-[#71B554] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#5A9443] transition-all duration-300 flex items-center space-x-2"
-                  >
-                    {copied ? (
-                      <>
-                        <Check className="w-5 h-5" />
-                        <span>{t('homeNew.contact.copied')}</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="w-5 h-5" />
-                        <span>{t('homeNew.contact.copy')}</span>
-                      </>
-                    )}
-                  </button>
+                <div className="flex items-center justify-center mt-8">
+                  <ContactButton />
                 </div>
               </div>
             </div>
