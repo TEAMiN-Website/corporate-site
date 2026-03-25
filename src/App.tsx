@@ -16,6 +16,7 @@ import Impressum from './pages/Impressum';
 import Privacy from './pages/Privacy';
 import Terms from './pages/Terms';
 import FAQ from './pages/FAQ';
+import Contact from './pages/Contact';
 import './i18n';
 import { initializeAnalytics, removeAnalytics, trackPageView } from './utils/analytics';
 
@@ -69,9 +70,11 @@ const AppContent: React.FC = () => {
                               <Route path="volunteers/signup" element={<Signup />} />
                               <Route path="volunteers/faq" element={<FAQ />} />
                               <Route path="partners" element={<Partners />} />
+                              <Route path="contact" element={<Contact />} />
                               <Route path="impressum" element={<Impressum />} />
                               <Route path="privacy" element={<Privacy />} />
                               <Route path="terms" element={<Terms />} />
+                              <Route path="faq" element={<FAQ />} />
                               <Route path="*" element={<NotFound />} />
                         </Route>
                   </Routes>

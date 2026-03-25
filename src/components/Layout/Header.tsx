@@ -34,6 +34,7 @@ const Header: React.FC = () => {
       ]
     },
     { id: '/partners', label: t('nav.partners') },
+    { id: '/contact', label: t('nav.contact') },
   ];
 
   const toggleLanguage = () => {
@@ -101,6 +102,8 @@ const Header: React.FC = () => {
         return 'bg-[#F7ECD5] text-gray-900 ';
       } else if (itemPath === '/partners') {
         return 'bg-[#3F3E34] text-white';
+      } else if (itemPath === '/contact') {
+        return 'bg-blue-600 text-white';
       } else {
         return 'bg-blue-600 text-white'; // Default active style for other pages
       }
@@ -119,6 +122,8 @@ const Header: React.FC = () => {
       return 'text-gray-600 hover:bg-[#F7ECD5] hover:text-gray-900 transition-all duration-300';
     } else if (itemPath === '/partners') {
       return 'text-gray-600 hover:bg-[#3F3E34] hover:text-white transition-all duration-300';
+    } else if (itemPath === '/contact') {
+      return 'text-gray-600 hover:bg-blue-600 hover:text-white transition-all duration-300';
     }
 
     return 'text-gray-600 hover:text-blue-600 hover:text-blue-400';

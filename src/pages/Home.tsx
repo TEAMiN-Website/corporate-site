@@ -6,6 +6,7 @@ import { trackEmailCopyClick, trackHeroCTAClick, trackAudiencePathSelected } fro
 import useScrollDepthTracking from '../hooks/useScrollDepthTracking';
 
 const ContactButton: React.FC = () => {
+ const { t } = useTranslation();
  const [isHovered, setIsHovered] = useState(false);
  const [showCopied, setShowCopied] = useState(false);
 
@@ -32,12 +33,12 @@ const ContactButton: React.FC = () => {
       <Copy className="w-5 h-5" />
      </>
     ) : (
-     <span>Schreib uns</span>
+     <span>{t('homeNew.contact.cta')}</span>
     )}
    </button>
    {showCopied && (
     <div className="absolute -top-10 left-1/2 transform -translate-x-1/2 bg-[#71B554] text-white px-4 py-2 rounded-lg text-sm whitespace-nowrap">
-     Kopiert!
+     {t('homeNew.contact.copied')}
     </div>
    )}
   </div>
@@ -125,34 +126,6 @@ const Home: React.FC = () => {
  </h2>
 
  <div className="grid md:grid-cols-2 gap-10">
- {/* Inclusive Map Card */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
- <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
-
- <div className="h-48 relative overflow-hidden">
- <img
- src="Inklusion sign.jpg"
- alt="Inclusive sports map - sports clubs and organizations in Bavaria"
- className="w-full h-full object-cover"
- loading="lazy"
- />
- <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/10 to-[#D86D55]/10"></div>
- </div>
-
- <div className="p-8 text-center flex flex-col flex-grow">
- <h3 className="text-2xl font-bold mb-4 text-[#3F3E34]">{t('homeNew.paths.inclusiveMap.title')}</h3>
- <p className="text-[#B3ADAA] mb-6 italic flex-grow">{t('homeNew.paths.inclusiveMap.description')}</p>
- <a
- href="https://familiensportinklusiv.de/inklusionsmap/"
- target="_blank"
- rel="noopener noreferrer"
- className="inline-block bg-gradient-to-r from-[#71B554] to-[#D86D55] text-white px-8 py-3 rounded-full font-semibold tracking-wider text-sm hover:from-[#D86D55] hover:to-[#71B554] hover:-translate-y-1 hover:shadow-lg transition-all duration-300"
- >
- {t('homeNew.paths.inclusiveMap.cta')}
- </a>
- </div>
- </div>
-
  {/* Become Sport Assistant Card */}
  <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
@@ -283,7 +256,7 @@ const Home: React.FC = () => {
  </div>
  <div className="p-8 flex-grow bg-[#F7ECD5] flex flex-col items-center justify-center text-center">
  <p className="text-[#3F3E34] text-xl md:text-2xl leading-relaxed mb-8">
- Fragen, Ideen, Sorgen? Wir freuen uns auf deine Email 😊
+ {t('homeNew.contact.description')}
  </p>
  <ContactButton />
  </div>
