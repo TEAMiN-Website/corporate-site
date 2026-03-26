@@ -127,7 +127,7 @@ const Home: React.FC = () => {
 
  <div className="grid md:grid-cols-2 gap-10">
  {/* Become Sport Assistant Card */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
+ <div className="bg-white rounded-3xl overflow-hidden shadow-lg relative flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
 
  <div className="h-48 relative overflow-hidden">
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
  </div>
 
  {/* Athletes & Families Card */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
+ <div className="bg-white rounded-3xl overflow-hidden shadow-lg relative flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
 
  <div className="h-48 relative overflow-hidden">
@@ -181,7 +181,7 @@ const Home: React.FC = () => {
  </div>
 
  {/* TEAMiN - The Inclusive Network Card */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
+ <div className="bg-white rounded-3xl overflow-hidden shadow-lg relative flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
 
  <div className="h-48 relative overflow-hidden">
@@ -207,7 +207,7 @@ const Home: React.FC = () => {
  </div>
 
  {/* SpAss Program Card */}
- <div className="bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 relative flex flex-col">
+ <div className="bg-white rounded-3xl overflow-hidden shadow-lg relative flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#71B554] to-[#D86D55]"></div>
 
  <div className="h-48 relative overflow-hidden">
@@ -244,7 +244,7 @@ const Home: React.FC = () => {
  </h2>
 
  <div className="max-w-2xl mx-auto">
- <div className="bg-white rounded-2xl shadow-lg overflow-hidden hover:shadow-xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+ <div className="bg-white rounded-2xl shadow-lg overflow-hidden flex flex-col">
  <div className="relative h-64 overflow-hidden">
  <img
  src="/postkasten.jpg"
