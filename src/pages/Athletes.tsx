@@ -106,7 +106,7 @@ const Athletes: React.FC = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
             {barrierTiles.map((tile, index) => (
-              <div key={index} className="relative p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden min-h-[200px] flex items-center justify-center">
+              <div key={index} className="relative p-8 rounded-2xl shadow-lg overflow-hidden min-h-[200px] flex items-center justify-center">
                 <img loading="lazy" src={tile.image} alt="" className="absolute inset-0 w-full h-full object-cover" />
                 <div className="absolute inset-0" style={{ backgroundColor: tile.color }}></div>
                 <div className="relative z-10 text-center">
@@ -223,7 +223,7 @@ const Athletes: React.FC = () => {
 
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {(t('athletes.getStarted.options', { returnObjects: true }) as Array<{title: string, description: string, cta?: string, email?: string, link?: string}>).map((entry, index) => (
-              <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden flex flex-col">
+              <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg text-center relative overflow-hidden flex flex-col">
                 <div className="absolute top-0 left-0 right-0 h-1 bg-[#71B554]"></div>
                 <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
                 <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>
