@@ -132,7 +132,7 @@ const Home: React.FC = () => {
 
  <div className="h-48 relative overflow-hidden">
  <img
- src="assistant picture 1.jpg"
+ src="/assistant picture 1.jpg"
  alt="People of different ages helping and supporting in sports"
  className="w-full h-full object-cover"
  loading="lazy"
@@ -159,7 +159,7 @@ const Home: React.FC = () => {
 
  <div className="h-48 relative overflow-hidden">
  <img
- src="athlete 2.jpg"
+ src="/athlete 2.jpg"
  alt="Families doing sports together - parents and children actively participating"
  className="w-full h-full object-cover"
  loading="lazy"
@@ -186,7 +186,7 @@ const Home: React.FC = () => {
 
  <div className="h-48 relative overflow-hidden">
  <img
- src="TEAMiN Network.jpg"
+ src="/TEAMiN Network.jpg"
  alt="Team network imagery - diverse group, collaborative, inclusive community"
  className="w-full h-full object-cover"
  loading="lazy"
@@ -212,7 +212,7 @@ const Home: React.FC = () => {
 
  <div className="h-48 relative overflow-hidden">
  <img
- src="athlete 7-min.jpg"
+ src="/athlete 7-min.jpg"
  alt="Diverse sports and activities - variety of possibilities, welcoming environment"
  className="w-full h-full object-cover"
  loading="lazy"
