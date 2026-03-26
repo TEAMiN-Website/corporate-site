@@ -69,10 +69,10 @@ const Header: React.FC = () => {
     return () => document.removeEventListener('keydown', handleEscape);
   }, []);
 
-  // Close dropdown when clicking outside
+  // Close dropdown when clicking outside (desktop only — mobile menu handles its own closing via onClick)
   useEffect(() => {
     const handleClickOutside = (event: MouseEvent) => {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      if (window.innerWidth >= 1024 && dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
         setDropdownOpen(null);
       }
     };
