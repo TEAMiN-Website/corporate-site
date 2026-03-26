@@ -130,7 +130,7 @@ const Signup: React.FC = () => {
  {/* Background Image with Overlay */}
  <div className="absolute inset-0">
  <img
- src="athlete 7-min-min.jpg"
+ src="athlete 7-min.jpg"
  alt="Praxistag background"
  className="w-full h-full object-cover"
  loading="lazy"
@@ -217,7 +217,7 @@ const Signup: React.FC = () => {
  <div className="relative rounded-[25px] p-16 shadow-lg overflow-hidden h-96 flex flex-col justify-center items-center">
  {/* Background Image */}
  <img
- src="aurelian 3-min-min.jpg"
+ src="aurelian 3-min copy.jpg"
  alt="Aurelian smiling in sports jersey"
  className="absolute inset-0 w-full h-full object-cover"
  style={{ objectPosition: 'center 20%' }}

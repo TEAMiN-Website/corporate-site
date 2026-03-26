@@ -112,7 +112,7 @@ const SpAss: React.FC = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: 'url("/athlete 7-min-min copy.jpg")',
+            backgroundImage: 'url("/athlete 7-min.jpg")',
             backgroundPosition: '40% center'
           }}
         ></div>
