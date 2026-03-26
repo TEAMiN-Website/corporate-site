@@ -178,7 +178,7 @@ const Volunteers: React.FC = () => {
  { image: '/assistant page tile human.jpg', overlay: 'rgba(216, 109, 85, 0.6)' }
  ];
  return (
- <div key={index} className="relative p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 overflow-hidden">
+ <div key={index} className="relative p-8 rounded-2xl shadow-lg overflow-hidden">
  <img loading="lazy" src={backgrounds[index].image} alt="" className="absolute inset-0 w-full h-full object-cover" />
  <div className="absolute inset-0" style={{ backgroundColor: backgrounds[index].overlay }}></div>
  <div className="relative z-10 text-center">
@@ -221,7 +221,7 @@ const Volunteers: React.FC = () => {
            <div className="grid lg:grid-cols-4 gap-8">
  {(t('volunteersNew.journey.steps', { returnObjects: true }) as JourneyStep[]).map((step, index) => (
  <div key={index} className="text-center relative h-full">
- <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
+ <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
  <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ backgroundColor: 'rgba(216, 109, 85, 0.85)' }}>
  {index + 1}
  </div>
@@ -432,7 +432,7 @@ const Volunteers: React.FC = () => {
 
          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
  {(t('volunteersNew.getStarted.options', { returnObjects: true }) as GetStartedOption[]).filter((_, index) => index !== 1).map((entry, index) => (
- <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 text-center relative overflow-hidden flex flex-col">
+ <div key={index} className="bg-white/95 backdrop-blur-sm p-8 rounded-2xl shadow-lg text-center relative overflow-hidden flex flex-col">
  <div className="absolute top-0 left-0 right-0 h-1 bg-[#D86D55]"></div>
  <h3 className="text-2xl font-bold text-[#3F3E34] mb-4">{entry.title}</h3>
  <p className="text-[#B3ADAA] mb-6 leading-relaxed flex-grow">{entry.description}</p>

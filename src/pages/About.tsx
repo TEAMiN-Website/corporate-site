@@ -171,7 +171,7 @@ const About: React.FC = () => {
 
  <div className="grid md:grid-cols-3 gap-8">
  {/* Who We Are Tile */}
- <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+ <div className="relative rounded-3xl overflow-hidden shadow-lg flex flex-col">
  <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
  <div className="relative z-10 p-10 flex flex-col flex-grow">
  <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.whoWeAre.title')}</h3>
@@ -182,7 +182,7 @@ const About: React.FC = () => {
  </div>
 
  {/* Mission Tile */}
- <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+ <div className="relative rounded-3xl overflow-hidden shadow-lg flex flex-col">
  <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
  <div className="relative z-10 p-10 flex flex-col flex-grow">
  <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.mission.title')}</h3>
@@ -193,7 +193,7 @@ const About: React.FC = () => {
  </div>
 
  {/* Vision Tile */}
- <div className="relative rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 flex flex-col">
+ <div className="relative rounded-3xl overflow-hidden shadow-lg flex flex-col">
  <div className="absolute inset-0 bg-gradient-to-b from-[#71B554]/70 to-[#D86D55]/70"></div>
  <div className="relative z-10 p-10 flex flex-col flex-grow">
  <h3 className="text-2xl font-bold mb-6 text-white uppercase tracking-wide">{t('about.missionVision.vision.title')}</h3>
@@ -324,7 +324,7 @@ const About: React.FC = () => {
  </div>
 
  <div className="grid md:grid-cols-3 gap-10">
- <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+ <div className="relative rounded-[25px] p-8 shadow-lg overflow-hidden group">
  <img loading="lazy" src="/assistant picture 2 crop copy.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
  <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/90 to-[#D86D55]/80" />
  <div className="relative z-10 h-full flex flex-col justify-between">
@@ -346,7 +346,7 @@ const About: React.FC = () => {
  </div>
  </div>
 
- <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+ <div className="relative rounded-[25px] p-8 shadow-lg overflow-hidden group">
  <img loading="lazy" src="/athlete 1.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
  <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80" />
  <div className="relative z-10 h-full flex flex-col justify-between">
@@ -368,7 +368,7 @@ const About: React.FC = () => {
  </div>
  </div>
 
- <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+ <div className="relative rounded-[25px] p-8 shadow-lg overflow-hidden group">
  <img loading="lazy" src="/partner picture-min.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
  <div className="absolute inset-0 bg-gradient-to-br from-[#3F3E34]/90 to-[#3F3E34]/85" />
  <div className="relative z-10 h-full flex flex-col justify-between">

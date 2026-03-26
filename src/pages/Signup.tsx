@@ -79,7 +79,7 @@ const Signup: React.FC = () => {
 
  <div className="grid md:grid-cols-3 gap-8">
  {/* E-Learning Card */}
- <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
+ <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-lg border-2 border-transparent hover:border-[#D86D55]">
  <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
  {/* Number 1 in top right corner */}
  <div className="absolute top-4 right-4">
@@ -120,7 +120,7 @@ const Signup: React.FC = () => {
  </div>
 
  {/* Praxistag Card */}
- <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
+ <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-lg border-2 border-transparent hover:border-[#D86D55]">
  <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
  {/* Number 2 in top right corner */}
  <div className="absolute top-4 right-4">
@@ -161,7 +161,7 @@ const Signup: React.FC = () => {
  </div>
 
  {/* Team Up Card */}
- <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 hover:-translate-y-2 border-2 border-transparent hover:border-[#D86D55]">
+ <div className="bg-[#F7ECD5] rounded-3xl overflow-hidden shadow-lg border-2 border-transparent hover:border-[#D86D55]">
  <div className="bg-[#D86D55] p-10 text-center relative overflow-hidden h-48">
  {/* Number 3 in top right corner */}
  <div className="absolute top-4 right-4">
@@ -214,7 +214,7 @@ const Signup: React.FC = () => {
  <section className="py-24 bg-[#F7ECD5]">
  <div className="max-w-3xl mx-auto px-4">
  <div className="text-center">
- <div className="relative rounded-[25px] p-16 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl overflow-hidden h-96 flex flex-col justify-center items-center">
+ <div className="relative rounded-[25px] p-16 shadow-lg overflow-hidden h-96 flex flex-col justify-center items-center">
  {/* Background Image */}
  <img
  src="aurelian 3-min-min.jpg"

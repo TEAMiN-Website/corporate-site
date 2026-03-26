@@ -190,7 +190,7 @@ const SpAss: React.FC = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <div className="bg-[#F7ECD5]/80  p-8 rounded-3xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-3 relative overflow-hidden group">
+            <div className="bg-[#F7ECD5]/80  p-8 rounded-3xl shadow-lg relative overflow-hidden group">
               <div className="absolute top-0 left-0 right-0 h-1 bg-gradient-to-r from-[#D86D55] to-[#71B554] scale-x-0 group-hover:scale-x-100 transition-transform duration-300" />
               <div className="text-gray-700 leading-relaxed space-y-3">
                 <p>
@@ -247,7 +247,7 @@ const SpAss: React.FC = () => {
             <div className="grid lg:grid-cols-4 gap-8">
               {(t('spassPage.howItWorks.steps', { returnObjects: true }) as Array<{number: string, title: string, description: string}>).map((step, index) => (
                 <div key={index} className="text-center relative h-full">
-                  <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 hover:-translate-y-2 mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
+                  <div className="backdrop-blur-sm p-6 rounded-2xl shadow-lg mb-8 lg:mb-0 h-full flex flex-col" style={{ backgroundColor: 'rgba(255, 255, 255, 0.85)' }}>
                     <div className="w-12 h-12 text-white rounded-full flex items-center justify-center font-bold text-xl mx-auto mb-4 relative z-10 shrink-0" style={{ background: 'linear-gradient(135deg, #71B554, #D86D55)' }}>
                       {step.number}
                     </div>
@@ -416,7 +416,7 @@ const SpAss: React.FC = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-10">
-            <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+            <div className="relative rounded-[25px] p-8 shadow-lg overflow-hidden group">
               <img loading="lazy" src="/assistant picture 2 crop copy.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#D86D55]/90 to-[#D86D55]/80" />
               <div className="relative z-10 h-full flex flex-col justify-between">
@@ -437,7 +437,7 @@ const SpAss: React.FC = () => {
               </div>
             </div>
 
-            <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+            <div className="relative rounded-[25px] p-8 shadow-lg overflow-hidden group">
               <img loading="lazy" src="/athlete 1.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#71B554]/90 to-[#71B554]/80" />
               <div className="relative z-10 h-full flex flex-col justify-between">
@@ -458,7 +458,7 @@ const SpAss: React.FC = () => {
               </div>
             </div>
 
-            <div className="relative rounded-[25px] p-8 shadow-2xl transition-all duration-300 hover:-translate-y-3 hover:shadow-3xl cursor-pointer overflow-hidden group">
+            <div className="relative rounded-[25px] p-8 shadow-lg overflow-hidden group">
               <img loading="lazy" src="/partner picture-min.jpg" alt="" className="absolute inset-0 w-full h-full object-cover" />
               <div className="absolute inset-0 bg-gradient-to-br from-[#3F3E34]/90 to-[#3F3E34]/85" />
               <div className="relative z-10 h-full flex flex-col justify-between">
