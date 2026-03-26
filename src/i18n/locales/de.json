@@ -368,7 +368,7 @@
   "cookieConsent": {
     "title": "Cookie-Einstellungen",
     "subtitle": "Wir respektieren Ihre Privatsphäre",
-    "description": "Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung zu verbessern, die Website-Nutzung zu analysieren und unsere Marketing-Bemühungen zu unterstützen. Dies hilft uns, Ihnen bessere Inhalte und eine personalisiertere Erfahrung zu bieten.",
+    "description": "Diese Website verwendet Cookies, um dein Erlebnis zu verbessern.",
     "essential": {
       "title": "Notwendige Cookies",
       "description": "Diese Cookies sind für das ordnungsgemäße Funktionieren der Website erforderlich. Sie ermöglichen grundlegende Funktionen wie Seitennavigation, Spracheinstellungen und Zugang zu sicheren Bereichen."
@@ -379,8 +379,8 @@
     },
     "showDetails": "Details anzeigen",
     "hideDetails": "Details ausblenden",
-    "accept": "Alle Cookies akzeptieren",
-    "decline": "Analyse ablehnen"
+    "accept": "Akzeptieren",
+    "decline": "Ablehnen"
   },
   "notFound": {
     "title": "Seite nicht gefunden",
