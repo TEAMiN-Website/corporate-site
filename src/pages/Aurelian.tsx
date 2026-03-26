@@ -6,7 +6,7 @@ import { ChevronDown } from 'lucide-react';
 const Aurelian: React.FC = () => {
  const { t } = useTranslation();
  const [currentImageIndex, setCurrentImageIndex] = useState(0);
- const carouselImages = ['aurelian 2.jpg', 'Aurelian 5-min.jpg', 'aurelian 3-min copy.jpg'];
+ const carouselImages = ['/aurelian 2.jpg', '/Aurelian 5-min.jpg', '/aurelian 3-min copy.jpg'];
 
  useEffect(() => {
  const interval = setInterval(() => {
@@ -31,7 +31,7 @@ const Aurelian: React.FC = () => {
  <section className="min-h-screen relative overflow-hidden hero-section">
  <div className="absolute inset-0">
  <img
- src="Aurelian 1-min.jpg"
+ src="/Aurelian 1-min.jpg"
  alt="Aurelian playing football"
  className="w-full h-full object-cover"
  style={{ objectPosition: 'center 20%' }}
