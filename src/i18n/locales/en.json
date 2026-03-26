@@ -365,10 +365,10 @@
     "error": "Something went wrong. Please try again.",
     "success": "Success!"
   },
-  "cookieConsent": {
+"cookieConsent": {
     "title": "Cookie Preferences",
     "subtitle": "We respect your privacy",
-    "description": "We use cookies and similar technologies to improve your experience, analyze site usage, and assist with our marketing efforts. This helps us provide you with better content and a more personalized experience.",
+    "description": "This site uses cookies to improve your experience.",
     "essential": {
       "title": "Essential Cookies",
       "description": "These cookies are necessary for the website to function properly. They enable basic features like page navigation, language preferences, and access to secure areas."
@@ -379,8 +379,8 @@
     },
     "showDetails": "Show Details",
     "hideDetails": "Hide Details",
-    "accept": "Accept All Cookies",
-    "decline": "Decline Analytics"
+    "accept": "Accept",
+    "decline": "Decline"
   },
   "notFound": {
     "title": "Page Not Found",
