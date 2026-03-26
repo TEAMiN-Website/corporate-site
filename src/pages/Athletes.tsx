@@ -206,7 +206,7 @@ const Athletes: React.FC = () => {
       <section className="py-24 relative overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="Aurelian 1-min.jpg"
+            src="/Aurelian 1-min.jpg"
             alt="Two people having friendly conversation"
             className="w-full h-full object-cover object-top"
             loading="lazy"

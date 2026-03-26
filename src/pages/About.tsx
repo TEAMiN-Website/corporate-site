@@ -25,32 +25,32 @@ const About: React.FC = () => {
  const partners = [
  {
  name: 'BVS',
- logo: 'BVS Logo.png',
+ logo: '/BVS Logo.png',
  description: t('about.partners.bvs')
  },
  {
  name: 'Universität Würzburg',
- logo: 'Universität_Würzburg_Logo.svg.png',
+ logo: '/Universität_Würzburg_Logo.svg.png',
  description: t('about.partners.uniWuerzburg')
  },
  {
  name: 'BMFTR',
- logo: 'BMFTR_Logo.svg.png',
+ logo: '/BMFTR_Logo.svg.png',
  description: t('about.partners.bmftr')
  },
  {
  name: 'Lebenshilfe',
- logo: 'Bundesvereinigung_Lebenshilfe_logo.png',
+ logo: '/Bundesvereinigung_Lebenshilfe_logo.png',
  description: t('about.partners.lebenshilfe')
  },
  {
  name: 'Adidas',
- logo: 'adidas logo.png',
+ logo: '/adidas logo.png',
  description: t('about.partners.adidas')
  },
  {
  name: 'avaAssist',
- logo: 'ava_logo.png',
+ logo: '/ava_logo.png',
  description: t('about.partners.ava')
  }
  ];
